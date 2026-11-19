@@ -1,0 +1,13 @@
+# Tested direct Python dependencies. FreeCAD 1.0 is an external native dependency.
+# Python 3.12. Each runtime/tool version is also recorded in the CI log.
+cadquery==2.7.0
+cadquery-ocp==7.8.1.1.post1
+numpy==2.3.5
+gmsh==4.15.2
+cad-ccx==2.23.0
+matplotlib==3.10.8
+plotly==7.1.0
+narwhals==2.29.0
+python-docx==1.2.0
+Pillow==13.0.0
+PyYAML==6.0.3

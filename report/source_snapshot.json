@@ -1,0 +1,1947 @@
+{
+  "schema": "v1-report-source-snapshot",
+  "draft": false,
+  "static_file_hashes": {
+    "requirement.md": "daed9c70a9376adc1ccc36665bf0f1e1d19cff86ccbe264e7ca375dbde1b2a49",
+    "frozen_requirements.sha256": "66aeb610bd12f255c99786b5f4beffbf1fbdda76fc955f0ef02526186b97d20e",
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "config/physical_acceptance.json": "5e1f6b1d1a085b5d458ad542b4125119277e25af1ddd93b5995e1e14dbf618ad",
+    "cad/geometry_manifest.json": "f18647eee463420d1f4063c83c52787863fa522f63e9fd1a3d3113f1fc34e02e",
+    "scripts/calculate.py": "31e67283f7214c3d4d6b318f089c96e2dfabe7c197d7e6ca2fe8baf8edb629c8",
+    "scripts/check_geometric_fit.py": "38eef5d65622f5dd5b295cebd56295f5e34ab49d687fd4ec656bb70de8f9604e",
+    "scripts/run_fem.py": "b3f66294823c0044c559489ef7e4108272c792a2d606cc92783032f98b7f01bb",
+    "scripts/render_fem.py": "2c0f2de315d11c0bf11a5928c25cefcaf9834065354726c455218a2d2523e4ae",
+    "scripts/build_bom.py": "90de32fabe629b77f53497ae09fb3ff52b6e66a0a472e546d79997f69fc75c8c",
+    "scripts/build_report.py": "145ff8857c75df7af352dd385f210d414d822b56ce320d527af821d2fdd8d1f4",
+    "scripts/render_report.py": "804429cf73fd9da6802df21c5f96977dc81fe2978b53d93d4d13e8e19140d52f",
+    "results/fem_render.json": "1976055ddb9280cdddfbbdda6ff2386fb81422c272f3e66a2923a19bb017cdc4",
+    "results/stress_surface_data.json.xz": "421e9c42446726232e0b2264a3fea27c2760573e987687d4cc2165d1119c366e",
+    "bom.csv": "b466f345f85c7ea9bd2cca45c8095cd728e7fb4dee1523943ac7020305ae75a6",
+    "manufacturing/PRINT_AND_ASSEMBLY.md": "52735c6370de7523a54b9ca1c63ea0c64bfe7801e44dd0ed70af7d35a567cb02",
+    "evidence/source_manifest.json": "9c8fcab1797997c736acd018f66d750ea24d945d9ab5d3a3d9ba60094d0e9488",
+    "evidence/solver_method_sources.json": "3af076ee4bfdc99e4a46cfe3a72eaeb8b9f46a97558c5cb3180041f0a2206cd9",
+    "evidence/calculix_rf_method.md": "239b40287aaf8f0e6ac275fcb7326fb5abae72b80328abc6499cfb801452a73b",
+    "evidence/v0_report_export.docx": "f92e5fd83ce542552d690454ad9fba1b1f0c9d718263aa92f2a24f3dae4c1cd7",
+    "drawings/assembly.png": "dc21c00bf006b7a36f798cbd522a9108de7515e718694eab4187bf7bec74715e",
+    "drawings/bracket_detail.png": "8f73a4948e06cf2cf1800995b0faadb11a6e3b3dd767f4d2861a4a8c526dfaf7",
+    "results/bracket_stress.png": "f2ab7ed822b6a10b44dbf8ec667fc06ce7142d0e9e04235fa041cb58d6833d21",
+    "results/beam_stress.png": "33622cfb644cc88ec0c4fd6041b586e7387e01062b329c7b7de44d30cbc25ad1",
+    "fem/beam_h5p5/central_gravity.dat.xz": "6e1877d0194a2b17919beb855d786817a94b088e8fa3ae57ca8de4a7b3d62577",
+    "fem/beam_h5p5/central_gravity.frd.xz": "6967f89b2fba5a65ffee25f9400f7e3273ad45ec791bea505568a06d621089e7",
+    "fem/beam_h5p5/central_gravity.inp.xz": "12794236e39ac994cd561c71444b1b57808b14da2095983f05a0262cefc7dd57",
+    "fem/beam_h5p5/central_gravity.json": "df758c9a1a15c0a6bb84cf358494e58e58c35a7f75fa337f04ad2a1676f84b31",
+    "fem/beam_h5p5/central_gravity.solver.log": "44d1d969645b2a0a5318467958d7efd35e93293d906742d7744f38b0b2cb795b",
+    "fem/beam_h5p5/common_mesh.inc.xz": "ea3c0a1b0714ae55829e8cd5f1f70c3a1c085623a44ea1a7ca08d350b035aa43",
+    "fem/beam_h5p5/summary.json": "63e477dc71d41fbfda5fe72b30e08bdc71b0287285795c9f1d536da73c41217b",
+    "fem/beam_h8/central_gravity.inp.xz": "88aa1c30434274cddc21464799ce65d075440c39895e641f877a86767d8d702b",
+    "fem/beam_h8/central_gravity.json": "569e3d440e2bf57ae3b444474fe8359bcd7a5d764d3d038dd674a3c7f6594efa",
+    "fem/beam_h8/central_gravity.solver.log": "62bcb7e52231afd08bbb90f5d1c00b59410a01153ebf36f3d5fab625164adc36",
+    "fem/beam_h8/common_mesh.inc.xz": "7147be6d4186e98f963461e2caa3c06bd6ad7542d9801d952f8ca67449dacc17",
+    "fem/beam_h8/summary.json": "b8c80aaa0935f11704ce00a2b537c015a76bcdccb37b01ffc9d2fea20c5f1082",
+    "fem/bracket_h3p5/common_mesh.inc.xz": "43bc0547e640e8e326df2189f1c42539c7d5395643efed3a7d03e958e5a22233",
+    "fem/bracket_h3p5/fx.dat.xz": "5bbc924c0fe23e4eba449b87e7076fb1c1ea25282a60e95b326afa9957a6bcb1",
+    "fem/bracket_h3p5/fx.frd.xz": "6c1d419c4de3ac6f5292f2fc292da5c78753286db48179a74f00c15af56a755f",
+    "fem/bracket_h3p5/fx.inp.xz": "f37f557847b6274820fc6282f3ab2e4bc74a3fb840975b8972070cd917debec2",
+    "fem/bracket_h3p5/fx.json": "abea06cd9451a8c02710c05e3d458559f61f6c64d7795ff7d862d2dce8a9ee2e",
+    "fem/bracket_h3p5/fx.solver.log": "995112c0cb75c057161180546ee1602008e13ae8787502c34ad876732c4fc76c",
+    "fem/bracket_h3p5/fy.dat.xz": "74ddfbeddd8089ef8f424c666ce959b271a8ff50ef6f818a7a3b41674c1a2c52",
+    "fem/bracket_h3p5/fy.frd.xz": "77e19f95bbe4b9fc54340ac8eae5b5201638e3ce0b07262041ebc32ac2bbd13d",
+    "fem/bracket_h3p5/fy.inp.xz": "8ce71e3ed33f196be7d4b00474fe498cc9bce196937e308977f3f80ec8f8986f",
+    "fem/bracket_h3p5/fy.json": "a141678519f968188bca6223360518052f60031ba460bdc2354f8d12ef613f9c",
+    "fem/bracket_h3p5/fy.solver.log": "106716ebbb522454126a43ea79d09e7acbb0688f714920aae9ba1fb38db3bd21",
+    "fem/bracket_h3p5/fz.dat.xz": "f3f35454cebf8f24ce6b49e653bd96df3a3039e6cc9de56616e4a86a00f71dc0",
+    "fem/bracket_h3p5/fz.frd.xz": "0a5a82cd2f55378e76a495641edc08c08c1aba0a6778533bdc390f7d6614bedc",
+    "fem/bracket_h3p5/fz.inp.xz": "60119e82a8c1f008cad1f077e76cb26e212f16edb95a4eace6576364a7d8c80e",
+    "fem/bracket_h3p5/fz.json": "04982adc362f6908e06234263f721bcb6c1c93e9ffb8012c36643d303f00e945",
+    "fem/bracket_h3p5/fz.solver.log": "b7f6f46cb25cfc2126936debfd8f176abe43051877ab616c8cc63fb5db0be0c7",
+    "fem/bracket_h3p5/my.dat.xz": "1aab416b53bb4bd7648a3fb01a56828da8f0148186d690b1913997948204c721",
+    "fem/bracket_h3p5/my.frd.xz": "90663097ae89b7eee262fdb9ab2c5ee4916de3dd3384431d0e01aab62c825d62",
+    "fem/bracket_h3p5/my.inp.xz": "cfcf48c9a0489214122ceb032deafc47ca6be0f97c856642d863e199aea94cc6",
+    "fem/bracket_h3p5/my.json": "a558cd7ac2400b1b502e18688451039e800d55dca975524b8dd584b72fb990bd",
+    "fem/bracket_h3p5/my.solver.log": "a4ebde09808e9db0b936b09540afb4a9f3afa664b7c823e215abc27b629dbfcf",
+    "fem/bracket_h3p5/mz.dat.xz": "665a846a1643d015847b1e1dad745d2b815b527987c079a9a909d6d70cc8f604",
+    "fem/bracket_h3p5/mz.frd.xz": "ae552cdff2985bc44f6db7d3c790b748ff554769726139c94084a2965a2e7869",
+    "fem/bracket_h3p5/mz.inp.xz": "73cc27ebc59fc816072c5c3907867f4880f57a27b96b4f59c8fd634b08e01f1a",
+    "fem/bracket_h3p5/mz.json": "6327fb3d0f2f84ac08d20e7888745968ea3af070750006ea0c546e6410a21e60",
+    "fem/bracket_h3p5/mz.solver.log": "4dfd332cec0f518c7626f40f01387b2b70ab4a78dbf8f828ddd2906cb1c1be3e",
+    "fem/bracket_h3p5/summary.json": "db198509ae6ae56f17de5600928aeb201639229e538278ce062b4bc0ae56047f",
+    "fem/bracket_h3p5/tx.dat.xz": "513fd86a23c86a5462f5114fd73c0ce1a98f05ffc26289ed8854d63d41feca99",
+    "fem/bracket_h3p5/tx.frd.xz": "f86417ccb1a597ee507fa37a01e42447bbe169f0a0379a9b04fa0083a14b2ec0",
+    "fem/bracket_h3p5/tx.inp.xz": "9be9334032567f654df8442eff7bd3f0ddaaf889a23d0d91a59622c10ddbd231",
+    "fem/bracket_h3p5/tx.json": "f44ce79eebec19138bdb403599341f97959a605496d08886251fc7e5f882e7be",
+    "fem/bracket_h3p5/tx.solver.log": "3a1a465f74f2e99b9292d980ebd590c8c06f50224d01e333d76aadd6a81a5169",
+    "fem/bracket_h4p5/common_mesh.inc.xz": "68f45fe5deb366a3c3ecdd26a539fd8d0452e1b8528f23255a676690d1f7f009",
+    "fem/bracket_h4p5/fx.inp.xz": "f12fc62412443a2427d4946d5ebce4088b13e1dd53f4d26be24c8c43a61639f1",
+    "fem/bracket_h4p5/fx.json": "08eef6134c970a70668f92bf42031bdae147c702087c3c8f083cbaaa278f5db1",
+    "fem/bracket_h4p5/fx.solver.log": "c0f613c48275a896a52e232405760efdf1df0636bf3d8ada17816d83989639fc",
+    "fem/bracket_h4p5/fy.inp.xz": "8b273062203280048aa64506a027240025216e8fb30e265c6c7bd243c250bab1",
+    "fem/bracket_h4p5/fy.json": "b25581db7a68f2fced10e5baecf20c5bba0cce5b04dcc11ce9825ce26dd64cdd",
+    "fem/bracket_h4p5/fy.solver.log": "7f68932cf66437d340aef30e9d223d7083e361993e3bebd3889d15235c264e6a",
+    "fem/bracket_h4p5/fz.inp.xz": "434fd28ad15a4cbc0e2c4a556969bce20e53db1deecfa506e23e3d980fe21f00",
+    "fem/bracket_h4p5/fz.json": "9c56420785fd5be1c364b3631e987308af5f27115eda5c390cc88fd523d6bcd9",
+    "fem/bracket_h4p5/fz.solver.log": "08803c1083468d6ffb20cb7655caee913aa4beaea652768b6153397eb0e48240",
+    "fem/bracket_h4p5/my.inp.xz": "f6e8e996daedb1880d5cd89725b3a81da29c7cc87bef8057fb5c7d661f15d0d1",
+    "fem/bracket_h4p5/my.json": "d2684a001fbd53ab2b21fbb031a2d2586cbc3e848c8eb1cab0c97fbaab92b387",
+    "fem/bracket_h4p5/my.solver.log": "51be764e5591a21dadb4b2e1fe0c8f5a8966a1e1add88a07e452e87567ce2450",
+    "fem/bracket_h4p5/mz.inp.xz": "321649cf53feacd61d317e1701af756245cab228900dec31849bbec19e4e336c",
+    "fem/bracket_h4p5/mz.json": "40aa8a1f8d12f9ed9dc1776d8991297e9d457cbbf449c23317b4fecac55e57d7",
+    "fem/bracket_h4p5/mz.solver.log": "d5528197a036b39719affa34c59f7bf6fb2efe34cf3d3a8accf6cf6fd3bf1083",
+    "fem/bracket_h4p5/summary.json": "bd594a16fcb857a8296e7544aa4b1a8deb2a95f6cc39fd74a3283eae7cce54cf",
+    "fem/bracket_h4p5/tx.inp.xz": "cfd209ab616253ec2a656c5277124b11db38cea057aa518e30e6cfc171f624d5",
+    "fem/bracket_h4p5/tx.json": "db2ef511cb16fc6e12619d38d5219e05e86fbac278c0e8f36ae3928d7f6f2ca4",
+    "fem/bracket_h4p5/tx.solver.log": "a19205f6d9d2bf17af34ebd0642aa5fb95a9dad0b7189ba03960eff42d26c4c6",
+    "fem/bracket_h6/common_mesh.inc.xz": "152ba2ae0c8c61af86f536c077c875b5c2f5a19ed7dd28288d78fc2abaee6ac4",
+    "fem/bracket_h6/fx.inp.xz": "2fe3c3cbbebfe3369aba9c494db06796e506dc6a387f7a06213187dd7abf1bb5",
+    "fem/bracket_h6/fx.json": "4b2f11ee1c193e3b29a2dafdc22807268183dafe2e9a1be609c71dd0a142fc17",
+    "fem/bracket_h6/fx.solver.log": "4349072470acf59dcb60e4d6533c7352b25bac08964b9c6bc77de5ee857bd046",
+    "fem/bracket_h6/fy.inp.xz": "cc6d4bd5a768d02355b7d6fbc11a0cbe73a8dce368364a117eed561a456d4d0a",
+    "fem/bracket_h6/fy.json": "491416f715e04057ef18e5bcbcba8873601b28f432f9c5ce2b30c4963ed39e1e",
+    "fem/bracket_h6/fy.solver.log": "40fd092de05c7472440fa9088733f110e10a1cdd0ad890b2dae571f1953faa7c",
+    "fem/bracket_h6/fz.inp.xz": "a4791a6f8e576875cd39a099ec96fe82c175ba92668af2b10bf21b54635e2479",
+    "fem/bracket_h6/fz.json": "be9ea4e1570a715dffd1d0ac2e1f429345a5fea15fc7a905c7a4336a955e98e0",
+    "fem/bracket_h6/fz.solver.log": "451ee1d086c8149463f3978f3261f2445b37b43924171a10ce3f04b9136b17fb",
+    "fem/bracket_h6/my.inp.xz": "8f8580ccee2a79127c22694aea3a4e9b62947068e682a016d8253836cc0effab",
+    "fem/bracket_h6/my.json": "0104a52b25c26a083e2bc730d6dd7e01817fe8bd5bc0fc3bd4e239add269961c",
+    "fem/bracket_h6/my.solver.log": "0171cb018a4a081b5ddf614bfac83ee8ad228107a4b7afc7c0854d3becbe10a5",
+    "fem/bracket_h6/mz.inp.xz": "5c2b6752b8991ba1290431dfc6822503acbd4031b9645b1ffa66d7b7ccce2522",
+    "fem/bracket_h6/mz.json": "7cabc62c2896fa7c7c594a62a2653d3d940c38ce0e0cf9c8b06c85c0a3122f2a",
+    "fem/bracket_h6/mz.solver.log": "64e4812e2820c0a7c7ac753a3349cd0e988af72d73ba689f2f2178cb35d2564b",
+    "fem/bracket_h6/summary.json": "d5125b4313af8a48cd285bf023ee9185cd0f280522f0298ab298b65a6e332641",
+    "fem/bracket_h6/tx.inp.xz": "d3447293257e6cbe5976b2db57f0baa54abc37fe1765ebba930e978f9ebdada3",
+    "fem/bracket_h6/tx.json": "16b9f14c939cb3a124aacb973aee43df0b02a73daa4e5365fe453a7b6e39c48a",
+    "fem/bracket_h6/tx.solver.log": "821d444cdb2daea7233d533af422e4d4dcfce055dc0afb5bb4f2282c4ecef6e2",
+    "fem/retained_evidence.json": "bcba0a2db524303e65ef6342105340f41785e65c13614185ccfd93772f7b9772"
+  },
+  "calculation_values": {
+    "section_area_mm2": 437.0230634049907,
+    "section_I_mm4": 88514.40504106123,
+    "section_Amin_mm2": 400.26680276889454,
+    "section_Amax_mm2": 474.4812581210864,
+    "section_Imin_mm4": 78669.22473235524,
+    "section_Zmin_mm3": 4061.919438872092,
+    "beam_weight_upper_N": 5.217954525829465,
+    "beam_moment_max_Nmm": 1262.4738484493375,
+    "eccentric_axial_moment_Nmm": 273.8978116926092,
+    "torsion_enclosed_area_lower_mm2": 939.6810534216652,
+    "beam_torsion_shear_MPa": 0.049040909746315524,
+    "beam_transverse_shear_MPa": 0.12184072341778265,
+    "beam_bending_stress_MPa": 0.5349090919493314,
+    "beam_global_vm_MPa": 0.6333096623836735,
+    "beam_local_wall_stress_MPa": 55.69446817175465,
+    "beam_global_deflection_mm": 0.004284560144507763,
+    "beam_nominal_euler_deflection_mm": 0.0028402042383489975,
+    "beam_nominal_weight_N": 4.800020091709418,
+    "beam_euler_buckling_N": 333747.9121707224,
+    "beam_compression_allowable_N": 32021.344221511565,
+    "beam_compression_utilization": 0.0003122916992748267,
+    "bracket_bounding_volume_mm3": 158690.365,
+    "bracket_weight_upper_N": 1.9764005022676074,
+    "required_bracket_force_N": 17.194355028097075,
+    "required_bracket_torsion_Nmm": 476.10845937426114,
+    "required_bracket_transverse_moment_Nmm": 1536.3716601419467,
+    "plug_area_mm2": 977.4025,
+    "plug_I_mm4": 78630.43350052084,
+    "plug_vm_MPa": 0.7455111684275487,
+    "plug_deflection_mm": 0.00942613336064137,
+    "plate_strip_stress_MPa": 0.9861932938856016,
+    "contact_force_N": 100.0,
+    "contact_bearing_pressure_MPa": 0.3913894324853229,
+    "anchor_tension_N": 40.96666666666667,
+    "anchor_shear_N": 24.583333333333332,
+    "anchor_bending_Nmm": 2833.125,
+    "anchor_interaction": 0.5149652956055573,
+    "fixture_max_mm": 9.9,
+    "preload_range_N": [
+      5333.333333333333,
+      8888.88888888889
+    ],
+    "sleeve_min_area_mm2": 210.10186269045144,
+    "sleeve_compression_MPa": 42.30752062386578,
+    "aluminum_allowable_MPa": 80.0,
+    "PETG_allowable_MPa": 4.666666666666667
+  },
+  "fit_checks": [
+    {
+      "id": "geometry:valid:beam_400mm",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 174809.22536199616,
+        "bbox_mm": {
+          "xmin": 15.8,
+          "xmax": 415.8,
+          "ymin": -19.05,
+          "ymax": 19.05,
+          "zmin": -19.05,
+          "zmax": 19.05
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 174809.22536199627,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:bracket",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120749.73533815093,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 45.8,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120749.73533916454,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:bracket_structural_core_only",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120742.94333985182,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 45.8,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120742.9433391851,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:bracket_added_ribs",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 6.791999999994495,
+        "bbox_mm": {
+          "xmin": 16.0,
+          "xmax": 44.3,
+          "ymin": -15.925,
+          "ymax": 15.925,
+          "zmin": -15.925,
+          "zmax": 15.925
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 6.79200000000018,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:bracket_right",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120749.73533815102,
+        "bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120749.73533916457,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:bracket_right_structural_core_only",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120742.94333985193,
+        "bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120742.94333918516,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:sleeves",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 7113.571077376441,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 431.6,
+          "ymin": -9.0,
+          "ymax": 9.000000000000002,
+          "zmin": -69.0,
+          "zmax": 69.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 7113.571077376433,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:retention_washers",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 4048.1306297096635,
+        "bbox_mm": {
+          "xmin": 8.0,
+          "xmax": 423.6,
+          "ymin": -15.0,
+          "ymax": 15.000000000000002,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 4048.130629709676,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:anchor_shanks_simplified",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 5598.318108697011,
+        "bbox_mm": {
+          "xmin": -40.0,
+          "xmax": 471.6,
+          "ymin": -3.000000000000005,
+          "ymax": 3.0000000000000013,
+          "zmin": -63.0,
+          "zmax": 63.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 5598.31810869701,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:valid:assembly",
+      "status": "PASS",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 15,
+        "volume_mm3": 433068.7158540812,
+        "bbox_mm": {
+          "xmin": -40.0,
+          "xmax": 471.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 15,
+        "volume_mm3": 433068.71585435624,
+        "volume_tolerance_mm3": 0.001
+      }
+    },
+    {
+      "id": "geometry:beam_dimensions",
+      "status": "PASS",
+      "observed": {
+        "length_mm": 400.0,
+        "outside_y_mm": 38.1,
+        "outside_z_mm": 38.1,
+        "start_x_mm": 15.8,
+        "end_x_mm": 415.8
+      },
+      "criterion": {
+        "length_mm": 400,
+        "outside_y_mm": 38.1,
+        "outside_z_mm": 38.1,
+        "start_x_mm": 15.8,
+        "end_x_mm": 415.8
+      }
+    },
+    {
+      "id": "geometry:catalogue_profile",
+      "status": "PASS",
+      "observed": {
+        "cylindrical_radii_mm": [
+          1.5748,
+          1.5748,
+          1.5748,
+          1.5748,
+          3.175,
+          3.175,
+          3.175,
+          3.175
+        ],
+        "absolute_flat_levels_mm": [
+          15.875,
+          19.05
+        ],
+        "flat_wall_mm": 3.1750000000000007
+      },
+      "criterion": {
+        "radii_mm": [
+          1.5748,
+          1.5748,
+          1.5748,
+          1.5748,
+          3.175,
+          3.175,
+          3.175,
+          3.175
+        ],
+        "flat_wall_mm": 3.175
+      }
+    },
+    {
+      "id": "fit:right_printable_pose",
+      "status": "PASS",
+      "observed": {
+        "symmetric_difference_volume_mm3": -5.820766091346741e-11,
+        "actual_bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "maximum_symmetric_difference_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:right_core_pose",
+      "status": "PASS",
+      "observed": {
+        "symmetric_difference_volume_mm3": -2.9103830456733704e-11,
+        "actual_bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "maximum_symmetric_difference_mm3": 0.001
+      }
+    },
+    {
+      "id": "assembly:actual_instance:beam_400mm",
+      "status": "PASS",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid."
+    },
+    {
+      "id": "assembly:actual_instance:bracket",
+      "status": "PASS",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid."
+    },
+    {
+      "id": "assembly:actual_instance:bracket_right",
+      "status": "PASS",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid."
+    },
+    {
+      "id": "fit:engagement_and_relief",
+      "status": "PASS",
+      "observed": {
+        "left_engagement_mm": 29.999999999999996,
+        "right_engagement_mm": 30.0,
+        "left_root_relief_mm": 2.0,
+        "right_root_relief_mm": 2.0,
+        "wall_spacing_mm": 431.6
+      },
+      "criterion": {
+        "left_engagement_mm": 30,
+        "right_engagement_mm": 30,
+        "left_root_relief_mm": 2,
+        "right_root_relief_mm": 2,
+        "wall_spacing_mm": 431.6
+      }
+    },
+    {
+      "id": "fit:left:core_collision",
+      "status": "PASS",
+      "observed": {
+        "intersection_volume_mm3": 0,
+        "minimum_distance_mm": 0.09999999999999964,
+        "intersection_bbox_mm": null
+      },
+      "criterion": {
+        "maximum_prohibited_intersection_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:left:core_clearance",
+      "status": "PASS",
+      "observed": {
+        "clearance_mm": 0.09999999999999964
+      },
+      "criterion": {
+        "minimum_mm": 0.05
+      }
+    },
+    {
+      "id": "fit:right:core_collision",
+      "status": "PASS",
+      "observed": {
+        "intersection_volume_mm3": 0,
+        "minimum_distance_mm": 0.09999999999999964,
+        "intersection_bbox_mm": null
+      },
+      "criterion": {
+        "maximum_prohibited_intersection_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:right:core_clearance",
+      "status": "PASS",
+      "observed": {
+        "clearance_mm": 0.09999999999999964
+      },
+      "criterion": {
+        "minimum_mm": 0.05
+      }
+    },
+    {
+      "id": "fit:separate_sacrificial_ribs",
+      "status": "PASS",
+      "observed": {
+        "symmetric_difference_mm3": 0,
+        "rib_volume_mm3": 6.791999999994495
+      },
+      "criterion": {
+        "max_difference_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:rib_region_bounds",
+      "status": "PASS",
+      "observed": {
+        "outside_allowed_region_mm3": 0,
+        "maximum_envelope_mm": 31.85
+      },
+      "criterion": {
+        "max_outside_volume_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:left:intentional_interference",
+      "status": "PASS",
+      "observed": {
+        "total_interference_mm3": 0.7546666666650025,
+        "outside_ribs_mm3": 0,
+        "maximum_radial_interference_mm": 0.05000000000000071
+      },
+      "criterion": {
+        "positive_interference": true,
+        "max_prohibited_volume_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:right:intentional_interference",
+      "status": "PASS",
+      "observed": {
+        "total_interference_mm3": 0.7546666666650025,
+        "outside_ribs_mm3": 0,
+        "maximum_radial_interference_mm": 0.05000000000000071
+      },
+      "criterion": {
+        "positive_interference": true,
+        "max_prohibited_volume_mm3": 0.001
+      }
+    },
+    {
+      "id": "fit:left:sampled_insertion_path",
+      "status": "PASS",
+      "observed": {
+        "maximum_intersection_mm3": 0,
+        "samples": [
+          {
+            "withdrawal_mm": 0.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 1.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 2.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 3.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 4.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 5.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 6.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 7.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 8.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 9.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 10.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 11.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 12.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 13.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 14.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 15.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 16.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 17.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 18.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 19.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 20.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 21.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 22.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 23.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 24.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 25.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 26.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 27.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 28.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 29.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 30.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 31.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 32.0,
+            "intersection_mm3": 0
+          }
+        ]
+      },
+      "criterion": {
+        "max_prohibited_mm3": 0.001,
+        "sampling_step_mm": 1
+      }
+    },
+    {
+      "id": "fit:right:sampled_insertion_path",
+      "status": "PASS",
+      "observed": {
+        "maximum_intersection_mm3": 0,
+        "samples": [
+          {
+            "withdrawal_mm": 0.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 1.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 2.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 3.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 4.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 5.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 6.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 7.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 8.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 9.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 10.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 11.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 12.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 13.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 14.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 15.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 16.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 17.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 18.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 19.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 20.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 21.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 22.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 23.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 24.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 25.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 26.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 27.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 28.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 29.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 30.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 31.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 32.0,
+            "intersection_mm3": 0
+          }
+        ]
+      },
+      "criterion": {
+        "max_prohibited_mm3": 0.001,
+        "sampling_step_mm": 1
+      }
+    },
+    {
+      "id": "hardware:mount_holes",
+      "status": "PASS",
+      "observed": {
+        "hole_cylinders": [
+          {
+            "radius_mm": 9.3,
+            "location_mm": [
+              -1.0,
+              0.0,
+              -60.0
+            ],
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "radius_mm": 9.3,
+            "location_mm": [
+              -1.0,
+              0.0,
+              60.0
+            ],
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "z_centers_mm": [
+          -60.0,
+          60.0
+        ]
+      },
+      "criterion": {
+        "diameter_mm": 18.6,
+        "z_centers_mm": [
+          -60.0,
+          60.0
+        ]
+      }
+    },
+    {
+      "id": "hardware:actual_solids",
+      "status": "PASS",
+      "observed": {
+        "plate_intersections": [
+          {
+            "part": "sleeves",
+            "plate_overlap_mm3": 0
+          },
+          {
+            "part": "retention_washers",
+            "plate_overlap_mm3": 0
+          },
+          {
+            "part": "anchor_shanks_simplified",
+            "plate_overlap_mm3": 0
+          }
+        ],
+        "sleeve_diameters_mm": [
+          6.4,
+          18.0
+        ],
+        "washer_diameters_mm": [
+          6.4,
+          30.0
+        ]
+      },
+      "criterion": "Nominal dimensions match config and all plate overlap volumes <=0.001mm3."
+    },
+    {
+      "id": "hardware:positions:sleeves",
+      "status": "PASS",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            4.0,
+            -3.4156056851179405e-16,
+            59.99999999999999
+          ],
+          [
+            4.0,
+            -1.5328080175795153e-16,
+            -59.99999999999999
+          ],
+          [
+            427.6000000000001,
+            4.388755869647108e-16,
+            -60.0
+          ],
+          [
+            427.6000000000001,
+            5.643954314672724e-16,
+            60.00000000000001
+          ]
+        ],
+        "axial_lengths_mm": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "maximum_position_error_mm": 5.728856699135064e-14
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            4.0,
+            0.0,
+            -60.0
+          ],
+          [
+            4.0,
+            0.0,
+            60.0
+          ],
+          [
+            427.6,
+            0.0,
+            -60.0
+          ],
+          [
+            427.6,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 8,
+        "dimension_tolerance_mm": 0.01
+      }
+    },
+    {
+      "id": "assembly:actual_hardware:sleeves",
+      "status": "PASS",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches."
+    },
+    {
+      "id": "hardware:positions:retention_washers",
+      "status": "PASS",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            8.750000000000002,
+            8.631159315641314e-17,
+            60.00000000000001
+          ],
+          [
+            8.750000000000002,
+            1.395423051450849e-16,
+            -60.00000000000001
+          ],
+          [
+            422.85,
+            2.264773123341299e-15,
+            59.999999999999986
+          ],
+          [
+            422.85000000000014,
+            1.948652160611608e-15,
+            -60.00000000000001
+          ]
+        ],
+        "axial_lengths_mm": [
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "maximum_position_error_mm": 1.139253326276393e-13
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            8.75,
+            0.0,
+            -60.0
+          ],
+          [
+            8.75,
+            0.0,
+            60.0
+          ],
+          [
+            422.85,
+            0.0,
+            -60.0
+          ],
+          [
+            422.85,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 1.5,
+        "dimension_tolerance_mm": 0.01
+      }
+    },
+    {
+      "id": "assembly:actual_hardware:retention_washers",
+      "status": "PASS",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches."
+    },
+    {
+      "id": "hardware:positions:anchor_shanks_simplified",
+      "status": "PASS",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            -15.25,
+            -8.422335232446133e-17,
+            -60.0
+          ],
+          [
+            -15.25,
+            -8.422335232446133e-17,
+            60.00000000000001
+          ],
+          [
+            446.85,
+            -1.8107642489240445e-15,
+            -60.0
+          ],
+          [
+            446.85,
+            -1.8107642489240445e-15,
+            60.0
+          ]
+        ],
+        "axial_lengths_mm": [
+          49.5,
+          49.5,
+          49.5,
+          49.5
+        ],
+        "maximum_position_error_mm": 7.105926505897843e-15
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            -15.25,
+            0.0,
+            -60.0
+          ],
+          [
+            -15.25,
+            0.0,
+            60.0
+          ],
+          [
+            446.85,
+            0.0,
+            -60.0
+          ],
+          [
+            446.85,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 49.5,
+        "dimension_tolerance_mm": 0.01
+      }
+    },
+    {
+      "id": "assembly:actual_hardware:anchor_shanks_simplified",
+      "status": "PASS",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches."
+    },
+    {
+      "id": "hardware:tolerance_stack",
+      "status": "PASS",
+      "observed": {
+        "minimum_sleeve_radial_clearance_mm": 0.10000000000000142,
+        "minimum_shank_diametral_clearance_mm": 0.3000000000000007,
+        "minimum_sleeve_projection_mm": 0.10000000000000053,
+        "minimum_washer_radial_overlap_mm": 5.049999999999999,
+        "maximum_fixture_stack_mm": 9.9,
+        "nominal_washer_to_plate_gap_mm": 0.20000000000000018
+      },
+      "criterion": {
+        "minimum_projection_mm": 0.1,
+        "maximum_fixture_mm": 10,
+        "positive_clearances_required": true
+      }
+    },
+    {
+      "id": "fit:catalogue_tolerance_qualification",
+      "status": "BLOCKED",
+      "observed": {
+        "minimum_catalogue_opening_mm": 30.708600000000004,
+        "nominal_core_mm": 31.55,
+        "hypothetical_minimum_opening_collision_mm3": 1311.1048187999945,
+        "all_catalogue_extremes_fit": false
+      },
+      "criterion": "Actual measured tube opening and selected fit coupon must demonstrate geometric fit; nominal STEP PASS alone cannot approve the purchased lot."
+    },
+    {
+      "id": "fit:physical_press_fit",
+      "status": "BLOCKED",
+      "observed": null,
+      "criterion": "Authentic print, insertion, retention and sustained-load evidence."
+    }
+  ],
+  "FEM_checks": [
+    {
+      "id": "stl:gmsh_generated",
+      "status": "PASS",
+      "observed": 6,
+      "criterion": 6
+    },
+    {
+      "id": "stl:manifold:bracket",
+      "status": "PASS",
+      "observed": true,
+      "criterion": "closed manifold"
+    },
+    {
+      "id": "stl:manifold:fit_coupon_31p65mm",
+      "status": "PASS",
+      "observed": true,
+      "criterion": "closed manifold"
+    },
+    {
+      "id": "stl:manifold:fit_coupon_31p75mm",
+      "status": "PASS",
+      "observed": true,
+      "criterion": "closed manifold"
+    },
+    {
+      "id": "stl:manifold:fit_coupon_31p85mm",
+      "status": "PASS",
+      "observed": true,
+      "criterion": "closed manifold"
+    },
+    {
+      "id": "stl:manifold:fit_coupon_31p95mm",
+      "status": "PASS",
+      "observed": true,
+      "criterion": "closed manifold"
+    },
+    {
+      "id": "stl:manifold:fit_coupon_32p05mm",
+      "status": "PASS",
+      "observed": true,
+      "criterion": "closed manifold"
+    },
+    {
+      "id": "fem:positive_jacobian:bracket_h6",
+      "status": "PASS",
+      "observed": 0.014061025860056826,
+      "criterion": ">0"
+    },
+    {
+      "id": "fem:solved:bracket_h6:fx",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h6:fx",
+      "status": "PASS",
+      "observed": 4.358737820250359e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h6:fx",
+      "status": "PASS",
+      "observed": 6.646257628410126e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h6:fy",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h6:fy",
+      "status": "PASS",
+      "observed": 7.911533017609738e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h6:fy",
+      "status": "PASS",
+      "observed": 1.8014906736056724e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h6:fz",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h6:fz",
+      "status": "PASS",
+      "observed": 7.531111750454656e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h6:fz",
+      "status": "PASS",
+      "observed": 3.3721547343474865e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h6:tx",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h6:tx",
+      "status": "PASS",
+      "observed": 3.77479343272593e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h6:tx",
+      "status": "PASS",
+      "observed": 4.204584828235243e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h6:my",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h6:my",
+      "status": "PASS",
+      "observed": 6.213912117908286e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h6:my",
+      "status": "PASS",
+      "observed": 3.364714251422975e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h6:mz",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h6:mz",
+      "status": "PASS",
+      "observed": 4.3517035328584705e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h6:mz",
+      "status": "PASS",
+      "observed": 6.606534657186683e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:positive_jacobian:bracket_h4p5",
+      "status": "PASS",
+      "observed": 0.18370519436786167,
+      "criterion": ">0"
+    },
+    {
+      "id": "fem:solved:bracket_h4p5:fx",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h4p5:fx",
+      "status": "PASS",
+      "observed": 2.1808157383564583e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h4p5:fx",
+      "status": "PASS",
+      "observed": 1.0220794544053886e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h4p5:fy",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h4p5:fy",
+      "status": "PASS",
+      "observed": 5.779637274784333e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h4p5:fy",
+      "status": "PASS",
+      "observed": 1.2121532201072424e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h4p5:fz",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h4p5:fz",
+      "status": "PASS",
+      "observed": 1.0185015808073716e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h4p5:fz",
+      "status": "PASS",
+      "observed": 3.37492400865949e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h4p5:tx",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h4p5:tx",
+      "status": "PASS",
+      "observed": 2.0118995387978526e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h4p5:tx",
+      "status": "PASS",
+      "observed": 1.003769733285882e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h4p5:my",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h4p5:my",
+      "status": "PASS",
+      "observed": 1.493953867686109e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h4p5:my",
+      "status": "PASS",
+      "observed": 6.50530488235579e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h4p5:mz",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h4p5:mz",
+      "status": "PASS",
+      "observed": 2.1052619011797266e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h4p5:mz",
+      "status": "PASS",
+      "observed": 4.22205947417871e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:positive_jacobian:bracket_h3p5",
+      "status": "PASS",
+      "observed": 0.18370519436786167,
+      "criterion": ">0"
+    },
+    {
+      "id": "fem:solved:bracket_h3p5:fx",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h3p5:fx",
+      "status": "PASS",
+      "observed": 4.418381242032541e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h3p5:fx",
+      "status": "PASS",
+      "observed": 6.086625116245111e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h3p5:fy",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h3p5:fy",
+      "status": "PASS",
+      "observed": 2.660273055117781e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h3p5:fy",
+      "status": "PASS",
+      "observed": 7.198957161340796e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h3p5:fz",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h3p5:fz",
+      "status": "PASS",
+      "observed": 1.9381170391606743e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h3p5:fz",
+      "status": "PASS",
+      "observed": 1.6039780855618353e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h3p5:tx",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h3p5:tx",
+      "status": "PASS",
+      "observed": 3.7306129859622214e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h3p5:tx",
+      "status": "PASS",
+      "observed": 4.580364950609557e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h3p5:my",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h3p5:my",
+      "status": "PASS",
+      "observed": 2.1993894601077146e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h3p5:my",
+      "status": "PASS",
+      "observed": 7.532283964631992e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:bracket_h3p5:mz",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:bracket_h3p5:mz",
+      "status": "PASS",
+      "observed": 1.022309995994968e-06,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:bracket_h3p5:mz",
+      "status": "PASS",
+      "observed": 7.45954734739111e-07,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:positive_jacobian:beam_h8",
+      "status": "PASS",
+      "observed": 2.718694594008396,
+      "criterion": ">0"
+    },
+    {
+      "id": "fem:beam_volume:beam_h8",
+      "status": "PASS",
+      "observed": 0.001393523609236952,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:beam_h8:central_gravity",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:beam_h8:central_gravity",
+      "status": "PASS",
+      "observed": 5.991528858762724e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:beam_h8:central_gravity",
+      "status": "PASS",
+      "observed": 5.9170049022326934e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:positive_jacobian:beam_h5p5",
+      "status": "PASS",
+      "observed": 1.8879662149999035,
+      "criterion": ">0"
+    },
+    {
+      "id": "fem:beam_volume:beam_h5p5",
+      "status": "PASS",
+      "observed": 0.001393523609235953,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:solved:beam_h5p5:central_gravity",
+      "status": "PASS",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished"
+    },
+    {
+      "id": "fem:force_balance_relative:beam_h5p5:central_gravity",
+      "status": "PASS",
+      "observed": 3.8248662002201715e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:moment_balance_relative:beam_h5p5:central_gravity",
+      "status": "PASS",
+      "observed": 6.089583928300274e-08,
+      "criterion": 0.005
+    },
+    {
+      "id": "fem:convergence:bracket:max_vm_bound_MPa",
+      "status": "PASS",
+      "observed": {
+        "coarse": 2.662082976592533,
+        "fine": 2.697315190363355,
+        "relative_change": 0.013061956532442158
+      },
+      "criterion": 0.1
+    },
+    {
+      "id": "fem:convergence:bracket:max_principal_abs_bound_MPa",
+      "status": "PASS",
+      "observed": {
+        "coarse": 3.1073668581242133,
+        "fine": 3.1406272955199683,
+        "relative_change": 0.010590380285874817
+      },
+      "criterion": 0.1
+    },
+    {
+      "id": "fem:convergence:bracket:max_displacement_bound_mm",
+      "status": "PASS",
+      "observed": {
+        "coarse": 0.18559526884588437,
+        "fine": 0.1880892993052199,
+        "relative_change": 0.013259821098532357
+      },
+      "criterion": 0.05
+    },
+    {
+      "id": "fem:strength:bracket:max_vm_bound_MPa",
+      "status": "PASS",
+      "observed": 2.697315190363355,
+      "criterion": 4.666666666666667
+    },
+    {
+      "id": "fem:strength:bracket:max_principal_abs_bound_MPa",
+      "status": "PASS",
+      "observed": 3.1406272955199683,
+      "criterion": 4.666666666666667
+    },
+    {
+      "id": "fem:displacement:bracket",
+      "status": "PASS",
+      "observed": 0.1880892993052199,
+      "criterion": 1
+    },
+    {
+      "id": "fem:convergence:beam:max_nodal_vm_MPa",
+      "status": "PASS",
+      "observed": {
+        "coarse": 0.8525031585413223,
+        "fine": 0.925637531034323,
+        "relative_change": 0.07900973117552733
+      },
+      "criterion": 0.1
+    },
+    {
+      "id": "fem:convergence:beam:max_IP_vm_MPa",
+      "status": "PASS",
+      "observed": {
+        "coarse": 0.7917040092701046,
+        "fine": 0.8287446493927781,
+        "relative_change": 0.044694876944078255
+      },
+      "criterion": 0.1
+    },
+    {
+      "id": "fem:convergence:beam:max_displacement_mm",
+      "status": "PASS",
+      "observed": {
+        "coarse": 0.0035986900746462916,
+        "fine": 0.003615970134262195,
+        "relative_change": 0.004778817018473344
+      },
+      "criterion": 0.05
+    },
+    {
+      "id": "fem:strength:beam:max_nodal_vm_MPa",
+      "status": "PASS",
+      "observed": 0.925637531034323,
+      "criterion": 80.0
+    },
+    {
+      "id": "fem:strength:beam:max_IP_vm_MPa",
+      "status": "PASS",
+      "observed": 0.8287446493927781,
+      "criterion": 80.0
+    },
+    {
+      "id": "fem:displacement:beam",
+      "status": "PASS",
+      "observed": 0.003615970134262195,
+      "criterion": 1
+    },
+    {
+      "id": "fem:Euler_comparison",
+      "status": "PASS",
+      "observed": {
+        "FEM_section_mm": 0.0030568006249999994,
+        "Euler_mm": 0.0028402042383489975,
+        "relative_difference": 0.0762608490355992,
+        "nodes": 96
+      },
+      "criterion": 0.15
+    },
+    {
+      "id": "fem:executed_all_cases",
+      "status": "PASS",
+      "observed": 20,
+      "criterion": 20
+    },
+    {
+      "id": "fem:3d_visuals",
+      "status": "PASS",
+      "observed": 3,
+      "criterion": 3
+    }
+  ],
+  "FEM_levels": [
+    {
+      "part": "bracket",
+      "label": "bracket_h6",
+      "size_mm": 6,
+      "nodes": 26191,
+      "elements": 16214,
+      "minimum_det_jacobian": 0.014061025860056826,
+      "FE_volume_mm3": 120743.10685893422,
+      "CAD_volume_mm3": 120742.94333985182,
+      "volume_relative_error": 1.3542744435300877e-06,
+      "max_vm_bound_MPa": 2.7376323275023933,
+      "max_principal_abs_bound_MPa": 3.0444294311689317,
+      "max_displacement_bound_mm": 0.18605895531683975
+    },
+    {
+      "part": "bracket",
+      "label": "bracket_h4p5",
+      "size_mm": 4.5,
+      "nodes": 38371,
+      "elements": 24447,
+      "minimum_det_jacobian": 0.18370519436786167,
+      "FE_volume_mm3": 120743.1073146923,
+      "CAD_volume_mm3": 120742.94333985182,
+      "volume_relative_error": 1.358049058183796e-06,
+      "max_vm_bound_MPa": 2.662082976592533,
+      "max_principal_abs_bound_MPa": 3.1073668581242133,
+      "max_displacement_bound_mm": 0.18559526884588437
+    },
+    {
+      "part": "bracket",
+      "label": "bracket_h3p5",
+      "size_mm": 3.5,
+      "nodes": 56358,
+      "elements": 36388,
+      "minimum_det_jacobian": 0.18370519436786167,
+      "FE_volume_mm3": 120743.07776331197,
+      "CAD_volume_mm3": 120742.94333985182,
+      "volume_relative_error": 1.113302826966727e-06,
+      "max_vm_bound_MPa": 2.697315190363355,
+      "max_principal_abs_bound_MPa": 3.1406272955199683,
+      "max_displacement_bound_mm": 0.1880892993052199
+    },
+    {
+      "part": "beam",
+      "label": "beam_h8",
+      "size_mm": 8,
+      "nodes": 58176,
+      "elements": 36000,
+      "minimum_det_jacobian": 2.718694594008396,
+      "FE_volume_mm3": 174565.6245793418,
+      "CAD_volume_mm3": 174809.22536199616,
+      "volume_relative_error": 0.001393523609236952,
+      "max_nodal_vm_MPa": 0.8525031585413223,
+      "max_IP_vm_MPa": 0.7917040092701046,
+      "max_displacement_mm": 0.0035986900746462916,
+      "section_mean_uz_mm": -0.0030571914102564103,
+      "section_node_count": 78
+    },
+    {
+      "part": "beam",
+      "label": "beam_h5p5",
+      "size_mm": 5.5,
+      "nodes": 121128,
+      "elements": 76650,
+      "minimum_det_jacobian": 1.8879662149999035,
+      "FE_volume_mm3": 174565.62457934197,
+      "CAD_volume_mm3": 174809.22536199616,
+      "volume_relative_error": 0.001393523609235953,
+      "max_nodal_vm_MPa": 0.925637531034323,
+      "max_IP_vm_MPa": 0.8287446493927781,
+      "max_displacement_mm": 0.003615970134262195,
+      "section_mean_uz_mm": -0.0030568006249999994,
+      "section_node_count": 96
+    }
+  ],
+  "BOM_metrics": {
+    "two_brackets_mass_g": 306.70432776147794,
+    "five_coupons_mass_g": 108.0975105,
+    "cash_purchases_by_currency": {
+      "USD": 37.599999999999994,
+      "EUR": 31.5,
+      "GBP": 102.02
+    },
+    "base_consumed_by_currency": {
+      "USD": 16.288283,
+      "EUR": 2.52,
+      "GBP": 17.599999999999998
+    },
+    "with_all_coupons_consumed_by_currency": {
+      "USD": 18.881542276895,
+      "EUR": 2.52,
+      "GBP": 17.599999999999998
+    }
+  },
+  "CI_selftest_functional": true,
+  "policy": "Static source bytes and canonical engineering metrics are captured; mutable CI summaries and timestamps are not report prerequisites."
+}

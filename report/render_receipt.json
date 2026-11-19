@@ -1,0 +1,9 @@
+{
+  "schema": "beam-report-render-v1",
+  "renderer": "documents skill render_docx.py using installed LibreOffice",
+  "input_docx_sha256": "d606f499c785920e7e61192c47d11a846c7ee1228533f63b1f393d26d3101ff9",
+  "output_pdf_sha256": "0cb8f1100cd2b9b01aee76124198c7bb364f9b26222b68c5bd5aa632e0eff6a5",
+  "page_count": 12,
+  "visual_review_performed": true,
+  "visual_review_path": "report/visual_review.json"
+}

@@ -1,0 +1,149 @@
+PAGE 1
+Alloy 6061
+Alloy 6061 is one of the most widely used alloys in the 6000 series. This standard structural alloy, one of the most versatile of 
+the heat-treatable alloys, is popular for medium to high strength requirements and has good toughness characteristics. Hydro 
+produces 6061 for use in standard and custom, solid and hollow shapes, rod and bar products, and seamless and structural pipe 
+and tube. 
+ Alloy 6061 has excellent corrosion resistance to atmospheric conditions and good corrosion resistance to seawater. This 
+alloy also offers good finishing characteristics and responds well to anodizing; however, where cosmetic appearance is critical, 
+consider the use of alloy 6063. The most common anodizing methods include clear, clear and color dye, and hardcoat. 
+ Alloy 6061 is easily welded and joined by various commercial methods. (Caution: direct contact by dissimilar metals can 
+cause galvanic corrosion.) Since 6061 is a heat-treatable alloy, strength in its -T6 condition can be reduced in the weld region. 
+Selection of an appropriate filler alloy will depend on the desired weld characteristics. Consult the Safety Data Sheet (SDS) for 
+proper safety and handling precautions when using alloy 6061. 
+ For screw machine applications, alloy 6061 has adequate machinability characteristics in the heat-treated -T6/-T6511 
+condition. Chips from machining (particularly turning and drilling) can be difficult to break in the -T6/-T6511 temper condition. 
+Chip breakers are recommended, and special machining techniques (i.e. peck drilling) can improve chip formation. For 
+machining applications, alloy 6061 is available in many rod, bar and hex sizes. Refer to Hydro ACC-U-LINETM machine grade 
+product brochures for more details. Alloy 6061 conforms to standard industry specifications. 
+ For minor bending applications, special forming tempers are available (dependent upon bend radius and degree of bend). 
+When more severe bends are required, a softer temper condition such as -T1/-T4 or even -O (anneal) may be necessary to 
+prevent cracking. After artificial aging (precipitation heat-treating), 6061-T1/-T4 is capable of developing -T6 properties. Hydro 
+offers 6061 alloy with a wide selection of standard and special tempers. 
+Typical applications for 6061 alloy: 
+• Transportation components • Recreation products • Machinery and equipment • Consumer durables
+6061 Temper Designations and Definitions
+Standard Tempers Standard Temper Definitions*
+F As fabricated. There is no special control over thermal conditions and there are no mechanical property limits. 
+O Annealed. Applies to products that are annealed to obtain the lowest strength temper. 
+T1 Cooled from an elevated temperature shaping process and naturally aged. (See Note A.) 
+T4, T4510, T4511 Solution heat-treated and naturally aged. (See Notes B & C.) 
+T51 Cooled from an elevated temperature shaping process and artificially aged. (See Note A.) 
+T6, T6511 Solution heat-treated and artificially aged. (See Notes B & C.)
+ * For further details of definitions, see Aluminum Association’s Aluminum Standards and Data manual and Tempers for Aluminum and Aluminum Alloy Products.   
+ ** Hydro Special Temper Designations are unregistered tempers for reference only, not recognized by the Aluminum Association, and are provided for customer  
+  use to identify unique processing, material or end use application characteristics.
+ Note A: Applies to products that are not cold worked after cooling from an elevated temperature shaping process, or in which the effect of cold work in flattening or  
+  straightening may not be recognized in mechanical properties. 
+ Note B: Applies to products that are not cold worked after solution heat-treatment, or in which the effect of cold work in flattening or straightening may not be  
+  recognized in mechanical properties. 
+ Note C: Tempers -T4511 and -T6511 apply to products that are stress-relieved by stretching. 
+ Note D: The specified special temper will not conform to Military, Federal, ASTM, ASME and AMS specifications. 
+Special Tempers Special Temper Definitions**
+T4S6 For 6061 extrusions requiring maximum formability in the unaged condition and subsequently aged to -T6. May not meet -T4 minimum 
+mechanical properties, but will meet -T6 minimum when properly aged. Test reports state -T6 properties to demonstrate heat-treat 
+capabilities, but extrusions are supplied unaged. (See Note D.) 
+T6S2, T6S15 For 6061 extrusions requiring good formability; meets standard 6061-T6 minimum properties (See Note B.)  
+T51S10 For 6061 extrusions requiring improved forming characteristics not obtainable with -T6S2 and - T6S15 tempers. Lower minimum 
+properties of 35.0 ksi tensile and 30.0 ksi yield guaranteed to enhance formability. Meets standard 6061-T51 mechanical properties 
+(See Note B)
+T6H, T6511H Hydro’s “H” temper is offered for special applications requiring improved machinability and higher minimum mechanical properties 
+than standard -T6 or -T6511. Minimum properties of 42 ksi tensile, 38 ksi yield, and 10% elongation are guaranteed. “H” temper is 
+available for rod, bar, and certain profiles with a principle thickness of .500” or greater. (See Notes B & C.)  
+T6G, T6511G Hydro’s “G” temper is available for applications requiring a uniform grain structure to enhance anodized appearance for rod and bar 
+sizes with a thickness of 2.00” or greater. A minimal peripheral grain band may still be present, but is greatly reduced compared to 
+standard -T6, -T6511. Minimum mechanical properties are same as “H” tempers. (See Notes B & C.) 
+T6X, T6511X Hydro’s “X” temper is available for special applications requiring a uniform recrystallized grain structure in extrusions less than 2.75" 
+thickness to enhance anodizing appearance. Other benefits may include improved machinability and the same minimum mechanical 
+properties as standard 6061-T6, -T6511. (See Notes B & C.) 
+We are
+aluminum 
+
+
+PAGE 2
+Alloy 6061
+Alloy Si Fe Cu Mn Mg Cr Zn Ti Others
+Each Total
+6061 0.40-0.8 0.7 0.15-0.40 0.15 0.8-1.2 0.04-0.35 0.25 0.15 0.05 0.15
+Chemical Composition       Melting Temperature Range: 1080-1206 ºF          Density: 0.098 lb./in.3
+Chemical composition in weight percent maximum unless shown as a range or minimum.
+Average Coefficient of Thermal Expansion (68º to 212ºF) = 13.1 x 10-6  (in./in.ºF)
+Aluminum = Remainder
+Standard
+Tempers
+Wall Thickness2
+ (min.)
+Tensile Strength ksi (MPa) Elonga-
+tion3
+% (min.)
+Typical Thermal 
+Conductivity, @77°F , 
+BTU-in./ft.2hr.°F  
+(W/m-K@25ºC)
+Typical 
+Electrical
+Conductivity,
+@68ºF , % IACS
+Ultimate
+(min. )
+Yield - 0.2% 
+offset (min.)inches mm
+O All All 22.0 (150) max. 16.0 (110) max. 16 1250 (180) 47
+T1 up thru 0.625 up thru 16.00 26.0 (180) 14.0 (95) 16 — 40
+T4, T4511 All All 26.0 (180) 16.0 (110) 16 1070 (155) 42
+T51 up thru 0.625 up thru 16.00 35.0 (240) 30.0 (205) 8 — 42
+T6, T6511 up thru 0.249 up thru 6.30 38.0 (260) 35.0 (240) 8 1160 (167) 43
+0.250 & above >6.30 38.0 (260) 35.0 (240) 10 1160 (167) 43
+Hydro Special Tempers*
+T6S2, T6S15 up thru 0.249 up thru 6.30 38.0 (260) 35.0 (240) 8 — —
+0.250 & above >6.30 38.0 (260) 35.0 (240) 10 — —
+T51S10 up to 0.169 up thru 4.30 35.0 (240) 30.0 (205) 8 — —
+0.170 & above >4.30 35.0 (240) 30.0 (205) 12 — —
+T6H, T6511H 1.000 & above 25.0 & above 42.0 (290) 38.0 (260) 10 — —
+T6G, T6511G 3.000 & above 76.2 & above 42.0 (290) 38.0 (260) 10 — —
+T6X, T6511X .250 thru 2.750 6.30 - 69.85 38.0 (260) 35.0 (240) 10 — —
+6061 Extruded Mechanical and Physical Property Limits1
+1. Minimum property levels unless shown as a range or indicated as a maximum (max.) 
+2. The thickness of the cross section from which the tension test specimen is taken determines the applicable mechanical properties. 
+3. For materials of such dimensions that a standard test specimen cannot be taken, or for shapes thinner than .062", the test for elongation is not required. Elongation  
+ percent is minimum in 2" or 4 times specimen diameter. 
+*  Hydro Special Temper Designations are unregistered tempers for reference only, not recognized by the Aluminum Association or standard industry specifications, and  
+ are provided for customer use to identify unique processing, material or end use application characteristics.
+1. Rating:  A = Excellent   B = Good   C = Fair   D = Poor 
+Comparative Characteristics of Related Alloys/Tempers1
+Alloy Temper Formability
+ D C B A
+Machinability
+ D C B A
+General 
+Corrosion 
+Resistance
+ D C B A
+Weldability
+ D C B A
+Brazeability
+ D C B A
+Anodizing 
+Response
+ D C B A
+6061 -O
+-T1, -T4, -T4S6,
+-T4511
+-T6, -T6511
+-T6X,-T6511X
+6061 -T6H, -T6G,
+-T6511H, -T6511G
+-T6S2, -T6S15
+-T51S10
+6042 -T5, -T5511
+6063 T6, -T6511
+-T5, -T52
+6262 -T6, T6511
+Revision 2019/01 (2/2019)
+Extrusion North America
+6250 North River Rd, Suite 5000
+Rosemont, IL 60018
+Phone: 877-710-7272
+E-mail: NorthAmerica.Sales@hydro.com
+www.hydroextrusions.com
+Information and specifications herein subject to change without notice             ©2019 Hydro

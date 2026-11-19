@@ -1,0 +1,17 @@
+{
+  "schema": "solver-method-sources-v1",
+  "retrieved": "2026-11-19",
+  "sources": [
+    {
+      "url": "https://www.gmsh.info/doc/texinfo/",
+      "publisher": "Gmsh official documentation",
+      "use": "Tetrahedron10 connectivity, integration-point Jacobians, high-order mesh handling and OpenCASCADE extrusion."
+    },
+    {
+      "url": "https://www.dhondt.de/ccx_2.13.pdf",
+      "publisher": "CalculiX official user manual",
+      "use": "RF interpretation: sum of reaction and applied concentrated/distributed nodal loads. Version2.23 behavior separately checked against actual equilibrium."
+    }
+  ],
+  "method_note": "For straight-sided tetra10 under constant gravity, integrals of corner shape functions are -V/20 and midside functions V/5. The pipeline subtracts these distributed nodal loads at supports from RF to recover pure reactions. Clipped T6 face pressure is integrated with exact quadratic triangle quadrature over a 10x10mm patch."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "fem-integrity-negative-controls-v1",
+  "execution_complete": true,
+  "source_summary_sha256": "9a49222473d34ab8983223917c75503906304189c0c0c0177ffdb06e50d3e724",
+  "source_summary_unchanged": true,
+  "original_solver_cases": 20,
+  "method": "Altered only isolated copies of the real top-level summary. Per-level evidence, original solver artifacts and hashes remained unchanged. The real audit function reparsed the retained fine fields and rejected the mismatches.",
+  "controls": [
+    {
+      "mutation": "saved_check_status",
+      "changed": {
+        "id": "fem:convergence:bracket:max_vm_bound_MPa",
+        "old": "PASS",
+        "new": "FAIL"
+      },
+      "negative_control_passed": true,
+      "audit_exit_code": 3,
+      "audit_execution_complete": false,
+      "elapsed_seconds": 14.211642524998751,
+      "detector": {
+        "id": "fem:audit_recomputed_checks",
+        "requirements": [
+          "R05",
+          "R13",
+          "R14"
+        ],
+        "status": "FAIL",
+        "message": "Top-level metrics and checks match protected per-level evidence and fresh acceptance calculations",
+        "observed": [
+          "Saved check differs from recomputation: fem:convergence:bracket:max_vm_bound_MPa"
+        ],
+        "criterion": "no altered metric/status and all configured levels",
+        "evidence": [
+          "results/fem_summary.json"
+        ],
+        "next_action": "Restore altered summaries or rerun the model. Recorded PASS labels cannot override recomputed metrics."
+      }
+    },
+    {
+      "mutation": "coarse_metric",
+      "changed": {
+        "level": "bracket_h6",
+        "field": "max_vm_bound_MPa",
+        "old": 2.7376323275023933,
+        "new": 102.7376323275024
+      },
+      "negative_control_passed": true,
+      "audit_exit_code": 3,
+      "audit_execution_complete": false,
+      "elapsed_seconds": 14.487767350998183,
+      "detector": {
+        "id": "fem:audit_recomputed_checks",
+        "requirements": [
+          "R05",
+          "R13",
+          "R14"
+        ],
+        "status": "FAIL",
+        "message": "Top-level metrics and checks match protected per-level evidence and fresh acceptance calculations",
+        "observed": [
+          "Top-level levels differ from hash-protected per-level evidence"
+        ],
+        "criterion": "no altered metric/status and all configured levels",
+        "evidence": [
+          "results/fem_summary.json"
+        ],
+        "next_action": "Restore altered summaries or rerun the model. Recorded PASS labels cannot override recomputed metrics."
+      }
+    }
+  ]
+}

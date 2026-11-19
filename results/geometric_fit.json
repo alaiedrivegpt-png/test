@@ -1,0 +1,1503 @@
+{
+  "schema": "cadquery-occt-fit-v1",
+  "version": "v1",
+  "created_utc": "2026-11-19T21:27:01.198573+00:00",
+  "execution_complete": true,
+  "source_provenance": "Independent audit of reconstructed v1 delivered STEP files; no original v0 geometry recovered.",
+  "versions": {
+    "CadQuery": "2.7.0",
+    "cadquery-ocp_distribution": "7.8.1.1.post1",
+    "OCP": "7.8.1.1",
+    "OpenCASCADE_kernel": "7.8.1"
+  },
+  "kernel_operations": [
+    "BRepCheck_Analyzer",
+    "BRepCheck_Shell",
+    "BRepAlgoAPI_Common",
+    "BRepAlgoAPI_Cut",
+    "BRepExtrema_DistShapeShape"
+  ],
+  "actual_checked_solids": {
+    "beam_400mm": 1,
+    "bracket": 1,
+    "bracket_structural_core_only": 1,
+    "bracket_added_ribs": 4,
+    "bracket_right": 1,
+    "bracket_right_structural_core_only": 1,
+    "sleeves": 4,
+    "retention_washers": 4,
+    "anchor_shanks_simplified": 4,
+    "assembly": 15
+  },
+  "input_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "cad/geometry_manifest.json": "f18647eee463420d1f4063c83c52787863fa522f63e9fd1a3d3113f1fc34e02e",
+    "scripts/check_geometric_fit.py": "38eef5d65622f5dd5b295cebd56295f5e34ab49d687fd4ec656bb70de8f9604e",
+    "cad/beam_400mm.step": "8f476e9ee1b0b50fd539c61d5dbc157d0d2695c541a2656530a4db73f633bd70",
+    "cad/bracket.step": "5a9e8dd1ff6c80e67037288e1e38b30d001625ef17a636e07d0fae1b21234cc0",
+    "cad/bracket_structural_core_only.step": "4b26c57c6d842352867fb5ec1b2bbe0d75cbca81fd96007dc9f64a497e11c688",
+    "cad/bracket_added_ribs.step": "bbffc1c979a43323a6b9737fa9d53dae2146460f77644b5f0ddc378856be128c",
+    "cad/bracket_right.step": "6324fcbaf18be6420138049c26443ecd42404f1680c4ca96009beb61f1ac5414",
+    "cad/bracket_right_structural_core_only.step": "4614abeb7cf59f4f1967ae5626048f9bc2986a9538ee7fb93bd28d3a3a84d0a4",
+    "cad/sleeves.step": "ba340ee2ae7f4d8ca4276bcdb13b9f7d54b25bbb71d403d9ea9c071fd036e09c",
+    "cad/retention_washers.step": "875c1e58807a0e7a42d8c78e1fbb4abe97be8cbd87867c97a147c1cca7848012",
+    "cad/anchor_shanks_simplified.step": "de17c8c167277ed78f478b64b861af33d56f0f2647be8844432c22b7385478f2",
+    "cad/assembly.step": "21af61b81f3c3a297e6e2e5ca03573edff26f59a36b9699da6d75ee6af3f01ac"
+  },
+  "checks": [
+    {
+      "id": "geometry:valid:beam_400mm",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 174809.22536199616,
+        "bbox_mm": {
+          "xmin": 15.8,
+          "xmax": 415.8,
+          "ymin": -19.05,
+          "ymax": 19.05,
+          "zmin": -19.05,
+          "zmax": 19.05
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 174809.22536199627,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:bracket",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120749.73533815093,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 45.8,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120749.73533916454,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:bracket_structural_core_only",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120742.94333985182,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 45.8,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120742.9433391851,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:bracket_added_ribs",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 6.791999999994495,
+        "bbox_mm": {
+          "xmin": 16.0,
+          "xmax": 44.3,
+          "ymin": -15.925,
+          "ymax": 15.925,
+          "zmin": -15.925,
+          "zmax": 15.925
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 6.79200000000018,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_added_ribs.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:bracket_right",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120749.73533815102,
+        "bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120749.73533916457,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_right.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:bracket_right_structural_core_only",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120742.94333985193,
+        "bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120742.94333918516,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_right_structural_core_only.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:sleeves",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 7113.571077376441,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 431.6,
+          "ymin": -9.0,
+          "ymax": 9.000000000000002,
+          "zmin": -69.0,
+          "zmax": 69.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 7113.571077376433,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/sleeves.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:retention_washers",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 4048.1306297096635,
+        "bbox_mm": {
+          "xmin": 8.0,
+          "xmax": 423.6,
+          "ymin": -15.0,
+          "ymax": 15.000000000000002,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 4048.130629709676,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/retention_washers.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:anchor_shanks_simplified",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 5598.318108697011,
+        "bbox_mm": {
+          "xmin": -40.0,
+          "xmax": 471.6,
+          "ymin": -3.000000000000005,
+          "ymax": 3.0000000000000013,
+          "zmin": -63.0,
+          "zmax": 63.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 5598.31810869701,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/anchor_shanks_simplified.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:valid:assembly",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 15,
+        "volume_mm3": 433068.7158540812,
+        "bbox_mm": {
+          "xmin": -40.0,
+          "xmax": 471.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 15,
+        "volume_mm3": 433068.71585435624,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "geometry:beam_dimensions",
+      "requirements": [
+        "R02",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Beam length, outside section and position measured from delivered STEP.",
+      "observed": {
+        "length_mm": 400.0,
+        "outside_y_mm": 38.1,
+        "outside_z_mm": 38.1,
+        "start_x_mm": 15.8,
+        "end_x_mm": 415.8
+      },
+      "criterion": {
+        "length_mm": 400,
+        "outside_y_mm": 38.1,
+        "outside_z_mm": 38.1,
+        "start_x_mm": 15.8,
+        "end_x_mm": 415.8
+      },
+      "next_action": "Restore the 400 mm tube geometry and its assembly placement.",
+      "evidence": [
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "geometry:catalogue_profile",
+      "requirements": [
+        "R06",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual STEP curved faces and flat walls match the selected rounded catalogue section.",
+      "observed": {
+        "cylindrical_radii_mm": [
+          1.5748,
+          1.5748,
+          1.5748,
+          1.5748,
+          3.175,
+          3.175,
+          3.175,
+          3.175
+        ],
+        "absolute_flat_levels_mm": [
+          15.875,
+          19.05
+        ],
+        "flat_wall_mm": 3.1750000000000007
+      },
+      "criterion": {
+        "radii_mm": [
+          1.5748,
+          1.5748,
+          1.5748,
+          1.5748,
+          3.175,
+          3.175,
+          3.175,
+          3.175
+        ],
+        "flat_wall_mm": 3.175
+      },
+      "next_action": "Repair the section; do not replace rounded corners by a sharp square.",
+      "evidence": [
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "fit:right_printable_pose",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual delivered assembly instance agrees with the required transform.",
+      "observed": {
+        "symmetric_difference_volume_mm3": -5.820766091346741e-11,
+        "actual_bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "maximum_symmetric_difference_mm3": 0.001
+      },
+      "next_action": "Repair the misplaced or mirrored instance and regenerate the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step"
+      ]
+    },
+    {
+      "id": "fit:right_core_pose",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual delivered assembly instance agrees with the required transform.",
+      "observed": {
+        "symmetric_difference_volume_mm3": -2.9103830456733704e-11,
+        "actual_bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "maximum_symmetric_difference_mm3": 0.001
+      },
+      "next_action": "Repair the misplaced or mirrored instance and regenerate the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step"
+      ]
+    },
+    {
+      "id": "assembly:actual_instance:beam_400mm",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "The assembly STEP contains the actual intended part in its tested pose.",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid.",
+      "next_action": "Repair the assembly export; independent component files cannot substitute for a misplaced assembly.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "assembly:actual_instance:bracket",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "The assembly STEP contains the actual intended part in its tested pose.",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid.",
+      "next_action": "Repair the assembly export; independent component files cannot substitute for a misplaced assembly.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/bracket.step"
+      ]
+    },
+    {
+      "id": "assembly:actual_instance:bracket_right",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "The assembly STEP contains the actual intended part in its tested pose.",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid.",
+      "next_action": "Repair the assembly export; independent component files cannot substitute for a misplaced assembly.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/bracket_right.step"
+      ]
+    },
+    {
+      "id": "fit:engagement_and_relief",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Both imported bracket ends seat at the specified engagement and root-relief distances.",
+      "observed": {
+        "left_engagement_mm": 29.999999999999996,
+        "right_engagement_mm": 30.0,
+        "left_root_relief_mm": 2.0,
+        "right_root_relief_mm": 2.0,
+        "wall_spacing_mm": 431.6
+      },
+      "criterion": {
+        "left_engagement_mm": 30,
+        "right_engagement_mm": 30,
+        "left_root_relief_mm": 2,
+        "right_root_relief_mm": 2,
+        "wall_spacing_mm": 431.6
+      },
+      "next_action": "Correct tube/plug length or spacing; root fillet must remain outside the inserted tube end.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/bracket_right_structural_core_only.step",
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "fit:left:core_collision",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Structural-core collision checked by OCCT Boolean common on imported solids.",
+      "observed": {
+        "intersection_volume_mm3": 0,
+        "minimum_distance_mm": 0.09999999999999964,
+        "intersection_bbox_mm": null
+      },
+      "criterion": {
+        "maximum_prohibited_intersection_mm3": 0.001
+      },
+      "next_action": "Correct the plug, root fillet or assembly pose; regenerate CAD and rerun both-end fit checks before manufacturing.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ]
+    },
+    {
+      "id": "fit:left:core_clearance",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Minimum core-to-tube surface clearance measured directly by OCCT.",
+      "observed": {
+        "clearance_mm": 0.09999999999999964
+      },
+      "criterion": {
+        "minimum_mm": 0.05
+      },
+      "next_action": "Increase clearance or adapt plug to measured tube opening; recheck corners and root fillet.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ]
+    },
+    {
+      "id": "fit:right:core_collision",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Structural-core collision checked by OCCT Boolean common on imported solids.",
+      "observed": {
+        "intersection_volume_mm3": 0,
+        "minimum_distance_mm": 0.09999999999999964,
+        "intersection_bbox_mm": null
+      },
+      "criterion": {
+        "maximum_prohibited_intersection_mm3": 0.001
+      },
+      "next_action": "Correct the plug, root fillet or assembly pose; regenerate CAD and rerun both-end fit checks before manufacturing.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ]
+    },
+    {
+      "id": "fit:right:core_clearance",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Minimum core-to-tube surface clearance measured directly by OCCT.",
+      "observed": {
+        "clearance_mm": 0.09999999999999964
+      },
+      "criterion": {
+        "minimum_mm": 0.05
+      },
+      "next_action": "Increase clearance or adapt plug to measured tube opening; recheck corners and root fillet.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ]
+    },
+    {
+      "id": "fit:separate_sacrificial_ribs",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Printable-minus-core geometry matches the separately exported rib solids.",
+      "observed": {
+        "symmetric_difference_mm3": 0,
+        "rib_volume_mm3": 6.791999999994495
+      },
+      "criterion": {
+        "max_difference_mm3": 0.001
+      },
+      "next_action": "Reconcile printable/core/rib exports; do not classify arbitrary collision as allowed press-fit interference.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/bracket_structural_core_only.step",
+        "cad/bracket_added_ribs.step"
+      ]
+    },
+    {
+      "id": "fit:rib_region_bounds",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Sacrificial ribs lie only in the explicit four thin bands and insertion length.",
+      "observed": {
+        "outside_allowed_region_mm3": 0,
+        "maximum_envelope_mm": 31.85
+      },
+      "criterion": {
+        "max_outside_volume_mm3": 0.001
+      },
+      "next_action": "Restrict ribs to the documented sacrificial bands; structural core collision remains prohibited.",
+      "evidence": [
+        "cad/bracket_added_ribs.step",
+        "config/design.json"
+      ]
+    },
+    {
+      "id": "fit:left:intentional_interference",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Nonzero nominal press-fit interference is confined to separately identified sacrificial ribs.",
+      "observed": {
+        "total_interference_mm3": 0.7546666666650025,
+        "outside_ribs_mm3": 0,
+        "maximum_radial_interference_mm": 0.05000000000000071
+      },
+      "criterion": {
+        "positive_interference": true,
+        "max_prohibited_volume_mm3": 0.001
+      },
+      "next_action": "Correct rib size/location or structural collision; actual insertion force and retention still need physical qualification.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/bracket_added_ribs.step",
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "fit:right:intentional_interference",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Nonzero nominal press-fit interference is confined to separately identified sacrificial ribs.",
+      "observed": {
+        "total_interference_mm3": 0.7546666666650025,
+        "outside_ribs_mm3": 0,
+        "maximum_radial_interference_mm": 0.05000000000000071
+      },
+      "criterion": {
+        "positive_interference": true,
+        "max_prohibited_volume_mm3": 0.001
+      },
+      "next_action": "Correct rib size/location or structural collision; actual insertion force and retention still need physical qualification.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/bracket_added_ribs.step",
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "fit:left:sampled_insertion_path",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Pure axial core insertion/withdrawal sampled at <=1 mm steps from unengaged to seated; physical rib deformation is excluded.",
+      "observed": {
+        "maximum_intersection_mm3": 0,
+        "samples": [
+          {
+            "withdrawal_mm": 0.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 1.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 2.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 3.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 4.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 5.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 6.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 7.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 8.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 9.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 10.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 11.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 12.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 13.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 14.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 15.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 16.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 17.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 18.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 19.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 20.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 21.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 22.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 23.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 24.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 25.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 26.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 27.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 28.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 29.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 30.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 31.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 32.0,
+            "intersection_mm3": 0
+          }
+        ]
+      },
+      "criterion": {
+        "max_prohibited_mm3": 0.001,
+        "sampling_step_mm": 1
+      },
+      "next_action": "Repair the offending axial position and retest the full path. This sampled path is not a physical insertion-force test.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "fit:right:sampled_insertion_path",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Pure axial core insertion/withdrawal sampled at <=1 mm steps from unengaged to seated; physical rib deformation is excluded.",
+      "observed": {
+        "maximum_intersection_mm3": 0,
+        "samples": [
+          {
+            "withdrawal_mm": 0.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 1.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 2.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 3.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 4.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 5.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 6.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 7.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 8.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 9.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 10.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 11.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 12.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 13.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 14.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 15.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 16.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 17.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 18.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 19.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 20.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 21.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 22.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 23.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 24.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 25.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 26.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 27.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 28.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 29.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 30.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 31.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 32.0,
+            "intersection_mm3": 0
+          }
+        ]
+      },
+      "criterion": {
+        "max_prohibited_mm3": 0.001,
+        "sampling_step_mm": 1
+      },
+      "next_action": "Repair the offending axial position and retest the full path. This sampled path is not a physical insertion-force test.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "hardware:mount_holes",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual cylindrical bores have the required diameter, centerline and pitch.",
+      "observed": {
+        "hole_cylinders": [
+          {
+            "radius_mm": 9.3,
+            "location_mm": [
+              -1.0,
+              0.0,
+              -60.0
+            ],
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "radius_mm": 9.3,
+            "location_mm": [
+              -1.0,
+              0.0,
+              60.0
+            ],
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "z_centers_mm": [
+          -60.0,
+          60.0
+        ]
+      },
+      "criterion": {
+        "diameter_mm": 18.6,
+        "z_centers_mm": [
+          -60.0,
+          60.0
+        ]
+      },
+      "next_action": "Repair bolt-hole positions and diameters; do not check only config values.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step"
+      ]
+    },
+    {
+      "id": "hardware:actual_solids",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Imported sleeves, washers and simplified M6 shanks have nominal diameters and no forbidden plate collision.",
+      "observed": {
+        "plate_intersections": [
+          {
+            "part": "sleeves",
+            "plate_overlap_mm3": 0
+          },
+          {
+            "part": "retention_washers",
+            "plate_overlap_mm3": 0
+          },
+          {
+            "part": "anchor_shanks_simplified",
+            "plate_overlap_mm3": 0
+          }
+        ],
+        "sleeve_diameters_mm": [
+          6.4,
+          18.0
+        ],
+        "washer_diameters_mm": [
+          6.4,
+          30.0
+        ]
+      },
+      "criterion": "Nominal dimensions match config and all plate overlap volumes <=0.001mm3.",
+      "next_action": "Repair actual hardware placement or component sizes; threaded/expansion details require separate catalogue/installation verification.",
+      "evidence": [
+        "cad/sleeves.step",
+        "cad/retention_washers.step",
+        "cad/anchor_shanks_simplified.step"
+      ]
+    },
+    {
+      "id": "hardware:positions:sleeves",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Every imported modeled hardware instance has the required axial length, bolt center and left/right pose.",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            4.0,
+            -3.4156056851179405e-16,
+            59.99999999999999
+          ],
+          [
+            4.0,
+            -1.5328080175795153e-16,
+            -59.99999999999999
+          ],
+          [
+            427.6000000000001,
+            4.388755869647108e-16,
+            -60.0
+          ],
+          [
+            427.6000000000001,
+            5.643954314672724e-16,
+            60.00000000000001
+          ]
+        ],
+        "axial_lengths_mm": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "maximum_position_error_mm": 5.728856699135064e-14
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            4.0,
+            0.0,
+            -60.0
+          ],
+          [
+            4.0,
+            0.0,
+            60.0
+          ],
+          [
+            427.6,
+            0.0,
+            -60.0
+          ],
+          [
+            427.6,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 8,
+        "dimension_tolerance_mm": 0.01
+      },
+      "next_action": "Repair misplaced sleeves, washers or simplified shanks and regenerate both component and assembly STEP files.",
+      "evidence": [
+        "cad/sleeves.step",
+        "cad/assembly.step"
+      ]
+    },
+    {
+      "id": "assembly:actual_hardware:sleeves",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Assembly STEP contains all four hardware components in their independently checked poses.",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches.",
+      "next_action": "Repair stale or misplaced hardware in the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/sleeves.step"
+      ]
+    },
+    {
+      "id": "hardware:positions:retention_washers",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Every imported modeled hardware instance has the required axial length, bolt center and left/right pose.",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            8.750000000000002,
+            8.631159315641314e-17,
+            60.00000000000001
+          ],
+          [
+            8.750000000000002,
+            1.395423051450849e-16,
+            -60.00000000000001
+          ],
+          [
+            422.85,
+            2.264773123341299e-15,
+            59.999999999999986
+          ],
+          [
+            422.85000000000014,
+            1.948652160611608e-15,
+            -60.00000000000001
+          ]
+        ],
+        "axial_lengths_mm": [
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "maximum_position_error_mm": 1.139253326276393e-13
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            8.75,
+            0.0,
+            -60.0
+          ],
+          [
+            8.75,
+            0.0,
+            60.0
+          ],
+          [
+            422.85,
+            0.0,
+            -60.0
+          ],
+          [
+            422.85,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 1.5,
+        "dimension_tolerance_mm": 0.01
+      },
+      "next_action": "Repair misplaced sleeves, washers or simplified shanks and regenerate both component and assembly STEP files.",
+      "evidence": [
+        "cad/retention_washers.step",
+        "cad/assembly.step"
+      ]
+    },
+    {
+      "id": "assembly:actual_hardware:retention_washers",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Assembly STEP contains all four hardware components in their independently checked poses.",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches.",
+      "next_action": "Repair stale or misplaced hardware in the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/retention_washers.step"
+      ]
+    },
+    {
+      "id": "hardware:positions:anchor_shanks_simplified",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Every imported modeled hardware instance has the required axial length, bolt center and left/right pose.",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            -15.25,
+            -8.422335232446133e-17,
+            -60.0
+          ],
+          [
+            -15.25,
+            -8.422335232446133e-17,
+            60.00000000000001
+          ],
+          [
+            446.85,
+            -1.8107642489240445e-15,
+            -60.0
+          ],
+          [
+            446.85,
+            -1.8107642489240445e-15,
+            60.0
+          ]
+        ],
+        "axial_lengths_mm": [
+          49.5,
+          49.5,
+          49.5,
+          49.5
+        ],
+        "maximum_position_error_mm": 7.105926505897843e-15
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            -15.25,
+            0.0,
+            -60.0
+          ],
+          [
+            -15.25,
+            0.0,
+            60.0
+          ],
+          [
+            446.85,
+            0.0,
+            -60.0
+          ],
+          [
+            446.85,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 49.5,
+        "dimension_tolerance_mm": 0.01
+      },
+      "next_action": "Repair misplaced sleeves, washers or simplified shanks and regenerate both component and assembly STEP files.",
+      "evidence": [
+        "cad/anchor_shanks_simplified.step",
+        "cad/assembly.step"
+      ]
+    },
+    {
+      "id": "assembly:actual_hardware:anchor_shanks_simplified",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Assembly STEP contains all four hardware components in their independently checked poses.",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches.",
+      "next_action": "Repair stale or misplaced hardware in the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/anchor_shanks_simplified.step"
+      ]
+    },
+    {
+      "id": "hardware:tolerance_stack",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Supplier hardware tolerance stack screened against nominal printed plate; actual printed dimensions remain unmeasured.",
+      "observed": {
+        "minimum_sleeve_radial_clearance_mm": 0.10000000000000142,
+        "minimum_shank_diametral_clearance_mm": 0.3000000000000007,
+        "minimum_sleeve_projection_mm": 0.10000000000000053,
+        "minimum_washer_radial_overlap_mm": 5.049999999999999,
+        "maximum_fixture_stack_mm": 9.9,
+        "nominal_washer_to_plate_gap_mm": 0.20000000000000018
+      },
+      "criterion": {
+        "minimum_projection_mm": 0.1,
+        "maximum_fixture_mm": 10,
+        "positive_clearances_required": true
+      },
+      "next_action": "Choose a compatible sleeve/washer stack and measure every printed plate before tightening anchors.",
+      "evidence": [
+        "config/design.json",
+        "cad/sleeves.step",
+        "cad/retention_washers.step"
+      ]
+    },
+    {
+      "id": "fit:catalogue_tolerance_qualification",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "BLOCKED",
+      "message": "The fixed nominal plug does not fit every allowed catalogue opening; actual purchased tube dimensions are not measured.",
+      "observed": {
+        "minimum_catalogue_opening_mm": 30.708600000000004,
+        "nominal_core_mm": 31.55,
+        "hypothetical_minimum_opening_collision_mm3": 1311.1048187999945,
+        "all_catalogue_extremes_fit": false
+      },
+      "criterion": "Actual measured tube opening and selected fit coupon must demonstrate geometric fit; nominal STEP PASS alone cannot approve the purchased lot.",
+      "next_action": "Measure both flats and corners at both tube ends, select/rebuild coupons and adapt plug core/rib dimensions to those observations; rerun this checker.",
+      "evidence": [
+        "config/design.json",
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "fit:physical_press_fit",
+      "requirements": [
+        "R03",
+        "R05",
+        "R15"
+      ],
+      "status": "BLOCKED",
+      "message": "CAD does not establish insertion force, rib crushing, retention, printed shrinkage or creep.",
+      "observed": null,
+      "criterion": "Authentic print, insertion, retention and sustained-load evidence.",
+      "next_action": "Print qualified material, measure openings and coupons, record insertion/retention/proof and environmental tests before release.",
+      "evidence": [
+        "config/physical_acceptance.json",
+        "manufacturing/PRINT_AND_ASSEMBLY.md"
+      ]
+    }
+  ],
+  "summary": {
+    "PASS": 37,
+    "FAIL": 0,
+    "BLOCKED": 2,
+    "ERROR": 0
+  },
+  "nominal_geometry_pass": true,
+  "physical_fit_qualified": false
+}

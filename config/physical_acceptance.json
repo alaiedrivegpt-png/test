@@ -1,0 +1,17 @@
+{
+  "schema": "physical-qualification-v1",
+  "operator": null,
+  "test_date": null,
+  "evidence_files": [],
+  "beam_length_mm": null,
+  "beam_lot_certificate": null,
+  "tube_openings_both_ends_mm": null,
+  "selected_fit_coupon": null,
+  "press_fit_insertion_and_retention": null,
+  "printed_process_and_material": null,
+  "actual_wall_and_anchor_installation": null,
+  "sleeve_projection_all_four_mm": null,
+  "assembly_30N_proof_test": null,
+  "sustained_load_environment": null,
+  "current_procurement_quotes": null
+}

@@ -1,0 +1,321 @@
+Info:  - Label 'Shapes/Open CASCADE STEP translator 7.8 3' (3D)
+Info: Meshing 1D...
+Info: Meshing curve 1 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 2 (Line)
+Info: Meshing curve 3 (Line)
+Info: Meshing curve 4 (Line)
+Info: Meshing curve 5 (Line)
+Info: Meshing curve 6 (Line)
+Info: Meshing curve 7 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 8 (Line)
+Info: Meshing curve 9 (Line)
+Info: Meshing curve 10 (Line)
+Info: Meshing curve 11 (Line)
+Info: Meshing curve 12 (Line)
+Info: Meshing curve 13 (Ellipse)
+Info: Meshing curve 14 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 15 (Ellipse)
+Info: Meshing curve 16 (Ellipse)
+Info: Meshing curve 17 (Line)
+Info: Meshing curve 18 (Line)
+Info: Meshing curve 19 (Ellipse)
+Info: Meshing curve 20 (Ellipse)
+Info: Meshing curve 21 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 22 (Line)
+Info: Meshing curve 23 (Ellipse)
+Info: Meshing curve 24 (Ellipse)
+Info: Meshing curve 25 (Line)
+Info: Meshing curve 26 (Line)
+Info: Meshing curve 27 (Ellipse)
+Info: Meshing curve 28 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 29 (Line)
+Info: Meshing curve 30 (Line)
+Info: Meshing curve 31 (Line)
+Info: Meshing curve 32 (Line)
+Info: Meshing curve 33 (Line)
+Info: Meshing curve 34 (Line)
+Info: Meshing curve 35 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 36 (Line)
+Info: Meshing curve 37 (Line)
+Info: Meshing curve 38 (Line)
+Info: Meshing curve 39 (Line)
+Info: Meshing curve 40 (Line)
+Info: Meshing curve 41 (Line)
+Info: Meshing curve 42 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 43 (Line)
+Info: Meshing curve 44 (Line)
+Info: Meshing curve 45 (Line)
+Info: Meshing curve 46 (Line)
+Info: Meshing curve 47 (Line)
+Info: Meshing curve 48 (Line)
+Info: Meshing curve 49 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 50 (Line)
+Info: Meshing curve 51 (Line)
+Info: Meshing curve 52 (Line)
+Info: Meshing curve 53 (Line)
+Info: Meshing curve 54 (Line)
+Info: Meshing curve 55 (Line)
+Info: Meshing curve 56 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 57 (Line)
+Info: Meshing curve 58 (Line)
+Info: Meshing curve 59 (Line)
+Info: Meshing curve 60 (Line)
+Info: Meshing curve 61 (Line)
+Info: Meshing curve 62 (Circle)
+Info: Meshing curve 63 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 64 (Line)
+Info: Meshing curve 65 (Circle)
+Info: Meshing curve 66 (Line)
+Info: Meshing curve 67 (Circle)
+Info: Meshing curve 68 (Circle)
+Info: Meshing curve 69 (Line)
+Info: Meshing curve 70 (Line)
+Progress: Meshing 1D...
+Info: Done meshing 1D (Wall 0.0518998s, CPU 0.051889s)
+Info: Meshing 2D...
+Info: Meshing surface 1 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 2 (Cylinder, Frontal-Delaunay)
+Info: Meshing surface 3 (Cylinder, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 4 (Cylinder, Frontal-Delaunay)
+Info: Meshing surface 5 (Cylinder, Frontal-Delaunay)
+Info: Meshing surface 6 (Cylinder, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 7 (Cylinder, Frontal-Delaunay)
+Info: Meshing surface 8 (Cylinder, Frontal-Delaunay)
+Info: Meshing surface 9 (Cylinder, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 10 (Plane, Frontal-Delaunay)
+Info: Meshing surface 11 (Plane, Frontal-Delaunay)
+Info: Meshing surface 12 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 13 (Plane, Frontal-Delaunay)
+Info: Meshing surface 14 (Plane, Frontal-Delaunay)
+Info: Meshing surface 15 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 16 (Plane, Frontal-Delaunay)
+Info: Meshing surface 17 (Plane, Frontal-Delaunay)
+Info: Meshing surface 18 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 19 (Plane, Frontal-Delaunay)
+Info: Meshing surface 20 (Plane, Frontal-Delaunay)
+Info: Meshing surface 21 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 22 (Plane, Frontal-Delaunay)
+Info: Meshing surface 23 (Plane, Frontal-Delaunay)
+Info: Meshing surface 24 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 25 (Plane, Frontal-Delaunay)
+Info: Meshing surface 26 (Plane, Frontal-Delaunay)
+Info: Meshing surface 27 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 28 (Cylinder, Frontal-Delaunay)
+Info: Meshing surface 29 (Cylinder, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Done meshing 2D (Wall 0.146988s, CPU 0.146983s)
+Info: Meshing 3D...
+Progress: Meshing 3D...
+Info: 3D Meshing 1 volume with 1 connected component
+Info: Tetrahedrizing 2292 nodes...
+Info: Done tetrahedrizing 2300 nodes (Wall 0.0223041s, CPU 0.022294s)
+Info: Reconstructing mesh...
+Info:  - Creating surface mesh
+Info:  - Identifying boundary edges
+Info:  - Recovering boundary
+Info: Done reconstructing mesh (Wall 0.0459175s, CPU 0.045907s)
+Info: Found volume 1
+Info: It. 0 - 0 nodes created - worst tet radius 13.6153 (nodes removed 0 0)
+Info: It. 500 - 499 nodes created - worst tet radius 1.4719 (nodes removed 0 1)
+Info: It. 1000 - 999 nodes created - worst tet radius 1.18366 (nodes removed 0 1)
+Info: It. 1500 - 1495 nodes created - worst tet radius 1.03693 (nodes removed 0 5)
+Info: 3D refinement terminated (3841 nodes total):
+Info:  - 0 Delaunay cavities modified for star shapeness
+Info:  - 5 nodes could not be inserted
+Info:  - 16613 tetrahedra created in 0.0623339 sec. (266516 tets/s)
+Info: 0 node relocations
+Progress: Meshing 3D...
+Info: Done meshing 3D (Wall 0.172962s, CPU 0.172949s)
+Info: Optimizing mesh...
+Info: Optimizing volume 1
+Info: Optimization starts (volume = 120840) with worst = 0.0110277 / average = 0.722416:
+Info: 0.00 < quality < 0.10 :        57 elements
+Info: 0.10 < quality < 0.20 :       150 elements
+Info: 0.20 < quality < 0.30 :       262 elements
+Info: 0.30 < quality < 0.40 :       395 elements
+Info: 0.40 < quality < 0.50 :       847 elements
+Info: 0.50 < quality < 0.60 :      1656 elements
+Info: 0.60 < quality < 0.70 :      2894 elements
+Info: 0.70 < quality < 0.80 :      4020 elements
+Info: 0.80 < quality < 0.90 :      4256 elements
+Info: 0.90 < quality < 1.00 :      2076 elements
+Info: 439 edge swaps, 20 node relocations (volume = 120840): worst = 0.0220817 / average = 0.737835 (Wall 0.00577043s, CPU 0.005771s)
+Info: 450 edge swaps, 23 node relocations (volume = 120840): worst = 0.137456 / average = 0.738024 (Wall 0.0072973s, CPU 0.007299s)
+Info: 452 edge swaps, 26 node relocations (volume = 120840): worst = 0.137456 / average = 0.738017 (Wall 0.00883629s, CPU 0.008837s)
+Info: No ill-shaped tets in the mesh :-)
+Info: 0.00 < quality < 0.10 :         0 elements
+Info: 0.10 < quality < 0.20 :         1 elements
+Info: 0.20 < quality < 0.30 :        19 elements
+Info: 0.30 < quality < 0.40 :       400 elements
+Info: 0.40 < quality < 0.50 :       815 elements
+Info: 0.50 < quality < 0.60 :      1647 elements
+Info: 0.60 < quality < 0.70 :      2874 elements
+Info: 0.70 < quality < 0.80 :      4082 elements
+Info: 0.80 < quality < 0.90 :      4297 elements
+Info: 0.90 < quality < 1.00 :      2074 elements
+Info: Done optimizing mesh (Wall 0.0219601s, CPU 0.021959s)
+Info: 3841 nodes 21466 elements
+Info: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 1 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 2 order 2
+Info: Meshing curve 3 order 2
+Info: Meshing curve 4 order 2
+Info: Meshing curve 5 order 2
+Info: Meshing curve 6 order 2
+Info: Meshing curve 7 order 2
+Info: Meshing curve 8 order 2
+Info: Meshing curve 9 order 2
+Info: Meshing curve 10 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 11 order 2
+Info: Meshing curve 12 order 2
+Info: Meshing curve 13 order 2
+Info: Meshing curve 14 order 2
+Info: Meshing curve 15 order 2
+Info: Meshing curve 16 order 2
+Info: Meshing curve 17 order 2
+Info: Meshing curve 18 order 2
+Info: Meshing curve 19 order 2
+Info: Meshing curve 20 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 21 order 2
+Info: Meshing curve 22 order 2
+Info: Meshing curve 23 order 2
+Info: Meshing curve 24 order 2
+Info: Meshing curve 25 order 2
+Info: Meshing curve 26 order 2
+Info: Meshing curve 27 order 2
+Info: Meshing curve 28 order 2
+Info: Meshing curve 29 order 2
+Info: Meshing curve 30 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 31 order 2
+Info: Meshing curve 32 order 2
+Info: Meshing curve 33 order 2
+Info: Meshing curve 34 order 2
+Info: Meshing curve 35 order 2
+Info: Meshing curve 36 order 2
+Info: Meshing curve 37 order 2
+Info: Meshing curve 38 order 2
+Info: Meshing curve 39 order 2
+Info: Meshing curve 40 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 41 order 2
+Info: Meshing curve 42 order 2
+Info: Meshing curve 43 order 2
+Info: Meshing curve 44 order 2
+Info: Meshing curve 45 order 2
+Info: Meshing curve 46 order 2
+Info: Meshing curve 47 order 2
+Info: Meshing curve 48 order 2
+Info: Meshing curve 49 order 2
+Info: Meshing curve 50 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 51 order 2
+Info: Meshing curve 52 order 2
+Info: Meshing curve 53 order 2
+Info: Meshing curve 54 order 2
+Info: Meshing curve 55 order 2
+Info: Meshing curve 56 order 2
+Info: Meshing curve 57 order 2
+Info: Meshing curve 58 order 2
+Info: Meshing curve 59 order 2
+Info: Meshing curve 60 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing curve 61 order 2
+Info: Meshing curve 62 order 2
+Info: Meshing curve 63 order 2
+Info: Meshing curve 64 order 2
+Info: Meshing curve 65 order 2
+Info: Meshing curve 66 order 2
+Info: Meshing curve 67 order 2
+Info: Meshing curve 68 order 2
+Info: Meshing curve 69 order 2
+Info: Meshing curve 70 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing surface 1 order 2
+Info: Meshing surface 2 order 2
+Info: Meshing surface 3 order 2
+Info: Meshing surface 4 order 2
+Info: Meshing surface 5 order 2
+Info: Meshing surface 6 order 2
+Info: Meshing surface 7 order 2
+Info: Meshing surface 8 order 2
+Info: Meshing surface 9 order 2
+Info: Meshing surface 10 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing surface 11 order 2
+Info: Meshing surface 12 order 2
+Info: Meshing surface 13 order 2
+Info: Meshing surface 14 order 2
+Info: Meshing surface 15 order 2
+Info: Meshing surface 16 order 2
+Info: Meshing surface 17 order 2
+Info: Meshing surface 18 order 2
+Info: Meshing surface 19 order 2
+Info: Meshing surface 20 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Meshing surface 21 order 2
+Info: Meshing surface 22 order 2
+Info: Meshing surface 23 order 2
+Info: Meshing surface 24 order 2
+Info: Meshing surface 25 order 2
+Info: Meshing surface 26 order 2
+Info: Meshing surface 27 order 2
+Info: Meshing surface 28 order 2
+Info: Meshing surface 29 order 2
+Info: Meshing volume 1 order 2
+Progress: Meshing order 2 (curvilinear on)...
+Info: Surface mesh: worst distortion = 0.78437 (0 elements in ]0, 0.2]); worst gamma = 0.278569
+Warning: Volume mesh: worst distortion = -0.0274034 (avg = 0.988642, 1 elements with jac. < 0)
+Info: Done meshing order 2 (Wall 0.0978191s, CPU 0.097814s)
+Info: Optimizing mesh (HighOrder)...
+Info: Optimizing high-order mesh...
+Info: Optimizing mesh...
+Info: Computing connectivity and bad elements for entity 1...
+Info: Starting patch generation from 1 bad elements...
+Info: Constructing 1 primary patches
+Info: Computing patch connectivity...
+Info: Identifying groups of primary patches...
+Info: Merging primary patches into 1 patches...
+Info: Computing boundaries for 1 patches...
+Info: Generated 1 patches
+Info: Optimizing patch 0/0 composed of 146 elements, 0 boundary elements
+Info: Patch composed of 146 elements, 687 nodes, 66 free nodes, 148 variables
+Info:  - Pass 0 with contributions: ScaledNodeDispSq BarrierMovMinScaledJac
+Info: Optimization run with barrier 0
+Info: Iteration   0  0.000000e+00 <= ScaledNodeDispSq <=  0.000000e+00  |  -2.740341e-02 <= ScaledJac <=  1.082783e+00
+Info: Iteration  10  0.000000e+00 <= ScaledNodeDispSq <=  4.933866e-01  |   6.101882e-02 <= ScaledJac <=  1.600430e+00 (obj 3.830756E+01, rel decr 1.018057E-01)
+Info: Reached target values, setting null gradient
+Info: Optimization finalized after 15 iterations (44 function evaluations), because gradient norm is no more than EpsG
+Info: Target reached for pass 0
+Info:  - Pass 1 with contributions: ScaledNodeDispSq BarrierFixMinMovMaxScaledJac
+Info: Reached target values, setting null gradient
+Info: Target reached for pass 1
+Info: Optimization succeeded
+Info: Done optimizing mesh (0.071477 s)
+Info: Done optimizing high-order mesh (0.071477 s)
+Info: Done optimizing mesh (Wall 0.0743595s, CPU 0.074337s)
+Info: Writing '/workspace/scratch/edcffa025ff3/beam_wall_mount_v1/mesh/bracket_h6.msh'...
+Info: Done writing '/workspace/scratch/edcffa025ff3/beam_wall_mount_v1/mesh/bracket_h6.msh'

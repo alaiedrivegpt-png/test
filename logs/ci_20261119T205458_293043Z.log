@@ -1,0 +1,65 @@
+Beam wall mount v1 CI
+Run 20261119T205458_293043Z
+Mode selftest
+PASS dependency:cadquery Runtime dependency imported.
+PASS dependency:cadquery-ocp Runtime dependency imported.
+PASS dependency:gmsh Runtime dependency imported.
+PASS dependency:numpy Runtime dependency imported.
+PASS dependency:matplotlib Runtime dependency imported.
+PASS dependency:cad-ccx Runtime dependency imported.
+TOOL VERSIONS {"OpenCASCADE_binding_reported": "7.8.1.1", "cad-ccx": "2.23.0", "cadquery": "2.7.0", "cadquery-ocp": "7.8.1.1.post1", "gmsh": "4.15.2", "matplotlib": "3.10.8", "numpy": "2.3.5", "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"}
+
+=== COMMAND ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3", "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py", "-v"] ===
+START 2026-11-19T20:55:00.301523+00:00
+STDOUT
+
+STDERR
+test_actual_dimensions_are_not_physical_acceptance (test_calculations.AnalyticalTests.test_actual_dimensions_are_not_physical_acceptance) ... ok
+test_bearing_force_uses_couple_arm (test_calculations.AnalyticalTests.test_bearing_force_uses_couple_arm) ... ok
+test_chamfer_formula_matches_polygon_shoelace (test_calculations.AnalyticalTests.test_chamfer_formula_matches_polygon_shoelace) ... ok
+test_fixture_stack_failure_detected (test_calculations.AnalyticalTests.test_fixture_stack_failure_detected) ... ok
+test_increased_service_load_cannot_pass_unchanged_envelope (test_calculations.AnalyticalTests.test_increased_service_load_cannot_pass_unchanged_envelope) ... ok
+test_invalid_geometry_rejected (test_calculations.AnalyticalTests.test_invalid_geometry_rejected) ... ok
+test_mass_unit_conversion (test_calculations.AnalyticalTests.test_mass_unit_conversion) ... ok
+test_rounded_section_against_independent_slice_quadrature (test_calculations.AnalyticalTests.test_rounded_section_against_independent_slice_quadrature) ... ok
+test_tube_section_matches_independent_exact_CAD_volume (test_calculations.AnalyticalTests.test_tube_section_matches_independent_exact_CAD_volume) ... ok
+test_zero_radius_reduces_to_square (test_calculations.AnalyticalTests.test_zero_radius_reduces_to_square) ... ok
+test_DAT_shear_reordering (test_calculations.StressAndEvidenceTests.test_DAT_shear_reordering) ... ok
+test_actual_failed_solver_invocation_is_rejected (test_calculations.StressAndEvidenceTests.test_actual_failed_solver_invocation_is_rejected) ... ok
+test_balanced_tip_load_resultants (test_calculations.StressAndEvidenceTests.test_balanced_tip_load_resultants) ... ok
+test_direction_bound_dominates_random_load_combinations (test_calculations.StressAndEvidenceTests.test_direction_bound_dominates_random_load_combinations) ... ok
+test_missing_solver_fields_rejected (test_calculations.StressAndEvidenceTests.test_missing_solver_fields_rejected) ... ok
+test_pure_shear (test_calculations.StressAndEvidenceTests.test_pure_shear) ... ok
+test_solver_failure_does_not_pass (test_calculations.StressAndEvidenceTests.test_solver_failure_does_not_pass) ... ok
+test_vm_zero_hydrostatic_but_principal_not_zero (test_calculations.StressAndEvidenceTests.test_vm_zero_hydrostatic_but_principal_not_zero) ... ok
+test_blocked_only_is_nonzero (test_ci_runner.CIRunnerControls.test_blocked_only_is_nonzero) ... ok
+test_error_is_not_a_design_strength_failure (test_ci_runner.CIRunnerControls.test_error_is_not_a_design_strength_failure) ... ok
+test_known_engineering_failure_cannot_be_green (test_ci_runner.CIRunnerControls.test_known_engineering_failure_cannot_be_green) ... ok
+test_missing_next_action_is_rejected (test_ci_runner.CIRunnerControls.test_missing_next_action_is_rejected) ... ok
+test_missing_physical_evidence_cannot_be_pass (test_ci_runner.CIRunnerControls.test_missing_physical_evidence_cannot_be_pass) ... ok
+test_missing_requirement_mapping_is_rejected (test_ci_runner.CIRunnerControls.test_missing_requirement_mapping_is_rejected) ... ok
+test_missing_stl_is_detected (test_ci_runner.CIRunnerControls.test_missing_stl_is_detected) ... ok
+test_nonzero_child_process_is_retained_with_feedback (test_ci_runner.CIRunnerControls.test_nonzero_child_process_is_retained_with_feedback) ... ok
+test_path_traversal_is_rejected (test_ci_runner.CIRunnerControls.test_path_traversal_is_rejected) ... ok
+test_stale_result_hash_is_detected (test_ci_runner.CIRunnerControls.test_stale_result_hash_is_detected) ... ok
+test_unavailable_executable_is_execution_error (test_ci_runner.CIRunnerControls.test_unavailable_executable_is_execution_error) ... ok
+test_closed_step_solid_uses_shell_closure_not_cached_solid_flag (test_geometric_fit.ActualKernelFitTests.test_closed_step_solid_uses_shell_closure_not_cached_solid_flag) ... ok
+test_intended_ribs_are_not_misclassified_as_core_collision (test_geometric_fit.ActualKernelFitTests.test_intended_ribs_are_not_misclassified_as_core_collision) ... ok
+test_lateral_misalignment_is_detected (test_geometric_fit.ActualKernelFitTests.test_lateral_misalignment_is_detected) ... ok
+test_missing_delivered_step_causes_error_and_saved_feedback (test_geometric_fit.ActualKernelFitTests.test_missing_delivered_step_causes_error_and_saved_feedback) ... ok
+test_nominal_core_has_real_clearance (test_geometric_fit.ActualKernelFitTests.test_nominal_core_has_real_clearance) ... ok
+test_oversized_core_is_detected (test_geometric_fit.ActualKernelFitTests.test_oversized_core_is_detected) ... ok
+test_surface_cannot_pass_as_closed_solid (test_geometric_fit.ActualKernelFitTests.test_surface_cannot_pass_as_closed_solid) ... ok
+test_wrong_right_instance_is_detected (test_geometric_fit.ActualKernelFitTests.test_wrong_right_instance_is_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 4.752s
+
+OK
+
+END 2026-11-19T20:55:07.054957+00:00 EXIT 0 DURATION_SECONDS 6.753417
+PASS unit_and_negative_tests Independent unit tests and deliberate-negative controls executed.
+PASS ci_saved_log Full stdout/stderr, commands, timings and exit codes saved in a separate run log.
+PASS selftest_summary Test-system-only summary written; engineering acceptance is not evaluated in this mode.
+
+FINAL {"test_system_functional": true, "engineering_release": "NOT_EVALUATED", "counts": {"PASS": 9, "FAIL": 0, "BLOCKED": 0, "ERROR": 0}, "exit_code": 0}

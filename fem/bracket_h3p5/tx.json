@@ -1,0 +1,43 @@
+{
+  "case": "tx",
+  "solver_version": "2.23",
+  "returncode": 0,
+  "finished": true,
+  "elapsed_seconds": 88.42224020800131,
+  "max_nodal_vm_MPa": 0.43410853297869095,
+  "max_IP_vm_MPa": 0.33862946601921307,
+  "max_displacement_mm": 0.0068868071699838525,
+  "force_balance_relative": 3.7306129859622214e-08,
+  "moment_balance_relative": 4.580364950609557e-08,
+  "applied_force_N": [
+    0.0,
+    1.1726730697603216e-15,
+    -8.083811398051921e-16
+  ],
+  "reaction_force_N": [
+    -6.4514099990063e-07,
+    2.0147400406345106e-07,
+    -3.160700001447747e-07
+  ],
+  "RF_support_external_force_N": [
+    -6.4514099990063e-07,
+    2.0147400406345106e-07,
+    -3.160700001447747e-07
+  ],
+  "reaction_extraction": "CalculiX RF is reaction plus applied nodal loads. Subtract consistent CLOAD and C3D10 GRAV vectors at constrained DOFs.",
+  "applied_moment_Nmm": [
+    550.0000000000008,
+    2.1538326677728037e-14,
+    2.708944180085382e-14
+  ],
+  "reaction_moment_Nmm": [
+    -550.000008462728,
+    2.200478650253579e-05,
+    8.877434621051838e-06
+  ],
+  "input_decompressed_sha256": "3669f01ed9b4a38d02f0ccf49d5cad966e6e0005f80995707255061065f8266b",
+  "common_include_decompressed_sha256": "5414f8381ac954caa5b2e9004611d91720c8e9d617d0467bf9857242acb24004",
+  "frd_decompressed_sha256": "501c97e54715fcc97e4fc4f372776bc383f47e5a90da0005c0d55b7add247761",
+  "dat_decompressed_sha256": "caa7840e00bfeca2f9633ab22f129d5ab47bb4af741cdb0b9e1173e03d90e2ec",
+  "integration_points": 145552
+}

@@ -1,0 +1,2585 @@
+{
+  "documentId": "1cYAbrp5_44yrPNomKcAUwh-eoXsCq4oBbQqKRzxCNtM",
+  "title": "400 mm beam wall mount engineering report v0",
+  "revisionId": "AHj4eMSj3jCraT6KXBB7vhIIsQyESEwS_5ot9DkI-8StDHcqYF6nFcbErjPN87KyHtCAtgcvr_AUzFl1k1m-PjcjnbIJr-yGvBvk_9nOV9E",
+  "tabId": null,
+  "paragraphs": [
+    {
+      "text": "400 mm beam wall mount engineering report v0",
+      "startIndex": 1,
+      "endIndex": 45,
+      "tabId": "t.0",
+      "namedStyleType": "TITLE",
+      "isListItem": false
+    },
+    {
+      "text": "Design baseline and analysis record    17 November 2026",
+      "startIndex": 46,
+      "endIndex": 101,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "This version defines a 400 mm purchased aluminum tube supported between two opposite walls by identical printed PETG end brackets. It includes reproducible CAD, hand calculations, executed finite element analyses, purchase evidence, a priced bill of materials and automated checks. The report supports review of the design and the next qualification steps.",
+      "startIndex": 102,
+      "endIndex": 458,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Numerical verification: FAIL. Principal stress changes 14.44% against a 10% limit; beam mesh volume error is 0.5032% against 0.5%. Stress magnitudes remain below the material screening thresholds. Physical qualification is BLOCKED. Engineering release is not approved.",
+      "startIndex": 459,
+      "endIndex": 727,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Figure 1  FreeCAD assembly geometry. Transparency exposes the inserted plugs; purchased fasteners are omitted from this view.",
+      "startIndex": 730,
+      "endIndex": 855,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Design quantity",
+      "startIndex": 859,
+      "endIndex": 874,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "v0 selection",
+      "startIndex": 876,
+      "endIndex": 888,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Finished beam length",
+      "startIndex": 891,
+      "endIndex": 911,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "400 ± 0.5 mm",
+      "startIndex": 913,
+      "endIndex": 925,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Nominal wall bearing face spacing",
+      "startIndex": 928,
+      "endIndex": 961,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "431.6 mm",
+      "startIndex": 963,
+      "endIndex": 971,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Tube and end brackets",
+      "startIndex": 974,
+      "endIndex": 995,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Online Metals 23437; two Prusament PETG brackets",
+      "startIndex": 997,
+      "endIndex": 1045,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Applied service force",
+      "startIndex": 1048,
+      "endIndex": 1069,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "10 N quasistatic force in any direction plus self weight",
+      "startIndex": 1071,
+      "endIndex": 1127,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Material strength screening factor",
+      "startIndex": 1130,
+      "endIndex": 1164,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "3 for aluminum and PETG; added deflection target 1 mm",
+      "startIndex": 1166,
+      "endIndex": 1219,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The force may act at any span station with at least a 10 × 10 mm contact footprint. The factor of three applies to the aluminum and PETG material screens. Anchors use published permissible capacities and a separate interaction check. An overall assembly safety factor, load duration and environment remain unqualified.",
+      "startIndex": 1222,
+      "endIndex": 1540,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Geometry press fit and print definition",
+      "startIndex": 1541,
+      "endIndex": 1580,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "Each plug has 30 mm tube engagement beyond a 2 mm root relief. The plate is 13.8 mm thick at its reinforced center and 7.8 mm at the bolt mounts. Wall spacing is therefore 400 + 2 × (13.8 + 2) = 431.6 mm. Measure the actual spacing before fabrication.",
+      "startIndex": 1581,
+      "endIndex": 1832,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Figure 2  Printable end bracket and fit features. Values follow the current native CAD geometry.",
+      "startIndex": 1835,
+      "endIndex": 1931,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Feature",
+      "startIndex": 1935,
+      "endIndex": 1942,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Nominal dimension",
+      "startIndex": 1944,
+      "endIndex": 1961,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Purpose",
+      "startIndex": 1963,
+      "endIndex": 1970,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Plate and reinforced center",
+      "startIndex": 1973,
+      "endIndex": 2000,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "60 × 150 mm; 7.8 / 13.8 mm thick",
+      "startIndex": 2002,
+      "endIndex": 2034,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Thin mounting zones; tapered central reinforcement",
+      "startIndex": 2036,
+      "endIndex": 2086,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Anchor pitch and sleeve bores",
+      "startIndex": 2089,
+      "endIndex": 2118,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "120 mm; Ø18.6 mm",
+      "startIndex": 2120,
+      "endIndex": 2136,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Two M6 anchors on one vertical line",
+      "startIndex": 2138,
+      "endIndex": 2173,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Plug core and rib envelope",
+      "startIndex": 2176,
+      "endIndex": 2202,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "31.55; 31.85 mm",
+      "startIndex": 2204,
+      "endIndex": 2219,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Relieved core with sacrificial fit ribs",
+      "startIndex": 2221,
+      "endIndex": 2260,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Plug projection and engagement",
+      "startIndex": 2263,
+      "endIndex": 2293,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "32; 30 mm",
+      "startIndex": 2295,
+      "endIndex": 2304,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2 mm root fillet within relief",
+      "startIndex": 2306,
+      "endIndex": 2336,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Corner clearance",
+      "startIndex": 2339,
+      "endIndex": 2355,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "3 mm chamfer",
+      "startIndex": 2357,
+      "endIndex": 2369,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Clear the tube internal corner radii",
+      "startIndex": 2371,
+      "endIndex": 2407,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Print the flange wall face on the bed with the local CAD x axis along the build direction. Use dry PETG, 0.2 mm layers and 100% infill as the initial qualification process. The supplier test specimens used 250 °C nozzle and 80 °C bed temperatures; these are a starting reference, not a validated setting for every printer [S6].",
+      "startIndex": 2410,
+      "endIndex": 2737,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Measure both inside dimensions at both ends. The nominal coupon set cannot cover the full supplier tolerance envelope. Rebuild coupons and brackets from measured openings as needed; record insertion, seating and retention results. Do not obtain fit by forcing an oversized plug.",
+      "startIndex": 2738,
+      "endIndex": 3016,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Material evidence and cross section",
+      "startIndex": 3017,
+      "endIndex": 3052,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "The beam is Online Metals 23437, an ASTM B221 6061 T6 extruded square tube. Its nominal outside width is 38.1 mm and wall thickness is 3.175 mm. The supplier identifies 3.175 mm outer and 1.5748 mm inner corner radii; consequently the corners are represented explicitly instead of assuming a sharp hollow square [S1].",
+      "startIndex": 3053,
+      "endIndex": 3370,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Input",
+      "startIndex": 3374,
+      "endIndex": 3379,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Value used",
+      "startIndex": 3381,
+      "endIndex": 3391,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Evidence and limit",
+      "startIndex": 3393,
+      "endIndex": 3411,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Aluminum elastic modulus",
+      "startIndex": 3414,
+      "endIndex": 3438,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "68,947.57 MPa",
+      "startIndex": 3440,
+      "endIndex": 3453,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Supplier alloy guide typical value [S5]",
+      "startIndex": 3455,
+      "endIndex": 3494,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Aluminum minimum yield",
+      "startIndex": 3497,
+      "endIndex": 3519,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "240 MPa",
+      "startIndex": 3521,
+      "endIndex": 3528,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "General 6061 T6 extrusion reference [S4]",
+      "startIndex": 3530,
+      "endIndex": 3570,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Aluminum density for weight",
+      "startIndex": 3573,
+      "endIndex": 3600,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2800 kg/m³",
+      "startIndex": 3602,
+      "endIndex": 3612,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Conservative rounded upper value from [S5]",
+      "startIndex": 3614,
+      "endIndex": 3656,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PETG elastic modulus",
+      "startIndex": 3659,
+      "endIndex": 3679,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1400 MPa",
+      "startIndex": 3681,
+      "endIndex": 3689,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Conservative specimen reference [S6]",
+      "startIndex": 3691,
+      "endIndex": 3727,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PETG strength reference",
+      "startIndex": 3730,
+      "endIndex": 3753,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "14 MPa",
+      "startIndex": 3755,
+      "endIndex": 3761,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "18 ± 4 MPa interlayer result; use 14 as a screen [S6]",
+      "startIndex": 3763,
+      "endIndex": 3816,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PETG Poisson ratio",
+      "startIndex": 3819,
+      "endIndex": 3837,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.38",
+      "startIndex": 3839,
+      "endIndex": 3843,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Assumption; not established by the material sheet",
+      "startIndex": 3845,
+      "endIndex": 3894,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PETG density",
+      "startIndex": 3897,
+      "endIndex": 3909,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1.27 g/cm³",
+      "startIndex": 3911,
+      "endIndex": 3921,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Supplier technical data [S6]",
+      "startIndex": 3923,
+      "endIndex": 3951,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The PETG reference is neither a guaranteed allowable nor a statistical lower bound. The isotropic FEM cannot establish through layer strength, creep life or process quality. The beam and steel sleeve also require actual supply lot evidence before manufacturing release.",
+      "startIndex": 3954,
+      "endIndex": 4223,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Rounded square section formulas",
+      "startIndex": 4224,
+      "endIndex": 4255,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "At nominal dimensions, A = 437.023 mm² and I = 88,514.405 mm⁴. Independent numerical integration and FreeCAD volume inertia are checked against these formulas. The script enumerates the dimensional tolerance corners: outside width ±0.635 mm, wall ±0.2032 mm and radius ±0.396875 mm [S2].",
+      "startIndex": 4444,
+      "endIndex": 4731,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The resulting conservative values are Imin = 78,669.225 mm⁴, Amax = 474.481 mm² and Z = Imin/cmax = 4,061.919 mm³. Independently extreme dimensions are combined deliberately; actual dimensions must still be measured.",
+      "startIndex": 4732,
+      "endIndex": 4948,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Beam force stress and deflection calculations",
+      "startIndex": 4949,
+      "endIndex": 4994,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "The calculation span is L = 400.5 mm, including the positive cut tolerance. The force is F = 10 N. All maximum tube weight is assigned conservatively to one bracket for its load envelope; the beam bending model uses the uniformly distributed tube weight W = 5.220 N.",
+      "startIndex": 4995,
+      "endIndex": 5261,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Substitution gives Mmax = 10 × 400.5/4 + 0.013033 × 400.5²/8 = 1,262.563 N mm. The point force at midspan maximizes simply supported bending. A transverse end moment envelope also covers restraint from snug plugs; perfect pins are not assumed for the bracket check.",
+      "startIndex": 5323,
+      "endIndex": 5588,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The diagonal section factor bounds transverse direction; axial force at a section corner contributes Me = 273.898 N mm. Calculated bending stress is 0.535 MPa. This envelope intentionally combines some loads that cannot all occur simultaneously.",
+      "startIndex": 5661,
+      "endIndex": 5906,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The torsion term is a closed thin wall screening approximation. Combined stress is 0.625 MPa against 240/3 = 80.000 MPa. The ratio of material reference yield to this stress is 383.7.",
+      "startIndex": 6046,
+      "endIndex": 6229,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The computed global beam deflection is 0.00428 mm against the added 1 mm target. The interface contact model on the next page gives a maximum local force of 100 N. A 10 mm axial wall strip under that force gives 55.694 MPa against the 80 MPa screen. Smaller or sharp contact footprints require another local model. These values exclude installation movement and long term creep.",
+      "startIndex": 6281,
+      "endIndex": 6659,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "For comparison with the centered vertical FEM case, use the nominal section and L = 400 mm, with Me = 0. The first two deflection terms then give 0.00284043 mm. Compare this global bending quantity with a section displacement, while retaining the local maximum separately.",
+      "startIndex": 6660,
+      "endIndex": 6932,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Global FEM displacement 0.00307321 mm averages 101 sidewall nodes with |x − midspan| ≤ h/2, |z| ≤ 2 mm and |y| ≥ 0.4 OD. The difference from Euler is 8.195%, within 15%. The 0.00361843 mm maximum includes local wall deformation and axial translation. Gravity equilibrium uses mesh volume; Euler uses exact CAD section and mass.",
+      "startIndex": 6933,
+      "endIndex": 7260,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The pin ended Euler compression screen gives PE = 333,747.9 N and Pallow = 32,021.3 N. The 10 N axial utilization is 0.0003123. This global compression screen uses the conservative section and span.",
+      "startIndex": 7327,
+      "endIndex": 7525,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Bracket analytical screening",
+      "startIndex": 7526,
+      "endIndex": 7554,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "The end force envelope is R = 20 N. The sum F + Wbeam + Wbracket is 16.909 N, using a bounding volume for the bracket weight. Independent applied moment envelopes are T = 550 N mm about the tube axis and Mt = 1600 N mm transverse to it.",
+      "startIndex": 7555,
+      "endIndex": 7791,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The required transverse moment bound is 1,536.461 N mm. The 6 mm tapered reinforcement and 2 mm root fillet spread the load at the plug junction; their size responds to the root stress concentration found during design. The FEM retains both features.",
+      "startIndex": 7792,
+      "endIndex": 8042,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Chamfered plug section",
+      "startIndex": 8043,
+      "endIndex": 8065,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "With B = 31.55 mm and C = 3 mm, Ap = 977.403 mm² and Ip = 78,630.434 mm⁴. Bending uses the actual octagonal section. Shear and torsion retain a conservative inscribed square of side a = B − 2C = 25.550 mm.",
+      "startIndex": 8164,
+      "endIndex": 8369,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Using projection ℓ = 32 mm gives a combined plug screen of 0.746 MPa against 14/3 = 4.667 MPa. The force plus end moment displacement estimate is 0.00943 mm.",
+      "startIndex": 8536,
+      "endIndex": 8693,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Plate and interface screens",
+      "startIndex": 8694,
+      "endIndex": 8721,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "The plate strip estimate is 0.986 MPa. Two assumed 10 mm axial bearing patches in 30 mm engagement have centers 20 mm apart. Thus Fc = 20 + 1600/20 = 100 N and p = 100/255.5 = 0.391 MPa. These patches and the local wall strip are screening assumptions. Physical contact, interference crushing and sustained bearing remain unqualified; the fit ribs carry no credited structural load.",
+      "startIndex": 8873,
+      "endIndex": 9255,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Wall anchors and installation load path",
+      "startIndex": 9256,
+      "endIndex": 9295,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "Two fischer 564572 anchors attach each plate to provisionally solid C20/25 concrete in a dry interior. Their centres are 120 mm apart. The project assumes at least 100 mm wall thickness and at least 60 mm to every free edge. Those conditions are unverified at the actual site [S8 S9].",
+      "startIndex": 9296,
+      "endIndex": 9580,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "An 8 mm EN1A sleeve carries installation preload through an 18.6 mm printed hole. A 30 mm retention washer spans the sleeve and print; keep the original fischer washer and nut above it. The original small washer alone cannot retain the printed plate. Each measured sleeve must stand at least 0.1 mm proud of the local flange [S10 S11].",
+      "startIndex": 9581,
+      "endIndex": 9916,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The anchor load table gives permissible tension 700 N and shear 4300 N for an isolated M6 anchor in cracked C20/25. Its values include material factors and an action factor of 1.4. ETA characteristic bending 11 Nm with factor 1.25 gives a service screening reference of 6285.714 N mm [S8 S9].",
+      "startIndex": 9962,
+      "endIndex": 10254,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Using e = 45.8 mm, s = 120 mm and d = 6 mm gives N = 40.967 N, V = 24.583 N and Mb = 2,833.125 N mm. One bolt is conservatively assigned the full direct load and full global bending moment because clearances and the vertical bolt alignment cannot guarantee equal sharing in every direction.",
+      "startIndex": 10324,
+      "endIndex": 10614,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Combined screening utilization is 0.5150. This linear sum is a conservative project screen. It does not replace the full fastening design method or verify the custom fixture and concrete surface.",
+      "startIndex": 10655,
+      "endIndex": 10850,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Tightening preload remains a qualification gate",
+      "startIndex": 10851,
+      "endIndex": 10898,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "The specified 8 Nm torque with assumed K = 0.15 to 0.25 gives 5,333 to 8,889 N. Minimum sleeve area is 210.10 mm² and its estimated mean compression is 42.308 MPa. K is not manufacturer preload data. Washer bending, local concrete bearing, installation damage and actual torque performance remain blocked even though external beam loads are small.",
+      "startIndex": 10960,
+      "endIndex": 11307,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "FEM attachment idealization",
+      "startIndex": 11308,
+      "endIndex": 11335,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "Model assumption",
+      "startIndex": 11339,
+      "endIndex": 11355,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Definition and unresolved physical difference",
+      "startIndex": 11357,
+      "endIndex": 11402,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Retained translations",
+      "startIndex": 11405,
+      "endIndex": 11426,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Y/Z translations fixed on sleeve bores; X fixed on wall and washer annuli, radii 9.3 to 15 mm, at x = 0 and 7.8 mm.",
+      "startIndex": 11428,
+      "endIndex": 11543,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Assumed engagement",
+      "startIndex": 11546,
+      "endIndex": 11564,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Bilateral zero clearance restraint. The actual nominal 0.2 mm washer gap, preload, friction, contact opening and gap take up are not solved.",
+      "startIndex": 11566,
+      "endIndex": 11706,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The calculated stress applies to the assumed engaged state. This boundary model does not qualify the real metal, polymer and concrete contact; that requires installation and physical evidence.",
+      "startIndex": 11709,
+      "endIndex": 11901,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Finite element model and three dimensional bracket stress",
+      "startIndex": 11902,
+      "endIndex": 11959,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "FreeCAD creates solids; Gmsh generates STL and FEM meshes. CalculiX uses quadratic C3D10 displacement interpolation. Bracket geometry is curved second order; beam geometry is straight sided to avoid curved element inversion in the thin wall. Gmsh nodes 9 and 10 are remapped to CalculiX ordering. Raw decks, logs and results are retained.",
+      "startIndex": 11960,
+      "endIndex": 12298,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Beam ends are restrained transversely with one axial fix; a central 10 N patch and gravity load the tube. Bracket tip cases are balanced resultants: fx/fy/fz at 20 N, tx at 550 N mm, my/mz at 1600 N mm. Structural geometry retains reinforcement and fillet but omits fit ribs and interference preload.",
+      "startIndex": 12299,
+      "endIndex": 12599,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Figure 3  Bracket nodal stress field. The arbitrary-direction bound combines independent solutions and is not one physical stress tensor. PETG is isotropic in this screening model.",
+      "startIndex": 12602,
+      "endIndex": 12782,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "For the principal bound, each Si is maximum absolute principal stress, the spectral norm of its symmetric tensor. Triangle and Cauchy Schwarz inequalities give the bound; the same combination bounds von Mises stress. DAT shears are reordered from XY/XZ/YZ to XY/YZ/ZX before the eigenvalue calculation. Both nodal and integration point results are checked.",
+      "startIndex": 12861,
+      "endIndex": 13217,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Finite element results and numerical verification",
+      "startIndex": 13218,
+      "endIndex": 13267,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "All reported minimum Jacobians are positive. Bracket and beam displacement changes are 0.23% and 0.31% between the finest meshes, within the 5% limit. Peak stress refinement is assessed separately below; idealized restraints still require physical qualification.",
+      "startIndex": 13268,
+      "endIndex": 13530,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Part and h mm",
+      "startIndex": 13534,
+      "endIndex": 13547,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Nodes",
+      "startIndex": 13549,
+      "endIndex": 13554,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Elems",
+      "startIndex": 13556,
+      "endIndex": 13561,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "VM MPa",
+      "startIndex": 13563,
+      "endIndex": 13569,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Principal bound MPa",
+      "startIndex": 13571,
+      "endIndex": 13590,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Displacement mm",
+      "startIndex": 13592,
+      "endIndex": 13607,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Min det J",
+      "startIndex": 13609,
+      "endIndex": 13618,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Bracket 6",
+      "startIndex": 13621,
+      "endIndex": 13630,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "17675",
+      "startIndex": 13632,
+      "endIndex": 13637,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "10448",
+      "startIndex": 13639,
+      "endIndex": 13644,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2.781",
+      "startIndex": 13646,
+      "endIndex": 13651,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "3.238",
+      "startIndex": 13653,
+      "endIndex": 13658,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.17840",
+      "startIndex": 13660,
+      "endIndex": 13667,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.0569",
+      "startIndex": 13669,
+      "endIndex": 13675,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Bracket 4",
+      "startIndex": 13678,
+      "endIndex": 13687,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "45078",
+      "startIndex": 13689,
+      "endIndex": 13694,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "28917",
+      "startIndex": 13696,
+      "endIndex": 13701,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2.757",
+      "startIndex": 13703,
+      "endIndex": 13708,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "3.064",
+      "startIndex": 13710,
+      "endIndex": 13715,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.17750",
+      "startIndex": 13717,
+      "endIndex": 13724,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.1055",
+      "startIndex": 13726,
+      "endIndex": 13732,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Bracket 3.2",
+      "startIndex": 13735,
+      "endIndex": 13746,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "79939",
+      "startIndex": 13748,
+      "endIndex": 13753,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "52996",
+      "startIndex": 13755,
+      "endIndex": 13760,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2.721",
+      "startIndex": 13762,
+      "endIndex": 13767,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "3.582",
+      "startIndex": 13769,
+      "endIndex": 13774,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.17792",
+      "startIndex": 13776,
+      "endIndex": 13783,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.0845",
+      "startIndex": 13785,
+      "endIndex": 13791,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Beam 8",
+      "startIndex": 13794,
+      "endIndex": 13800,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "66479",
+      "startIndex": 13802,
+      "endIndex": 13807,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "33429",
+      "startIndex": 13809,
+      "endIndex": 13814,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.885",
+      "startIndex": 13816,
+      "endIndex": 13821,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "single case",
+      "startIndex": 13823,
+      "endIndex": 13834,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.00361",
+      "startIndex": 13836,
+      "endIndex": 13843,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.0927",
+      "startIndex": 13845,
+      "endIndex": 13851,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Beam 5.5",
+      "startIndex": 13854,
+      "endIndex": 13862,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "127600",
+      "startIndex": 13864,
+      "endIndex": 13870,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "63923",
+      "startIndex": 13872,
+      "endIndex": 13877,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.895",
+      "startIndex": 13879,
+      "endIndex": 13884,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "single case",
+      "startIndex": 13886,
+      "endIndex": 13897,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.00362",
+      "startIndex": 13899,
+      "endIndex": 13906,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.0648",
+      "startIndex": 13908,
+      "endIndex": 13914,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The finest bracket von Mises bound is 2.721 MPa and the absolute principal bound is 3.582 MPa, compared with the 4.667 MPa material screen. Peak principal stress is not converged: its 14.44% change exceeds the unchanged 10% limit. The stable von Mises result does not close that failed gate.",
+      "startIndex": 13917,
+      "endIndex": 14208,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Verification metric",
+      "startIndex": 14212,
+      "endIndex": 14231,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Difference",
+      "startIndex": 14233,
+      "endIndex": 14243,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Limit",
+      "startIndex": 14245,
+      "endIndex": 14250,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Result",
+      "startIndex": 14252,
+      "endIndex": 14258,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Absolute principal stress bound",
+      "startIndex": 14261,
+      "endIndex": 14292,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "14.44%",
+      "startIndex": 14294,
+      "endIndex": 14300,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "10%",
+      "startIndex": 14302,
+      "endIndex": 14305,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "FAIL",
+      "startIndex": 14307,
+      "endIndex": 14311,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Von Mises stress bound",
+      "startIndex": 14314,
+      "endIndex": 14336,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1.32%",
+      "startIndex": 14338,
+      "endIndex": 14343,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "10%",
+      "startIndex": 14345,
+      "endIndex": 14348,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PASS",
+      "startIndex": 14350,
+      "endIndex": 14354,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Beam mesh volume versus CAD",
+      "startIndex": 14357,
+      "endIndex": 14384,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.5032%",
+      "startIndex": 14386,
+      "endIndex": 14393,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "0.5%",
+      "startIndex": 14395,
+      "endIndex": 14399,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "FAIL",
+      "startIndex": 14401,
+      "endIndex": 14405,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Global beam displacement versus Euler",
+      "startIndex": 14408,
+      "endIndex": 14445,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "8.195%",
+      "startIndex": 14447,
+      "endIndex": 14453,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "15%",
+      "startIndex": 14455,
+      "endIndex": 14458,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PASS",
+      "startIndex": 14460,
+      "endIndex": 14464,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Figure 4  Beam nodal stress under the central transverse force and gravity. The hand screen also covers force direction, axial load, torsion, tolerance and local wall effects.",
+      "startIndex": 14469,
+      "endIndex": 14644,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Purchased parts and project cost",
+      "startIndex": 14645,
+      "endIndex": 14677,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "Prices below are a dated source snapshot from 17 November 2026. Minimum orders determine cash outlay. The CSV retains tax basis, exact URLs, source files, quantities, price basis and component notes. Purchase links are attached to the part identifiers in this table; none of the items has been ordered.",
+      "startIndex": 14678,
+      "endIndex": 14980,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Part and purchase link",
+      "startIndex": 14984,
+      "endIndex": 15006,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Used",
+      "startIndex": 15008,
+      "endIndex": 15012,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Buy",
+      "startIndex": 15014,
+      "endIndex": 15017,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Unit price",
+      "startIndex": 15019,
+      "endIndex": 15029,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Purchase cost",
+      "startIndex": 15031,
+      "endIndex": 15044,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Aluminum tube  23437",
+      "startIndex": 15047,
+      "endIndex": 15067,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1",
+      "startIndex": 15069,
+      "endIndex": 15070,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1",
+      "startIndex": 15072,
+      "endIndex": 15073,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "USD 13.61",
+      "startIndex": 15075,
+      "endIndex": 15084,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "USD 13.61",
+      "startIndex": 15086,
+      "endIndex": 15095,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "PETG spool  IDS 3449 / IDF 17558",
+      "startIndex": 15098,
+      "endIndex": 15130,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "306.6 g",
+      "startIndex": 15132,
+      "endIndex": 15139,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1",
+      "startIndex": 15141,
+      "endIndex": 15142,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "USD 23.99",
+      "startIndex": 15144,
+      "endIndex": 15153,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "USD 23.99",
+      "startIndex": 15155,
+      "endIndex": 15164,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "M6 anchor  564572 / FAZ II Plus 6/10 zp",
+      "startIndex": 15167,
+      "endIndex": 15206,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "4",
+      "startIndex": 15208,
+      "endIndex": 15209,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "50",
+      "startIndex": 15211,
+      "endIndex": 15213,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "EUR 0.63",
+      "startIndex": 15215,
+      "endIndex": 15223,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "EUR 31.50",
+      "startIndex": 15225,
+      "endIndex": 15234,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Steel sleeve  HPS-18-6.4-8-EN1A",
+      "startIndex": 15237,
+      "endIndex": 15268,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "4",
+      "startIndex": 15270,
+      "endIndex": 15271,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "25",
+      "startIndex": 15273,
+      "endIndex": 15275,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "GBP 4.02",
+      "startIndex": 15277,
+      "endIndex": 15285,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "GBP 100.50",
+      "startIndex": 15287,
+      "endIndex": 15297,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Wide washer  HYW-M6-30-A2",
+      "startIndex": 15300,
+      "endIndex": 15325,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "4",
+      "startIndex": 15327,
+      "endIndex": 15328,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "4",
+      "startIndex": 15330,
+      "endIndex": 15331,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "GBP 0.38",
+      "startIndex": 15333,
+      "endIndex": 15341,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "GBP 1.52",
+      "startIndex": 15343,
+      "endIndex": 15351,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Currency",
+      "startIndex": 15357,
+      "endIndex": 15365,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Cash purchases",
+      "startIndex": 15367,
+      "endIndex": 15381,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Base material consumed",
+      "startIndex": 15383,
+      "endIndex": 15405,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "With five coupons",
+      "startIndex": 15407,
+      "endIndex": 15424,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "USD",
+      "startIndex": 15427,
+      "endIndex": 15430,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "37.60",
+      "startIndex": 15432,
+      "endIndex": 15437,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "16.28",
+      "startIndex": 15439,
+      "endIndex": 15444,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "21.55",
+      "startIndex": 15446,
+      "endIndex": 15451,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "EUR",
+      "startIndex": 15454,
+      "endIndex": 15457,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "31.50",
+      "startIndex": 15459,
+      "endIndex": 15464,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2.52",
+      "startIndex": 15466,
+      "endIndex": 15470,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2.52",
+      "startIndex": 15472,
+      "endIndex": 15476,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "GBP",
+      "startIndex": 15479,
+      "endIndex": 15482,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "102.02",
+      "startIndex": 15484,
+      "endIndex": 15490,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "17.60",
+      "startIndex": 15492,
+      "endIndex": 15497,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "17.60",
+      "startIndex": 15499,
+      "endIndex": 15504,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "No currency conversion is applied. VAT or sales tax, delivery, customs, cutting, tools, energy and labor are excluded. Consumed beam cost is allocated by 400/609.6 of one stock length. Unused inventory remains 46 anchors and 21 sleeves; the supplier minimum orders explain the difference between purchase and consumed costs.",
+      "startIndex": 15507,
+      "endIndex": 15831,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Printed material allocation",
+      "startIndex": 15832,
+      "endIndex": 15859,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "The two solid brackets use an estimated 306.56 g of PETG. All five optional fit coupons add 219.47 g and USD 5.27 in consumed material. Both are drawn from the same 1 kg spool. Supports, brim, purge and failed prints require an additional process allowance.",
+      "startIndex": 15860,
+      "endIndex": 16117,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "The two printed allocation lines in the CSV are descriptive costs and are excluded from additive purchase totals. The bracket material is counted once in the filament line; coupon material is added once only in the optional coupon scenario. This prevents buying or costing the same filament twice.",
+      "startIndex": 16118,
+      "endIndex": 16415,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Klium lists the anchors on order. Accu reports the sleeves available for order with zero immediate stock in the captured response. Confirm delivery and final checkout prices before purchasing. Accu public pricing explicitly confirms GBP 4.02 per sleeve, minimum quantity 25, and GBP 0.38 per wide washer at quantity four [S10 S11 S12].",
+      "startIndex": 16416,
+      "endIndex": 16751,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Manufacture assembly and physical acceptance",
+      "startIndex": 16752,
+      "endIndex": 16796,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "First resolve both numerical failures in the next version: refine the joint/contact mesh at the washer restraint edge and improve the tube curvature/geometry approximation. Then obtain measured print, fit, wall and assembly evidence. The proposed physical qualification sequence follows. Site drilling and torque installation require the actual substrate and manufacturer procedure to be confirmed.",
+      "startIndex": 16797,
+      "endIndex": 17195,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "1. Inspect the purchased tube and material documentation. Finish cut to 400 ±0.5 mm, deburr, and record both inside dimensions and corner clearance at both ends. Verify the actual wall bearing face spacing against the CAD stack.",
+      "startIndex": 17196,
+      "endIndex": 17424,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "2. Print the appropriate fit coupons with the proposed PETG process. Select or regenerate a coupon from measured stock rather than assuming nominal interference. Record fit force, seating, damage and retention. Use the same qualified process for both brackets.",
+      "startIndex": 17425,
+      "endIndex": 17685,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "3. Inspect each printed flange, plug root, rib and sleeve bore. Confirm that the metal sleeves fit the bores and each stands at least 0.1 mm proud of the local printed surface. Keep the wide washer and original anchor washer and nut in the specified order.",
+      "startIndex": 17686,
+      "endIndex": 17942,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "4. Qualify the actual wall and installation. Check concrete class, wall thickness, every edge distance, anchor pitch, buried services and absence of weak finishes under the sleeves. Follow the current M6 ETA drilling, cleaning and 8 Nm torque procedure. Examine the metal and concrete bearing path.",
+      "startIndex": 17943,
+      "endIndex": 18241,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "5. Preassemble both plugs and the tube, then position the assembly between the prepared walls with bolt access above and below the beam. Do not force an assembly into an undersized gap or pry the printed flanges into alignment.",
+      "startIndex": 18242,
+      "endIndex": 18469,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "6. After installation qualification, use an agreed controlled proof procedure for the assembled load path. A proposed 30 N proof level requires review of the complete fixture, wall and test setup; the material screening factor alone does not qualify that test. Record direction, point, duration, deflection, residual movement and inspection outcome.",
+      "startIndex": 18470,
+      "endIndex": 18819,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Evidence still required for engineering release",
+      "startIndex": 18820,
+      "endIndex": 18867,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "Acceptance item",
+      "startIndex": 18871,
+      "endIndex": 18886,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Current evidence state",
+      "startIndex": 18888,
+      "endIndex": 18910,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Actual beam length and openings",
+      "startIndex": 18913,
+      "endIndex": 18944,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not measured",
+      "startIndex": 18946,
+      "endIndex": 18958,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Beam supply lot and printed material process",
+      "startIndex": 18961,
+      "endIndex": 19005,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not qualified",
+      "startIndex": 19007,
+      "endIndex": 19020,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Both press fits and retention",
+      "startIndex": 19023,
+      "endIndex": 19052,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not tested",
+      "startIndex": 19054,
+      "endIndex": 19064,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "All four sleeve projections",
+      "startIndex": 19067,
+      "endIndex": 19094,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not measured",
+      "startIndex": 19096,
+      "endIndex": 19108,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Actual walls and torque installation",
+      "startIndex": 19111,
+      "endIndex": 19147,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not qualified",
+      "startIndex": 19149,
+      "endIndex": 19162,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Assembled proof and sustained service load",
+      "startIndex": 19165,
+      "endIndex": 19207,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not tested",
+      "startIndex": 19209,
+      "endIndex": 19219,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Operating temperature and load duration",
+      "startIndex": 19222,
+      "endIndex": 19261,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Not agreed or qualified",
+      "startIndex": 19263,
+      "endIndex": 19286,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Store measured values, responsible operator, date and linked evidence in config/physical_acceptance.json. Null values remain blocked. A simulation result must not be used to change a physical observation to true. Stop and investigate cracking, crushing, washer dishing, sleeve rocking, concrete spalling or permanent movement.",
+      "startIndex": 19289,
+      "endIndex": 19615,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Requirements traceability and reproducibility",
+      "startIndex": 19616,
+      "endIndex": 19661,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "The frozen requirement.md is the baseline. Artifact completeness and engineering release are separate decisions. The final audit supplies PASS, FAIL or BLOCKED evidence for each requirement; missing software results, documents or measurements cannot be replaced by an assumed pass.",
+      "startIndex": 19662,
+      "endIndex": 19943,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "ID",
+      "startIndex": 19947,
+      "endIndex": 19949,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Requirement",
+      "startIndex": 19951,
+      "endIndex": 19962,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Evidence or acceptance path",
+      "startIndex": 19964,
+      "endIndex": 19991,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R01",
+      "startIndex": 19994,
+      "endIndex": 19997,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Self contained v0 ZIP",
+      "startIndex": 19999,
+      "endIndex": 20020,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Archive manifest and stored evidence; external software versions documented",
+      "startIndex": 20022,
+      "endIndex": 20097,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R02",
+      "startIndex": 20100,
+      "endIndex": 20103,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "40 cm beam",
+      "startIndex": 20105,
+      "endIndex": 20115,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "CAD 400 mm; actual length measurement gate",
+      "startIndex": 20117,
+      "endIndex": 20159,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R03",
+      "startIndex": 20162,
+      "endIndex": 20165,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Two printed press fit brackets",
+      "startIndex": 20167,
+      "endIndex": 20197,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "FCStd, STEP, Gmsh STL, coupons; physical fit gate",
+      "startIndex": 20199,
+      "endIndex": 20248,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R04",
+      "startIndex": 20251,
+      "endIndex": 20254,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Bolt mounts on two walls",
+      "startIndex": 20256,
+      "endIndex": 20280,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Hardware BOM and anchor screening; actual wall gate",
+      "startIndex": 20282,
+      "endIndex": 20333,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R05",
+      "startIndex": 20336,
+      "endIndex": 20339,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "No failure under 10 N",
+      "startIndex": 20341,
+      "endIndex": 20362,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Stress screens pass; numerical verification FAIL; physical qualification BLOCKED",
+      "startIndex": 20364,
+      "endIndex": 20444,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R06",
+      "startIndex": 20447,
+      "endIndex": 20450,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Known purchased beam and properties",
+      "startIndex": 20452,
+      "endIndex": 20487,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Online Metals 23437, supplier snapshots, section and material evidence",
+      "startIndex": 20489,
+      "endIndex": 20559,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R07",
+      "startIndex": 20562,
+      "endIndex": 20565,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Google Docs report",
+      "startIndex": 20567,
+      "endIndex": 20585,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Native import and verified receipt recorded with the final archive",
+      "startIndex": 20587,
+      "endIndex": 20653,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R08",
+      "startIndex": 20656,
+      "endIndex": 20659,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Full formulas and calculations",
+      "startIndex": 20661,
+      "endIndex": 20691,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "This report, calculate.py and calculations.json",
+      "startIndex": 20693,
+      "endIndex": 20740,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R09",
+      "startIndex": 20743,
+      "endIndex": 20746,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Priced BOM with external links",
+      "startIndex": 20748,
+      "endIndex": 20778,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "bom.csv and bom_summary.json",
+      "startIndex": 20780,
+      "endIndex": 20808,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R10",
+      "startIndex": 20811,
+      "endIndex": 20814,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "FEM and three dimensional stress",
+      "startIndex": 20816,
+      "endIndex": 20848,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Raw solved decks, FRD/DAT, figures and offline stress viewer",
+      "startIndex": 20850,
+      "endIndex": 20910,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R11",
+      "startIndex": 20913,
+      "endIndex": 20916,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "FreeCAD CAD",
+      "startIndex": 20918,
+      "endIndex": 20929,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Native FCStd, parametric build script and geometry manifest",
+      "startIndex": 20931,
+      "endIndex": 20990,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R12",
+      "startIndex": 20993,
+      "endIndex": 20996,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Gmsh generated STL",
+      "startIndex": 20998,
+      "endIndex": 21016,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "STL files, generation logs and hashed provenance",
+      "startIndex": 21018,
+      "endIndex": 21066,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R13",
+      "startIndex": 21069,
+      "endIndex": 21072,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "CalculiX FEM",
+      "startIndex": 21074,
+      "endIndex": 21086,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Actual solver logs, versions, input and result files",
+      "startIndex": 21088,
+      "endIndex": 21140,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "R14",
+      "startIndex": 21143,
+      "endIndex": 21146,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Automated complete project tests",
+      "startIndex": 21148,
+      "endIndex": 21180,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Recompute/audit commands, structured results and LLM next actions",
+      "startIndex": 21182,
+      "endIndex": 21247,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Reproduction from the extracted project",
+      "startIndex": 21250,
+      "endIndex": 21289,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "Run the project commands from its root using the documented environment. CAD rebuilding requires FreeCAD; FEM rebuilding requires Gmsh, Python numerical dependencies and CalculiX. Existing reports, CAD exchanges, raw results and the offline viewer remain available without rerunning a solver.",
+      "startIndex": 21290,
+      "endIndex": 21582,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "python scripts/calculate.py\u000bpython -m unittest discover -s tests -p \"test_calculations.py\" -v\u000bpython scripts/run_fem.py\u000bpython scripts/build_report.py",
+      "startIndex": 21583,
+      "endIndex": 21733,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Use the README for the single project audit/recompute entry point and pinned software setup. Preserve the frozen requirements and provenance. A geometry, material or load change invalidates downstream meshes and results until they are regenerated. Record future changes as v1 instead of silently replacing this baseline.",
+      "startIndex": 21734,
+      "endIndex": 22054,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Source register and limits of this version",
+      "startIndex": 22055,
+      "endIndex": 22097,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_1",
+      "isListItem": false
+    },
+    {
+      "text": "Supplier sources and original evidence are retained under evidence with dates and hashes. Catalogue data and generic material references support the calculation inputs; they do not establish the properties of an untested printed part or the condition of a real installation. Prices were checked on 17 November 2026.",
+      "startIndex": 22098,
+      "endIndex": 22413,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S1  Online Metals 23437  Catalogue identity, alloy, nominal dimensions, corner radii and stock price.",
+      "startIndex": 22414,
+      "endIndex": 22515,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S2  Online Metals aluminum tolerances  Outside, wall and radius tolerance inputs; inside opening range derived from those inputs.",
+      "startIndex": 22516,
+      "endIndex": 22645,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S3  Online Metals cut tolerances  Supplier cut tolerance explains why oversize stock is finish cut for the project.",
+      "startIndex": 22646,
+      "endIndex": 22761,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S4  Hydro 6061 alloy data sheet  General extrusion minimum yield reference; not a certificate for Online Metals stock.",
+      "startIndex": 22762,
+      "endIndex": 22880,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S5  Online Metals 6061 product guide  Typical modulus, Poisson ratio and density; source of the self weight upper assumption.",
+      "startIndex": 22881,
+      "endIndex": 23006,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S6  Prusament PETG technical data  Printed specimen test conditions, interlayer adhesion, elastic modulus and density.",
+      "startIndex": 23007,
+      "endIndex": 23125,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S7  Prusament PETG Jet Black 1 kg  IDS 3449 and IDF 17558; filament identity and observed purchase price.",
+      "startIndex": 23126,
+      "endIndex": 23231,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S8  fischer FAZ II Plus 6/10 564572  Anchor dimensions, torque, allowed fixture and full ETA download.",
+      "startIndex": 23232,
+      "endIndex": 23334,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S9  fischer official static load table  Permissible isolated anchor loads and geometric limitations; full ETA is archived.",
+      "startIndex": 23335,
+      "endIndex": 23457,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S10  Accu EN1A compression sleeve  Dimensions, material and purchase identity; exact pricing response is archived.",
+      "startIndex": 23458,
+      "endIndex": 23572,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S11  Accu M6 30 mm retention washer  Dimensions, tolerances and purchase identity; exact pricing response is archived.",
+      "startIndex": 23573,
+      "endIndex": 23691,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S12  Klium fischer 564572 purchase listing  Anchor unit price, minimum order and availability snapshot.",
+      "startIndex": 23692,
+      "endIndex": 23795,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "S13  Smiths EN1A reference sheet  Generic 240 to 400 MPa yield range; actual sleeve condition needs supply evidence.",
+      "startIndex": 23796,
+      "endIndex": 23912,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    },
+    {
+      "text": "Release decision",
+      "startIndex": 23913,
+      "endIndex": 23929,
+      "tabId": "t.0",
+      "namedStyleType": "HEADING_2",
+      "isListItem": false
+    },
+    {
+      "text": "v0 is an engineering design baseline for review and further work. Numerical verification is FAIL: principal stress refinement changes 14.44% against 10%; beam mesh volume error is 0.5032% against 0.5%. Physical qualification is BLOCKED for fit, printed material, contact, installation, actual walls, duration and environment. Refine the washer restraint/contact mesh and tube geometric approximation in the next version, then complete physical qualification. Engineering release is not approved.",
+      "startIndex": 23930,
+      "endIndex": 24425,
+      "tabId": "t.0",
+      "namedStyleType": "NORMAL_TEXT",
+      "isListItem": false
+    }
+  ],
+  "document_url": "https://docs.google.com/document/d/1cYAbrp5_44yrPNomKcAUwh-eoXsCq4oBbQqKRzxCNtM"
+}

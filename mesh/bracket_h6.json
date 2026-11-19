@@ -1,0 +1,26 @@
+{
+  "part": "bracket",
+  "label": "bracket_h6",
+  "size_mm": 6,
+  "nodes": 26191,
+  "elements": 16214,
+  "element_type": "C3D10",
+  "gmsh_version": "4.15.2",
+  "geometry_order": 2,
+  "meshing_method": "OCC unstructured curved quadratic tetrahedra",
+  "minimum_det_jacobian": 0.014061025860056826,
+  "FE_volume_mm3": 120743.10685893422,
+  "CAD_volume_mm3": 120742.94333985182,
+  "volume_relative_error": 1.3542744435300877e-06,
+  "FE_centroid_mm": [
+    11.880709910515169,
+    4.564240726833911e-08,
+    -1.2312888074843897e-06
+  ],
+  "load_patch_area_mm2": null,
+  "source_step": "cad/bracket_structural_core_only.step",
+  "source_step_sha256": "4b26c57c6d842352867fb5ec1b2bbe0d75cbca81fd96007dc9f64a497e11c688",
+  "design_sha256": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+  "gmsh_to_ccx_nodes": "1,2,3,4,5,6,7,8,10,9; swaps the last two midside nodes",
+  "surface_triangles": 18352
+}

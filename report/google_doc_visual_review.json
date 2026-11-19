@@ -1,0 +1,115 @@
+{
+  "schema": "v1-google-doc-visual-review",
+  "reviewed_at_utc": "2026-11-19T21:26:05.675049+00:00",
+  "status": "PASS",
+  "reviewed_all_pages": true,
+  "page_count": 12,
+  "exported_pdf": "report/google_doc_export.pdf",
+  "exported_pdf_sha256": "8b7cc1422127eafa3cb3ea84df73230b3fe6a890e384d4feddd88f1c17163df1",
+  "exported_pdf_bytes": 1282222,
+  "document_id": "1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ",
+  "document_url": "https://docs.google.com/document/d/1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ",
+  "equations_count": 22,
+  "tables_count": 11,
+  "figures_count": 4,
+  "native_structure_evidence": "report/google_doc_readback.json",
+  "native_structure_note": "Archived native readback contains 22 equation objects, 11 tables and 4 inline images. The last successful native mutation changed only two page-10 table column widths; final PDF visual review independently confirms the preserved structure and content.",
+  "method": "Rendered every native PDF page with Poppler pdftoppm at 130 dpi and visually inspected all 12 page PNGs against the frozen offline report and current engineering results. After the page-10 column-width correction, re-rendered all 12 pages, visually rechecked page 10, and confirmed the other 11 rendered page images were byte-identical to their reviewed versions.",
+  "comparison_sources": {
+    "report/report.md": "74f17b3739dec5dba497e8adee0e8b2130db30ca8fefcad943402ea4a21d4e04",
+    "report/report.docx": "d606f499c785920e7e61192c47d11a846c7ee1228533f63b1f393d26d3101ff9",
+    "report/report.pdf": "0cb8f1100cd2b9b01aee76124198c7bb364f9b26222b68c5bd5aa632e0eff6a5",
+    "report/native_report_plan.json": "186275db74bc262e945b47cfdcc724da5a728ffdd66e53be06db98b0d4bbb0f9"
+  },
+  "page_reviews": [
+    {
+      "page": 1,
+      "status": "PASS",
+      "observations": "Title, explicit reconstruction status, numerical/nominal-fit PASS and physical BLOCKED statement, centered assembly figure, scope and design table are readable; no clipping or overlap.",
+      "rendered_png_sha256": "0c1b9fc222545fad819e5db4acc1f609e716fa690d6a70f18b96bfb25dbba7f1"
+    },
+    {
+      "page": 2,
+      "status": "PASS",
+      "observations": "Bracket drawing dimensions, geometric details and the design table are readable; all table rows remain on the page.",
+      "rendered_png_sha256": "0be6cb8bf9efd83e233144cdc7ff97a9b45ec0960fbf71b39b313df777a216a8"
+    },
+    {
+      "page": 3,
+      "status": "PASS",
+      "observations": "Material evidence table and all three rounded-section equations are intact; fractions, subscripts, superscripts and source links are legible.",
+      "rendered_png_sha256": "07fca91f1dee33451b5abff28e407ce256b22eedaf70637105aa25694df684aa"
+    },
+    {
+      "page": 4,
+      "status": "PASS",
+      "observations": "All seven beam calculation equation blocks render in full, including radicals and fractions; the conservative torsion-area definition and fresh stress/deflection values are visible.",
+      "rendered_png_sha256": "68ddc3daf574897ce8aed29cdd4057144e2d03d73719a6c4794031cf17132753"
+    },
+    {
+      "page": 5,
+      "status": "PASS",
+      "observations": "All six bracket/contact equation blocks render completely; plug, plate, bearing and local tube-wall results are readable with their limitations.",
+      "rendered_png_sha256": "f0307a7ac68e80f4a1053149ce3cca4bd3c14cab3232ba1e92de6a6bf3353480"
+    },
+    {
+      "page": 6,
+      "status": "PASS",
+      "observations": "All five anchor/sleeve equation blocks are intact. Both anchor equations visibly show italic R followed by italic e, meaning reaction multiplied by eccentricity; neither uses the real-part glyph. Interaction, fixture stack and preload limitations are readable.",
+      "rendered_png_sha256": "e2e03c920723754649ee688c7d1a71d1250c4011cb07db3c7bbb0796677cb9d1"
+    },
+    {
+      "page": 7,
+      "status": "PASS",
+      "observations": "Both-end Open CASCADE geometric observations and the two BLOCKED tolerance/physical-fit rows are readable. The full table is on one page without split rows.",
+      "rendered_png_sha256": "5beb70f08764124034bdeb884914330946f830f04e36e1eef903bd8192d53ceb"
+    },
+    {
+      "page": 8,
+      "status": "PASS",
+      "observations": "The directional-envelope equation is intact. Both actual bracket stress fields, MPa legends, raw peaks, figure caption and three-mesh results table are readable and complete.",
+      "rendered_png_sha256": "f498aa71dc4878fee7239efeafe7c97b10c5bfe5bff11bd76cd871ed6bcf7878"
+    },
+    {
+      "page": 9,
+      "status": "PASS",
+      "observations": "The centered beam stress figure, MPa legend and raw peak/displacement annotations are readable. Both numerical tables, convergence criteria, gravity-reaction method and retained-field scope fit on the page.",
+      "rendered_png_sha256": "f78aea362c85fdec771aafbf4a09e824981e1a6a8b1f5bc8ce76fdd99a052837"
+    },
+    {
+      "page": 10,
+      "status": "PASS",
+      "observations": "The revised Used column keeps 306.704328 g together. All five exact purchased catalogue identities, supplier hyperlinks, historical-price qualifications and separate-currency totals are readable; both tables are complete.",
+      "rendered_png_sha256": "f7b2841e8488c88dd3e2ed035a0808b6a731664ec660ba4ff77a3a24047ee3b8"
+    },
+    {
+      "page": 11,
+      "status": "PASS",
+      "observations": "CI artifacts, the functional self-test statement, four literal python3 commands and the requirement verification table are visible without overflow; physical design acceptance remains distinct from test functionality.",
+      "rendered_png_sha256": "13329a15322bd9595de7fba5d052a3b9c97d8573e82cd0271b1bf33cbed9467e"
+    },
+    {
+      "page": 12,
+      "status": "PASS",
+      "observations": "Physical acceptance steps, 14 supplier-source links, two method-source links and the engineering-release decision are readable; no clipped content or unexpected trailing page.",
+      "rendered_png_sha256": "7cb03d584441ba8503c813a1c485ffa1b6466684e0ac4a8e201b52bef3351fa6"
+    }
+  ],
+  "anchor_eccentricity_product_correct": true,
+  "all_radicals_and_fractions_intact": true,
+  "figure_legends_and_units_readable": true,
+  "no_clipped_or_split_table_rows": true,
+  "no_unexpected_blank_pages": true,
+  "issues_remaining": [],
+  "resolved_issues": [
+    {
+      "page": 10,
+      "finding": "PETG quantity token 306.704328 wrapped between digits in the initial native export.",
+      "correction": "Root widened the Used column and reduced the Part column without changing text.",
+      "verified": "Final export keeps 306.704328 g together, with all other rendered pages unchanged."
+    }
+  ],
+  "numerical_screening_status": "PASS",
+  "nominal_geometric_status": "PASS",
+  "physical_qualification_status": "BLOCKED"
+}

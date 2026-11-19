@@ -1,0 +1,77 @@
+{
+  "part": "beam",
+  "label": "beam_h8",
+  "size_mm": 8,
+  "nodes": 58176,
+  "elements": 36000,
+  "element_type": "C3D10",
+  "gmsh_version": "4.15.2",
+  "geometry_order": 1,
+  "meshing_method": "STEP end-face sweep with triangular base split into tetrahedra",
+  "minimum_det_jacobian": 2.718694594008396,
+  "FE_volume_mm3": 174565.6245793418,
+  "CAD_volume_mm3": 174809.22536199616,
+  "volume_relative_error": 0.001393523609236952,
+  "FE_centroid_mm": [
+    215.79999999997756,
+    -1.0009213208347466e-15,
+    -3.642239706393714e-15
+  ],
+  "load_patch_area_mm2": 99.99999999999999,
+  "source_step": "cad/beam_400mm.step",
+  "source_step_sha256": "8f476e9ee1b0b50fd539c61d5dbc157d0d2695c541a2656530a4db73f633bd70",
+  "design_sha256": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+  "gmsh_to_ccx_nodes": "1,2,3,4,5,6,7,8,10,9; swaps the last two midside nodes",
+  "surface_triangles": 40320,
+  "cases": [
+    {
+      "case": "central_gravity",
+      "solver_version": "2.23",
+      "returncode": 0,
+      "finished": true,
+      "elapsed_seconds": 48.54550887300138,
+      "max_nodal_vm_MPa": 0.8525031585413223,
+      "max_IP_vm_MPa": 0.7917040092701046,
+      "max_displacement_mm": 0.0035986900746462916,
+      "force_balance_relative": 5.991528858762724e-08,
+      "moment_balance_relative": 5.9170049022326934e-08,
+      "applied_force_N": [
+        0.0,
+        0.0,
+        -14.793331150386805
+      ],
+      "reaction_force_N": [
+        1.40849e-11,
+        2.319090000426141e-07,
+        14.793332005856675
+      ],
+      "RF_support_external_force_N": [
+        1.40849e-11,
+        2.319090000426141e-07,
+        14.761376464854017
+      ],
+      "reaction_extraction": "CalculiX RF is reaction plus applied nodal loads. Subtract consistent CLOAD and C3D10 GRAV vectors at constrained DOFs.",
+      "applied_moment_Nmm": [
+        1.498404359717931e-14,
+        3192.4008622533647,
+        0.0
+      ],
+      "reaction_moment_Nmm": [
+        -1.5860592796235196e-05,
+        -3192.4010489530724,
+        -2.393321417204497e-05
+      ],
+      "input_decompressed_sha256": "25582b34c936cf07e392b87a6a30f70d530d7ec3ca884be15538416069ce1478",
+      "common_include_decompressed_sha256": "a0cf7cc270f64164607a009dbfe19c913e624a6ee276499b802d271b6f6fe93c",
+      "frd_decompressed_sha256": "a8f45009a477bed22a9ca21c043ffc44e3d87d1c0613169bfdba6d53934221c1",
+      "dat_decompressed_sha256": "d214215196060f035f53f193a33fab27359fcfb9f940b095fa47abca97ce6c3b",
+      "integration_points": 144000
+    }
+  ],
+  "max_nodal_vm_MPa": 0.8525031585413223,
+  "max_IP_vm_MPa": 0.7917040092701046,
+  "max_displacement_mm": 0.0035986900746462916,
+  "section_mean_uz_mm": -0.0030571914102564103,
+  "section_node_count": 78,
+  "section_sampling": "abs(x-midspan)<=h/2, abs(z)<=2mm, abs(y)>=0.4*OD; retains local maximum separately"
+}

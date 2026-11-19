@@ -1,0 +1,304 @@
+{
+  "schema": "freecad-validation-v1",
+  "execution_complete": true,
+  "versions": {
+    "FreeCAD": "1.0.0",
+    "OpenCASCADE": "7.8.1"
+  },
+  "input_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "cad/geometry_manifest.json": "f18647eee463420d1f4063c83c52787863fa522f63e9fd1a3d3113f1fc34e02e",
+    "scripts/build_cad.py": "0b380d3bf09f49dbcf6e40fa12072424acae6a3fc60c17fb142a750cd40ff933",
+    "cad/bracket.FCStd": "8fbe9700b340f51d6a3830e34d991c60dcf469245107fed2ef50b6a444747827",
+    "cad/beam_400mm.FCStd": "f11e469f510a868148a576ba08d18c3e3403423bea01545792fb6977617029bc",
+    "cad/bracket_structural_core_only.FCStd": "4aed050025aa7a345774e27791ed3a9b7c7559037cde8c0bccca134c34bad297",
+    "cad/assembly.FCStd": "318bfb8c2abe9cd03781ed5989885cbd7c9c5e8c692cbc14235e4e112f9039ea",
+    "cad/fit_coupons.FCStd": "c5a5bee94f17c7514bbbeb0725640617f3474e2392872295ec052c26edbe195f"
+  },
+  "checks": [
+    {
+      "id": "freecad:source_manifest",
+      "requirements": [
+        "R11",
+        "R19"
+      ],
+      "status": "PASS",
+      "message": "Native geometry is bound to current design and generator.",
+      "observed": {
+        "design_sha256": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+        "generator_sha256": "0b380d3bf09f49dbcf6e40fa12072424acae6a3fc60c17fb142a750cd40ff933"
+      },
+      "criterion": "Matches geometry_manifest.json",
+      "next_action": "Regenerate CAD and all dependent checks in the current version if source inputs changed.",
+      "evidence": [
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "freecad:bracket.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "PrintableBracket": {
+          "volume_mm3": 120749.73533916454,
+          "area_mm2": 25685.565592615232,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 45.8,
+            "ymin": -30.0,
+            "ymax": 30.0,
+            "zmin": -75.0,
+            "zmax": 75.0
+          },
+          "center_mm": [
+            11.881746242533799,
+            1.3824815554151044e-15,
+            -8.110526222838387e-14
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/bracket.FCStd",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "freecad:beam_400mm.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "AluminumTube400": {
+          "volume_mm3": 174809.22536199627,
+          "area_mm2": 109372.23555562664,
+          "bbox_mm": {
+            "xmin": 15.8,
+            "xmax": 415.8,
+            "ymin": -19.05,
+            "ymax": 19.05,
+            "zmin": -19.05,
+            "zmax": 19.05
+          },
+          "center_mm": [
+            215.79999999999987,
+            -6.197192812413519e-16,
+            1.3058356268623485e-15
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/beam_400mm.FCStd",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "freecad:bracket_structural_core_only.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "StructuralCore": {
+          "volume_mm3": 120742.9433391851,
+          "area_mm2": 25678.927470218223,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 45.8,
+            "ymin": -30.0,
+            "ymax": 30.0,
+            "zmin": -75.0,
+            "zmax": 75.0
+          },
+          "center_mm": [
+            11.880718621572317,
+            2.318487967241586e-15,
+            -9.292076481483066e-14
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/bracket_structural_core_only.FCStd",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "freecad:assembly.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "FullAssembly": {
+          "volume_mm3": 433068.71585435624,
+          "area_mm2": 175016.7531394709,
+          "bbox_mm": {
+            "xmin": -40.0,
+            "xmax": 471.6,
+            "ymin": -30.0,
+            "ymax": 30.0,
+            "zmin": -75.0,
+            "zmax": 75.0
+          },
+          "center_mm": [
+            215.79999999999998,
+            -1.8301765628443027e-16,
+            -4.446578954181387e-14
+          ],
+          "solids": 15,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/assembly.FCStd",
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "freecad:fit_coupons.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "fit_coupon_31p65mm": {
+          "volume_mm3": 16872.03000000001,
+          "area_mm2": 5454.88516646487,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.647585975131618,
+            -4.4135103308646594e-16,
+            1.4352857725551637e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_31p75mm": {
+          "volume_mm3": 16947.389999999996,
+          "area_mm2": 5459.685166464869,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.6580464602514,
+            -1.7609080160381166e-16,
+            -1.1812757940922365e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_31p85mm": {
+          "volume_mm3": 17022.990000000005,
+          "area_mm2": 5464.4851664648695,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.668447199933734,
+            -2.905116810202142e-16,
+            -1.4444712444404866e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_31p95mm": {
+          "volume_mm3": 17098.82999999999,
+          "area_mm2": 5469.285166464869,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.678788548690176,
+            4.787141761135913e-16,
+            -2.5556355756064117e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_32p05mm": {
+          "volume_mm3": 17174.909999999996,
+          "area_mm2": 5474.08516646487,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.689070859759961,
+            1.820322806550044e-17,
+            -1.3181826232659268e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/fit_coupons.FCStd",
+        "cad/geometry_manifest.json"
+      ]
+    }
+  ],
+  "summary": {
+    "PASS": 6,
+    "FAIL": 0,
+    "BLOCKED": 0,
+    "ERROR": 0
+  }
+}

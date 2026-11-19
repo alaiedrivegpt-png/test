@@ -1,0 +1,9 @@
+{
+  "success": true,
+  "root": "/workspace/scratch/edcffa025ff3/beam_wall_mount_v1",
+  "core_volume_mm3": 120742.9433391851,
+  "bracket_volume_mm3": 120749.73533916454,
+  "beam_volume_mm3": 174809.22536199627,
+  "root_fillet_edges": 8,
+  "CAD_files": 20
+}

@@ -1,0 +1,56 @@
+PAGE 1
+Loads
+Bolt anchor FAZ II Plus
+Permissible loads of a single anchor 1) in normal concrete of strength class C20/25.
+For the design the complete current assessment ETA-19/0520 of 24.05.2023 has to be considered.
+Cracked concrete Non-cracked concrete
+Material/
+surface2)
+Effective 
+anchorage 
+depth
+Minimum
+member 
+thickness
+Instal-
+lation 
+torque
+Permissible tension (N perm) and shear loads (Vperm);
+minimum spacing (smin) and edge distances (c min)
+with reduced loads
+Permissible tension (N perm) and shear loads (Vperm);
+minimum spacing (smin) and edge distances (c min)
+with reduced loads
+hef hmin Tinst Nperm3) Vperm3) smin3) cmin3) Nperm3) Vperm3) smin3) cmin3)
+Type [mm] [mm] [Nm] [kN] [kN] [mm] [mm] [kN] [kN] [mm] [mm]
+FAZ II Plus 6 gvz 40 80 8 0.7 4.3 35 40 5.0 4.3 35 40
+gvz 80 120 8 0.7 4.3 35 40 5.0 4.3 35 40
+R 40 80 8 0.7 5.0 35 40 5.0 5.0 35 40
+R 80 120 8 0.7 5.0 35 40 5.0 5.0 35 40
+FAZ II Plus 8 gvz 35 80 20 2.6 8.5 35 40 4.8 9.3 40 40
+gvz 90 140 20 3.8 9.3 35 40 6.7 9.3 40 40
+R 35 80 20 2.6 8.5 35 40 4.8 10.1 40 40
+R 90 140 20 3.8 10.1 35 40 6.7 10.1 40 40
+FAZ II Plus 10 gvz 40 80 45 4.1 10.8 40 45 5.9 15.0 40 45
+gvz 100 150 45 6.2 15.0 40 45 9.5 15.0 40 45
+R 40 80 45 4.1 10.8 40 45 5.9 15.1 40 45
+R 100 150 45 6.2 15.1 40 45 9.5 15.1 40 45
+FAZ II Plus 12 gvz 50 100 60 5.8 18.0 50 55 8.3 21.1 50 55
+gvz 125 190 60 9.5 21.1 50 55 10.5 21.1 50 55
+R 50 100 60 5.8 18.0 50 55 8.3 24.1 50 55
+R 125 190 60 9.5 24.1 50 55 10.5 24.1 50 55
+FAZ II Plus 16 gvz 65 140 110 8.6 27. 5 65 65 12.3 39.1 65 65
+gvz 160 240 110 12.9 39.1 65 65 18.4 39.1 65 65
+R 65 140 110 8.6 27. 5 65 65 12.3 39.3 65 65
+R 160 240 110 12.9 40.6 65 65 18.4 40.6 65 65
+FAZ II Plus 20 gvz 100 160 200 16.4 47.4 95 85 23.4 47.4 95 95
+gvz 180 270 200 16.4 47.4 95 85 23.4 47.4 95 95
+R 100 160 200 16.4 52.5 95 85 23.4 61.7 95 95
+R 180 270 200 16.4 61.7 95 85 23.4 61.7 95 95
+FAZ II Plus 24 gvz 125 200 270 22.9 73.3 100 100 32.7 73.3 100 135
+R 125 200 270 22.9 73.3 100 100 32.7 90.3 100 135
+1) Design according to EN 1992-4:2018 (for static resp. quasi-static loads). The partial safety factors for material resistance as regulated in the ETA as well as a partial safety factor for load 
+actions of γL = 1.4 are considered. As a single anchor counts e.g. an anchor with a spacing s ≥ 3 x h ef and an edge distance c ≥ 1.5 x h ef. Accurate data see ETA.
+2) Further steel grades, versions and technical data see ETA, e.g. for dry internal conditions, galvanised steel (gvz); for damp interiors and for outdoor use, stainless steel (R).
+3) In the case of combinations of tension and shear loads, bending moments with reduced or minimum spacing and edge distances (anchor groups), the design must be carried out in accor -
+dance with the provisions of the complete ETA and the provisions of the EN 1992-4:2018. We recommend using our anchor design software C-FIX.

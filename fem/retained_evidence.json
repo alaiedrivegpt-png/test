@@ -1,0 +1,329 @@
+{
+  "schema": "solver-field-retention-v1",
+  "policy": "Complete raw FRD/DAT fields retained for finest bracket and beam. Coarse raw fields were genuinely solved and parsed, then omitted as regenerable output to keep the self-contained download manageable. All coarse input decks, meshes, successful solver logs, per-case summaries, mesh quality, reactions, envelope metrics and exact omitted-file hashes remain. --force regenerates all levels.",
+  "audit_scope": "Full-field reparse for finest meshes; hash-protected cached coarse metrics and executed solver logs for refinement history.",
+  "omitted_regenerable_fields": [
+    {
+      "path": "fem/bracket_h6/fx.frd.xz",
+      "compressed_sha256": "0833a6b91fddb2d3ed1427d378e233d31d96a38beb1077edd945f59085d5c8ac",
+      "compressed_bytes": 1867416,
+      "uncompressed_sha256": "35dbd428237177a7ec97f9ad0e7f274ea1118fe2f21a7c0bf142cfd77c500d88",
+      "level": "bracket_h6",
+      "case": "fx"
+    },
+    {
+      "path": "fem/bracket_h6/fx.dat.xz",
+      "compressed_sha256": "02b09b4fefb0c5f03f7651a2a8706b7629d3147f5d6c09800ffe755c9170448c",
+      "compressed_bytes": 1719256,
+      "uncompressed_sha256": "4b2e4be3ab315f1162769a4bc48a6ac3b2f77e5a21f27af35e5889c1fe053709",
+      "level": "bracket_h6",
+      "case": "fx"
+    },
+    {
+      "path": "fem/bracket_h6/fy.frd.xz",
+      "compressed_sha256": "99eb195a6af0dac54b60158c2e7ada440985d2f41da893ce2c330c49dd5d84b7",
+      "compressed_bytes": 1867972,
+      "uncompressed_sha256": "8e71b22815560b72880b58bc51d77feebbd42d25813b23155b0d8e40727950f7",
+      "level": "bracket_h6",
+      "case": "fy"
+    },
+    {
+      "path": "fem/bracket_h6/fy.dat.xz",
+      "compressed_sha256": "6f1f7c03dbb127507bd309a3e2f16a047bbacb7a08bd0898528d578ac1396ace",
+      "compressed_bytes": 1701324,
+      "uncompressed_sha256": "070f1ffbf4208df467b86c2e789dea53777ab82f0c854d78f0712161599794d6",
+      "level": "bracket_h6",
+      "case": "fy"
+    },
+    {
+      "path": "fem/bracket_h6/fz.frd.xz",
+      "compressed_sha256": "b8e45b43085d278c92bc8d7b30c556fb5eb33c002037b1e341251f88b8b06dc7",
+      "compressed_bytes": 1865364,
+      "uncompressed_sha256": "f64db8550258c68cad3a132972d98130e1d82530a7540270e57bf48f0d14bc19",
+      "level": "bracket_h6",
+      "case": "fz"
+    },
+    {
+      "path": "fem/bracket_h6/fz.dat.xz",
+      "compressed_sha256": "e9c646fdd35cc5327b34329a00358c0c6ff2e9a8fee103951b9fa51531232afd",
+      "compressed_bytes": 1715800,
+      "uncompressed_sha256": "c6ca2f39261bd68daea1a21689d3c9f1b720d18400c4bae695211e2b71cdf9a9",
+      "level": "bracket_h6",
+      "case": "fz"
+    },
+    {
+      "path": "fem/bracket_h6/tx.frd.xz",
+      "compressed_sha256": "93c5079b0d2cd6e8461d2567d47f0c2bfcda6b6cc6fd4684e3ac60c410c34469",
+      "compressed_bytes": 1861776,
+      "uncompressed_sha256": "32e7d067d998c0f982b390545a76e7a08eb324a3efaf6819b27cee4ca8d8e3c2",
+      "level": "bracket_h6",
+      "case": "tx"
+    },
+    {
+      "path": "fem/bracket_h6/tx.dat.xz",
+      "compressed_sha256": "fbda144c1c31c1e4473fd93f9f055f1b4ebc977533988d8c66302fc4ff4d8fa0",
+      "compressed_bytes": 1706388,
+      "uncompressed_sha256": "10b2ad72ef697a61f1ddd3dc6d665d44a2df2df53451c09f35bca1237332a152",
+      "level": "bracket_h6",
+      "case": "tx"
+    },
+    {
+      "path": "fem/bracket_h6/my.frd.xz",
+      "compressed_sha256": "a9e7f30b0e81a1c2ab735053efca4f6c8765c38ff2bccf7be355b97fa256b9b7",
+      "compressed_bytes": 1870932,
+      "uncompressed_sha256": "48d65995152ab9ee93b2366dcec6073beacb7ba2a3b2fade0dfa3c6a64d1051f",
+      "level": "bracket_h6",
+      "case": "my"
+    },
+    {
+      "path": "fem/bracket_h6/my.dat.xz",
+      "compressed_sha256": "5e750d103bc431ba3fe4c7ba6a31e22243a78d7af606dd28463dc3e5f455be5b",
+      "compressed_bytes": 1703064,
+      "uncompressed_sha256": "4d65ff8b7e0b6f7b40cfd6a7a845abf4a9b9600807de22091d193c73c1ae2532",
+      "level": "bracket_h6",
+      "case": "my"
+    },
+    {
+      "path": "fem/bracket_h6/mz.frd.xz",
+      "compressed_sha256": "09da4231ac2edb6a958956d30e3d76d165c17e18314bc5c7905d546facc9d088",
+      "compressed_bytes": 1873848,
+      "uncompressed_sha256": "954319604049dee1093f889b55306217a40732ad11269adafcf7af7bcb3f60a6",
+      "level": "bracket_h6",
+      "case": "mz"
+    },
+    {
+      "path": "fem/bracket_h6/mz.dat.xz",
+      "compressed_sha256": "71a0e6391733283301b5d34fe65ae33a21c3e103257dfd57bc6da6f83f23d961",
+      "compressed_bytes": 1702768,
+      "uncompressed_sha256": "e43e3e6d541ec35b354f78c252a5cfd68d19d1fc4154006fbebf038a9be50319",
+      "level": "bracket_h6",
+      "case": "mz"
+    },
+    {
+      "path": "fem/bracket_h4p5/fx.frd.xz",
+      "compressed_sha256": "a10b406067a10addd9773363897eb1f30a06bd7e2a02f9382e6bb6c552fffa80",
+      "compressed_bytes": 2776360,
+      "uncompressed_sha256": "a54072acfe594a1db1bbd9136eae03cb9013b70236ead93445d6c615bccc2a7b",
+      "level": "bracket_h4p5",
+      "case": "fx"
+    },
+    {
+      "path": "fem/bracket_h4p5/fx.dat.xz",
+      "compressed_sha256": "633526073514cf0f13fe685e12bd538d5d74a4635d45e29a0ddf6399d0e7d5e6",
+      "compressed_bytes": 2588508,
+      "uncompressed_sha256": "4061d13478791711debe3db1bbf07b5b2bf523ab3dd9f52b868e09e2c280b4eb",
+      "level": "bracket_h4p5",
+      "case": "fx"
+    },
+    {
+      "path": "fem/bracket_h4p5/fy.frd.xz",
+      "compressed_sha256": "efb0a896db39c12d5961188dca810fa70066293d893fab51e436609d0deb9563",
+      "compressed_bytes": 2778488,
+      "uncompressed_sha256": "b4ae2780ceb8d7b6ba8cb2721503825223fe4a9bae48017b48b2f4f77c1da944",
+      "level": "bracket_h4p5",
+      "case": "fy"
+    },
+    {
+      "path": "fem/bracket_h4p5/fy.dat.xz",
+      "compressed_sha256": "3672ec8134f9eda69612664f7633e141df9679087008bf1c69e529bd0e5371c0",
+      "compressed_bytes": 2570132,
+      "uncompressed_sha256": "dae9892360ca0d8ff9cb9eabcc1dbce813ed2379d23aaaa7a4aa84cb30dc766b",
+      "level": "bracket_h4p5",
+      "case": "fy"
+    },
+    {
+      "path": "fem/bracket_h4p5/fz.frd.xz",
+      "compressed_sha256": "8dc1fd36c1893483ee8feb3f72da15c75ff5c8619a75964e30b0260431596e24",
+      "compressed_bytes": 2774340,
+      "uncompressed_sha256": "c05933b8792d2fbdb0563abc332be7bdd72ebc02c227c70a467b7145dcbcf3b2",
+      "level": "bracket_h4p5",
+      "case": "fz"
+    },
+    {
+      "path": "fem/bracket_h4p5/fz.dat.xz",
+      "compressed_sha256": "f651a9f7a72553c38fd57bfc1794d52c1be40f9df9555beeafece51c15572da1",
+      "compressed_bytes": 2580040,
+      "uncompressed_sha256": "8c703f4aced4054887e31f5ffd65c1d8df534d3847b046dc781bba19324a9647",
+      "level": "bracket_h4p5",
+      "case": "fz"
+    },
+    {
+      "path": "fem/bracket_h4p5/tx.frd.xz",
+      "compressed_sha256": "953258033598925b910409848b498187102c1c5e9ced0d0229d725d1009adb4c",
+      "compressed_bytes": 2767596,
+      "uncompressed_sha256": "c797e9cedfb6aae95f62998e62ae4dcce686935ff422e55584f7ff2a76525126",
+      "level": "bracket_h4p5",
+      "case": "tx"
+    },
+    {
+      "path": "fem/bracket_h4p5/tx.dat.xz",
+      "compressed_sha256": "6c6c68b2546ff0669b480cfd02c33232bbc64285917457cdf558b8568079845e",
+      "compressed_bytes": 2562296,
+      "uncompressed_sha256": "198e11dad9cb30bee6eac407d983d6193f7a18b9aa15d8b9c17b857eaedb2dc7",
+      "level": "bracket_h4p5",
+      "case": "tx"
+    },
+    {
+      "path": "fem/bracket_h4p5/my.frd.xz",
+      "compressed_sha256": "bb7c00263934969724b28514288f12608874e44594bb44d8f4c90242de899647",
+      "compressed_bytes": 2780028,
+      "uncompressed_sha256": "976bc5cc6649417880e74e1c35d09136de8280238883d6949a6f45917507ab76",
+      "level": "bracket_h4p5",
+      "case": "my"
+    },
+    {
+      "path": "fem/bracket_h4p5/my.dat.xz",
+      "compressed_sha256": "806af5c6b722fdf46e699dd4830c7c12eb516080814cf6186483b6e0e443e8ce",
+      "compressed_bytes": 2564832,
+      "uncompressed_sha256": "130ee3f04159ad00e95cfeec32f80ad214e95fb66db15e39189eda54fd283ebb",
+      "level": "bracket_h4p5",
+      "case": "my"
+    },
+    {
+      "path": "fem/bracket_h4p5/mz.frd.xz",
+      "compressed_sha256": "a9aca1960c5e1bb20e958bac565f699e8623b03fcbe8df146781b5a18d2f320a",
+      "compressed_bytes": 2782600,
+      "uncompressed_sha256": "2f637ba83c50fc013ecf6eb8149c29447bb8c76aec6bfab595c439c2ac88af7c",
+      "level": "bracket_h4p5",
+      "case": "mz"
+    },
+    {
+      "path": "fem/bracket_h4p5/mz.dat.xz",
+      "compressed_sha256": "d5aa46ef7f3726f4f57432d28f46577d889e47e26d051f313b61362447646a22",
+      "compressed_bytes": 2560592,
+      "uncompressed_sha256": "bef0a6046dd85e4164741a11d8fc5d6c1217f71ee4dae75049f7da2c2469e53c",
+      "level": "bracket_h4p5",
+      "case": "mz"
+    },
+    {
+      "path": "fem/beam_h8/central_gravity.frd.xz",
+      "compressed_sha256": "f1d1321483d77483df88f06dd2aefd309bd1d04ef91b8b0ffb25170bb814eff8",
+      "compressed_bytes": 2847872,
+      "uncompressed_sha256": "a8f45009a477bed22a9ca21c043ffc44e3d87d1c0613169bfdba6d53934221c1",
+      "level": "beam_h8",
+      "case": "central_gravity"
+    },
+    {
+      "path": "fem/beam_h8/central_gravity.dat.xz",
+      "compressed_sha256": "28f0a0fd412fcbdd1cb34659025a7aad2f9e21a62f7f7545c0d0e3696f6c0590",
+      "compressed_bytes": 3451328,
+      "uncompressed_sha256": "d214215196060f035f53f193a33fab27359fcfb9f940b095fa47abca97ce6c3b",
+      "level": "beam_h8",
+      "case": "central_gravity"
+    }
+  ],
+  "retained_full_fields": [
+    {
+      "path": "fem/bracket_h3p5/fx.frd.xz",
+      "compressed_sha256": "6c1d419c4de3ac6f5292f2fc292da5c78753286db48179a74f00c15af56a755f",
+      "compressed_bytes": 4102448,
+      "uncompressed_sha256": "337052e7565cdd82bc2d5e2fe9bb3e0fafba061d9312646c3c74be262bdecfc2",
+      "level": "bracket_h3p5",
+      "case": "fx"
+    },
+    {
+      "path": "fem/bracket_h3p5/fx.dat.xz",
+      "compressed_sha256": "5bbc924c0fe23e4eba449b87e7076fb1c1ea25282a60e95b326afa9957a6bcb1",
+      "compressed_bytes": 3839156,
+      "uncompressed_sha256": "b3e38b6c9f277caf00cbaf893235b37620a6923380671cea3462668f0bd8004e",
+      "level": "bracket_h3p5",
+      "case": "fx"
+    },
+    {
+      "path": "fem/bracket_h3p5/fy.frd.xz",
+      "compressed_sha256": "77e19f95bbe4b9fc54340ac8eae5b5201638e3ce0b07262041ebc32ac2bbd13d",
+      "compressed_bytes": 4115256,
+      "uncompressed_sha256": "567a028b01e9eb5dab930a60070c15adf0ee9a8092c6e0eb009aee37b72d02df",
+      "level": "bracket_h3p5",
+      "case": "fy"
+    },
+    {
+      "path": "fem/bracket_h3p5/fy.dat.xz",
+      "compressed_sha256": "74ddfbeddd8089ef8f424c666ce959b271a8ff50ef6f818a7a3b41674c1a2c52",
+      "compressed_bytes": 3819540,
+      "uncompressed_sha256": "10adac4ac3ea7b001db5408d1d1cf896ec1f24db8181a78185393a343e5cfa74",
+      "level": "bracket_h3p5",
+      "case": "fy"
+    },
+    {
+      "path": "fem/bracket_h3p5/fz.frd.xz",
+      "compressed_sha256": "0a5a82cd2f55378e76a495641edc08c08c1aba0a6778533bdc390f7d6614bedc",
+      "compressed_bytes": 4106316,
+      "uncompressed_sha256": "5086bfb2b7e9d20abf864875d50c9fd015e59d03ce7fb8145b9e700f43cdac2f",
+      "level": "bracket_h3p5",
+      "case": "fz"
+    },
+    {
+      "path": "fem/bracket_h3p5/fz.dat.xz",
+      "compressed_sha256": "f3f35454cebf8f24ce6b49e653bd96df3a3039e6cc9de56616e4a86a00f71dc0",
+      "compressed_bytes": 3835660,
+      "uncompressed_sha256": "aa0b3e9e119473e972d956c9c2ea944c3303464a30fff21a2e035976b7fd5ce0",
+      "level": "bracket_h3p5",
+      "case": "fz"
+    },
+    {
+      "path": "fem/bracket_h3p5/tx.frd.xz",
+      "compressed_sha256": "f86417ccb1a597ee507fa37a01e42447bbe169f0a0379a9b04fa0083a14b2ec0",
+      "compressed_bytes": 4103624,
+      "uncompressed_sha256": "501c97e54715fcc97e4fc4f372776bc383f47e5a90da0005c0d55b7add247761",
+      "level": "bracket_h3p5",
+      "case": "tx"
+    },
+    {
+      "path": "fem/bracket_h3p5/tx.dat.xz",
+      "compressed_sha256": "513fd86a23c86a5462f5114fd73c0ce1a98f05ffc26289ed8854d63d41feca99",
+      "compressed_bytes": 3810268,
+      "uncompressed_sha256": "caa7840e00bfeca2f9633ab22f129d5ab47bb4af741cdb0b9e1173e03d90e2ec",
+      "level": "bracket_h3p5",
+      "case": "tx"
+    },
+    {
+      "path": "fem/bracket_h3p5/my.frd.xz",
+      "compressed_sha256": "90663097ae89b7eee262fdb9ab2c5ee4916de3dd3384431d0e01aab62c825d62",
+      "compressed_bytes": 4116444,
+      "uncompressed_sha256": "02f32605dd24f21098827737e1d1a7d4a9c0f72076a18521acec3bf732886842",
+      "level": "bracket_h3p5",
+      "case": "my"
+    },
+    {
+      "path": "fem/bracket_h3p5/my.dat.xz",
+      "compressed_sha256": "1aab416b53bb4bd7648a3fb01a56828da8f0148186d690b1913997948204c721",
+      "compressed_bytes": 3823548,
+      "uncompressed_sha256": "ee445f6bffcdb6d7b5a4c0f042a5053631db1965e4ae7a1db7afe17d5b6dfc62",
+      "level": "bracket_h3p5",
+      "case": "my"
+    },
+    {
+      "path": "fem/bracket_h3p5/mz.frd.xz",
+      "compressed_sha256": "ae552cdff2985bc44f6db7d3c790b748ff554769726139c94084a2965a2e7869",
+      "compressed_bytes": 4132388,
+      "uncompressed_sha256": "aad589bb0fdb82e1cd48b4c8668a997ef4e28b7b9dfe1965a746cd7e8bad4ae7",
+      "level": "bracket_h3p5",
+      "case": "mz"
+    },
+    {
+      "path": "fem/bracket_h3p5/mz.dat.xz",
+      "compressed_sha256": "665a846a1643d015847b1e1dad745d2b815b527987c079a9a909d6d70cc8f604",
+      "compressed_bytes": 3830904,
+      "uncompressed_sha256": "54b062b182e6e16a12792283e10553109687250b77cd374f7805bcdbf7a6c875",
+      "level": "bracket_h3p5",
+      "case": "mz"
+    },
+    {
+      "path": "fem/beam_h5p5/central_gravity.frd.xz",
+      "compressed_sha256": "6967f89b2fba5a65ffee25f9400f7e3273ad45ec791bea505568a06d621089e7",
+      "compressed_bytes": 5811248,
+      "uncompressed_sha256": "db2d2826d2de96849702478fa0cc1cd66dddd2cfe145e08f16f43be979c556bb",
+      "level": "beam_h5p5",
+      "case": "central_gravity"
+    },
+    {
+      "path": "fem/beam_h5p5/central_gravity.dat.xz",
+      "compressed_sha256": "6e1877d0194a2b17919beb855d786817a94b088e8fa3ae57ca8de4a7b3d62577",
+      "compressed_bytes": 7142252,
+      "uncompressed_sha256": "3eebf51f59def016a2b66da7bc498133d52e0fbf8a5969f003a5b3ee005ca484",
+      "level": "beam_h5p5",
+      "case": "central_gravity"
+    }
+  ]
+}

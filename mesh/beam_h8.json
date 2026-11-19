@@ -1,0 +1,26 @@
+{
+  "part": "beam",
+  "label": "beam_h8",
+  "size_mm": 8,
+  "nodes": 58176,
+  "elements": 36000,
+  "element_type": "C3D10",
+  "gmsh_version": "4.15.2",
+  "geometry_order": 1,
+  "meshing_method": "STEP end-face sweep with triangular base split into tetrahedra",
+  "minimum_det_jacobian": 2.718694594008396,
+  "FE_volume_mm3": 174565.6245793418,
+  "CAD_volume_mm3": 174809.22536199616,
+  "volume_relative_error": 0.001393523609236952,
+  "FE_centroid_mm": [
+    215.79999999997756,
+    -1.0009213208347466e-15,
+    -3.642239706393714e-15
+  ],
+  "load_patch_area_mm2": 99.99999999999999,
+  "source_step": "cad/beam_400mm.step",
+  "source_step_sha256": "8f476e9ee1b0b50fd539c61d5dbc157d0d2695c541a2656530a4db73f633bd70",
+  "design_sha256": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+  "gmsh_to_ccx_nodes": "1,2,3,4,5,6,7,8,10,9; swaps the last two midside nodes",
+  "surface_triangles": 40320
+}

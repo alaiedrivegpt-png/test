@@ -1,0 +1,53 @@
+{
+  "schema": "bom-summary-v1",
+  "price_date": "2026-11-17",
+  "price_status": "Historical quotes, not a current procurement offer",
+  "bracket_volume_each_mm3": 120749.73533916454,
+  "two_brackets_mass_g": 306.70432776147794,
+  "five_coupons_mass_g": 108.0975105,
+  "cash_purchases_by_currency": {
+    "USD": 37.599999999999994,
+    "EUR": 31.5,
+    "GBP": 102.02
+  },
+  "base_consumed_by_currency": {
+    "USD": 16.288283,
+    "EUR": 2.52,
+    "GBP": 17.599999999999998
+  },
+  "with_all_coupons_consumed_by_currency": {
+    "USD": 18.881542276895,
+    "EUR": 2.52,
+    "GBP": 17.599999999999998
+  },
+  "input_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "cad/geometry_manifest.json": "f18647eee463420d1f4063c83c52787863fa522f63e9fd1a3d3113f1fc34e02e",
+    "evidence/v0_report_export.docx": "f92e5fd83ce542552d690454ad9fba1b1f0c9d718263aa92f2a24f3dae4c1cd7"
+  },
+  "bom_sha256": "b466f345f85c7ea9bd2cca45c8095cd728e7fb4dee1523943ac7020305ae75a6",
+  "checks": [
+    {
+      "id": "bom:complete_catalogue_lines",
+      "requirements": [
+        "R09"
+      ],
+      "status": "PASS",
+      "observed": 5,
+      "criterion": "Five purchased component lines with catalogue IDs, prices, quantities, external links, source files and notes",
+      "message": "Current geometry volumes determine consumed filament; historical quote date and current-procurement block are explicit.",
+      "next_action": "Obtain current quotes and delivery confirmation before purchasing.",
+      "evidence": [
+        "bom.csv",
+        "results/bom_summary.json",
+        "evidence/v0_report_export.docx"
+      ]
+    }
+  ],
+  "notes": [
+    "Currencies are not converted or added together.",
+    "Minimum order quantities are distinct from quantities installed.",
+    "Printed allocations are not counted twice.",
+    "Historical stock labels were not reused as current availability claims."
+  ]
+}

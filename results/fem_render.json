@@ -1,0 +1,57 @@
+{
+  "schema": "fem-figure-postprocessing-v1",
+  "execution_complete": true,
+  "actual_solver_runs": 0,
+  "postprocessing_only": true,
+  "input_hashes": {
+    "scripts/render_fem.py": "2c0f2de315d11c0bf11a5928c25cefcaf9834065354726c455218a2d2523e4ae",
+    "results/stress_surface_data.json.xz": "421e9c42446726232e0b2264a3fea27c2760573e987687d4cc2165d1119c366e",
+    "fem/beam_h5p5/summary.json": "63e477dc71d41fbfda5fe72b30e08bdc71b0287285795c9f1d536da73c41217b"
+  },
+  "artifact_hashes": {
+    "results/beam_stress.png": "33622cfb644cc88ec0c4fd6041b586e7387e01062b329c7b7de44d30cbc25ad1"
+  },
+  "checks": [
+    {
+      "id": "fem_render:solved_3d_figure",
+      "requirements": [
+        "R10"
+      ],
+      "status": "PASS",
+      "message": "Centered beam figure projects the retained actual finest-mesh 3D surface and nodal stress values.",
+      "observed": {
+        "surface_nodes": 37608,
+        "surface_triangles": 75216,
+        "raw_peak_MPa": 0.925637531034323,
+        "image_pixels": [
+          2520,
+          792
+        ]
+      },
+      "criterion": "Actual solved data; readable 3D scientific figure; unchanged numerical results",
+      "next_action": "Retain the numerical evidence and complete physical qualification before release.",
+      "evidence": [
+        "results/beam_stress.png",
+        "results/stress_surface_data.json.xz",
+        "results/fem_summary.json"
+      ]
+    },
+    {
+      "id": "fem_render:numerics_preserved",
+      "requirements": [
+        "R10",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "All executed numerical levels, checks and solver-run counts remain byte-equivalent under canonical JSON hashing.",
+      "observed": "6cdb989885a3780bb6413e6b0b2456fea5b4aaf6df4f88cad5d0ccf43085c4d0",
+      "criterion": "Identical numerical digest before and after rendering",
+      "next_action": "Use --force for a changed physical model; this stage only renders retained data.",
+      "evidence": [
+        "results/fem_summary.json",
+        "results/fem_render.json"
+      ]
+    }
+  ],
+  "numerical_digest": "6cdb989885a3780bb6413e6b0b2456fea5b4aaf6df4f88cad5d0ccf43085c4d0"
+}

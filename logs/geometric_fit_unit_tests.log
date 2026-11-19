@@ -1,0 +1,14 @@
+test_closed_step_solid_uses_shell_closure_not_cached_solid_flag (test_geometric_fit.ActualKernelFitTests.test_closed_step_solid_uses_shell_closure_not_cached_solid_flag) ... ok
+test_intended_ribs_are_not_misclassified_as_core_collision (test_geometric_fit.ActualKernelFitTests.test_intended_ribs_are_not_misclassified_as_core_collision) ... ok
+test_lateral_misalignment_is_detected (test_geometric_fit.ActualKernelFitTests.test_lateral_misalignment_is_detected) ... ok
+test_misplaced_washer_is_detected_even_without_plate_collision (test_geometric_fit.ActualKernelFitTests.test_misplaced_washer_is_detected_even_without_plate_collision) ... ok
+test_missing_delivered_step_causes_error_and_saved_feedback (test_geometric_fit.ActualKernelFitTests.test_missing_delivered_step_causes_error_and_saved_feedback) ... ok
+test_nominal_core_has_real_clearance (test_geometric_fit.ActualKernelFitTests.test_nominal_core_has_real_clearance) ... ok
+test_oversized_core_is_detected (test_geometric_fit.ActualKernelFitTests.test_oversized_core_is_detected) ... ok
+test_surface_cannot_pass_as_closed_solid (test_geometric_fit.ActualKernelFitTests.test_surface_cannot_pass_as_closed_solid) ... ok
+test_wrong_right_instance_is_detected (test_geometric_fit.ActualKernelFitTests.test_wrong_right_instance_is_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 5.111s
+
+OK

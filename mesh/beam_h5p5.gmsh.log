@@ -1,0 +1,218 @@
+Info:  - Label 'Shapes/Open CASCADE STEP translator 7.8 1' (3D)
+Info: Meshing 1D...
+Info: Meshing curve 49 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 50 (Circle)
+Info: Meshing curve 51 (Line)
+Info: Meshing curve 52 (Circle)
+Info: Meshing curve 53 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 54 (Circle)
+Info: Meshing curve 55 (Line)
+Info: Meshing curve 56 (Circle)
+Info: Meshing curve 57 (Circle)
+Info: Meshing curve 58 (Line)
+Progress: Meshing 1D...
+Info: Meshing curve 59 (Circle)
+Info: Meshing curve 60 (Line)
+Info: Meshing curve 61 (Circle)
+Info: Meshing curve 62 (Line)
+Info: Meshing curve 63 (Circle)
+Progress: Meshing 1D...
+Info: Meshing curve 64 (Line)
+Info: Meshing curve 65 (Extruded)
+Info: Meshing curve 66 (Extruded)
+Info: Meshing curve 67 (Extruded)
+Info: Meshing curve 68 (Extruded)
+Progress: Meshing 1D...
+Info: Meshing curve 69 (Extruded)
+Info: Meshing curve 70 (Extruded)
+Info: Meshing curve 71 (Extruded)
+Info: Meshing curve 72 (Extruded)
+Progress: Meshing 1D...
+Info: Meshing curve 73 (Extruded)
+Info: Meshing curve 74 (Extruded)
+Info: Meshing curve 75 (Extruded)
+Info: Meshing curve 76 (Extruded)
+Info: Meshing curve 77 (Extruded)
+Progress: Meshing 1D...
+Info: Meshing curve 78 (Extruded)
+Info: Meshing curve 79 (Extruded)
+Info: Meshing curve 80 (Extruded)
+Info: Meshing curve 81 (Extruded)
+Info: Meshing curve 82 (Extruded)
+Progress: Meshing 1D...
+Info: Meshing curve 83 (Extruded)
+Info: Meshing curve 84 (Extruded)
+Info: Meshing curve 85 (Extruded)
+Info: Meshing curve 86 (Extruded)
+Info: Meshing curve 87 (Extruded)
+Progress: Meshing 1D...
+Info: Meshing curve 88 (Extruded)
+Info: Meshing curve 89 (Extruded)
+Info: Meshing curve 90 (Extruded)
+Info: Meshing curve 91 (Extruded)
+Info: Meshing curve 92 (Extruded)
+Progress: Meshing 1D...
+Info: Meshing curve 93 (Extruded)
+Info: Meshing curve 94 (Extruded)
+Info: Meshing curve 95 (Extruded)
+Info: Meshing curve 96 (Extruded)
+Progress: Meshing 1D...
+Info: Done meshing 1D (Wall 0.000841358s, CPU 0.000833s)
+Info: Meshing 2D...
+Info: Meshing surface 19 (Plane, Frontal-Delaunay)
+Progress: Meshing 2D...
+Info: Meshing surface 20 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 21 (Extruded)
+Info: Meshing surface 22 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 23 (Extruded)
+Info: Meshing surface 24 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 25 (Extruded)
+Info: Meshing surface 26 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 27 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 28 (Extruded)
+Info: Meshing surface 29 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 30 (Extruded)
+Info: Meshing surface 31 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 32 (Extruded)
+Info: Meshing surface 33 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 34 (Extruded)
+Info: Meshing surface 35 (Extruded)
+Progress: Meshing 2D...
+Info: Meshing surface 36 (Extruded)
+Progress: Meshing 2D...
+Info: Done meshing 2D (Wall 0.0174718s, CPU 0.017469s)
+Info: Meshing 3D...
+Progress: Meshing 3D...
+Info: Meshing volume 1 (Extruded)
+Info: Subdividing extruded mesh
+Info: Swapping 511
+Info: Swapping 0
+Info: Remeshing surface 21
+Info: Meshing surface 21 (Extruded)
+Info: Remeshing surface 29
+Info: Meshing surface 29 (Extruded)
+Info: Remeshing surface 34
+Info: Meshing surface 34 (Extruded)
+Info: Remeshing surface 30
+Info: Meshing surface 30 (Extruded)
+Info: Remeshing surface 27
+Info: Meshing surface 27 (Extruded)
+Info: Remeshing surface 31
+Info: Meshing surface 31 (Extruded)
+Info: Remeshing surface 20
+Info: Meshing surface 20 (Extruded)
+Info: Remeshing surface 23
+Info: Meshing surface 23 (Extruded)
+Info: Remeshing surface 32
+Info: Meshing surface 32 (Extruded)
+Info: Remeshing surface 33
+Info: Meshing surface 33 (Extruded)
+Info: Remeshing surface 35
+Info: Meshing surface 35 (Extruded)
+Info: Remeshing surface 26
+Info: Meshing surface 26 (Extruded)
+Info: Remeshing surface 25
+Info: Meshing surface 25 (Extruded)
+Info: Remeshing surface 22
+Info: Meshing surface 22 (Extruded)
+Info: Remeshing surface 28
+Info: Meshing surface 28 (Extruded)
+Info: Remeshing surface 24
+Info: Meshing surface 24 (Extruded)
+Progress: Meshing 3D...
+Info: Done meshing 3D (Wall 0.313929s, CPU 0.313838s)
+Info: Optimizing mesh...
+Info: Done optimizing mesh (Wall 0.0011322s, CPU 0.001131s)
+Info: 17538 nodes 96902 elements
+Info: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 49 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 50 order 2
+Info: Meshing curve 51 order 2
+Info: Meshing curve 52 order 2
+Info: Meshing curve 53 order 2
+Info: Meshing curve 54 order 2
+Info: Meshing curve 55 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 56 order 2
+Info: Meshing curve 57 order 2
+Info: Meshing curve 58 order 2
+Info: Meshing curve 59 order 2
+Info: Meshing curve 60 order 2
+Info: Meshing curve 61 order 2
+Info: Meshing curve 62 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 63 order 2
+Info: Meshing curve 64 order 2
+Info: Meshing curve 65 order 2
+Info: Meshing curve 66 order 2
+Info: Meshing curve 67 order 2
+Info: Meshing curve 68 order 2
+Info: Meshing curve 69 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 70 order 2
+Info: Meshing curve 71 order 2
+Info: Meshing curve 72 order 2
+Info: Meshing curve 73 order 2
+Info: Meshing curve 74 order 2
+Info: Meshing curve 75 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 76 order 2
+Info: Meshing curve 77 order 2
+Info: Meshing curve 78 order 2
+Info: Meshing curve 79 order 2
+Info: Meshing curve 80 order 2
+Info: Meshing curve 81 order 2
+Info: Meshing curve 82 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 83 order 2
+Info: Meshing curve 84 order 2
+Info: Meshing curve 85 order 2
+Info: Meshing curve 86 order 2
+Info: Meshing curve 87 order 2
+Info: Meshing curve 88 order 2
+Info: Meshing curve 89 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 90 order 2
+Info: Meshing curve 91 order 2
+Info: Meshing curve 92 order 2
+Info: Meshing curve 93 order 2
+Info: Meshing curve 94 order 2
+Info: Meshing curve 95 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing curve 96 order 2
+Info: Meshing surface 19 order 2
+Info: Meshing surface 20 order 2
+Info: Meshing surface 21 order 2
+Info: Meshing surface 22 order 2
+Info: Meshing surface 23 order 2
+Info: Meshing surface 24 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing surface 25 order 2
+Info: Meshing surface 26 order 2
+Info: Meshing surface 27 order 2
+Info: Meshing surface 28 order 2
+Info: Meshing surface 29 order 2
+Info: Meshing surface 30 order 2
+Info: Meshing surface 31 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Meshing surface 32 order 2
+Info: Meshing surface 33 order 2
+Info: Meshing surface 34 order 2
+Info: Meshing surface 35 order 2
+Info: Meshing surface 36 order 2
+Info: Meshing volume 1 order 2
+Progress: Meshing order 2 (curvilinear off)...
+Info: Done meshing order 2 (Wall 0.263341s, CPU 0.263322s)
+Info: Writing '/workspace/scratch/edcffa025ff3/beam_wall_mount_v1/mesh/beam_h5p5.msh'...
+Info: Done writing '/workspace/scratch/edcffa025ff3/beam_wall_mount_v1/mesh/beam_h5p5.msh'

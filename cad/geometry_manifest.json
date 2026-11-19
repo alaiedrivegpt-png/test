@@ -1,0 +1,419 @@
+{
+  "schema": "freecad-geometry-v1",
+  "reconstructed": true,
+  "generator": "scripts/build_cad.py",
+  "design_sha256": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+  "generator_sha256": "0b380d3bf09f49dbcf6e40fa12072424acae6a3fc60c17fb142a750cd40ff933",
+  "FreeCAD_version": "1.0.0",
+  "OCC_version": "7.8.1",
+  "coordinates": "Global x is beam axis. Left wall x=0, beam STEP x=15.8..415.8, right wall x=431.6; right bracket is 180 degree rotation about z then translation.",
+  "geometry": {
+    "beam_400mm": {
+      "volume_mm3": 174809.22536199627,
+      "area_mm2": 109372.23555562664,
+      "bbox_mm": {
+        "xmin": 15.8,
+        "xmax": 415.8,
+        "ymin": -19.05,
+        "ymax": 19.05,
+        "zmin": -19.05,
+        "zmax": 19.05
+      },
+      "center_mm": [
+        215.79999999999987,
+        -6.197192812413519e-16,
+        1.363507189404634e-15
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "bracket": {
+      "volume_mm3": 120749.73533916454,
+      "area_mm2": 25685.565592615232,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 45.8,
+        "ymin": -30.0,
+        "ymax": 30.0,
+        "zmin": -75.0,
+        "zmax": 75.0
+      },
+      "center_mm": [
+        11.881746242533799,
+        1.361225276538452e-15,
+        -8.110526222838387e-14
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "bracket_structural_core_only": {
+      "volume_mm3": 120742.9433391851,
+      "area_mm2": 25678.927470218223,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 45.8,
+        "ymin": -30.0,
+        "ymax": 30.0,
+        "zmin": -75.0,
+        "zmax": 75.0
+      },
+      "center_mm": [
+        11.880718621572317,
+        2.3279374642695998e-15,
+        -9.292076481483066e-14
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "bracket_added_ribs": {
+      "volume_mm3": 6.79200000000018,
+      "area_mm2": 187.75812239699522,
+      "bbox_mm": {
+        "xmin": 16.0,
+        "xmax": 44.3,
+        "ymin": -15.925,
+        "ymax": 15.925,
+        "zmin": -15.925,
+        "zmax": 15.925
+      },
+      "center_mm": [
+        30.150000000000006,
+        -2.2407270701019532e-14,
+        5.0647812424820865e-14
+      ],
+      "solids": 4,
+      "valid": true,
+      "closed": true
+    },
+    "bracket_right": {
+      "volume_mm3": 120749.73533916457,
+      "area_mm2": 25685.565592615232,
+      "bbox_mm": {
+        "xmin": 385.8,
+        "xmax": 431.6,
+        "ymin": -30.000000000000004,
+        "ymax": 30.0,
+        "zmin": -75.0,
+        "zmax": 75.0
+      },
+      "center_mm": [
+        419.71825375746624,
+        -7.550797824805016e-16,
+        -8.110526222838385e-14
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "bracket_right_structural_core_only": {
+      "volume_mm3": 120742.94333918516,
+      "area_mm2": 25678.927470218223,
+      "bbox_mm": {
+        "xmin": 385.8,
+        "xmax": 431.6,
+        "ymin": -30.0,
+        "ymax": 30.0,
+        "zmin": -75.0,
+        "zmax": 75.0
+      },
+      "center_mm": [
+        419.7192813784277,
+        -5.148043592158749e-16,
+        -9.255920541866395e-14
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "sleeves": {
+      "volume_mm3": 7113.571077376433,
+      "area_mm2": 4231.348313267021,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 431.6,
+        "ymin": -8.997202638007348,
+        "ymax": 8.997202638007348,
+        "zmin": -69.0,
+        "zmax": 69.0
+      },
+      "center_mm": [
+        215.80000000000004,
+        1.2676419371573112e-16,
+        6.13696625931532e-15
+      ],
+      "solids": 4,
+      "valid": true,
+      "closed": true
+    },
+    "retention_washers": {
+      "volume_mm3": 4048.130629709676,
+      "area_mm2": 6083.631341823562,
+      "bbox_mm": {
+        "xmin": 8.0,
+        "xmax": 423.6,
+        "ymin": -14.995337730012245,
+        "ymax": 14.995337730012247,
+        "zmin": -75.0,
+        "zmax": 75.0
+      },
+      "center_mm": [
+        215.79999999999998,
+        1.118773702124953e-15,
+        -5.392087074056649e-15
+      ],
+      "solids": 4,
+      "valid": true,
+      "closed": true
+    },
+    "anchor_shanks_simplified": {
+      "volume_mm3": 5598.31810869701,
+      "area_mm2": 3958.4067435231386,
+      "bbox_mm": {
+        "xmin": -40.0,
+        "xmax": 471.6,
+        "ymin": -3.000000000000005,
+        "ymax": 3.0000000000000013,
+        "zmin": -63.0,
+        "zmax": 63.0
+      },
+      "center_mm": [
+        215.8,
+        -9.517342357877088e-16,
+        2.599336969751753e-15
+      ],
+      "solids": 4,
+      "valid": true,
+      "closed": true
+    }
+  },
+  "coupons": {
+    "fit_coupon_31p65mm": {
+      "volume_mm3": 16872.03000000001,
+      "area_mm2": 5454.88516646487,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 15.0,
+        "ymin": -21.0,
+        "ymax": 21.0,
+        "zmin": -21.0,
+        "zmax": 21.0
+      },
+      "center_mm": [
+        6.647585975131618,
+        -4.733574057148738e-16,
+        1.4516048112308324e-16
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "fit_coupon_31p75mm": {
+      "volume_mm3": 16947.389999999996,
+      "area_mm2": 5459.685166464869,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 15.0,
+        "ymin": -21.0,
+        "ymax": 21.0,
+        "zmin": -21.0,
+        "zmax": 21.0
+      },
+      "center_mm": [
+        6.6580464602514,
+        -1.7944491211055092e-16,
+        -5.450429573451313e-17
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "fit_coupon_31p85mm": {
+      "volume_mm3": 17022.990000000005,
+      "area_mm2": 5464.4851664648695,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 15.0,
+        "ymin": -21.0,
+        "ymax": 21.0,
+        "zmin": -21.0,
+        "zmax": 21.0
+      },
+      "center_mm": [
+        6.668447199933734,
+        -5.309351411748742e-16,
+        -1.3281204813882097e-16
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "fit_coupon_31p95mm": {
+      "volume_mm3": 17098.82999999999,
+      "area_mm2": 5469.285166464869,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 15.0,
+        "ymin": -21.0,
+        "ymax": 21.0,
+        "zmin": -21.0,
+        "zmax": 21.0
+      },
+      "center_mm": [
+        6.678788548690176,
+        4.471323381060974e-16,
+        -2.4390217165162416e-16
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    },
+    "fit_coupon_32p05mm": {
+      "volume_mm3": 17174.909999999996,
+      "area_mm2": 5474.08516646487,
+      "bbox_mm": {
+        "xmin": 0.0,
+        "xmax": 15.0,
+        "ymin": -21.0,
+        "ymax": 21.0,
+        "zmin": -21.0,
+        "zmax": 21.0
+      },
+      "center_mm": [
+        6.689070859759961,
+        2.0520002546564133e-16,
+        -3.570832096371606e-17
+      ],
+      "solids": 1,
+      "valid": true,
+      "closed": true
+    }
+  },
+  "assembly": {
+    "volume_mm3": 433068.71585435624,
+    "area_mm2": 175016.7531394709,
+    "bbox_mm": {
+      "xmin": -40.0,
+      "xmax": 471.6,
+      "ymin": -30.000000000000004,
+      "ymax": 30.0,
+      "zmin": -75.0,
+      "zmax": 75.0
+    },
+    "center_mm": [
+      215.79999999999995,
+      -8.090670381357994e-17,
+      -4.4593718656353334e-14
+    ],
+    "solids": 15,
+    "valid": true,
+    "closed": true
+  },
+  "root_fillet_edges": 8,
+  "rib_reconstruction": "Four triangular sacrificial ribs; nominal 31.85 mm maximum envelope, 1.2 mm base width, 0.075 mm embedded root, x=16..44.3. These details are reconstructed and differ potentially from unrecovered v0 ribs.",
+  "anchor_geometry": "Simplified cylindrical M6 shanks only; thread, nut, supplied small washer and expansion mechanism are not modeled. Catalogue anchor capacities and physical installation are separate checks.",
+  "files": [
+    {
+      "path": "cad/anchor_shanks_simplified.step",
+      "sha256": "de17c8c167277ed78f478b64b861af33d56f0f2647be8844432c22b7385478f2",
+      "bytes": 9870
+    },
+    {
+      "path": "cad/assembly.FCStd",
+      "sha256": "318bfb8c2abe9cd03781ed5989885cbd7c9c5e8c692cbc14235e4e112f9039ea",
+      "bytes": 45407
+    },
+    {
+      "path": "cad/assembly.step",
+      "sha256": "21af61b81f3c3a297e6e2e5ca03573edff26f59a36b9699da6d75ee6af3f01ac",
+      "bytes": 172121
+    },
+    {
+      "path": "cad/beam_400mm.FCStd",
+      "sha256": "f11e469f510a868148a576ba08d18c3e3403423bea01545792fb6977617029bc",
+      "bytes": 8367
+    },
+    {
+      "path": "cad/beam_400mm.step",
+      "sha256": "8f476e9ee1b0b50fd539c61d5dbc157d0d2695c541a2656530a4db73f633bd70",
+      "bytes": 23392
+    },
+    {
+      "path": "cad/bracket.FCStd",
+      "sha256": "8fbe9700b340f51d6a3830e34d991c60dcf469245107fed2ef50b6a444747827",
+      "bytes": 29551
+    },
+    {
+      "path": "cad/bracket.step",
+      "sha256": "5a9e8dd1ff6c80e67037288e1e38b30d001625ef17a636e07d0fae1b21234cc0",
+      "bytes": 52620
+    },
+    {
+      "path": "cad/bracket_added_ribs.step",
+      "sha256": "bbffc1c979a43323a6b9737fa9d53dae2146460f77644b5f0ddc378856be128c",
+      "bytes": 20095
+    },
+    {
+      "path": "cad/bracket_right.step",
+      "sha256": "6324fcbaf18be6420138049c26443ecd42404f1680c4ca96009beb61f1ac5414",
+      "bytes": 55994
+    },
+    {
+      "path": "cad/bracket_right_structural_core_only.step",
+      "sha256": "4614abeb7cf59f4f1967ae5626048f9bc2986a9538ee7fb93bd28d3a3a84d0a4",
+      "bytes": 36687
+    },
+    {
+      "path": "cad/bracket_structural_core_only.FCStd",
+      "sha256": "4aed050025aa7a345774e27791ed3a9b7c7559037cde8c0bccca134c34bad297",
+      "bytes": 8110
+    },
+    {
+      "path": "cad/bracket_structural_core_only.step",
+      "sha256": "4b26c57c6d842352867fb5ec1b2bbe0d75cbca81fd96007dc9f64a497e11c688",
+      "bytes": 34561
+    },
+    {
+      "path": "cad/fit_coupon_31p65mm.step",
+      "sha256": "c244a0e874835c6b373050b0dd0c12e0501c9eceef890392705431ce0f598fea",
+      "bytes": 35084
+    },
+    {
+      "path": "cad/fit_coupon_31p75mm.step",
+      "sha256": "eef4b4e0f0660a107b1216b9d5e47fe9c9653fbb90a76086660040e96936757b",
+      "bytes": 35088
+    },
+    {
+      "path": "cad/fit_coupon_31p85mm.step",
+      "sha256": "bf996fe9d91fd1ea26e1451535c9af7699efeff44f879e3714e352228b1340b4",
+      "bytes": 35084
+    },
+    {
+      "path": "cad/fit_coupon_31p95mm.step",
+      "sha256": "95d0d58ca5d35f6fc80dd5e82bb96ed531782e98dee6479192f13e08e5945d91",
+      "bytes": 35092
+    },
+    {
+      "path": "cad/fit_coupon_32p05mm.step",
+      "sha256": "ca3fe73b37bd4cf7e8d4c2a8dd3540628a4cd4fda7e5e46869690ae59dfe7b26",
+      "bytes": 35080
+    },
+    {
+      "path": "cad/fit_coupons.FCStd",
+      "sha256": "c5a5bee94f17c7514bbbeb0725640617f3474e2392872295ec052c26edbe195f",
+      "bytes": 25237
+    },
+    {
+      "path": "cad/retention_washers.step",
+      "sha256": "875c1e58807a0e7a42d8c78e1fbb4abe97be8cbd87867c97a147c1cca7848012",
+      "bytes": 16090
+    },
+    {
+      "path": "cad/sleeves.step",
+      "sha256": "ba340ee2ae7f4d8ca4276bcdb13b9f7d54b25bbb71d403d9ea9c071fd036e09c",
+      "bytes": 15954
+    }
+  ]
+}

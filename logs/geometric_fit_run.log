@@ -1,0 +1,12 @@
+{
+  "geometric_fit": {
+    "PASS": 37,
+    "FAIL": 0,
+    "BLOCKED": 2,
+    "ERROR": 0
+  },
+  "execution_complete": true,
+  "nominal_geometry_pass": true
+}
+BLOCKED fit:catalogue_tolerance_qualification The fixed nominal plug does not fit every allowed catalogue opening; actual purchased tube dimensions are not measured. NEXT: Measure both flats and corners at both tube ends, select/rebuild coupons and adapt plug core/rib dimensions to those observations; rerun this checker.
+BLOCKED fit:physical_press_fit CAD does not establish insertion force, rib crushing, retention, printed shrinkage or creep. NEXT: Print qualified material, measure openings and coupons, record insertion/retention/proof and environmental tests before release.

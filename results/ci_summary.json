@@ -1,0 +1,5808 @@
+{
+  "schema": "beam-wall-mount-ci-v1",
+  "version": "v1",
+  "run_id": "20261119T212645_389218Z",
+  "mode": "audit",
+  "completed_at": "2026-11-19T21:27:15.030636+00:00",
+  "test_system_functional": true,
+  "unit_tests_run": 43,
+  "engineering_release": "BLOCKED",
+  "artifact_complete": true,
+  "numerical_screen_pass": true,
+  "physical_qualification_pass": false,
+  "project_complete": false,
+  "exit_code": 2,
+  "counts": {
+    "PASS": 208,
+    "FAIL": 0,
+    "BLOCKED": 14,
+    "ERROR": 0
+  },
+  "log_file": "logs/ci_20261119T212645_389218Z.log",
+  "tool_versions": {
+    "cadquery": "2.7.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "gmsh": "4.15.2",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "cad-ccx": "2.23.0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "OpenCASCADE_binding_reported": "7.8.1.1"
+  },
+  "stages": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "started_at": "2026-11-19T21:26:47.692800+00:00",
+      "finished_at": "2026-11-19T21:26:55.009713+00:00",
+      "duration_s": 7.316740038000717,
+      "returncode": 0,
+      "execution_error": null,
+      "name": "unit_and_negative_tests",
+      "test_count": 43
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "scripts/build_cad.py",
+        "--root",
+        "/workspace/scratch/edcffa025ff3/beam_wall_mount_v1",
+        "--validate-only"
+      ],
+      "started_at": "2026-11-19T21:26:55.011720+00:00",
+      "finished_at": "2026-11-19T21:26:55.465574+00:00",
+      "duration_s": 0.45342927499950747,
+      "returncode": 0,
+      "execution_error": null,
+      "name": "native_cad",
+      "result": "results/freecad_validation.json"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/calculate.py",
+        "--root",
+        "/workspace/scratch/edcffa025ff3/beam_wall_mount_v1"
+      ],
+      "started_at": "2026-11-19T21:26:55.470381+00:00",
+      "finished_at": "2026-11-19T21:26:55.507010+00:00",
+      "duration_s": 0.036591501000657445,
+      "returncode": 0,
+      "execution_error": null,
+      "name": "calculations",
+      "result": "results/calculations.json"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/check_geometric_fit.py",
+        "--root",
+        "/workspace/scratch/edcffa025ff3/beam_wall_mount_v1"
+      ],
+      "started_at": "2026-11-19T21:26:55.508238+00:00",
+      "finished_at": "2026-11-19T21:27:01.624912+00:00",
+      "duration_s": 6.116603483998915,
+      "returncode": 2,
+      "execution_error": null,
+      "name": "geometric_fit",
+      "result": "results/geometric_fit.json"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "scripts/run_fem.py",
+        "--root",
+        "/workspace/scratch/edcffa025ff3/beam_wall_mount_v1",
+        "--audit"
+      ],
+      "started_at": "2026-11-19T21:27:01.628791+00:00",
+      "finished_at": "2026-11-19T21:27:14.798036+00:00",
+      "duration_s": 13.169184692000272,
+      "returncode": 0,
+      "execution_error": null,
+      "name": "fem",
+      "result": "results/fem_audit.json"
+    }
+  ],
+  "checks": [
+    {
+      "id": "dependency:cadquery",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "2.7.0",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:cadquery-ocp",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "7.8.1.1.post1",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:gmsh",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "4.15.2",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:numpy",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "2.3.5",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:matplotlib",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "3.10.8",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:cad-ccx",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "2.23.0",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "unit_and_negative_tests",
+      "requirements": [
+        "R08",
+        "R15",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Independent unit tests and deliberate-negative controls executed.",
+      "observed": {
+        "exit_code": 0,
+        "tests_run": 43,
+        "mandatory_test_modules_executed": true
+      },
+      "criterion": "All three mandatory test modules executed; at least 20 tests; exit 0",
+      "next_action": "",
+      "evidence": [
+        "logs/ci_20261119T212645_389218Z.log"
+      ]
+    },
+    {
+      "id": "native_cad:freecad:source_manifest",
+      "requirements": [
+        "R11",
+        "R19"
+      ],
+      "status": "PASS",
+      "message": "Native geometry is bound to current design and generator.",
+      "observed": {
+        "design_sha256": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+        "generator_sha256": "0b380d3bf09f49dbcf6e40fa12072424acae6a3fc60c17fb142a750cd40ff933"
+      },
+      "criterion": "Matches geometry_manifest.json",
+      "next_action": "Regenerate CAD and all dependent checks in the current version if source inputs changed.",
+      "evidence": [
+        "cad/geometry_manifest.json"
+      ],
+      "category": "artifact"
+    },
+    {
+      "id": "native_cad:freecad:bracket.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "PrintableBracket": {
+          "volume_mm3": 120749.73533916454,
+          "area_mm2": 25685.565592615232,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 45.8,
+            "ymin": -30.0,
+            "ymax": 30.0,
+            "zmin": -75.0,
+            "zmax": 75.0
+          },
+          "center_mm": [
+            11.881746242533799,
+            1.3824815554151044e-15,
+            -8.110526222838387e-14
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/bracket.FCStd",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "artifact"
+    },
+    {
+      "id": "native_cad:freecad:beam_400mm.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "AluminumTube400": {
+          "volume_mm3": 174809.22536199627,
+          "area_mm2": 109372.23555562664,
+          "bbox_mm": {
+            "xmin": 15.8,
+            "xmax": 415.8,
+            "ymin": -19.05,
+            "ymax": 19.05,
+            "zmin": -19.05,
+            "zmax": 19.05
+          },
+          "center_mm": [
+            215.79999999999987,
+            -6.197192812413519e-16,
+            1.3058356268623485e-15
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/beam_400mm.FCStd",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "artifact"
+    },
+    {
+      "id": "native_cad:freecad:bracket_structural_core_only.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "StructuralCore": {
+          "volume_mm3": 120742.9433391851,
+          "area_mm2": 25678.927470218223,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 45.8,
+            "ymin": -30.0,
+            "ymax": 30.0,
+            "zmin": -75.0,
+            "zmax": 75.0
+          },
+          "center_mm": [
+            11.880718621572317,
+            2.318487967241586e-15,
+            -9.292076481483066e-14
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/bracket_structural_core_only.FCStd",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "artifact"
+    },
+    {
+      "id": "native_cad:freecad:assembly.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "FullAssembly": {
+          "volume_mm3": 433068.71585435624,
+          "area_mm2": 175016.7531394709,
+          "bbox_mm": {
+            "xmin": -40.0,
+            "xmax": 471.6,
+            "ymin": -30.0,
+            "ymax": 30.0,
+            "zmin": -75.0,
+            "zmax": 75.0
+          },
+          "center_mm": [
+            215.79999999999998,
+            -1.8301765628443027e-16,
+            -4.446578954181387e-14
+          ],
+          "solids": 15,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/assembly.FCStd",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "artifact"
+    },
+    {
+      "id": "native_cad:freecad:fit_coupons.FCStd",
+      "requirements": [
+        "R11"
+      ],
+      "status": "PASS",
+      "message": "Opened native document and checked current final solids and volume without writing CAD.",
+      "observed": {
+        "fit_coupon_31p65mm": {
+          "volume_mm3": 16872.03000000001,
+          "area_mm2": 5454.88516646487,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.647585975131618,
+            -4.4135103308646594e-16,
+            1.4352857725551637e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_31p75mm": {
+          "volume_mm3": 16947.389999999996,
+          "area_mm2": 5459.685166464869,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.6580464602514,
+            -1.7609080160381166e-16,
+            -1.1812757940922365e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_31p85mm": {
+          "volume_mm3": 17022.990000000005,
+          "area_mm2": 5464.4851664648695,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.668447199933734,
+            -2.905116810202142e-16,
+            -1.4444712444404866e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_31p95mm": {
+          "volume_mm3": 17098.82999999999,
+          "area_mm2": 5469.285166464869,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.678788548690176,
+            4.787141761135913e-16,
+            -2.5556355756064117e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        },
+        "fit_coupon_32p05mm": {
+          "volume_mm3": 17174.909999999996,
+          "area_mm2": 5474.08516646487,
+          "bbox_mm": {
+            "xmin": 0.0,
+            "xmax": 15.0,
+            "ymin": -21.0,
+            "ymax": 21.0,
+            "zmin": -21.0,
+            "zmax": 21.0
+          },
+          "center_mm": [
+            6.689070859759961,
+            1.820322806550044e-17,
+            -1.3181826232659268e-16
+          ],
+          "solids": 1,
+          "valid": true,
+          "closed": true
+        }
+      },
+      "criterion": "Valid closed solids, expected solid count, volume agrees within0.001mm3.",
+      "next_action": "Repair invalid/stale native CAD and regenerate dependent exports.",
+      "evidence": [
+        "cad/fit_coupons.FCStd",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "artifact"
+    },
+    {
+      "id": "stage_executed:native_cad",
+      "requirements": [
+        "R11",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Stage executed and fresh result provenance verified.",
+      "observed": {
+        "exit_code": 0,
+        "checks": 6
+      },
+      "criterion": "Valid, current, mapped checks with actionable feedback",
+      "next_action": "",
+      "evidence": [
+        "results/freecad_validation.json",
+        "logs/ci_20261119T212645_389218Z.log"
+      ]
+    },
+    {
+      "id": "calculations:calc:beam_global_stress",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.6333096623836735,
+      "criterion": {
+        "maximum": 80.0
+      },
+      "message": "Combined conservative beam stress screen",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:beam_local_wall_stress",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 55.69446817175465,
+      "criterion": {
+        "maximum": 80.0
+      },
+      "message": "Local 10 mm wall-strip contact screen",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:beam_displacement",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.004284560144507763,
+      "criterion": {
+        "maximum": 1
+      },
+      "message": "Global all-direction beam displacement envelope",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:beam_compression",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 10,
+      "criterion": {
+        "maximum": 32021.344221511565
+      },
+      "message": "Pinned Euler and squash-load material screen",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:bracket_force_envelope",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 17.194355028097075,
+      "criterion": {
+        "maximum": 20
+      },
+      "message": "Force envelope includes all beam selfweight and conservative bracket selfweight",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:bracket_torsion_envelope",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 476.10845937426114,
+      "criterion": {
+        "maximum": 550
+      },
+      "message": "Eccentric force/selfweight torque envelope",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:bracket_transverse_moment_envelope",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 1536.3716601419467,
+      "criterion": {
+        "maximum": 1600
+      },
+      "message": "Beam bending plus eccentric axial moment",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:plug_stress",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.7455111684275487,
+      "criterion": {
+        "maximum": 4.666666666666667
+      },
+      "message": "Chamfered plug conservative stress screen",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:plug_displacement",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.00942613336064137,
+      "criterion": {
+        "maximum": 1
+      },
+      "message": "Isolated plug displacement screen",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:plate_strip_stress",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.9861932938856016,
+      "criterion": {
+        "maximum": 4.666666666666667
+      },
+      "message": "Simplified plate strip screen; FEM retains real geometry",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:bearing_pressure",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.3913894324853229,
+      "criterion": {
+        "maximum": 4.666666666666667
+      },
+      "message": "Assumed two 10 mm axial bearing patches",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:anchor_interaction",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 0.5149652956055573,
+      "criterion": {
+        "maximum": 1
+      },
+      "message": "Linear service permissible-capacity interaction",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "calculations:calc:fixture_thickness",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14"
+      ],
+      "status": "PASS",
+      "observed": 9.9,
+      "criterion": {
+        "maximum": 10
+      },
+      "message": "Maximum sleeve plus retention washer fixture stack",
+      "next_action": "Retain this verified screen; actual physical qualification is separate.",
+      "evidence": [
+        "results/calculations.json",
+        "scripts/calculate.py"
+      ],
+      "category": "numerical"
+    },
+    {
+      "id": "stage_executed:calculations",
+      "requirements": [
+        "R05",
+        "R08",
+        "R14",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Stage executed and fresh result provenance verified.",
+      "observed": {
+        "exit_code": 0,
+        "checks": 13
+      },
+      "criterion": "Valid, current, mapped checks with actionable feedback",
+      "next_action": "",
+      "evidence": [
+        "results/calculations.json",
+        "logs/ci_20261119T212645_389218Z.log"
+      ]
+    },
+    {
+      "id": "geometric_fit:geometry:valid:beam_400mm",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 174809.22536199616,
+        "bbox_mm": {
+          "xmin": 15.8,
+          "xmax": 415.8,
+          "ymin": -19.05,
+          "ymax": 19.05,
+          "zmin": -19.05,
+          "zmax": 19.05
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 174809.22536199627,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:bracket",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120749.73533815093,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 45.8,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120749.73533916454,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:bracket_structural_core_only",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120742.94333985182,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 45.8,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120742.9433391851,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:bracket_added_ribs",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 6.791999999994495,
+        "bbox_mm": {
+          "xmin": 16.0,
+          "xmax": 44.3,
+          "ymin": -15.925,
+          "ymax": 15.925,
+          "zmin": -15.925,
+          "zmax": 15.925
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 6.79200000000018,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_added_ribs.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:bracket_right",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120749.73533815102,
+        "bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120749.73533916457,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_right.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:bracket_right_structural_core_only",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 1,
+        "volume_mm3": 120742.94333985193,
+        "bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 1,
+        "volume_mm3": 120742.94333918516,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/bracket_right_structural_core_only.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:sleeves",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 7113.571077376441,
+        "bbox_mm": {
+          "xmin": 0.0,
+          "xmax": 431.6,
+          "ymin": -9.0,
+          "ymax": 9.000000000000002,
+          "zmin": -69.0,
+          "zmax": 69.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 7113.571077376433,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/sleeves.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:retention_washers",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 4048.1306297096635,
+        "bbox_mm": {
+          "xmin": 8.0,
+          "xmax": 423.6,
+          "ymin": -15.0,
+          "ymax": 15.000000000000002,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 4048.130629709676,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/retention_washers.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:anchor_shanks_simplified",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 4,
+        "volume_mm3": 5598.318108697011,
+        "bbox_mm": {
+          "xmin": -40.0,
+          "xmax": 471.6,
+          "ymin": -3.000000000000005,
+          "ymax": 3.0000000000000013,
+          "zmin": -63.0,
+          "zmax": 63.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 4,
+        "volume_mm3": 5598.31810869701,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/anchor_shanks_simplified.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:valid:assembly",
+      "requirements": [
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "CadQuery STEP import and OCCT solid/volume validity compared with FreeCAD manifest.",
+      "observed": {
+        "valid": true,
+        "closed": true,
+        "solids": 15,
+        "volume_mm3": 433068.7158540812,
+        "bbox_mm": {
+          "xmin": -40.0,
+          "xmax": 471.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "expected_solids": 15,
+        "volume_mm3": 433068.71585435624,
+        "volume_tolerance_mm3": 0.001
+      },
+      "next_action": "Repair invalid or stale STEP exports and regenerate the manifest.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/geometry_manifest.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:beam_dimensions",
+      "requirements": [
+        "R02",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Beam length, outside section and position measured from delivered STEP.",
+      "observed": {
+        "length_mm": 400.0,
+        "outside_y_mm": 38.1,
+        "outside_z_mm": 38.1,
+        "start_x_mm": 15.8,
+        "end_x_mm": 415.8
+      },
+      "criterion": {
+        "length_mm": 400,
+        "outside_y_mm": 38.1,
+        "outside_z_mm": 38.1,
+        "start_x_mm": 15.8,
+        "end_x_mm": 415.8
+      },
+      "next_action": "Restore the 400 mm tube geometry and its assembly placement.",
+      "evidence": [
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:geometry:catalogue_profile",
+      "requirements": [
+        "R06",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual STEP curved faces and flat walls match the selected rounded catalogue section.",
+      "observed": {
+        "cylindrical_radii_mm": [
+          1.5748,
+          1.5748,
+          1.5748,
+          1.5748,
+          3.175,
+          3.175,
+          3.175,
+          3.175
+        ],
+        "absolute_flat_levels_mm": [
+          15.875,
+          19.05
+        ],
+        "flat_wall_mm": 3.1750000000000007
+      },
+      "criterion": {
+        "radii_mm": [
+          1.5748,
+          1.5748,
+          1.5748,
+          1.5748,
+          3.175,
+          3.175,
+          3.175,
+          3.175
+        ],
+        "flat_wall_mm": 3.175
+      },
+      "next_action": "Repair the section; do not replace rounded corners by a sharp square.",
+      "evidence": [
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:right_printable_pose",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual delivered assembly instance agrees with the required transform.",
+      "observed": {
+        "symmetric_difference_volume_mm3": -5.820766091346741e-11,
+        "actual_bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "maximum_symmetric_difference_mm3": 0.001
+      },
+      "next_action": "Repair the misplaced or mirrored instance and regenerate the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:right_core_pose",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual delivered assembly instance agrees with the required transform.",
+      "observed": {
+        "symmetric_difference_volume_mm3": -2.9103830456733704e-11,
+        "actual_bbox_mm": {
+          "xmin": 385.8,
+          "xmax": 431.6,
+          "ymin": -30.0,
+          "ymax": 30.0,
+          "zmin": -75.0,
+          "zmax": 75.0
+        }
+      },
+      "criterion": {
+        "maximum_symmetric_difference_mm3": 0.001
+      },
+      "next_action": "Repair the misplaced or mirrored instance and regenerate the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:assembly:actual_instance:beam_400mm",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "The assembly STEP contains the actual intended part in its tested pose.",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid.",
+      "next_action": "Repair the assembly export; independent component files cannot substitute for a misplaced assembly.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:assembly:actual_instance:bracket",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "The assembly STEP contains the actual intended part in its tested pose.",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid.",
+      "next_action": "Repair the assembly export; independent component files cannot substitute for a misplaced assembly.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/bracket.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:assembly:actual_instance:bracket_right",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "The assembly STEP contains the actual intended part in its tested pose.",
+      "observed": {
+        "matching_solids": 1
+      },
+      "criterion": "Exactly one matching solid.",
+      "next_action": "Repair the assembly export; independent component files cannot substitute for a misplaced assembly.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/bracket_right.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:engagement_and_relief",
+      "requirements": [
+        "R03",
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Both imported bracket ends seat at the specified engagement and root-relief distances.",
+      "observed": {
+        "left_engagement_mm": 29.999999999999996,
+        "right_engagement_mm": 30.0,
+        "left_root_relief_mm": 2.0,
+        "right_root_relief_mm": 2.0,
+        "wall_spacing_mm": 431.6
+      },
+      "criterion": {
+        "left_engagement_mm": 30,
+        "right_engagement_mm": 30,
+        "left_root_relief_mm": 2,
+        "right_root_relief_mm": 2,
+        "wall_spacing_mm": 431.6
+      },
+      "next_action": "Correct tube/plug length or spacing; root fillet must remain outside the inserted tube end.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/bracket_right_structural_core_only.step",
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:left:core_collision",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Structural-core collision checked by OCCT Boolean common on imported solids.",
+      "observed": {
+        "intersection_volume_mm3": 0,
+        "minimum_distance_mm": 0.09999999999999964,
+        "intersection_bbox_mm": null
+      },
+      "criterion": {
+        "maximum_prohibited_intersection_mm3": 0.001
+      },
+      "next_action": "Correct the plug, root fillet or assembly pose; regenerate CAD and rerun both-end fit checks before manufacturing.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:left:core_clearance",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Minimum core-to-tube surface clearance measured directly by OCCT.",
+      "observed": {
+        "clearance_mm": 0.09999999999999964
+      },
+      "criterion": {
+        "minimum_mm": 0.05
+      },
+      "next_action": "Increase clearance or adapt plug to measured tube opening; recheck corners and root fillet.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:right:core_collision",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Structural-core collision checked by OCCT Boolean common on imported solids.",
+      "observed": {
+        "intersection_volume_mm3": 0,
+        "minimum_distance_mm": 0.09999999999999964,
+        "intersection_bbox_mm": null
+      },
+      "criterion": {
+        "maximum_prohibited_intersection_mm3": 0.001
+      },
+      "next_action": "Correct the plug, root fillet or assembly pose; regenerate CAD and rerun both-end fit checks before manufacturing.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:right:core_clearance",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Minimum core-to-tube surface clearance measured directly by OCCT.",
+      "observed": {
+        "clearance_mm": 0.09999999999999964
+      },
+      "criterion": {
+        "minimum_mm": 0.05
+      },
+      "next_action": "Increase clearance or adapt plug to measured tube opening; recheck corners and root fillet.",
+      "evidence": [
+        "cad/beam_400mm.step",
+        "cad/bracket_structural_core_only.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:separate_sacrificial_ribs",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Printable-minus-core geometry matches the separately exported rib solids.",
+      "observed": {
+        "symmetric_difference_mm3": 0,
+        "rib_volume_mm3": 6.791999999994495
+      },
+      "criterion": {
+        "max_difference_mm3": 0.001
+      },
+      "next_action": "Reconcile printable/core/rib exports; do not classify arbitrary collision as allowed press-fit interference.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/bracket_structural_core_only.step",
+        "cad/bracket_added_ribs.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:rib_region_bounds",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Sacrificial ribs lie only in the explicit four thin bands and insertion length.",
+      "observed": {
+        "outside_allowed_region_mm3": 0,
+        "maximum_envelope_mm": 31.85
+      },
+      "criterion": {
+        "max_outside_volume_mm3": 0.001
+      },
+      "next_action": "Restrict ribs to the documented sacrificial bands; structural core collision remains prohibited.",
+      "evidence": [
+        "cad/bracket_added_ribs.step",
+        "config/design.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:left:intentional_interference",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Nonzero nominal press-fit interference is confined to separately identified sacrificial ribs.",
+      "observed": {
+        "total_interference_mm3": 0.7546666666650025,
+        "outside_ribs_mm3": 0,
+        "maximum_radial_interference_mm": 0.05000000000000071
+      },
+      "criterion": {
+        "positive_interference": true,
+        "max_prohibited_volume_mm3": 0.001
+      },
+      "next_action": "Correct rib size/location or structural collision; actual insertion force and retention still need physical qualification.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/bracket_added_ribs.step",
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:right:intentional_interference",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Nonzero nominal press-fit interference is confined to separately identified sacrificial ribs.",
+      "observed": {
+        "total_interference_mm3": 0.7546666666650025,
+        "outside_ribs_mm3": 0,
+        "maximum_radial_interference_mm": 0.05000000000000071
+      },
+      "criterion": {
+        "positive_interference": true,
+        "max_prohibited_volume_mm3": 0.001
+      },
+      "next_action": "Correct rib size/location or structural collision; actual insertion force and retention still need physical qualification.",
+      "evidence": [
+        "cad/bracket.step",
+        "cad/bracket_added_ribs.step",
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:left:sampled_insertion_path",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Pure axial core insertion/withdrawal sampled at <=1 mm steps from unengaged to seated; physical rib deformation is excluded.",
+      "observed": {
+        "maximum_intersection_mm3": 0,
+        "samples": [
+          {
+            "withdrawal_mm": 0.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 1.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 2.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 3.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 4.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 5.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 6.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 7.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 8.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 9.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 10.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 11.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 12.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 13.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 14.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 15.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 16.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 17.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 18.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 19.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 20.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 21.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 22.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 23.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 24.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 25.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 26.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 27.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 28.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 29.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 30.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 31.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 32.0,
+            "intersection_mm3": 0
+          }
+        ]
+      },
+      "criterion": {
+        "max_prohibited_mm3": 0.001,
+        "sampling_step_mm": 1
+      },
+      "next_action": "Repair the offending axial position and retest the full path. This sampled path is not a physical insertion-force test.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:right:sampled_insertion_path",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Pure axial core insertion/withdrawal sampled at <=1 mm steps from unengaged to seated; physical rib deformation is excluded.",
+      "observed": {
+        "maximum_intersection_mm3": 0,
+        "samples": [
+          {
+            "withdrawal_mm": 0.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 1.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 2.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 3.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 4.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 5.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 6.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 7.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 8.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 9.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 10.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 11.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 12.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 13.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 14.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 15.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 16.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 17.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 18.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 19.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 20.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 21.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 22.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 23.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 24.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 25.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 26.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 27.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 28.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 29.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 30.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 31.0,
+            "intersection_mm3": 0
+          },
+          {
+            "withdrawal_mm": 32.0,
+            "intersection_mm3": 0
+          }
+        ]
+      },
+      "criterion": {
+        "max_prohibited_mm3": 0.001,
+        "sampling_step_mm": 1
+      },
+      "next_action": "Repair the offending axial position and retest the full path. This sampled path is not a physical insertion-force test.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step",
+        "cad/beam_400mm.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:hardware:mount_holes",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Actual cylindrical bores have the required diameter, centerline and pitch.",
+      "observed": {
+        "hole_cylinders": [
+          {
+            "radius_mm": 9.3,
+            "location_mm": [
+              -1.0,
+              0.0,
+              -60.0
+            ],
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "radius_mm": 9.3,
+            "location_mm": [
+              -1.0,
+              0.0,
+              60.0
+            ],
+            "axis": [
+              1.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "z_centers_mm": [
+          -60.0,
+          60.0
+        ]
+      },
+      "criterion": {
+        "diameter_mm": 18.6,
+        "z_centers_mm": [
+          -60.0,
+          60.0
+        ]
+      },
+      "next_action": "Repair bolt-hole positions and diameters; do not check only config values.",
+      "evidence": [
+        "cad/bracket_structural_core_only.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:hardware:actual_solids",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Imported sleeves, washers and simplified M6 shanks have nominal diameters and no forbidden plate collision.",
+      "observed": {
+        "plate_intersections": [
+          {
+            "part": "sleeves",
+            "plate_overlap_mm3": 0
+          },
+          {
+            "part": "retention_washers",
+            "plate_overlap_mm3": 0
+          },
+          {
+            "part": "anchor_shanks_simplified",
+            "plate_overlap_mm3": 0
+          }
+        ],
+        "sleeve_diameters_mm": [
+          6.4,
+          18.0
+        ],
+        "washer_diameters_mm": [
+          6.4,
+          30.0
+        ]
+      },
+      "criterion": "Nominal dimensions match config and all plate overlap volumes <=0.001mm3.",
+      "next_action": "Repair actual hardware placement or component sizes; threaded/expansion details require separate catalogue/installation verification.",
+      "evidence": [
+        "cad/sleeves.step",
+        "cad/retention_washers.step",
+        "cad/anchor_shanks_simplified.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:hardware:positions:sleeves",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Every imported modeled hardware instance has the required axial length, bolt center and left/right pose.",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            4.0,
+            -3.4156056851179405e-16,
+            59.99999999999999
+          ],
+          [
+            4.0,
+            -1.5328080175795153e-16,
+            -59.99999999999999
+          ],
+          [
+            427.6000000000001,
+            4.388755869647108e-16,
+            -60.0
+          ],
+          [
+            427.6000000000001,
+            5.643954314672724e-16,
+            60.00000000000001
+          ]
+        ],
+        "axial_lengths_mm": [
+          8.0,
+          8.0,
+          8.0,
+          8.0
+        ],
+        "maximum_position_error_mm": 5.728856699135064e-14
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            4.0,
+            0.0,
+            -60.0
+          ],
+          [
+            4.0,
+            0.0,
+            60.0
+          ],
+          [
+            427.6,
+            0.0,
+            -60.0
+          ],
+          [
+            427.6,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 8,
+        "dimension_tolerance_mm": 0.01
+      },
+      "next_action": "Repair misplaced sleeves, washers or simplified shanks and regenerate both component and assembly STEP files.",
+      "evidence": [
+        "cad/sleeves.step",
+        "cad/assembly.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:assembly:actual_hardware:sleeves",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Assembly STEP contains all four hardware components in their independently checked poses.",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches.",
+      "next_action": "Repair stale or misplaced hardware in the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/sleeves.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:hardware:positions:retention_washers",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Every imported modeled hardware instance has the required axial length, bolt center and left/right pose.",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            8.750000000000002,
+            8.631159315641314e-17,
+            60.00000000000001
+          ],
+          [
+            8.750000000000002,
+            1.395423051450849e-16,
+            -60.00000000000001
+          ],
+          [
+            422.85,
+            2.264773123341299e-15,
+            59.999999999999986
+          ],
+          [
+            422.85000000000014,
+            1.948652160611608e-15,
+            -60.00000000000001
+          ]
+        ],
+        "axial_lengths_mm": [
+          1.5,
+          1.5,
+          1.5,
+          1.5
+        ],
+        "maximum_position_error_mm": 1.139253326276393e-13
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            8.75,
+            0.0,
+            -60.0
+          ],
+          [
+            8.75,
+            0.0,
+            60.0
+          ],
+          [
+            422.85,
+            0.0,
+            -60.0
+          ],
+          [
+            422.85,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 1.5,
+        "dimension_tolerance_mm": 0.01
+      },
+      "next_action": "Repair misplaced sleeves, washers or simplified shanks and regenerate both component and assembly STEP files.",
+      "evidence": [
+        "cad/retention_washers.step",
+        "cad/assembly.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:assembly:actual_hardware:retention_washers",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Assembly STEP contains all four hardware components in their independently checked poses.",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches.",
+      "next_action": "Repair stale or misplaced hardware in the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/retention_washers.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:hardware:positions:anchor_shanks_simplified",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Every imported modeled hardware instance has the required axial length, bolt center and left/right pose.",
+      "observed": {
+        "actual_centers_mm": [
+          [
+            -15.25,
+            -8.422335232446133e-17,
+            -60.0
+          ],
+          [
+            -15.25,
+            -8.422335232446133e-17,
+            60.00000000000001
+          ],
+          [
+            446.85,
+            -1.8107642489240445e-15,
+            -60.0
+          ],
+          [
+            446.85,
+            -1.8107642489240445e-15,
+            60.0
+          ]
+        ],
+        "axial_lengths_mm": [
+          49.5,
+          49.5,
+          49.5,
+          49.5
+        ],
+        "maximum_position_error_mm": 7.105926505897843e-15
+      },
+      "criterion": {
+        "expected_centers_mm": [
+          [
+            -15.25,
+            0.0,
+            -60.0
+          ],
+          [
+            -15.25,
+            0.0,
+            60.0
+          ],
+          [
+            446.85,
+            0.0,
+            -60.0
+          ],
+          [
+            446.85,
+            0.0,
+            60.0
+          ]
+        ],
+        "axial_length_mm": 49.5,
+        "dimension_tolerance_mm": 0.01
+      },
+      "next_action": "Repair misplaced sleeves, washers or simplified shanks and regenerate both component and assembly STEP files.",
+      "evidence": [
+        "cad/anchor_shanks_simplified.step",
+        "cad/assembly.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:assembly:actual_hardware:anchor_shanks_simplified",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Assembly STEP contains all four hardware components in their independently checked poses.",
+      "observed": {
+        "matching_components": 4,
+        "expected_components": 4
+      },
+      "criterion": "Four exact component/pose matches.",
+      "next_action": "Repair stale or misplaced hardware in the assembly STEP.",
+      "evidence": [
+        "cad/assembly.step",
+        "cad/anchor_shanks_simplified.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:hardware:tolerance_stack",
+      "requirements": [
+        "R04",
+        "R15"
+      ],
+      "status": "PASS",
+      "message": "Supplier hardware tolerance stack screened against nominal printed plate; actual printed dimensions remain unmeasured.",
+      "observed": {
+        "minimum_sleeve_radial_clearance_mm": 0.10000000000000142,
+        "minimum_shank_diametral_clearance_mm": 0.3000000000000007,
+        "minimum_sleeve_projection_mm": 0.10000000000000053,
+        "minimum_washer_radial_overlap_mm": 5.049999999999999,
+        "maximum_fixture_stack_mm": 9.9,
+        "nominal_washer_to_plate_gap_mm": 0.20000000000000018
+      },
+      "criterion": {
+        "minimum_projection_mm": 0.1,
+        "maximum_fixture_mm": 10,
+        "positive_clearances_required": true
+      },
+      "next_action": "Choose a compatible sleeve/washer stack and measure every printed plate before tightening anchors.",
+      "evidence": [
+        "config/design.json",
+        "cad/sleeves.step",
+        "cad/retention_washers.step"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:catalogue_tolerance_qualification",
+      "requirements": [
+        "R03",
+        "R15"
+      ],
+      "status": "BLOCKED",
+      "message": "The fixed nominal plug does not fit every allowed catalogue opening; actual purchased tube dimensions are not measured.",
+      "observed": {
+        "minimum_catalogue_opening_mm": 30.708600000000004,
+        "nominal_core_mm": 31.55,
+        "hypothetical_minimum_opening_collision_mm3": 1311.1048187999945,
+        "all_catalogue_extremes_fit": false
+      },
+      "criterion": "Actual measured tube opening and selected fit coupon must demonstrate geometric fit; nominal STEP PASS alone cannot approve the purchased lot.",
+      "next_action": "Measure both flats and corners at both tube ends, select/rebuild coupons and adapt plug core/rib dimensions to those observations; rerun this checker.",
+      "evidence": [
+        "config/design.json",
+        "config/physical_acceptance.json"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "geometric_fit:fit:physical_press_fit",
+      "requirements": [
+        "R03",
+        "R05",
+        "R15"
+      ],
+      "status": "BLOCKED",
+      "message": "CAD does not establish insertion force, rib crushing, retention, printed shrinkage or creep.",
+      "observed": null,
+      "criterion": "Authentic print, insertion, retention and sustained-load evidence.",
+      "next_action": "Print qualified material, measure openings and coupons, record insertion/retention/proof and environmental tests before release.",
+      "evidence": [
+        "config/physical_acceptance.json",
+        "manufacturing/PRINT_AND_ASSEMBLY.md"
+      ],
+      "category": "geometry"
+    },
+    {
+      "id": "stage_executed:geometric_fit",
+      "requirements": [
+        "R02",
+        "R03",
+        "R04",
+        "R15",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Stage executed and fresh result provenance verified.",
+      "observed": {
+        "exit_code": 2,
+        "checks": 39
+      },
+      "criterion": "Valid, current, mapped checks with actionable feedback",
+      "next_action": "",
+      "evidence": [
+        "results/geometric_fit.json",
+        "logs/ci_20261119T212645_389218Z.log"
+      ]
+    },
+    {
+      "id": "fem:fem:audit_hashes",
+      "requirements": [
+        "R10",
+        "R12",
+        "R13",
+        "R14"
+      ],
+      "status": "PASS",
+      "message": "FEM input and output bytes match the executed-run provenance",
+      "observed": [],
+      "criterion": "no missing or changed files",
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Restore evidence or rerun the changed model. Stale results cannot be accepted as current.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:audit_recomputed_checks",
+      "requirements": [
+        "R05",
+        "R13",
+        "R14"
+      ],
+      "status": "PASS",
+      "message": "Top-level metrics and checks match protected per-level evidence and fresh acceptance calculations",
+      "observed": [],
+      "criterion": "no altered metric/status and all configured levels",
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Restore altered summaries or rerun the model. Recorded PASS labels cannot override recomputed metrics.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:audit_evidence",
+      "requirements": [
+        "R13",
+        "R14"
+      ],
+      "status": "PASS",
+      "message": "Every case input/log verified; finest FRD/DAT fields reparsed and envelope peaks recomputed; coarse metrics use explicitly retained cached evidence",
+      "observed": {
+        "errors": [],
+        "cases_verified": 20,
+        "full_field_cases_reparsed": 7,
+        "coarse_cases_with_cached_metrics": 13
+      },
+      "criterion": "all configured cases; 7 finest full-field cases",
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Repair corrupted/incomplete evidence or execute --force. Coarse cached metrics are not represented as freshly reparsed raw fields.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:gmsh_generated",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Six printable STL files generated by Gmsh from current STEP sources",
+      "observed": 6,
+      "criterion": 6,
+      "evidence": [
+        "mesh/bracket.stl",
+        "mesh/fit_coupon_31p65mm.stl",
+        "mesh/fit_coupon_31p75mm.stl",
+        "mesh/fit_coupon_31p85mm.stl",
+        "mesh/fit_coupon_31p95mm.stl",
+        "mesh/fit_coupon_32p05mm.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:manifold:bracket",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Every mesh edge belongs to two triangles",
+      "observed": true,
+      "criterion": "closed manifold",
+      "evidence": [
+        "mesh/bracket.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:manifold:fit_coupon_31p65mm",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Every mesh edge belongs to two triangles",
+      "observed": true,
+      "criterion": "closed manifold",
+      "evidence": [
+        "mesh/fit_coupon_31p65mm.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:manifold:fit_coupon_31p75mm",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Every mesh edge belongs to two triangles",
+      "observed": true,
+      "criterion": "closed manifold",
+      "evidence": [
+        "mesh/fit_coupon_31p75mm.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:manifold:fit_coupon_31p85mm",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Every mesh edge belongs to two triangles",
+      "observed": true,
+      "criterion": "closed manifold",
+      "evidence": [
+        "mesh/fit_coupon_31p85mm.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:manifold:fit_coupon_31p95mm",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Every mesh edge belongs to two triangles",
+      "observed": true,
+      "criterion": "closed manifold",
+      "evidence": [
+        "mesh/fit_coupon_31p95mm.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:stl:manifold:fit_coupon_32p05mm",
+      "requirements": [
+        "R12"
+      ],
+      "status": "PASS",
+      "message": "Every mesh edge belongs to two triangles",
+      "observed": true,
+      "criterion": "closed manifold",
+      "evidence": [
+        "mesh/fit_coupon_32p05mm.stl"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:positive_jacobian:bracket_h6",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Adaptive minimum element determinant is positive",
+      "observed": 0.014061025860056826,
+      "criterion": ">0",
+      "evidence": [
+        "mesh/bracket_h6.json",
+        "fem/bracket_h6/summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h6:fx",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h6/fx.solver.log",
+        "fem/bracket_h6/fx.json",
+        "fem/bracket_h6/fx.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h6:fx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 4.358737820250359e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/fx.solver.log",
+        "fem/bracket_h6/fx.json",
+        "fem/bracket_h6/fx.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h6:fx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 6.646257628410126e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/fx.solver.log",
+        "fem/bracket_h6/fx.json",
+        "fem/bracket_h6/fx.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h6:fy",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h6/fy.solver.log",
+        "fem/bracket_h6/fy.json",
+        "fem/bracket_h6/fy.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h6:fy",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 7.911533017609738e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/fy.solver.log",
+        "fem/bracket_h6/fy.json",
+        "fem/bracket_h6/fy.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h6:fy",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.8014906736056724e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/fy.solver.log",
+        "fem/bracket_h6/fy.json",
+        "fem/bracket_h6/fy.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h6:fz",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h6/fz.solver.log",
+        "fem/bracket_h6/fz.json",
+        "fem/bracket_h6/fz.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h6:fz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 7.531111750454656e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/fz.solver.log",
+        "fem/bracket_h6/fz.json",
+        "fem/bracket_h6/fz.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h6:fz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 3.3721547343474865e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/fz.solver.log",
+        "fem/bracket_h6/fz.json",
+        "fem/bracket_h6/fz.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h6:tx",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h6/tx.solver.log",
+        "fem/bracket_h6/tx.json",
+        "fem/bracket_h6/tx.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h6:tx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 3.77479343272593e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/tx.solver.log",
+        "fem/bracket_h6/tx.json",
+        "fem/bracket_h6/tx.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h6:tx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 4.204584828235243e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/tx.solver.log",
+        "fem/bracket_h6/tx.json",
+        "fem/bracket_h6/tx.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h6:my",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h6/my.solver.log",
+        "fem/bracket_h6/my.json",
+        "fem/bracket_h6/my.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h6:my",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 6.213912117908286e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/my.solver.log",
+        "fem/bracket_h6/my.json",
+        "fem/bracket_h6/my.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h6:my",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 3.364714251422975e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/my.solver.log",
+        "fem/bracket_h6/my.json",
+        "fem/bracket_h6/my.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h6:mz",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h6/mz.solver.log",
+        "fem/bracket_h6/mz.json",
+        "fem/bracket_h6/mz.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h6:mz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 4.3517035328584705e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/mz.solver.log",
+        "fem/bracket_h6/mz.json",
+        "fem/bracket_h6/mz.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h6:mz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 6.606534657186683e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h6/mz.solver.log",
+        "fem/bracket_h6/mz.json",
+        "fem/bracket_h6/mz.inp.xz",
+        "fem/bracket_h6/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:positive_jacobian:bracket_h4p5",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Adaptive minimum element determinant is positive",
+      "observed": 0.18370519436786167,
+      "criterion": ">0",
+      "evidence": [
+        "mesh/bracket_h4p5.json",
+        "fem/bracket_h4p5/summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h4p5:fx",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h4p5/fx.solver.log",
+        "fem/bracket_h4p5/fx.json",
+        "fem/bracket_h4p5/fx.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h4p5:fx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 2.1808157383564583e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/fx.solver.log",
+        "fem/bracket_h4p5/fx.json",
+        "fem/bracket_h4p5/fx.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h4p5:fx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.0220794544053886e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/fx.solver.log",
+        "fem/bracket_h4p5/fx.json",
+        "fem/bracket_h4p5/fx.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h4p5:fy",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h4p5/fy.solver.log",
+        "fem/bracket_h4p5/fy.json",
+        "fem/bracket_h4p5/fy.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h4p5:fy",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 5.779637274784333e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/fy.solver.log",
+        "fem/bracket_h4p5/fy.json",
+        "fem/bracket_h4p5/fy.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h4p5:fy",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.2121532201072424e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/fy.solver.log",
+        "fem/bracket_h4p5/fy.json",
+        "fem/bracket_h4p5/fy.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h4p5:fz",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h4p5/fz.solver.log",
+        "fem/bracket_h4p5/fz.json",
+        "fem/bracket_h4p5/fz.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h4p5:fz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.0185015808073716e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/fz.solver.log",
+        "fem/bracket_h4p5/fz.json",
+        "fem/bracket_h4p5/fz.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h4p5:fz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 3.37492400865949e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/fz.solver.log",
+        "fem/bracket_h4p5/fz.json",
+        "fem/bracket_h4p5/fz.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h4p5:tx",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h4p5/tx.solver.log",
+        "fem/bracket_h4p5/tx.json",
+        "fem/bracket_h4p5/tx.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h4p5:tx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 2.0118995387978526e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/tx.solver.log",
+        "fem/bracket_h4p5/tx.json",
+        "fem/bracket_h4p5/tx.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h4p5:tx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.003769733285882e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/tx.solver.log",
+        "fem/bracket_h4p5/tx.json",
+        "fem/bracket_h4p5/tx.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h4p5:my",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h4p5/my.solver.log",
+        "fem/bracket_h4p5/my.json",
+        "fem/bracket_h4p5/my.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h4p5:my",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.493953867686109e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/my.solver.log",
+        "fem/bracket_h4p5/my.json",
+        "fem/bracket_h4p5/my.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h4p5:my",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 6.50530488235579e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/my.solver.log",
+        "fem/bracket_h4p5/my.json",
+        "fem/bracket_h4p5/my.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h4p5:mz",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h4p5/mz.solver.log",
+        "fem/bracket_h4p5/mz.json",
+        "fem/bracket_h4p5/mz.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h4p5:mz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 2.1052619011797266e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/mz.solver.log",
+        "fem/bracket_h4p5/mz.json",
+        "fem/bracket_h4p5/mz.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h4p5:mz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 4.22205947417871e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h4p5/mz.solver.log",
+        "fem/bracket_h4p5/mz.json",
+        "fem/bracket_h4p5/mz.inp.xz",
+        "fem/bracket_h4p5/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:positive_jacobian:bracket_h3p5",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Adaptive minimum element determinant is positive",
+      "observed": 0.18370519436786167,
+      "criterion": ">0",
+      "evidence": [
+        "mesh/bracket_h3p5.json",
+        "fem/bracket_h3p5/summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h3p5:fx",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h3p5/fx.solver.log",
+        "fem/bracket_h3p5/fx.json",
+        "fem/bracket_h3p5/fx.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fx.frd.xz",
+        "fem/bracket_h3p5/fx.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h3p5:fx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 4.418381242032541e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/fx.solver.log",
+        "fem/bracket_h3p5/fx.json",
+        "fem/bracket_h3p5/fx.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fx.frd.xz",
+        "fem/bracket_h3p5/fx.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h3p5:fx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 6.086625116245111e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/fx.solver.log",
+        "fem/bracket_h3p5/fx.json",
+        "fem/bracket_h3p5/fx.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fx.frd.xz",
+        "fem/bracket_h3p5/fx.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h3p5:fy",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h3p5/fy.solver.log",
+        "fem/bracket_h3p5/fy.json",
+        "fem/bracket_h3p5/fy.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fy.frd.xz",
+        "fem/bracket_h3p5/fy.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h3p5:fy",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 2.660273055117781e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/fy.solver.log",
+        "fem/bracket_h3p5/fy.json",
+        "fem/bracket_h3p5/fy.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fy.frd.xz",
+        "fem/bracket_h3p5/fy.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h3p5:fy",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 7.198957161340796e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/fy.solver.log",
+        "fem/bracket_h3p5/fy.json",
+        "fem/bracket_h3p5/fy.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fy.frd.xz",
+        "fem/bracket_h3p5/fy.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h3p5:fz",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h3p5/fz.solver.log",
+        "fem/bracket_h3p5/fz.json",
+        "fem/bracket_h3p5/fz.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fz.frd.xz",
+        "fem/bracket_h3p5/fz.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h3p5:fz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.9381170391606743e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/fz.solver.log",
+        "fem/bracket_h3p5/fz.json",
+        "fem/bracket_h3p5/fz.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fz.frd.xz",
+        "fem/bracket_h3p5/fz.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h3p5:fz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.6039780855618353e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/fz.solver.log",
+        "fem/bracket_h3p5/fz.json",
+        "fem/bracket_h3p5/fz.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/fz.frd.xz",
+        "fem/bracket_h3p5/fz.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h3p5:tx",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h3p5/tx.solver.log",
+        "fem/bracket_h3p5/tx.json",
+        "fem/bracket_h3p5/tx.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/tx.frd.xz",
+        "fem/bracket_h3p5/tx.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h3p5:tx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 3.7306129859622214e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/tx.solver.log",
+        "fem/bracket_h3p5/tx.json",
+        "fem/bracket_h3p5/tx.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/tx.frd.xz",
+        "fem/bracket_h3p5/tx.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h3p5:tx",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 4.580364950609557e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/tx.solver.log",
+        "fem/bracket_h3p5/tx.json",
+        "fem/bracket_h3p5/tx.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/tx.frd.xz",
+        "fem/bracket_h3p5/tx.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h3p5:my",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h3p5/my.solver.log",
+        "fem/bracket_h3p5/my.json",
+        "fem/bracket_h3p5/my.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/my.frd.xz",
+        "fem/bracket_h3p5/my.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h3p5:my",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 2.1993894601077146e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/my.solver.log",
+        "fem/bracket_h3p5/my.json",
+        "fem/bracket_h3p5/my.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/my.frd.xz",
+        "fem/bracket_h3p5/my.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h3p5:my",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 7.532283964631992e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/my.solver.log",
+        "fem/bracket_h3p5/my.json",
+        "fem/bracket_h3p5/my.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/my.frd.xz",
+        "fem/bracket_h3p5/my.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:bracket_h3p5:mz",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/bracket_h3p5/mz.solver.log",
+        "fem/bracket_h3p5/mz.json",
+        "fem/bracket_h3p5/mz.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/mz.frd.xz",
+        "fem/bracket_h3p5/mz.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:bracket_h3p5:mz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 1.022309995994968e-06,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/mz.solver.log",
+        "fem/bracket_h3p5/mz.json",
+        "fem/bracket_h3p5/mz.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/mz.frd.xz",
+        "fem/bracket_h3p5/mz.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:bracket_h3p5:mz",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 7.45954734739111e-07,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/bracket_h3p5/mz.solver.log",
+        "fem/bracket_h3p5/mz.json",
+        "fem/bracket_h3p5/mz.inp.xz",
+        "fem/bracket_h3p5/common_mesh.inc.xz",
+        "fem/bracket_h3p5/mz.frd.xz",
+        "fem/bracket_h3p5/mz.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:positive_jacobian:beam_h8",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Adaptive minimum element determinant is positive",
+      "observed": 2.718694594008396,
+      "criterion": ">0",
+      "evidence": [
+        "mesh/beam_h8.json",
+        "fem/beam_h8/summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:beam_volume:beam_h8",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Actual FE geometry volume versus exact CAD",
+      "observed": 0.001393523609236952,
+      "criterion": 0.005,
+      "evidence": [
+        "mesh/beam_h8.json",
+        "fem/beam_h8/summary.json"
+      ],
+      "next_action": "Refine the curved-profile geometric discretization while preserving positive Jacobians; do not replace FE mass with CAD mass to hide a volume error.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:beam_h8:central_gravity",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/beam_h8/central_gravity.solver.log",
+        "fem/beam_h8/central_gravity.json",
+        "fem/beam_h8/central_gravity.inp.xz",
+        "fem/beam_h8/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:beam_h8:central_gravity",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 5.991528858762724e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/beam_h8/central_gravity.solver.log",
+        "fem/beam_h8/central_gravity.json",
+        "fem/beam_h8/central_gravity.inp.xz",
+        "fem/beam_h8/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:beam_h8:central_gravity",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 5.9170049022326934e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/beam_h8/central_gravity.solver.log",
+        "fem/beam_h8/central_gravity.json",
+        "fem/beam_h8/central_gravity.inp.xz",
+        "fem/beam_h8/common_mesh.inc.xz",
+        "fem/retained_evidence.json"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:positive_jacobian:beam_h5p5",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Adaptive minimum element determinant is positive",
+      "observed": 1.8879662149999035,
+      "criterion": ">0",
+      "evidence": [
+        "mesh/beam_h5p5.json",
+        "fem/beam_h5p5/summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:beam_volume:beam_h5p5",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Actual FE geometry volume versus exact CAD",
+      "observed": 0.001393523609235953,
+      "criterion": 0.005,
+      "evidence": [
+        "mesh/beam_h5p5.json",
+        "fem/beam_h5p5/summary.json"
+      ],
+      "next_action": "Refine the curved-profile geometric discretization while preserving positive Jacobians; do not replace FE mass with CAD mass to hide a volume error.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:solved:beam_h5p5:central_gravity",
+      "requirements": [
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "CalculiX actual solve finished",
+      "observed": {
+        "exit": 0,
+        "finished": true
+      },
+      "criterion": "exit0 and Job finished",
+      "evidence": [
+        "fem/beam_h5p5/central_gravity.solver.log",
+        "fem/beam_h5p5/central_gravity.json",
+        "fem/beam_h5p5/central_gravity.inp.xz",
+        "fem/beam_h5p5/common_mesh.inc.xz",
+        "fem/beam_h5p5/central_gravity.frd.xz",
+        "fem/beam_h5p5/central_gravity.dat.xz"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:force_balance_relative:beam_h5p5:central_gravity",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 3.8248662002201715e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/beam_h5p5/central_gravity.solver.log",
+        "fem/beam_h5p5/central_gravity.json",
+        "fem/beam_h5p5/central_gravity.inp.xz",
+        "fem/beam_h5p5/common_mesh.inc.xz",
+        "fem/beam_h5p5/central_gravity.frd.xz",
+        "fem/beam_h5p5/central_gravity.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:moment_balance_relative:beam_h5p5:central_gravity",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Applied resultant and constrained-DOF reaction equilibrium",
+      "observed": 6.089583928300274e-08,
+      "criterion": 0.005,
+      "evidence": [
+        "fem/beam_h5p5/central_gravity.solver.log",
+        "fem/beam_h5p5/central_gravity.json",
+        "fem/beam_h5p5/central_gravity.inp.xz",
+        "fem/beam_h5p5/common_mesh.inc.xz",
+        "fem/beam_h5p5/central_gravity.frd.xz",
+        "fem/beam_h5p5/central_gravity.dat.xz"
+      ],
+      "next_action": "Review applied loads, support degrees of freedom, units, actual FE gravity mass and solver results before relying on stress output.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:convergence:bracket:max_vm_bound_MPa",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Last two configured mesh levels compared without excluding peak nodes or integration points",
+      "observed": {
+        "coarse": 2.662082976592533,
+        "fine": 2.697315190363355,
+        "relative_change": 0.013061956532442158
+      },
+      "criterion": 0.1,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Review peak location, idealized attachment/contact and geometric discretization; refine or revise the actual model and rerun. A below-allowable stress cannot override failed peak-stress convergence.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:convergence:bracket:max_principal_abs_bound_MPa",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Last two configured mesh levels compared without excluding peak nodes or integration points",
+      "observed": {
+        "coarse": 3.1073668581242133,
+        "fine": 3.1406272955199683,
+        "relative_change": 0.010590380285874817
+      },
+      "criterion": 0.1,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Review peak location, idealized attachment/contact and geometric discretization; refine or revise the actual model and rerun. A below-allowable stress cannot override failed peak-stress convergence.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:convergence:bracket:max_displacement_bound_mm",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Last two configured mesh levels compared without excluding peak nodes or integration points",
+      "observed": {
+        "coarse": 0.18559526884588437,
+        "fine": 0.1880892993052199,
+        "relative_change": 0.013259821098532357
+      },
+      "criterion": 0.05,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Review peak location, idealized attachment/contact and geometric discretization; refine or revise the actual model and rerun. A below-allowable stress cannot override failed peak-stress convergence.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:strength:bracket:max_vm_bound_MPa",
+      "requirements": [
+        "R05"
+      ],
+      "status": "PASS",
+      "message": "Finest-model material stress screen; physical material qualification is separate",
+      "observed": 2.697315190363355,
+      "criterion": 4.666666666666667,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:strength:bracket:max_principal_abs_bound_MPa",
+      "requirements": [
+        "R05"
+      ],
+      "status": "PASS",
+      "message": "Finest-model material stress screen; physical material qualification is separate",
+      "observed": 3.1406272955199683,
+      "criterion": 4.666666666666667,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:displacement:bracket",
+      "requirements": [
+        "R05"
+      ],
+      "status": "PASS",
+      "message": "Finest-model displacement screen excludes real joint clearance take-up and creep",
+      "observed": 0.1880892993052199,
+      "criterion": 1,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:convergence:beam:max_nodal_vm_MPa",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Last two configured mesh levels compared without excluding peak nodes or integration points",
+      "observed": {
+        "coarse": 0.8525031585413223,
+        "fine": 0.925637531034323,
+        "relative_change": 0.07900973117552733
+      },
+      "criterion": 0.1,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Review peak location, idealized attachment/contact and geometric discretization; refine or revise the actual model and rerun. A below-allowable stress cannot override failed peak-stress convergence.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:convergence:beam:max_IP_vm_MPa",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Last two configured mesh levels compared without excluding peak nodes or integration points",
+      "observed": {
+        "coarse": 0.7917040092701046,
+        "fine": 0.8287446493927781,
+        "relative_change": 0.044694876944078255
+      },
+      "criterion": 0.1,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Review peak location, idealized attachment/contact and geometric discretization; refine or revise the actual model and rerun. A below-allowable stress cannot override failed peak-stress convergence.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:convergence:beam:max_displacement_mm",
+      "requirements": [
+        "R05",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Last two configured mesh levels compared without excluding peak nodes or integration points",
+      "observed": {
+        "coarse": 0.0035986900746462916,
+        "fine": 0.003615970134262195,
+        "relative_change": 0.004778817018473344
+      },
+      "criterion": 0.05,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Review peak location, idealized attachment/contact and geometric discretization; refine or revise the actual model and rerun. A below-allowable stress cannot override failed peak-stress convergence.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:strength:beam:max_nodal_vm_MPa",
+      "requirements": [
+        "R05"
+      ],
+      "status": "PASS",
+      "message": "Finest-model material stress screen; physical material qualification is separate",
+      "observed": 0.925637531034323,
+      "criterion": 80.0,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:strength:beam:max_IP_vm_MPa",
+      "requirements": [
+        "R05"
+      ],
+      "status": "PASS",
+      "message": "Finest-model material stress screen; physical material qualification is separate",
+      "observed": 0.8287446493927781,
+      "criterion": 80.0,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:displacement:beam",
+      "requirements": [
+        "R05"
+      ],
+      "status": "PASS",
+      "message": "Finest-model displacement screen excludes real joint clearance take-up and creep",
+      "observed": 0.003615970134262195,
+      "criterion": 1,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "fem:fem:Euler_comparison",
+      "requirements": [
+        "R05",
+        "R08",
+        "R13"
+      ],
+      "status": "PASS",
+      "message": "Comparable section-average vertical deflection versus nominal Euler theory; local maximum reported separately",
+      "observed": {
+        "FEM_section_mm": 0.0030568006249999994,
+        "Euler_mm": 0.0028402042383489975,
+        "relative_difference": 0.0762608490355992,
+        "nodes": 96
+      },
+      "criterion": 0.15,
+      "evidence": [
+        "results/fem_summary.json"
+      ],
+      "next_action": "Retain this validated numerical evidence; physical qualification remains separate.",
+      "category": "numerical"
+    },
+    {
+      "id": "stage_executed:fem",
+      "requirements": [
+        "R05",
+        "R10",
+        "R12",
+        "R13",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Stage executed and fresh result provenance verified.",
+      "observed": {
+        "exit_code": 0,
+        "checks": 90
+      },
+      "criterion": "Valid, current, mapped checks with actionable feedback",
+      "next_action": "",
+      "evidence": [
+        "results/fem_audit.json",
+        "logs/ci_20261119T212645_389218Z.log"
+      ]
+    },
+    {
+      "id": "file:README.md",
+      "requirements": [
+        "R01",
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "README.md",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "file:requirement.md",
+      "requirements": [
+        "R01",
+        "R14"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "requirement.md",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "requirement.md"
+      ]
+    },
+    {
+      "id": "file:AI_REFERENCE.md",
+      "requirements": [
+        "R18"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "AI_REFERENCE.md",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "AI_REFERENCE.md"
+      ]
+    },
+    {
+      "id": "file:CHANGELOG.md",
+      "requirements": [
+        "R01",
+        "R19"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "CHANGELOG.md",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "CHANGELOG.md"
+      ]
+    },
+    {
+      "id": "file:config/design.json",
+      "requirements": [
+        "R02",
+        "R08"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "config/design.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "config/design.json"
+      ]
+    },
+    {
+      "id": "file:config/physical_acceptance.json",
+      "requirements": [
+        "R05",
+        "R14"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "config/physical_acceptance.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "file:requirements.lock",
+      "requirements": [
+        "R01",
+        "R16"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "requirements.lock",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "requirements.lock"
+      ]
+    },
+    {
+      "id": "file:.github/workflows/ci.yml",
+      "requirements": [
+        "R16",
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": ".github/workflows/ci.yml",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "id": "file:scripts/build_cad.py",
+      "requirements": [
+        "R11"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/build_cad.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/build_cad.py"
+      ]
+    },
+    {
+      "id": "file:scripts/check_geometric_fit.py",
+      "requirements": [
+        "R15"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/check_geometric_fit.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/check_geometric_fit.py"
+      ]
+    },
+    {
+      "id": "file:scripts/calculate.py",
+      "requirements": [
+        "R08"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/calculate.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/calculate.py"
+      ]
+    },
+    {
+      "id": "file:scripts/run_fem.py",
+      "requirements": [
+        "R12",
+        "R13"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/run_fem.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/run_fem.py"
+      ]
+    },
+    {
+      "id": "file:scripts/run_ci.py",
+      "requirements": [
+        "R14",
+        "R16",
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/run_ci.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/run_ci.py"
+      ]
+    },
+    {
+      "id": "file:scripts/ci_support.py",
+      "requirements": [
+        "R16"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/ci_support.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/ci_support.py"
+      ]
+    },
+    {
+      "id": "file:scripts/render_fem.py",
+      "requirements": [
+        "R10"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/render_fem.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/render_fem.py"
+      ]
+    },
+    {
+      "id": "file:results/fem_render.json",
+      "requirements": [
+        "R10"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "results/fem_render.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "results/fem_render.json"
+      ]
+    },
+    {
+      "id": "file:scripts/package_project.py",
+      "requirements": [
+        "R01"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "scripts/package_project.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "scripts/package_project.py"
+      ]
+    },
+    {
+      "id": "file:tests/test_geometric_fit.py",
+      "requirements": [
+        "R15",
+        "R16"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "tests/test_geometric_fit.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "tests/test_geometric_fit.py"
+      ]
+    },
+    {
+      "id": "file:tests/test_calculations.py",
+      "requirements": [
+        "R08",
+        "R16"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "tests/test_calculations.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "tests/test_calculations.py"
+      ]
+    },
+    {
+      "id": "file:tests/test_ci_runner.py",
+      "requirements": [
+        "R16"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "tests/test_ci_runner.py",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "tests/test_ci_runner.py"
+      ]
+    },
+    {
+      "id": "file:cad/beam_400mm.step",
+      "requirements": [
+        "R02",
+        "R06"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "cad/beam_400mm.step",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "cad/beam_400mm.step"
+      ]
+    },
+    {
+      "id": "file:cad/bracket.step",
+      "requirements": [
+        "R03",
+        "R11"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "cad/bracket.step",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "cad/bracket.step"
+      ]
+    },
+    {
+      "id": "file:cad/bracket_structural_core_only.step",
+      "requirements": [
+        "R11",
+        "R13"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "cad/bracket_structural_core_only.step",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "cad/bracket_structural_core_only.step"
+      ]
+    },
+    {
+      "id": "file:cad/assembly.step",
+      "requirements": [
+        "R04",
+        "R11"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "cad/assembly.step",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "cad/assembly.step"
+      ]
+    },
+    {
+      "id": "file:cad/geometry_manifest.json",
+      "requirements": [
+        "R11"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "cad/geometry_manifest.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "cad/geometry_manifest.json"
+      ]
+    },
+    {
+      "id": "file:mesh/bracket.stl",
+      "requirements": [
+        "R12"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "mesh/bracket.stl",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "mesh/bracket.stl"
+      ]
+    },
+    {
+      "id": "file:bom.csv",
+      "requirements": [
+        "R09"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "bom.csv",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "bom.csv"
+      ]
+    },
+    {
+      "id": "file:evidence/source_manifest.json",
+      "requirements": [
+        "R06"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "evidence/source_manifest.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "evidence/source_manifest.json"
+      ]
+    },
+    {
+      "id": "file:evidence/reconstruction_provenance.json",
+      "requirements": [
+        "R19"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "evidence/reconstruction_provenance.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "evidence/reconstruction_provenance.json"
+      ]
+    },
+    {
+      "id": "file:evidence/v0_report_export.docx",
+      "requirements": [
+        "R19"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "evidence/v0_report_export.docx",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "evidence/v0_report_export.docx"
+      ]
+    },
+    {
+      "id": "file:manufacturing/PRINT_AND_ASSEMBLY.md",
+      "requirements": [
+        "R03",
+        "R04",
+        "R05"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "manufacturing/PRINT_AND_ASSEMBLY.md",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "manufacturing/PRINT_AND_ASSEMBLY.md"
+      ]
+    },
+    {
+      "id": "file:report/report.md",
+      "requirements": [
+        "R07",
+        "R08"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "report/report.md",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "report/report.md"
+      ]
+    },
+    {
+      "id": "file:report/report.docx",
+      "requirements": [
+        "R07"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "report/report.docx",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "report/report.docx"
+      ]
+    },
+    {
+      "id": "file:report/google_doc.json",
+      "requirements": [
+        "R07"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "report/google_doc.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "report/google_doc.json"
+      ]
+    },
+    {
+      "id": "file:report/source_snapshot.json",
+      "requirements": [
+        "R07",
+        "R08"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "report/source_snapshot.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "report/source_snapshot.json"
+      ]
+    },
+    {
+      "id": "file:report/visual_review.json",
+      "requirements": [
+        "R07"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "report/visual_review.json",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "report/visual_review.json"
+      ]
+    },
+    {
+      "id": "file:results/bracket_stress.png",
+      "requirements": [
+        "R10"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "results/bracket_stress.png",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "results/bracket_stress.png"
+      ]
+    },
+    {
+      "id": "file:results/beam_stress.png",
+      "requirements": [
+        "R10"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "results/beam_stress.png",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "results/beam_stress.png"
+      ]
+    },
+    {
+      "id": "file:results/stress_viewer.html",
+      "requirements": [
+        "R10"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Required deliverable exists.",
+      "observed": "results/stress_viewer.html",
+      "criterion": "Present, nonempty project file",
+      "next_action": "",
+      "evidence": [
+        "results/stress_viewer.html"
+      ]
+    },
+    {
+      "id": "frozen_requirements",
+      "requirements": [
+        "R01",
+        "R14"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Frozen requirements hash matches the current baseline.",
+      "observed": null,
+      "criterion": "Exact SHA-256 match",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "static_manifest",
+      "requirements": [
+        "R01"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Static manifest byte hashes checked.",
+      "observed": [],
+      "criterion": "No changed/missing static file",
+      "next_action": "",
+      "evidence": [
+        "MANIFEST.sha256"
+      ]
+    },
+    {
+      "id": "source_evidence",
+      "requirements": [
+        "R06",
+        "R09"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Stored catalogue/material evidence is independently hash checked.",
+      "observed": {
+        "sources": 14,
+        "issues": []
+      },
+      "criterion": "At least five sourced, hash-bound records",
+      "next_action": "",
+      "evidence": [
+        "evidence/source_manifest.json"
+      ]
+    },
+    {
+      "id": "bom_content",
+      "requirements": [
+        "R09"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "BOM schema and purchase links checked.",
+      "observed": {
+        "rows": 7,
+        "issues": []
+      },
+      "criterion": "Part numbers, prices, currency, links and notes",
+      "next_action": "",
+      "evidence": [
+        "bom.csv"
+      ]
+    },
+    {
+      "id": "report_current_sources",
+      "requirements": [
+        "R07",
+        "R08"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Report source hashes, fresh calculation values and verification statuses checked.",
+      "observed": [],
+      "criterion": "Final report matches current static evidence and engineering decision",
+      "next_action": "",
+      "evidence": [
+        "report/source_snapshot.json"
+      ]
+    },
+    {
+      "id": "report_visual_qa",
+      "requirements": [
+        "R07"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Final report layout review is bound to the delivered DOCX and PDF.",
+      "observed": null,
+      "criterion": "Every page inspected; hashes current; title sanitation passes",
+      "next_action": "",
+      "evidence": [
+        "report/visual_review.json"
+      ]
+    },
+    {
+      "id": "native_google_doc",
+      "requirements": [
+        "R07"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Native document identity, readback evidence and offline report hash checked.",
+      "observed": {
+        "url": "https://docs.google.com/document/d/1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ"
+      },
+      "criterion": "Actual native Google Doc with current verified readback",
+      "next_action": "",
+      "evidence": [
+        "report/google_doc.json"
+      ]
+    },
+    {
+      "id": "hosted_workflow_definition",
+      "requirements": [
+        "R16",
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Workflow syntax and shared entry point checked; logs are retained after failures.",
+      "observed": null,
+      "criterion": "Runnable job definition, shared CI command, always-upload evidence, no ignored failures",
+      "next_action": "",
+      "evidence": [
+        ".github/workflows/ci.yml"
+      ]
+    },
+    {
+      "id": "physical:beam_length_mm",
+      "requirements": [
+        "R02"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document beam length mm. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:beam_lot_certificate",
+      "requirements": [
+        "R06"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document beam lot certificate. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:tube_openings_both_ends_mm",
+      "requirements": [
+        "R03"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document tube openings both ends mm. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:selected_fit_coupon",
+      "requirements": [
+        "R03"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document selected fit coupon. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:press_fit_insertion_and_retention",
+      "requirements": [
+        "R03",
+        "R05"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document press fit insertion and retention. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:printed_process_and_material",
+      "requirements": [
+        "R03",
+        "R05"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document printed process and material. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:actual_wall_and_anchor_installation",
+      "requirements": [
+        "R04",
+        "R05"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document actual wall and anchor installation. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:sleeve_projection_all_four_mm",
+      "requirements": [
+        "R04",
+        "R05"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document sleeve projection all four mm. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:assembly_30N_proof_test",
+      "requirements": [
+        "R05"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document assembly 30N proof test. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:sustained_load_environment",
+      "requirements": [
+        "R05"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document sustained load environment. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:current_procurement_quotes",
+      "requirements": [
+        "R09"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "No actual physical observation has been recorded.",
+      "observed": null,
+      "criterion": "Authentic recorded measurement/test evidence",
+      "next_action": "Perform and document current procurement quotes. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "physical:provenance",
+      "requirements": [
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06"
+      ],
+      "category": "physical",
+      "status": "BLOCKED",
+      "message": "A claimed physical pass lacks operator, date or evidence.",
+      "observed": null,
+      "criterion": null,
+      "next_action": "Add genuine operator, date and retained evidence after actual qualification.",
+      "evidence": [
+        "config/physical_acceptance.json"
+      ]
+    },
+    {
+      "id": "execution_sources_stable",
+      "requirements": [
+        "R14",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Code, tests, requirements and configuration stayed unchanged during this CI run.",
+      "observed": [],
+      "criterion": "No source mutations during execution",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "ci_saved_log",
+      "requirements": [
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Full stdout/stderr, commands, timings and exit codes saved in a separate run log.",
+      "observed": null,
+      "criterion": null,
+      "next_action": "",
+      "evidence": [
+        "logs/ci_20261119T212645_389218Z.log"
+      ]
+    },
+    {
+      "id": "feedback_outputs",
+      "requirements": [
+        "R14",
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Structured summary and next-iteration feedback are written by this finalization step.",
+      "observed": null,
+      "criterion": null,
+      "next_action": "",
+      "evidence": [
+        "results/ci_summary.json",
+        "results/next_iteration.md"
+      ]
+    },
+    {
+      "id": "all_requirements_mapped",
+      "requirements": [
+        "R14"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Every requirement has an executed or explicitly blocked check.",
+      "observed": [],
+      "criterion": null,
+      "next_action": "",
+      "evidence": []
+    }
+  ],
+  "requirements": {
+    "R01": {
+      "title": "Self-contained version ZIP and frozen layout",
+      "status": "PASS",
+      "check_ids": [
+        "file:README.md",
+        "file:requirement.md",
+        "file:CHANGELOG.md",
+        "file:requirements.lock",
+        "file:scripts/package_project.py",
+        "frozen_requirements",
+        "static_manifest"
+      ]
+    },
+    "R02": {
+      "title": "400 mm beam",
+      "status": "BLOCKED",
+      "check_ids": [
+        "geometric_fit:geometry:beam_dimensions",
+        "stage_executed:geometric_fit",
+        "file:config/design.json",
+        "file:cad/beam_400mm.step",
+        "physical:beam_length_mm",
+        "physical:provenance"
+      ]
+    },
+    "R03": {
+      "title": "Two printed press-fit brackets",
+      "status": "BLOCKED",
+      "check_ids": [
+        "geometric_fit:fit:right_printable_pose",
+        "geometric_fit:fit:right_core_pose",
+        "geometric_fit:assembly:actual_instance:beam_400mm",
+        "geometric_fit:assembly:actual_instance:bracket",
+        "geometric_fit:assembly:actual_instance:bracket_right",
+        "geometric_fit:fit:engagement_and_relief",
+        "geometric_fit:fit:left:core_collision",
+        "geometric_fit:fit:left:core_clearance",
+        "geometric_fit:fit:right:core_collision",
+        "geometric_fit:fit:right:core_clearance",
+        "geometric_fit:fit:separate_sacrificial_ribs",
+        "geometric_fit:fit:rib_region_bounds",
+        "geometric_fit:fit:left:intentional_interference",
+        "geometric_fit:fit:right:intentional_interference",
+        "geometric_fit:fit:left:sampled_insertion_path",
+        "geometric_fit:fit:right:sampled_insertion_path",
+        "geometric_fit:fit:catalogue_tolerance_qualification",
+        "geometric_fit:fit:physical_press_fit",
+        "stage_executed:geometric_fit",
+        "file:cad/bracket.step",
+        "file:manufacturing/PRINT_AND_ASSEMBLY.md",
+        "physical:tube_openings_both_ends_mm",
+        "physical:selected_fit_coupon",
+        "physical:press_fit_insertion_and_retention",
+        "physical:printed_process_and_material",
+        "physical:provenance"
+      ]
+    },
+    "R04": {
+      "title": "Bolted mounts on two walls",
+      "status": "BLOCKED",
+      "check_ids": [
+        "geometric_fit:assembly:actual_instance:beam_400mm",
+        "geometric_fit:assembly:actual_instance:bracket",
+        "geometric_fit:assembly:actual_instance:bracket_right",
+        "geometric_fit:fit:engagement_and_relief",
+        "geometric_fit:hardware:mount_holes",
+        "geometric_fit:hardware:actual_solids",
+        "geometric_fit:hardware:positions:sleeves",
+        "geometric_fit:assembly:actual_hardware:sleeves",
+        "geometric_fit:hardware:positions:retention_washers",
+        "geometric_fit:assembly:actual_hardware:retention_washers",
+        "geometric_fit:hardware:positions:anchor_shanks_simplified",
+        "geometric_fit:assembly:actual_hardware:anchor_shanks_simplified",
+        "geometric_fit:hardware:tolerance_stack",
+        "stage_executed:geometric_fit",
+        "file:cad/assembly.step",
+        "file:manufacturing/PRINT_AND_ASSEMBLY.md",
+        "physical:actual_wall_and_anchor_installation",
+        "physical:sleeve_projection_all_four_mm",
+        "physical:provenance"
+      ]
+    },
+    "R05": {
+      "title": "10 N structural requirement",
+      "status": "BLOCKED",
+      "check_ids": [
+        "calculations:calc:beam_global_stress",
+        "calculations:calc:beam_local_wall_stress",
+        "calculations:calc:beam_displacement",
+        "calculations:calc:beam_compression",
+        "calculations:calc:bracket_force_envelope",
+        "calculations:calc:bracket_torsion_envelope",
+        "calculations:calc:bracket_transverse_moment_envelope",
+        "calculations:calc:plug_stress",
+        "calculations:calc:plug_displacement",
+        "calculations:calc:plate_strip_stress",
+        "calculations:calc:bearing_pressure",
+        "calculations:calc:anchor_interaction",
+        "calculations:calc:fixture_thickness",
+        "stage_executed:calculations",
+        "geometric_fit:fit:physical_press_fit",
+        "fem:fem:audit_recomputed_checks",
+        "fem:fem:force_balance_relative:bracket_h6:fx",
+        "fem:fem:moment_balance_relative:bracket_h6:fx",
+        "fem:fem:force_balance_relative:bracket_h6:fy",
+        "fem:fem:moment_balance_relative:bracket_h6:fy",
+        "fem:fem:force_balance_relative:bracket_h6:fz",
+        "fem:fem:moment_balance_relative:bracket_h6:fz",
+        "fem:fem:force_balance_relative:bracket_h6:tx",
+        "fem:fem:moment_balance_relative:bracket_h6:tx",
+        "fem:fem:force_balance_relative:bracket_h6:my",
+        "fem:fem:moment_balance_relative:bracket_h6:my",
+        "fem:fem:force_balance_relative:bracket_h6:mz",
+        "fem:fem:moment_balance_relative:bracket_h6:mz",
+        "fem:fem:force_balance_relative:bracket_h4p5:fx",
+        "fem:fem:moment_balance_relative:bracket_h4p5:fx",
+        "fem:fem:force_balance_relative:bracket_h4p5:fy",
+        "fem:fem:moment_balance_relative:bracket_h4p5:fy",
+        "fem:fem:force_balance_relative:bracket_h4p5:fz",
+        "fem:fem:moment_balance_relative:bracket_h4p5:fz",
+        "fem:fem:force_balance_relative:bracket_h4p5:tx",
+        "fem:fem:moment_balance_relative:bracket_h4p5:tx",
+        "fem:fem:force_balance_relative:bracket_h4p5:my",
+        "fem:fem:moment_balance_relative:bracket_h4p5:my",
+        "fem:fem:force_balance_relative:bracket_h4p5:mz",
+        "fem:fem:moment_balance_relative:bracket_h4p5:mz",
+        "fem:fem:force_balance_relative:bracket_h3p5:fx",
+        "fem:fem:moment_balance_relative:bracket_h3p5:fx",
+        "fem:fem:force_balance_relative:bracket_h3p5:fy",
+        "fem:fem:moment_balance_relative:bracket_h3p5:fy",
+        "fem:fem:force_balance_relative:bracket_h3p5:fz",
+        "fem:fem:moment_balance_relative:bracket_h3p5:fz",
+        "fem:fem:force_balance_relative:bracket_h3p5:tx",
+        "fem:fem:moment_balance_relative:bracket_h3p5:tx",
+        "fem:fem:force_balance_relative:bracket_h3p5:my",
+        "fem:fem:moment_balance_relative:bracket_h3p5:my",
+        "fem:fem:force_balance_relative:bracket_h3p5:mz",
+        "fem:fem:moment_balance_relative:bracket_h3p5:mz",
+        "fem:fem:beam_volume:beam_h8",
+        "fem:fem:force_balance_relative:beam_h8:central_gravity",
+        "fem:fem:moment_balance_relative:beam_h8:central_gravity",
+        "fem:fem:beam_volume:beam_h5p5",
+        "fem:fem:force_balance_relative:beam_h5p5:central_gravity",
+        "fem:fem:moment_balance_relative:beam_h5p5:central_gravity",
+        "fem:fem:convergence:bracket:max_vm_bound_MPa",
+        "fem:fem:convergence:bracket:max_principal_abs_bound_MPa",
+        "fem:fem:convergence:bracket:max_displacement_bound_mm",
+        "fem:fem:strength:bracket:max_vm_bound_MPa",
+        "fem:fem:strength:bracket:max_principal_abs_bound_MPa",
+        "fem:fem:displacement:bracket",
+        "fem:fem:convergence:beam:max_nodal_vm_MPa",
+        "fem:fem:convergence:beam:max_IP_vm_MPa",
+        "fem:fem:convergence:beam:max_displacement_mm",
+        "fem:fem:strength:beam:max_nodal_vm_MPa",
+        "fem:fem:strength:beam:max_IP_vm_MPa",
+        "fem:fem:displacement:beam",
+        "fem:fem:Euler_comparison",
+        "stage_executed:fem",
+        "file:config/physical_acceptance.json",
+        "file:manufacturing/PRINT_AND_ASSEMBLY.md",
+        "physical:press_fit_insertion_and_retention",
+        "physical:printed_process_and_material",
+        "physical:actual_wall_and_anchor_installation",
+        "physical:sleeve_projection_all_four_mm",
+        "physical:assembly_30N_proof_test",
+        "physical:sustained_load_environment",
+        "physical:provenance"
+      ]
+    },
+    "R06": {
+      "title": "Catalogue section and material evidence",
+      "status": "BLOCKED",
+      "check_ids": [
+        "geometric_fit:geometry:catalogue_profile",
+        "file:cad/beam_400mm.step",
+        "file:evidence/source_manifest.json",
+        "source_evidence",
+        "physical:beam_lot_certificate",
+        "physical:provenance"
+      ]
+    },
+    "R07": {
+      "title": "Native Google Doc report",
+      "status": "PASS",
+      "check_ids": [
+        "file:report/report.md",
+        "file:report/report.docx",
+        "file:report/google_doc.json",
+        "file:report/source_snapshot.json",
+        "file:report/visual_review.json",
+        "report_current_sources",
+        "report_visual_qa",
+        "native_google_doc"
+      ]
+    },
+    "R08": {
+      "title": "Full executable calculations",
+      "status": "PASS",
+      "check_ids": [
+        "unit_and_negative_tests",
+        "calculations:calc:beam_global_stress",
+        "calculations:calc:beam_local_wall_stress",
+        "calculations:calc:beam_displacement",
+        "calculations:calc:beam_compression",
+        "calculations:calc:bracket_force_envelope",
+        "calculations:calc:bracket_torsion_envelope",
+        "calculations:calc:bracket_transverse_moment_envelope",
+        "calculations:calc:plug_stress",
+        "calculations:calc:plug_displacement",
+        "calculations:calc:plate_strip_stress",
+        "calculations:calc:bearing_pressure",
+        "calculations:calc:anchor_interaction",
+        "calculations:calc:fixture_thickness",
+        "stage_executed:calculations",
+        "fem:fem:Euler_comparison",
+        "file:config/design.json",
+        "file:scripts/calculate.py",
+        "file:tests/test_calculations.py",
+        "file:report/report.md",
+        "file:report/source_snapshot.json",
+        "report_current_sources"
+      ]
+    },
+    "R09": {
+      "title": "Priced BOM with links",
+      "status": "BLOCKED",
+      "check_ids": [
+        "file:bom.csv",
+        "source_evidence",
+        "bom_content",
+        "physical:current_procurement_quotes"
+      ]
+    },
+    "R10": {
+      "title": "3D FEM stress results",
+      "status": "PASS",
+      "check_ids": [
+        "fem:fem:audit_hashes",
+        "stage_executed:fem",
+        "file:scripts/render_fem.py",
+        "file:results/fem_render.json",
+        "file:results/bracket_stress.png",
+        "file:results/beam_stress.png",
+        "file:results/stress_viewer.html"
+      ]
+    },
+    "R11": {
+      "title": "Native FreeCAD CAD",
+      "status": "PASS",
+      "check_ids": [
+        "native_cad:freecad:source_manifest",
+        "native_cad:freecad:bracket.FCStd",
+        "native_cad:freecad:beam_400mm.FCStd",
+        "native_cad:freecad:bracket_structural_core_only.FCStd",
+        "native_cad:freecad:assembly.FCStd",
+        "native_cad:freecad:fit_coupons.FCStd",
+        "stage_executed:native_cad",
+        "file:scripts/build_cad.py",
+        "file:cad/bracket.step",
+        "file:cad/bracket_structural_core_only.step",
+        "file:cad/assembly.step",
+        "file:cad/geometry_manifest.json"
+      ]
+    },
+    "R12": {
+      "title": "Gmsh STL generation",
+      "status": "PASS",
+      "check_ids": [
+        "fem:fem:audit_hashes",
+        "fem:stl:gmsh_generated",
+        "fem:stl:manifold:bracket",
+        "fem:stl:manifold:fit_coupon_31p65mm",
+        "fem:stl:manifold:fit_coupon_31p75mm",
+        "fem:stl:manifold:fit_coupon_31p85mm",
+        "fem:stl:manifold:fit_coupon_31p95mm",
+        "fem:stl:manifold:fit_coupon_32p05mm",
+        "stage_executed:fem",
+        "file:scripts/run_fem.py",
+        "file:mesh/bracket.stl"
+      ]
+    },
+    "R13": {
+      "title": "Executed CalculiX FEM",
+      "status": "PASS",
+      "check_ids": [
+        "fem:fem:audit_hashes",
+        "fem:fem:audit_recomputed_checks",
+        "fem:fem:audit_evidence",
+        "fem:fem:positive_jacobian:bracket_h6",
+        "fem:fem:solved:bracket_h6:fx",
+        "fem:fem:force_balance_relative:bracket_h6:fx",
+        "fem:fem:moment_balance_relative:bracket_h6:fx",
+        "fem:fem:solved:bracket_h6:fy",
+        "fem:fem:force_balance_relative:bracket_h6:fy",
+        "fem:fem:moment_balance_relative:bracket_h6:fy",
+        "fem:fem:solved:bracket_h6:fz",
+        "fem:fem:force_balance_relative:bracket_h6:fz",
+        "fem:fem:moment_balance_relative:bracket_h6:fz",
+        "fem:fem:solved:bracket_h6:tx",
+        "fem:fem:force_balance_relative:bracket_h6:tx",
+        "fem:fem:moment_balance_relative:bracket_h6:tx",
+        "fem:fem:solved:bracket_h6:my",
+        "fem:fem:force_balance_relative:bracket_h6:my",
+        "fem:fem:moment_balance_relative:bracket_h6:my",
+        "fem:fem:solved:bracket_h6:mz",
+        "fem:fem:force_balance_relative:bracket_h6:mz",
+        "fem:fem:moment_balance_relative:bracket_h6:mz",
+        "fem:fem:positive_jacobian:bracket_h4p5",
+        "fem:fem:solved:bracket_h4p5:fx",
+        "fem:fem:force_balance_relative:bracket_h4p5:fx",
+        "fem:fem:moment_balance_relative:bracket_h4p5:fx",
+        "fem:fem:solved:bracket_h4p5:fy",
+        "fem:fem:force_balance_relative:bracket_h4p5:fy",
+        "fem:fem:moment_balance_relative:bracket_h4p5:fy",
+        "fem:fem:solved:bracket_h4p5:fz",
+        "fem:fem:force_balance_relative:bracket_h4p5:fz",
+        "fem:fem:moment_balance_relative:bracket_h4p5:fz",
+        "fem:fem:solved:bracket_h4p5:tx",
+        "fem:fem:force_balance_relative:bracket_h4p5:tx",
+        "fem:fem:moment_balance_relative:bracket_h4p5:tx",
+        "fem:fem:solved:bracket_h4p5:my",
+        "fem:fem:force_balance_relative:bracket_h4p5:my",
+        "fem:fem:moment_balance_relative:bracket_h4p5:my",
+        "fem:fem:solved:bracket_h4p5:mz",
+        "fem:fem:force_balance_relative:bracket_h4p5:mz",
+        "fem:fem:moment_balance_relative:bracket_h4p5:mz",
+        "fem:fem:positive_jacobian:bracket_h3p5",
+        "fem:fem:solved:bracket_h3p5:fx",
+        "fem:fem:force_balance_relative:bracket_h3p5:fx",
+        "fem:fem:moment_balance_relative:bracket_h3p5:fx",
+        "fem:fem:solved:bracket_h3p5:fy",
+        "fem:fem:force_balance_relative:bracket_h3p5:fy",
+        "fem:fem:moment_balance_relative:bracket_h3p5:fy",
+        "fem:fem:solved:bracket_h3p5:fz",
+        "fem:fem:force_balance_relative:bracket_h3p5:fz",
+        "fem:fem:moment_balance_relative:bracket_h3p5:fz",
+        "fem:fem:solved:bracket_h3p5:tx",
+        "fem:fem:force_balance_relative:bracket_h3p5:tx",
+        "fem:fem:moment_balance_relative:bracket_h3p5:tx",
+        "fem:fem:solved:bracket_h3p5:my",
+        "fem:fem:force_balance_relative:bracket_h3p5:my",
+        "fem:fem:moment_balance_relative:bracket_h3p5:my",
+        "fem:fem:solved:bracket_h3p5:mz",
+        "fem:fem:force_balance_relative:bracket_h3p5:mz",
+        "fem:fem:moment_balance_relative:bracket_h3p5:mz",
+        "fem:fem:positive_jacobian:beam_h8",
+        "fem:fem:beam_volume:beam_h8",
+        "fem:fem:solved:beam_h8:central_gravity",
+        "fem:fem:force_balance_relative:beam_h8:central_gravity",
+        "fem:fem:moment_balance_relative:beam_h8:central_gravity",
+        "fem:fem:positive_jacobian:beam_h5p5",
+        "fem:fem:beam_volume:beam_h5p5",
+        "fem:fem:solved:beam_h5p5:central_gravity",
+        "fem:fem:force_balance_relative:beam_h5p5:central_gravity",
+        "fem:fem:moment_balance_relative:beam_h5p5:central_gravity",
+        "fem:fem:convergence:bracket:max_vm_bound_MPa",
+        "fem:fem:convergence:bracket:max_principal_abs_bound_MPa",
+        "fem:fem:convergence:bracket:max_displacement_bound_mm",
+        "fem:fem:convergence:beam:max_nodal_vm_MPa",
+        "fem:fem:convergence:beam:max_IP_vm_MPa",
+        "fem:fem:convergence:beam:max_displacement_mm",
+        "fem:fem:Euler_comparison",
+        "stage_executed:fem",
+        "file:scripts/run_fem.py",
+        "file:cad/bracket_structural_core_only.step"
+      ]
+    },
+    "R14": {
+      "title": "Automatic requirements audit and feedback",
+      "status": "PASS",
+      "check_ids": [
+        "calculations:calc:beam_global_stress",
+        "calculations:calc:beam_local_wall_stress",
+        "calculations:calc:beam_displacement",
+        "calculations:calc:beam_compression",
+        "calculations:calc:bracket_force_envelope",
+        "calculations:calc:bracket_torsion_envelope",
+        "calculations:calc:bracket_transverse_moment_envelope",
+        "calculations:calc:plug_stress",
+        "calculations:calc:plug_displacement",
+        "calculations:calc:plate_strip_stress",
+        "calculations:calc:bearing_pressure",
+        "calculations:calc:anchor_interaction",
+        "calculations:calc:fixture_thickness",
+        "stage_executed:calculations",
+        "fem:fem:audit_hashes",
+        "fem:fem:audit_recomputed_checks",
+        "fem:fem:audit_evidence",
+        "file:requirement.md",
+        "file:config/physical_acceptance.json",
+        "file:scripts/run_ci.py",
+        "frozen_requirements",
+        "execution_sources_stable",
+        "feedback_outputs",
+        "all_requirements_mapped"
+      ]
+    },
+    "R15": {
+      "title": "CadQuery and Open CASCADE fit checks",
+      "status": "BLOCKED",
+      "check_ids": [
+        "unit_and_negative_tests",
+        "geometric_fit:geometry:valid:beam_400mm",
+        "geometric_fit:geometry:valid:bracket",
+        "geometric_fit:geometry:valid:bracket_structural_core_only",
+        "geometric_fit:geometry:valid:bracket_added_ribs",
+        "geometric_fit:geometry:valid:bracket_right",
+        "geometric_fit:geometry:valid:bracket_right_structural_core_only",
+        "geometric_fit:geometry:valid:sleeves",
+        "geometric_fit:geometry:valid:retention_washers",
+        "geometric_fit:geometry:valid:anchor_shanks_simplified",
+        "geometric_fit:geometry:valid:assembly",
+        "geometric_fit:geometry:beam_dimensions",
+        "geometric_fit:geometry:catalogue_profile",
+        "geometric_fit:fit:right_printable_pose",
+        "geometric_fit:fit:right_core_pose",
+        "geometric_fit:assembly:actual_instance:beam_400mm",
+        "geometric_fit:assembly:actual_instance:bracket",
+        "geometric_fit:assembly:actual_instance:bracket_right",
+        "geometric_fit:fit:engagement_and_relief",
+        "geometric_fit:fit:left:core_collision",
+        "geometric_fit:fit:left:core_clearance",
+        "geometric_fit:fit:right:core_collision",
+        "geometric_fit:fit:right:core_clearance",
+        "geometric_fit:fit:separate_sacrificial_ribs",
+        "geometric_fit:fit:rib_region_bounds",
+        "geometric_fit:fit:left:intentional_interference",
+        "geometric_fit:fit:right:intentional_interference",
+        "geometric_fit:fit:left:sampled_insertion_path",
+        "geometric_fit:fit:right:sampled_insertion_path",
+        "geometric_fit:hardware:mount_holes",
+        "geometric_fit:hardware:actual_solids",
+        "geometric_fit:hardware:positions:sleeves",
+        "geometric_fit:assembly:actual_hardware:sleeves",
+        "geometric_fit:hardware:positions:retention_washers",
+        "geometric_fit:assembly:actual_hardware:retention_washers",
+        "geometric_fit:hardware:positions:anchor_shanks_simplified",
+        "geometric_fit:assembly:actual_hardware:anchor_shanks_simplified",
+        "geometric_fit:hardware:tolerance_stack",
+        "geometric_fit:fit:catalogue_tolerance_qualification",
+        "geometric_fit:fit:physical_press_fit",
+        "stage_executed:geometric_fit",
+        "file:scripts/check_geometric_fit.py",
+        "file:tests/test_geometric_fit.py"
+      ]
+    },
+    "R16": {
+      "title": "Functional CI and meaningful negative tests",
+      "status": "PASS",
+      "check_ids": [
+        "dependency:cadquery",
+        "dependency:cadquery-ocp",
+        "dependency:gmsh",
+        "dependency:numpy",
+        "dependency:matplotlib",
+        "dependency:cad-ccx",
+        "unit_and_negative_tests",
+        "stage_executed:native_cad",
+        "stage_executed:calculations",
+        "stage_executed:geometric_fit",
+        "stage_executed:fem",
+        "file:requirements.lock",
+        "file:.github/workflows/ci.yml",
+        "file:scripts/run_ci.py",
+        "file:scripts/ci_support.py",
+        "file:tests/test_geometric_fit.py",
+        "file:tests/test_calculations.py",
+        "file:tests/test_ci_runner.py",
+        "hosted_workflow_definition",
+        "execution_sources_stable"
+      ]
+    },
+    "R17": {
+      "title": "Saved CI logs and next-iteration feedback",
+      "status": "PASS",
+      "check_ids": [
+        "file:README.md",
+        "file:.github/workflows/ci.yml",
+        "file:scripts/run_ci.py",
+        "hosted_workflow_definition",
+        "ci_saved_log",
+        "feedback_outputs"
+      ]
+    },
+    "R18": {
+      "title": "Simple AI reference",
+      "status": "PASS",
+      "check_ids": [
+        "file:AI_REFERENCE.md"
+      ]
+    },
+    "R19": {
+      "title": "Explicit reconstruction provenance",
+      "status": "PASS",
+      "check_ids": [
+        "native_cad:freecad:source_manifest",
+        "file:CHANGELOG.md",
+        "file:evidence/reconstruction_provenance.json",
+        "file:evidence/v0_report_export.docx"
+      ]
+    }
+  },
+  "input_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "requirement.md": "daed9c70a9376adc1ccc36665bf0f1e1d19cff86ccbe264e7ca375dbde1b2a49",
+    "scripts/run_ci.py": "5232adc483aa3f0b4fecf7726149c1807fa733245d1e95ad6493decbf4443b0a",
+    "scripts/ci_support.py": "788daddaf6d66e993283d38d5616b3a6608c4fa2b162885a24589ef995dee84b",
+    "tests/test_calculations.py": "2d07d521173c68865f876307b6162fc4d8246117694a7a3d02b24f6e66ea91c9",
+    "tests/test_ci_runner.py": "f69af16949237e31fc402378fce004f0303ab7648c0c9db1a96b72cebffbd5df",
+    "tests/test_geometric_fit.py": "931e4b6723540accab7285ae51ca08216e356df0919c400b687d9abd8a096976"
+  },
+  "executed_source_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "requirement.md": "daed9c70a9376adc1ccc36665bf0f1e1d19cff86ccbe264e7ca375dbde1b2a49",
+    "scripts/run_ci.py": "5232adc483aa3f0b4fecf7726149c1807fa733245d1e95ad6493decbf4443b0a",
+    "scripts/ci_support.py": "788daddaf6d66e993283d38d5616b3a6608c4fa2b162885a24589ef995dee84b",
+    "scripts/build_cad.py": "0b380d3bf09f49dbcf6e40fa12072424acae6a3fc60c17fb142a750cd40ff933",
+    "scripts/calculate.py": "31e67283f7214c3d4d6b318f089c96e2dfabe7c197d7e6ca2fe8baf8edb629c8",
+    "scripts/check_geometric_fit.py": "38eef5d65622f5dd5b295cebd56295f5e34ab49d687fd4ec656bb70de8f9604e",
+    "scripts/run_fem.py": "b3f66294823c0044c559489ef7e4108272c792a2d606cc92783032f98b7f01bb",
+    "scripts/render_fem.py": "2c0f2de315d11c0bf11a5928c25cefcaf9834065354726c455218a2d2523e4ae",
+    "tests/test_calculations.py": "2d07d521173c68865f876307b6162fc4d8246117694a7a3d02b24f6e66ea91c9",
+    "tests/test_ci_runner.py": "f69af16949237e31fc402378fce004f0303ab7648c0c9db1a96b72cebffbd5df",
+    "tests/test_geometric_fit.py": "931e4b6723540accab7285ae51ca08216e356df0919c400b687d9abd8a096976"
+  },
+  "next_iteration": {
+    "action": "COMPLETE_PHYSICAL_QUALIFICATION",
+    "priorities": [
+      {
+        "check_id": "geometric_fit:fit:catalogue_tolerance_qualification",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R03",
+          "R15"
+        ],
+        "message": "The fixed nominal plug does not fit every allowed catalogue opening; actual purchased tube dimensions are not measured.",
+        "next_action": "Measure both flats and corners at both tube ends, select/rebuild coupons and adapt plug core/rib dimensions to those observations; rerun this checker.",
+        "evidence": [
+          "config/design.json",
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "geometric_fit:fit:physical_press_fit",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R03",
+          "R05",
+          "R15"
+        ],
+        "message": "CAD does not establish insertion force, rib crushing, retention, printed shrinkage or creep.",
+        "next_action": "Print qualified material, measure openings and coupons, record insertion/retention/proof and environmental tests before release.",
+        "evidence": [
+          "config/physical_acceptance.json",
+          "manufacturing/PRINT_AND_ASSEMBLY.md"
+        ]
+      },
+      {
+        "check_id": "physical:beam_length_mm",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R02"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document beam length mm. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:beam_lot_certificate",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R06"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document beam lot certificate. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:tube_openings_both_ends_mm",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R03"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document tube openings both ends mm. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:selected_fit_coupon",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R03"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document selected fit coupon. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:press_fit_insertion_and_retention",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R03",
+          "R05"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document press fit insertion and retention. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:printed_process_and_material",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R03",
+          "R05"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document printed process and material. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:actual_wall_and_anchor_installation",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R04",
+          "R05"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document actual wall and anchor installation. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:sleeve_projection_all_four_mm",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R04",
+          "R05"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document sleeve projection all four mm. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:assembly_30N_proof_test",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R05"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document assembly 30N proof test. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:sustained_load_environment",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R05"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document sustained load environment. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:current_procurement_quotes",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R09"
+        ],
+        "message": "No actual physical observation has been recorded.",
+        "next_action": "Perform and document current procurement quotes. Record observations, operator/date and evidence; simulation cannot approve this gate.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      },
+      {
+        "check_id": "physical:provenance",
+        "status": "BLOCKED",
+        "requirement_ids": [
+          "R02",
+          "R03",
+          "R04",
+          "R05",
+          "R06"
+        ],
+        "message": "A claimed physical pass lacks operator, date or evidence.",
+        "next_action": "Add genuine operator, date and retained evidence after actual qualification.",
+        "evidence": [
+          "config/physical_acceptance.json"
+        ]
+      }
+    ]
+  },
+  "hosted_ci_execution": "NOT_RUN_NO_REPOSITORY_REQUESTED",
+  "notes": [
+    "Local CI commands were executed. Hosted GitHub Actions execution is not claimed.",
+    "Test-system functionality is separate from engineering acceptance.",
+    "Reconstructed v1 results never reuse historical v0 values as new evidence."
+  ],
+  "log_sha256": "a3d52e12f57bc5c589c34b0c3344be02ad5b2cfaaa7729479172d58b6d8c4152"
+}

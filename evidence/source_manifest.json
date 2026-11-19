@@ -1,0 +1,329 @@
+{
+  "schema": "v1-supplier-evidence",
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437",
+      "purpose": "Catalogue and actual section dimensions",
+      "retrieved_at_utc": "2026-11-19T20:48:29.432286+00:00",
+      "content_type": "text/html;charset=UTF-8",
+      "resolved_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437",
+      "path": "evidence/onlinemetals_23437.html",
+      "bytes": 303879,
+      "sha256": "5571f5aa4ad762543f3eb256c838fb90d7d583abeaad03ebb8335e5e2ff71857",
+      "status": "retrieved",
+      "text_path": "evidence/onlinemetals_23437.txt",
+      "text_sha256": "fa8f1a16d0a1ca8675ee5b8e7aaf6e14c898f506665f31757f88934c4750c892"
+    },
+    {
+      "id": "S2",
+      "url": "https://www.onlinemetals.com/en/aluminum-tolerances",
+      "purpose": "Dimensional tolerances",
+      "retrieved_at_utc": "2026-11-19T20:48:29.433116+00:00",
+      "content_type": "text/html;charset=UTF-8",
+      "resolved_url": "https://www.onlinemetals.com/en/aluminum-tolerances",
+      "path": "evidence/onlinemetals_aluminum_tolerances.html",
+      "bytes": 288259,
+      "sha256": "bb9de194d6c4727fb07126358f0d11e4fd17d781d848189a6fa8ac54c4ee1e47",
+      "status": "retrieved",
+      "text_path": "evidence/onlinemetals_aluminum_tolerances.txt",
+      "text_sha256": "37228e1d35465431011fbca188bcf1f9570fa589fa04c000cb35844b76e0d330"
+    },
+    {
+      "id": "S3",
+      "url": "https://www.onlinemetals.com/en/tolerances",
+      "purpose": "Tolerance overview",
+      "retrieved_at_utc": "2026-11-19T20:48:29.433632+00:00",
+      "content_type": "text/html;charset=UTF-8",
+      "resolved_url": "https://www.onlinemetals.com/en/tolerances",
+      "path": "evidence/onlinemetals_tolerances.html",
+      "bytes": 191131,
+      "sha256": "2fa5c994572083944d6486f025045bd347c0543cca2d916b452d53d072627973",
+      "status": "retrieved",
+      "text_path": "evidence/onlinemetals_tolerances.txt",
+      "text_sha256": "fda6eaac9f1bd232ee9ad6963dbfff60271e2a5306de6011e7ff7fc6e6991d8a"
+    },
+    {
+      "id": "S4",
+      "url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+      "purpose": "6061 extrusion strength reference",
+      "retrieved_at_utc": "2026-11-19T20:48:29.434171+00:00",
+      "content_type": "application/pdf",
+      "resolved_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf",
+      "path": "evidence/hydro_6061.pdf",
+      "bytes": 419400,
+      "sha256": "cc3cc79ef34d7ccd2a69fe5216f726be23d23d0b07e12c2ea1091adbba7fd009",
+      "status": "retrieved",
+      "text_path": "evidence/hydro_6061.txt",
+      "text_sha256": "27658d1fefc163ba869b355586051157330b4acf8084efb7d62e213467cf703f",
+      "page_count": 2
+    },
+    {
+      "id": "S5",
+      "url": "https://www.onlinemetals.com/en/product-guide/alloy/6061",
+      "purpose": "6061 typical physical properties",
+      "retrieved_at_utc": "2026-11-19T20:48:29.434953+00:00",
+      "content_type": "text/html;charset=UTF-8",
+      "resolved_url": "https://www.onlinemetals.com/en/product-guide/alloy/6061",
+      "path": "evidence/onlinemetals_6061.html",
+      "bytes": 190471,
+      "sha256": "cd45141dd5b03cf27f73cc66f1df5b35ea83a07637bea4c2fb96c16509d645e7",
+      "status": "retrieved",
+      "text_path": "evidence/onlinemetals_6061.txt",
+      "text_sha256": "fdf9a718fe80bd682a1ed4a433f8e22ddb43051c02856d770b643f611927ef56"
+    },
+    {
+      "id": "S6",
+      "url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf",
+      "purpose": "PETG typical print/material data",
+      "retrieved_at_utc": "2026-11-19T20:48:34.706635+00:00",
+      "content_type": "application/pdf",
+      "resolved_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf",
+      "path": "evidence/prusament_petg_tds.pdf",
+      "bytes": 1646301,
+      "sha256": "0159322f3d14300fe1b3a27a7e1233d87b6d7905ccb738f9f5a5bba88bb2e50d",
+      "status": "retrieved",
+      "text_path": "evidence/prusament_petg_tds.txt",
+      "text_sha256": "3d435f8b69143d1b2682e58741a95b0862615709e577e1f1f694df380bcc2eeb",
+      "page_count": 3
+    },
+    {
+      "id": "S7",
+      "url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+      "purpose": "Filament catalogue",
+      "retrieved_at_utc": "2026-11-19T20:48:34.710358+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "resolved_url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/",
+      "path": "evidence/prusament_petg_black.html",
+      "bytes": 875298,
+      "sha256": "3f1a084625fcd44621cc2eba4a107d268f0e463ac13a8ae669a4bdb9fd176ba6",
+      "status": "retrieved",
+      "text_path": "evidence/prusament_petg_black.txt",
+      "text_sha256": "3596eaa14569ecfeee5847fa59ab86b843b6ee83ddf3fa51efea599d6a28e76d"
+    },
+    {
+      "id": "S8",
+      "url": "https://www.fischer.co.uk/en-gb/products/steel-fixings/bolt-anchor/bolt-anchor-faz-ii-plus/bolt-anchor-faz-ii-plus/564572-faz-ii-plus-6-10-zp",
+      "purpose": "Anchor catalogue and installation dimensions",
+      "retrieved_at_utc": "2026-11-19T20:48:34.723063+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "resolved_url": "https://www.fischer.co.uk/en-gb/products/steel-fixings/bolt-anchor/bolt-anchor-faz-ii-plus/bolt-anchor-faz-ii-plus/564572-faz-ii-plus-6-10-zp",
+      "path": "evidence/fischer_564572.html",
+      "bytes": 245325,
+      "sha256": "0a76e54ccf8ca4f7cf32bde9673a107f369b44109bb37e03579d593eaa35c794",
+      "status": "retrieved",
+      "text_path": "evidence/fischer_564572.txt",
+      "text_sha256": "048209f8f80fef467fe4f13875c2befa1e43d62189be4d8445fd8b3a00c49ead"
+    },
+    {
+      "id": "S9",
+      "url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf",
+      "purpose": "Published permissible anchor loads",
+      "retrieved_at_utc": "2026-11-19T20:48:34.779209+00:00",
+      "content_type": "application/pdf",
+      "resolved_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf",
+      "path": "evidence/fischer_load_table.pdf",
+      "bytes": 69158,
+      "sha256": "81f69a5c516b9e5a6227702c8e8772389741f1387baba265795225cd0ad27dfb",
+      "status": "retrieved",
+      "text_path": "evidence/fischer_load_table.txt",
+      "text_sha256": "1c1f6e22a461eb9768b52594637ed9fe53ed9863549e24bb0fa857a48340dc29",
+      "page_count": 1
+    },
+    {
+      "id": "S10",
+      "url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A",
+      "purpose": "Steel sleeve catalogue and dimensions",
+      "retrieved_at_utc": "2026-11-19T20:48:36.506364+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "resolved_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A",
+      "path": "evidence/accu_sleeve.html",
+      "bytes": 778081,
+      "sha256": "59e5778e71feb6c2b4e459ba35081b12fa4c93eae1fc9d6f3d90fcc6b9a5def1",
+      "status": "retrieved",
+      "text_path": "evidence/accu_sleeve.txt",
+      "text_sha256": "fc552101636d4bbb1e8aae0dd795ee95f7208734f40d994da20ca17e23971a86"
+    },
+    {
+      "id": "S11",
+      "url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2",
+      "purpose": "Retention washer catalogue and dimensions",
+      "retrieved_at_utc": "2026-11-19T20:48:39.663613+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "resolved_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2",
+      "path": "evidence/accu_washer.html",
+      "bytes": 778224,
+      "sha256": "05fb0f5225a97f3742e6501d125315df9be3bd816fb992da288f524755a246a9",
+      "status": "retrieved",
+      "text_path": "evidence/accu_washer.txt",
+      "text_sha256": "2eb6578dba42f563c30040b6ad018d2ae9f2e9c415ef9438c32922fa55d64640"
+    },
+    {
+      "id": "S12",
+      "url": "https://www.smithmetal.com/pdf/engineering/en1a.pdf",
+      "purpose": "Generic EN1A steel information",
+      "retrieved_at_utc": "2026-11-19T20:48:40.975298+00:00",
+      "content_type": "application/pdf",
+      "resolved_url": "https://www.smithmetal.com/pdf/engineering/en1a.pdf",
+      "path": "evidence/smith_en1a.pdf",
+      "bytes": 1297949,
+      "sha256": "a7ddb81b58deb567ce69ab7b8caf109aa7f642b9ae3d39b3de5792dca6b21fe2",
+      "status": "retrieved",
+      "text_path": "evidence/smith_en1a.txt",
+      "text_sha256": "d999f8faf161b43aa2daf36a35b40b3fc8ca02bb4ad6f609f9f1bb79ba40ca8e",
+      "page_count": 1
+    },
+    {
+      "id": "S13",
+      "url": "https://www.klium.com/en/fischer-564572-piercing-anchor-faz-ii-plus-6-10-ev-electrolytically-galvanised-steel-176237",
+      "purpose": "Anchor distributor listing",
+      "retrieved_at_utc": "2026-11-19T20:48:41.170063+00:00",
+      "content_type": "text/html; charset=utf-8",
+      "resolved_url": "https://www.klium.com/en/fischer-564572-piercing-anchor-faz-ii-plus-6-10-ev-electrolytically-galvanised-steel-176237",
+      "path": "evidence/klium_anchor.html",
+      "bytes": 966414,
+      "sha256": "3127493a9ff6f566fb048471db1f627d67dff9c4531d1ee9607a4ecea8db20ac",
+      "status": "retrieved",
+      "text_path": "evidence/klium_anchor.txt",
+      "text_sha256": "ba163b7f70f052c54c9bbe9f4e148112113434b1a25285675c7f4fd0e19d663b"
+    },
+    {
+      "id": "S14",
+      "url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf",
+      "purpose": "ETA anchor bending strength and installation design conditions",
+      "path": "evidence/fischer_ETA_19_0520.pdf",
+      "bytes": 1272299,
+      "sha256": "7d64cd49e85612590be085b83bd9236b444e989053b999916556ef70c9daf156",
+      "retrieved_at_utc": "2026-11-19T20:49:05.431775+00:00",
+      "status": "retrieved",
+      "content_type": "application/pdf",
+      "text_path": "evidence/fischer_ETA_19_0520.txt",
+      "text_sha256": "01f0563d2ed7d47dead9e021b1162b98cef850d77fcc64229b21b1acb9ddfa38",
+      "page_count": 21
+    }
+  ],
+  "price_policy": "BOM prices from the retained v0 report are historical quotes dated 2026-11-17, unless explicitly refreshed. Supplier pages do not certify actual supplied material or printed parts.",
+  "property_evidence": [
+    {
+      "property": "beam catalogue and cross section",
+      "value": "23437; 6061-T6; ASTM B221; 38.1 mm outside width, 3.175 mm wall, 3.175 mm outer radius, 1.5748 mm inner radius",
+      "source_ids": [
+        "S1"
+      ],
+      "classification": "published nominal catalogue data"
+    },
+    {
+      "property": "beam dimensional tolerance",
+      "value": "Outside flats ±0.635 mm; flat wall ±0.2032 mm; radius ±0.396875 mm",
+      "source_ids": [
+        "S2"
+      ],
+      "classification": "published generic profile tolerances; actual measurements needed"
+    },
+    {
+      "property": "aluminum yield reference",
+      "value": "240 MPa",
+      "source_ids": [
+        "S4"
+      ],
+      "classification": "generic minimum 6061-T6 extrusion reference, not a supply lot certificate"
+    },
+    {
+      "property": "aluminum elastic modulus and Poisson ratio",
+      "value": "10,000 ksi = 68,947.5729 MPa; Poisson ratio 0.33",
+      "source_ids": [
+        "S5"
+      ],
+      "classification": "typical reference"
+    },
+    {
+      "property": "aluminum density",
+      "value": "2800 kg/m³",
+      "source_ids": [
+        "S5"
+      ],
+      "classification": "conservative rounded calculation assumption relative to the alloy guide; supplier product-page rounded density is not used"
+    },
+    {
+      "property": "PETG mechanical and density references",
+      "value": "Interlayer adhesion 18 ±4 MPa; horizontal tensile modulus 1.5 ±0.1 GPa; density 1.27 g/cm³",
+      "source_ids": [
+        "S6"
+      ],
+      "classification": "typical printed specimen test data, not a certified allowable"
+    },
+    {
+      "property": "PETG design screening inputs",
+      "value": "Strength reference 14 MPa; E = 1400 MPa; Poisson ratio = 0.38",
+      "source_ids": [
+        "S6"
+      ],
+      "classification": "14 and 1400 are lower typical screening references; Poisson ratio 0.38 is an assumption; print process qualification is required"
+    },
+    {
+      "property": "anchor capacities",
+      "value": "M6 zinc plated, 40 mm embedment; permissible N = 700 N, V = 4300 N; 8 N m torque",
+      "source_ids": [
+        "S8",
+        "S9"
+      ],
+      "classification": "isolated-anchor published permissible capacities in cracked C20/25; actual fixture and substrate verification required"
+    },
+    {
+      "property": "anchor bending reference",
+      "value": "11 N m / (1.25 × 1.4) = 6285.714 N mm",
+      "source_ids": [
+        "S9",
+        "S14"
+      ],
+      "classification": "derived service screen from ETA characteristic bending resistance and safety factors"
+    },
+    {
+      "property": "steel sleeve dimensions",
+      "value": "OD 18 ±0.4 mm; ID 6.4 ±0.1 mm; length 8 ±0.1 mm; EN1A steel",
+      "source_ids": [
+        "S10"
+      ],
+      "classification": "published catalogue dimensions; actual supply condition unverified"
+    },
+    {
+      "property": "washer dimensions",
+      "value": "OD 30 +0/-1.3 mm; ID 6.4 +0.3/-0 mm; thickness 1.5 ±0.3 mm; A2 steel",
+      "source_ids": [
+        "S11"
+      ],
+      "classification": "published catalogue dimensions"
+    }
+  ],
+  "checks": [
+    {
+      "id": "supplier_evidence_files",
+      "requirements": [
+        "R06",
+        "R09",
+        "R19"
+      ],
+      "status": "PASS",
+      "observed": 14,
+      "criterion": "All 14 specified supplier and technical source files retrieved with recorded SHA-256 hashes",
+      "message": "Official catalogue/material/dimensional sources retained with retrieval metadata. Historical price basis is retained separately.",
+      "next_action": "Verify actual material lot, current offers and installation conditions before procurement/release.",
+      "evidence": [
+        "evidence/onlinemetals_23437.html",
+        "evidence/onlinemetals_aluminum_tolerances.html",
+        "evidence/onlinemetals_tolerances.html",
+        "evidence/hydro_6061.pdf",
+        "evidence/onlinemetals_6061.html",
+        "evidence/prusament_petg_tds.pdf",
+        "evidence/prusament_petg_black.html",
+        "evidence/fischer_564572.html",
+        "evidence/fischer_load_table.pdf",
+        "evidence/accu_sleeve.html",
+        "evidence/accu_washer.html",
+        "evidence/smith_en1a.pdf",
+        "evidence/klium_anchor.html",
+        "evidence/fischer_ETA_19_0520.pdf"
+      ]
+    }
+  ]
+}

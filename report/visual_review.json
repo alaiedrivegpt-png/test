@@ -1,0 +1,97 @@
+{
+  "schema": "v1-report-visual-review",
+  "reviewed_at_utc": "2026-11-19T21:19:53.055807+00:00",
+  "reviewed_all_pages": true,
+  "page_count": 12,
+  "title_sanitize_pass": true,
+  "docx_sha256": "d606f499c785920e7e61192c47d11a846c7ee1228533f63b1f393d26d3101ff9",
+  "pdf_sha256": "0cb8f1100cd2b9b01aee76124198c7bb364f9b26222b68c5bd5aa632e0eff6a5",
+  "markdown_sha256": "74f17b3739dec5dba497e8adee0e8b2130db30ca8fefcad943402ea4a21d4e04",
+  "method": "Every page rendered with the documents skill render_docx.py and inspected as a full page PNG. The reviewed PDF is the retained deliverable.",
+  "page_reviews": [
+    {
+      "page": 1,
+      "status": "PASS",
+      "observations": "Title, explicit reconstruction status, centered assembly image, design table and 10 N scope are readable; no clipping.",
+      "rendered_png_sha256": "b02d22888622f4a7158e0bce90d753321751ea59a9c94da013eb72d91d63e87f"
+    },
+    {
+      "page": 2,
+      "status": "PASS",
+      "observations": "Bracket dimensions and labels are readable; geometry table remains on one page; both-end reconstruction note is complete.",
+      "rendered_png_sha256": "b4cf38ef5957ca2cbb71fbdcf4b6dc40532e969b6b020ff90ee8a1a24e30a55a"
+    },
+    {
+      "page": 3,
+      "status": "PASS",
+      "observations": "Material references and three rounded-section equations render in full; superscripts, subscripts and values are legible.",
+      "rendered_png_sha256": "68b9abb44477c9044bc1afeb984e4cb95f3c17a8c16992b28913f05cc649de9c"
+    },
+    {
+      "page": 4,
+      "status": "PASS",
+      "observations": "All beam stress/deflection radicals and fractions render fully; corrected torsion-area definition and current 0.633310 MPa result are visible.",
+      "rendered_png_sha256": "8c73eb435250de065403742a871b6cb756eb80c637acc341225725bea85d8160"
+    },
+    {
+      "page": 5,
+      "status": "PASS",
+      "observations": "Chamfered-plug, plate and contact equations render completely; local wall stress and assumption limits are legible.",
+      "rendered_png_sha256": "322076ee57c4a5694292cb1cefcf1ccbe57862eb257264a32174ea69c98d8170"
+    },
+    {
+      "page": 6,
+      "status": "PASS",
+      "observations": "Anchor equations display explicit R multiplied by eccentricity e, with no real-part glyph; capacities, interaction and sleeve limitations are visible.",
+      "rendered_png_sha256": "42760086505fcb197e556fa70f1fb583d4240802f029aa7a9a7ebdd9facb4c73"
+    },
+    {
+      "page": 7,
+      "status": "PASS",
+      "observations": "Both-end OCC fit results and the two physical/tolerance BLOCKED rows are readable; no split or clipped table rows.",
+      "rendered_png_sha256": "595a4e15bc95f14a8e2d72998423f3aae607408c85202277f3a7352bf471bea6"
+    },
+    {
+      "page": 8,
+      "status": "PASS",
+      "observations": "Full directional-envelope equation, two real 3D bracket stress fields and the three-mesh results table are readable.",
+      "rendered_png_sha256": "554fe0dc937d4e27b729bf0d043996360700b59820bbf0e557c24f6fb356c2fe"
+    },
+    {
+      "page": 9,
+      "status": "PASS",
+      "observations": "Centered beam stress figure, two-mesh result table, all convergence rows, equilibrium summary and retention scope fit on one page.",
+      "rendered_png_sha256": "dd92ab30cebc4f049c48f73c900eddb7fb76e9874f25baac7fde40dd8f66d58c"
+    },
+    {
+      "page": 10,
+      "status": "PASS",
+      "observations": "Five exact purchased catalogue identifiers, supplier hyperlinks, historical price basis and separate-currency totals are readable.",
+      "rendered_png_sha256": "65ccacb04b70b61caa0ea9ccbd5c47366b442f1fa71697b49708e408e77ed58e"
+    },
+    {
+      "page": 11,
+      "status": "PASS",
+      "observations": "CI paths, functional self-test status, four literal python3 commands and full requirement group table are visible without overflow.",
+      "rendered_png_sha256": "ecd9101c307c5fa2a682dbcbebad1b519b5627960e8a236da60975bdb952bca4"
+    },
+    {
+      "page": 12,
+      "status": "PASS",
+      "observations": "Physical qualification actions, all 14 supplier links, two method links and the release decision are visible and readable.",
+      "rendered_png_sha256": "91eed789d1d6f014df519b8f6f00bf76495e1d45bf6b45255798413cd9cf1dd2"
+    }
+  ],
+  "native_equations": 22,
+  "figures": 4,
+  "semantic_checks_pass": true,
+  "source_snapshot_hashes_current": true,
+  "issues_remaining": [],
+  "math_render_fixes": [
+    "Inserted empty degree nodes required for hidden-degree OMML radicals.",
+    "Displayed the anchor product R times eccentricity e explicitly to prevent real-part glyph substitution."
+  ],
+  "numerical_status": "PASS",
+  "nominal_geometric_status": "PASS",
+  "physical_qualification_status": "BLOCKED"
+}

@@ -1,0 +1,1251 @@
+PAGE 1
+ 
+ 
+Z29255.23 8.06.01-33/23
+European Technical 
+Assessment  
+ETA-19/0520 
+of 24 May 2023  
+ 
+English translation prepared by DIBt - Original version in German language 
+ 
+General Part 
+ 
+Technical Assessment Body issuing the 
+European Technical Assessment:  
+Deutsches Institut für Bautechnik 
+Trade name of the construction product  fischer  Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR  
+Product family 
+to which the construction product belongs  
+Mechanical fasteners for use in concrete   
+Manufacturer fischerwerke GmbH & Co. KG 
+Klaus-Fischer-Straße 1 
+72178 Waldachtal 
+DEUTSCHLAND  
+Manufacturing plant fischerwerke  
+  
+This European Technical Assessment 
+contains 
+21 pages including 3 annexes which form an integral part 
+of this assessment 
+This European Technical Assessment is 
+issued in accordance with Regulation (EU) 
+No 305/2011, on the basis of 
+EAD 330232-01-0601 Edition 05/2021  
+This version replaces ETA-19/0520 issued on 21 February 2022   
+ 
+
+PAGE 2
+  
+ 
+European Technical Assessment 
+ETA-19/0520 
+English translation prepared by DIBt 
+ 
+Page 2 of 21 | 24 May 2023 
+Z29255.23 8.06.01-33/23 
+ 
+The European Technical Assessment is issued by the Technical Assessment Body in its official language. 
+Translations of this European Technical Assessme nt in other languages shall fully correspond to the 
+original issued document and shall be identified as such. 
+Communication of this European Technical Assessm ent, including transmission by electronic means, 
+shall be in full. However, partial reproduction may on ly be made with the written consent of the issuing 
+Technical Assessment Body. Any partial reproduction shall be identified as such. 
+This European Technical Assessment may be withdr awn by the issuing Technical Assessment Body, in 
+particular pursuant to information by the Commissi on in accordance with Article 25(3) of Regulation 
+(EU) No 305/2011. 
+
+PAGE 3
+  
+ 
+European Technical Assessment 
+ETA-19/0520 
+English translation prepared by DIBt 
+ 
+Page 3 of 21 | 24 May 2023 
+Z29255.23 8.06.01-33/23 
+Specific Part 
+1 Technical description of the product 
+ The fischer Bolt Anchor FAZ II Plus, FAZ II Pl us R, FAZ II Plus HCR is an anchor made of 
+galvanized steel (FAZ II Plus), st ainless steel (FAZ II Plus R) or  high corrosion resistant steel 
+(FAZ II Plus HCR) which is placed into a drilled hole and anchored by torque-controlled 
+expansion. 
+ The product description is given in Annex A. 
+2 Specification of the intended use in accordance with the applicable European 
+Assessment Document 
+ The performances given in Section 3 are only valid  if the anchor is used in compliance with the 
+specifications and conditions given in Annex B. 
+ The verifications and assessment methods on which this European Technical Assessment is 
+based lead to the assumption of a working life of the anchor of at least 50 years. The indications 
+given on the working life cannot be interpreted as  a guarantee given by the producer, but are to 
+be regarded only as a means for choosing the ri ght products in relation to the expected 
+economically reasonable working life of the works. 
+3 Performance of the product and references to the methods used for its assessment 
+3.1 Mechanical resistance and stability (BWR 1) 
+Essential characteristic Performance 
+Characteristic resistance to tension load 
+(static and quasi-static loading), Method A 
+See Annex C1, C5 and C6 
+Characteristic resistance to shear load  
+(static and quasi-static loading) 
+See Annex C2 
+Displacements  See Annex C9  
+Characteristic resistance and displacements for 
+seismic performance categories C1 and C2 
+See Annex C7 to C9 
+3.2 Safety in case of fire (BWR 2) 
+Essential characteristic Performance 
+Reaction to fire Class A1 
+Resistance to fire See Annex C3 and C4 
+3.3 Aspects of Durability 
+Essential characteristic Performance 
+Durability See Annex B1 
+
+PAGE 4
+  
+ 
+European Technical Assessment 
+ETA-19/0520 
+English translation prepared by DIBt 
+ 
+Page 4 of 21 | 24 May 2023 
+Z29255.23 8.06.01-33/23 
+4 Assessment and verification of constancy of  performance (AVCP) system applied, with 
+reference to its legal base 
+ In accordance with the European Assessment Document EAD 330232-01-0601 the applicable 
+European legal act is: [96/582/EC]. 
+ The system to be applied is: 1 
+5 Technical details necessary for the implementation of the AVCP system, as provided for 
+in the applicable EAD 
+ Technical details necessary for the implementation of the AVCP system are laid down in the 
+control plan deposited with Deutsches Institut für Bautechnik.  
+ 
+ 
+Issued in Berlin on 24 May 2023 by Deutsches Institut für Bautechnik 
+Dipl.-Ing. Beatrix Wittstock beglaubigt: 
+Head of Section Ziegler 
+ 
+ 
+ 
+
+PAGE 5
+Page 5 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+ 
+ Cone bolt manufactured by cold - forming:  
+ 
+ 
+Cone bolt manufactured by turning:            
+ 
+ 
+ 
+ 
+           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ Expansion sleeve 
+ Cone bolt (cold – formed or turned) 
+ Washer  
+ Hexagon nut 
+ fischer FAZ II Plus dome nut 
+2 
+1 
+3
+ 4
+ 5
+(Figure not to scale) 
+Annex A1 Product description 
+Installed condition 
+
+PAGE 6
+Page 6 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Product marking and letter-code: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FAZ II Plus:           carbon steel, galvanised 
+FAZ II Plus R:       stainless steel 
+FAZ II Plus HCR:  high corrosion resistant steel 
+ 
+Table A2.1: Letter - code at marking area 2: 
+ 
+Marking (a) (b) (c) (d) (A) (B) (C) (D) (E) (F) (G) (H) (I) (K) 
+Max. tfix [mm] 5 10 15 20 5 10 15 20 25 30 35 40 45 50 
+B ≥ [mm] 
+M6 - 45 50 55 60 65 70 75 80 85 90 
+M8 40 45 - 50 55 60 65 70 75 80 85 90 95 
+M10 45 50 55 60 65 70 75 80 85 90 95 100 105 110 
+M12 55 60 65 70 75 80 85 90 95 100 105 110 115 120 
+M16 70 75 80 85 90 95 100 105 110 115 120 125 130 135 
+M20 - 105 110 115 120 125 130 135 140 145 150 M24 130 135 140 145 150 155 160 165 170 175 
+ 
+Marking (L) (M) (N) (O) (P) (R) (S) (T) (U) (V) (W) (X) (Y) (Z) 
+Max. tfix [mm] 60 70 80 90 100 120 140 160 180 200 250 300 350 400 
+B ≥ [mm] 
+M6 100 110 120 130 140 160 180 200 220 240 290 340 390 440 
+M8 105 115 125 135 145 165 185 205 225 245 295 345 395 445 
+M10 120 130 140 150 160 180 200 220 240 260 310 360 410 460 
+M12 130 140 150 160 170 190 210 230 250 270 320 370 420 470 
+M16 145 155 165 175 185 205 225 245 265 285 335 385 435 485 
+M20 160 170 180 190 200 220 240 260 280 300 350 400 450 500 
+M24 185 195 205 215 225 245 265 285 305 325 375 425 475 525 
+ 
+Calculation existing hef for installed fasteners: 
+ 
+existing hef = B(according to table A2.1) – existing tfix  
+ 
+Thickness of the fixture tfix including thickness of filling conical washer t and e.g. thickness of grout layer tgrout or 
+other non-structural layers 
+  
+Brand | type of fastener 
+placed at marking area 1 or 3 
+Thread size / max. thickness of the fixture (tfix) 
+identification R or HCR placed at marking area 1 or 3 
+               FAZ II +  12/30 R Product marking, example: 
+Marking area 1 - expansion sleeve 
+Marking area 3 - cone bolt 
+Marking area 2 - cone bolt, 
+front side 
+12/30 
+B 
+Marking area 4 –  
+wrench area,  
+optional: 2 D Barcode 
+(Figure not to scale) 
+Annex A2 Product description 
+Product marking and letter code 
+
+PAGE 7
+Page 7 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Product dimensions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Table A3.1: Dimensions [mm] 
+ 
+Part Designation FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+1 Expansion sleeve Sheet thickness 0,8 1,3 1,4 1,6 2,4 3,0 
+2 Cone bolt Thread size M 6 8 10 12 16 20 24 LG 
+≥ 
+10 19 26 31 40 50 57 
+3 Washer  tS 1,4 1,8 2,3 2,7 3,7 ∅ ds 11 15 19 23 29 36 43 
+4 & 5 Hexagon nut / 
+fischer FAZ II 
+Plus dome nut 
+Wrench size1) 10 13 17 19 24 30 36 
+5 L D ≥ - 2) 22 27 33 - 2) 
+6 
+fischer filling 
+conical washer 
+FFD 
+t = 6 7 8 10 
+1) Alternatively according to ISO 4032:2013 allowed 
+2) Not part of the assessment 
+ 
+  
+Product description 
+Dimensions 
+Annex A3 
+ts 
+∅ds 
+M 
+LG 
+5 
+LD 
+6 
+t 
+1
+ 2
+3
+ 4
+(Figure not to scale) 
+
+PAGE 8
+Page 8 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+ 
+Table A4.1: Materials FAZ II Plus 
+ 
+Part Designation Material FAZ II Plus FAZ II Plus R FAZ II Plus HCR 
+ Steel grade 
+Steel Stainless steel R High corrosion resistant steel HCR 
+Zinc plated ≥ 5 µm, 
+ISO 4042:2018 
+according to EN 10088:2014 
+Corrosion resistance class 
+CRC III according to 
+EN 1993-1-4:2006+A1:2015 
+according to EN 10088:2014 
+Corrosion resistance class 
+CRC V according to  
+EN 1993-1-4: 2006+A1:2015 
+1 Expansion sleeve 
+Cold strip, EN 10139:2016 
+or stainless steel  
+EN 10088:2014 
+Stainless steel  
+EN 10088:2014 
+2 Cone bolt Cold form steel or free cutting steel Stainless steel  
+EN 10088:2014 
+High corrosion resistant 
+steel EN 10088:2014 
+3 Washer  Cold strip, EN 10139:2016 
+4 / 5 
+Hexagon nut / 
+fischer FAZ II Plus 
+dome nut 
+Steel, property class min. 8, 
+EN ISO 898-2:2012 
+Stainless steel  
+EN 10088:2014; 
+ISO 3506-2:2020; property 
+class – min. 70 
+High corrosion resistant 
+steel EN 10088:2014; 
+ISO 3506-2:2020; property 
+class – min. 70 
+6 
+fischer filling 
+conical washer 
+FFD 
+Cold form steel or free 
+cutting steel 
+Stainless steel  
+EN 10088:2014 
+High corrosion resistant 
+steel EN 10088:2014 
+ 
+ 
+  
+Annex A4 Product description 
+Materials 
+
+PAGE 9
+Page 9 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Specifications of intended use 
+Fastenings subject to:  
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+Hammer drilling with 
+standard drill bit   
+Hammer drilling with 
+hollow drill bit with 
+automatic cleaning  
+- 1)  
+Diamond drilling  - 1) 
+  (for non seismic applications only) 
+Static and quasi-static loads 
+ Cracked and uncracked concrete 
+Fire exposure 
+Seismic performance  
+category 
+C1 - 1)  
+C2 - 1)  
+1) No performance assessed 
+ 
+Base materials: 
+ Compacted reinforced and unreinforced normal weight conc rete without fibres (cracked or uncracked) according 
+to EN 206-1:2013+A2:2021 
+ Strength classes C20/25 to C50/60 according to EN 206:2013+A2:2021 
+Use conditions (Environmental conditions): 
+ Structures subject to dry internal conditions  (FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR) 
+ For all other conditions according to EN 1993-1-4:2006 + A1:2015 corresponding to corrosion resistance class 
+- CRC III: for FAZ II Plus R 
+- CRC V: for FAZ II Plus HCR 
+ 
+Design:  
+ Fastenings are to be designed under the responsibility of  an engineer experienced in fastenings and concrete 
+work 
+ Verifiable calculation notes and drawings are to be pr epared taking account of the loads to be anchored. The 
+position of the fastener is indicated on the design drawings (e.g. position of the fastener relative to reinforcement 
+or to supports, etc.) 
+ Fastenings in stand-off installation or with a grout layer under seismic action are not covered 
+ In case of seismic applications the fastener shall be po sitioned outside of critical regions (e.g. plastic hinges) of 
+the concrete structure 
+ Design of fastenings according to EN 1992-4:2018 and EOTA Technical Report TR 055:2018 
+ 
+  
+Annex B1 Intended Use 
+Specifications 
+
+PAGE 10
+Page 10 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table B2.1: Installation parameters 
+ 
+Size  FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+Nominal drill hole diameter d 0 = 
+[mm] 
+6 8 10 12 16 20 24 
+Maximum bit diameter 
+with hammer or hollow drilling dcut,max 6,40 8,45 10,45 12,5 16,5 20,55 24,55 Maximum bit diameter 
+with diamond drilling - 1) 8,15 12,25 16,45 20,50 24,40 
+Effective embedment depth h ef ≥ 
+[mm] 
+40-80 35-90 40-100 50-125 65-160 100-180 125 
+Length from hef to end of cone bolt L 6,5 9,5 11,5 13,5 17,5 20,0 23,5 
+Overall fastener embedment depth in 
+the concrete hnom ≥ hef + L 
+Depth of drill hole to deepest point h12) ≥ hnom + 3 h nom + 5 h nom + 10 
+Diameter of clearance hole in the 
+fixture df ≤ [mm] 7 9 12 14 18 22 26 
+Required setting torque T inst = [Nm] 8 20 45 60 110 200 270 
+Excess length after hammering-in the 
+cone bolt (for fischer dome nut 
+applications according to Annex B4) 
+O = [mm] - 1) 12 16 20 - 1) 
+1) Not part of the assessment 
+2) For the application without drill hole cleaning: h1,nc = h1 + 15 mm 
+Setting gauge FAZ II Plus SL-H  
+for fastener with fischer FAZ II Plus dome nut: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+hef = Effective embedment depth     h    = Thickness of the concrete member 
+hnom = Overall fastener embedment depth in the concrete  h min = Minimum thickness of concrete member 
+h1 = Depth of drill hole to deepest point   t fix   = Thickness of the fixture 
+h1,nc = Depth of drill hole to deepest point without cleaning O   = Length of setting gauge 
+L    = Length from h ef to end of cone bolt    T inst = Required setting torque 
+ 
+tfix  
+Tinst 
+ 
+O 
+h ≥ hmin 
+hef 
+hnom 
+h1 
+L 
+Annex B2 Intended Use 
+Installation parameters 
+
+PAGE 11
+Page 11 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+ 
+Installation instructions: 
+ 
+ Fastener  installation carried out by appropriately qualified personnel according to the design drawings and under 
+the supervision of the person responsible for technical matters on the site 
+ Use of the fastener only as suppli ed by the manufacturer without excha nging the components of the fastener  
+Exception: fischer FAZ II Plus dome nut 
+ Hammer, hollow or diamond drilling according to Annex B1 + B2 
+ Drill hole created perpendicular +/- 5° to concrete surface, positioning without damaging the reinforcement 
+ In case of aborted hole: new drilling at a minimum di stance twice the depth of the aborted drill hole or smaller 
+distance if the aborted drill hole is filled with high strengt h mortar and if under shear or oblique tension load it is 
+not in the direction of load application 
+ 
+Installation instructions: Drilling and cleaning the hole 
+ 
+Types of drills and cleaning 
+Hammer drill 
+(e.g. fischer 
+Quattric II)  
+with cleaning 
+ 
+ 
+1: Drill the hole 
+Continue with step 5 
+2: Clean the hole 
+Hammer drill 
+(e.g. fischer 
+Quattric II)  
+without 
+cleaning  
+1: Drill the hole 
+ 
+2: When h1,nc is reached: 
+    Pull out drill 3 x 
+ 
+Cleaning not necessary; 
+Continue with step 5 
+Hollow drill 
+(e.g. fischer 
+FHD)  
+1: Drill the hole with  
+    automatic cleaning 
+    (e.g. fischer FVC) 
+ 
+Cleaning obsolete 
+Continue with step 5 
+Diamond drill,  
+for non seismic 
+applications 
+only 
+  
+1: Drill the hole 
+ 
+2: Break the drill 
+    core and remove 
+    it 
+ 
+3: Flush the drill  
+    hole, until clear 
+    water emerges 
+    from the drill hole 
+ 
+4: Clean the hole 
+h1,nc = h1 + 15 mm 
+Annex B3 Intended Use 
+Installation instructions 
+
+PAGE 12
+Page 12 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Installation instructions: Installation of the fastener 
+ 
+HEXAGON NUT: 
+ 
+        
+5.a: Set the fastener          5.b: Set the fastener 
+       e.g. with hammer               e.g. fischer FA-ST II 
+   
+ 
+6: Apply Tinst 
+ 
+7: Installed fastener 
+ 
+fischer FAZ II Plus DOME NUT: 
+ 
+Option 1: Push through installation with setting gauge SL-H: 
+ 
+ 
+5.1:Set the fastener 
+      through the set- 
+      ting gauge and  
+      fixture 
+ 
+5.2: Check offset 
+ 
+5.3: Turn on the 
+    fischer FAZ II 
+    Plus dome nut 
+ 
+6: Apply Tinst 
+ 
+7: Installed fastener 
+ 
+Option 2: Push through installation with hexagon nut:  
+ 
+ 
+5.1:Check setting  
+      position: Visible  
+      one turn of a 
+      thread 
+ 
+5.2: Set the fastener 
+ 
+5.3: Remove nut 
+ 
+fischer Filling conical washer FFD optional for seismic C2 application or minimising the annular gap: 
+ 
+Optional 
+The gap between bolt and fixture may be filled with mortar (compressive strength ≥ 50 N/mm² e.g. 
+fischer FIS SB) after last step (for eliminating the annular gap). The FFD is additional to the standard 
+washer. The thickness of the FFD must be considered for definition of tfix. Countersunk of the FFD in 
+direction to the anchor plate. Installation with hexagon nut or dome nut is permitted. 
+    
+  
+Intended Use 
+Installation instructions 
+Annex B4 
+
+PAGE 13
+Page 13 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C1.1: Characteristic values of tension resistance under static and quasi-static action 
+ 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+Steel failure 
+Characteristic 
+resistance 
+FAZ II Plus 
+NRk,s [kN] 
+11,3 19,9 32,7 49,3 78,7 108,4 180,0 
+FAZ II Plus R 12,1 21,0 34,5 52,0 83,0 127,6 187,0 FAZ II Plus HCR 11,3 17,6 29,1 43,8 69,9 
+Partial factor for 
+steel failure 
+FAZ II Plus 
+γMs1) [-] 1,4 1,4 1,5 FAZ II Plus R 1,45 
+FAZ II Plus HCR 1,5 1,45 1,4 1,5 
+Pullout failure 
+Effective embedment depth for 
+calculation hef [mm] 40-80 403) - < 45 45-90 40-100 50-125 65-160 100-180 125 
+Characteristic resistance in 
+cracked concrete C20/25 NRk,p 
+(C20/25) [kN] 
+1,5 5,5 8 13  20 27,0 34,4 48,1 
+Characteristic resistance in 
+uncracked concrete C20/25 10,5 14 20 22 38,6 49,2 68,8 
+Increasing factor ψc for 
+cracked or uncracked 
+concrete 
+NRk,p = ψc ∙ NRk,p (C20/25) 
+[-] 
+C25/30 1,12 
+C30/37 1,22 
+C35/45 1,32 
+C40/50 1,41 
+C45/55 1,50 
+C50/60 1,58 
+Installation sensitivity factor γinst [-] 1,0  
+Concrete cone and splitting failure 
+Factor for uncracked concrete k ucr,N [-] 11,02) 
+Factor for cracked concrete k cr,N 7,72) 
+Characteristic spacing s cr,N [mm] 3 ∙ hef Characteristic edge distance c cr,N 1,5 ∙ hef 
+Characteristic spacing 
+for splitting failure scr,sp [mm] 2 ∙ ccr,sp 
+Characteristic edge 
+distance 
+for splitting failure h 
+≥ 80 
+ccr,sp [mm] 40 
+2,4∙hef 2 ∙hef     
+≥ 100 
+2∙hef 
+2,4∙hef 2 ∙hef    
+≥ 120 
+1,9∙hef 
+2,1∙hef    
+≥ 140 
+1,5∙hef 2 ∙hef 
+ 
+≥ 160 2,4∙hef  ≥ 200 2,2∙hef 
+Characteristic resistance to 
+splitting N0Rk,sp [kN] min {N 0Rk,c; NRk,p}4) 
+1) In absence of other national regulations 
+2) Based on concrete strength as cylinder strength 
+3) For dry internal exposure and statically indeterminate redundant components, the minimum effective   
+   embedment depth can be reduced to 35 mm without reduction of NRk,p. 
+4) N0Rk,c according to EN 1992-4:2018 
+5) No performance assessed 
+ 
+  
+Annex C1 Performances 
+Characteristic values of tension resistance under static and quasi-static action 
+- 5) 
+
+PAGE 14
+Page 14 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C2.1: Characteristic values of shear resistance under static and quasi-static action 
+ 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+Steel failure without lever arm  
+Characteristic 
+resistance 
+FAZ II Plus without filling  
+of the annular gap 
+V0Rk,s [kN] 
+7,5 16,3 26,2 37,0 68,4 82,9 128,3 
+FAZ II Plus with filling 18,1 27,3 40,7 69,8 85,6 
+FAZ II Plus without filling R 
+8,8 
+17,6 26,5 42,1 71,1 107,9 
+158,1 FAZ II Plus with filling R 27,6 44,3 73,6 117,9 FAZ II Plus without filling HCR 17,4 23,7 42,1 71,1 107,9 FAZ II Plus with filling HCR 27,9 73,6 117,9 
+Partial factor for steel failure γMs1) 
+[-] 1,25 Factor for ductility k 7 1,0 
+Steel failure with lever arm and Concrete pryout failure 
+Effective embedment depth for  calculation h ef [mm] 40-80 45-90 60-100 70-125 85-160 100-180 125 
+Characteristic bending 
+resistance 
+FAZ II Plus 
+M0Rk,s [Nm] 11 
+30 60 105 266 422 864 
+FAZ II Plus R 29 59 100 256 519 898 FAZ II Plus HCR 
+Factor for pryout failure k 8 [-] 2,6 2,8 3,2 
+Effective embedment depth for calculation h ef [mm] 
+-2) 
+   403) 
+- < 45 
+    40 -  
+< 60 
+    50 -  
+< 70 
+    65 -  
+< 85 
+-2) Characteristic bending  
+resistance 
+FAZ II Plus 
+M0Rk,s [Nm] 
+27 56 105 251 
+FAZ II Plus R  29 59 100 256 FAZ II Plus HCR 24 50 223 
+Factor for pryout failure k 8 [-] 2,5 2,6 3,1 3,2 
+Partial factor for steel failure γMs1) 
+[-] 1,25 Factor for ductility k 7 1,0 
+Concrete edge failure 
+Effective embedment depth for calculation l f 
+[mm] hef Outside diameter of a fastener d nom 6 8 10 12 16 20 24 
+1) In absence of other national regulations 
+2) No performance assessed 
+3) For dry internal exposure and statically indeterminate redundant components, the minimum effective 
+   embedment depth can be reduced to 35 mm without reduction of NRk,p. 
+ 
+  
+Annex C2 Performances 
+Characteristic values of shear resistance under static and quasi-static action 
+ 
+
+PAGE 15
+Page 15 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C3.1: Characteristic values of tension resistance under fire exposure 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M12 M16 M20 M24 
+hef ≥ [mm] 40 35 45 40 60 50 70 65 85 100 125 
+Characteristic 
+resistance 
+steel failure 
+FAZ II Plus N Rk,s,fi  
+R30 
+[kN] 
+0,61) / 0,92) 1,4 2,8 5,0 9,4 14,7 21,1 
+R60 0,41) / 0,92) 1,2 2,3 4,1 7,7 12,0 17,3 
+R90 0,31) / 0,92) 0,9 1,9 3,2 6,0 9,4 13,5 
+R120 0,21) / 0,72) 0,8 1,6 2,8 5,2 8,1 11,6 
+FAZ II Plus  
+R / HCR  NRk,s,fi  
+R30 0,61) / 0,92) 3,6 7,8 11,5 21,8 34,3 49,4 
+R60 0,41) / 0,92) 2,3 4,8 7,1 13,2 20,7 29,3 
+R90 0,31) / 0,92) 1,9 3,8 5,7 10,5 18,3 26,4 
+R120 0,21) / 0,72) 1,6 3,3 4,9 8,6 17,3 25,0 
+Characteristic resistance 
+Concrete cone failure NRk,c,fi 
+R30 
+- R90 7,7 ∙ hef1,5 ∙ (20)0,5 ∙ hef / 200 / 1000 
+R120 7,7 ∙ hef1,5 ∙ (20)0,5 ∙ hef / 200 / 1000 ∙ 0,8 
+Characteristic resistance 
+pullout failure NRk,p,fi 
+R30 
+0,4 
+0,9 
+2,0 2,2 3,3 3,0 5, 0 4,5 6,8 8,6 12,0 R60 0,8 
+R90 0,5 
+R120 0,3 1,6 1,7 2,6 2,4 4, 0 3,6 5,4 6,9 9,6 
+ 
+ 
+Table C3.2: Characteristic values of shear resistance under fire exposure 
+FAZ II Plus 
+R30 R60 
+VRk,s,fi,30  
+[kN] 
+M0Rk,s,fi,30  
+[Nm] 
+VRk,s,fi,60  
+[kN] 
+M0Rk,s,fi,60  
+[Nm] 
+M6 
+hef ≥ 
+40 
+[mm] 
+0,61) / 0,92) 0,5 1) / 0,22) 0,4 1) / 0,92) 0,3 1) / 0,12) 
+M8 35 1,8 1,4 1,6 1,2 
+M10 40 3,6 3,6 2,9 3,0 
+M12 50 6,3 7,8 4,9 6,4 
+M16 65 11,7 19,9 9,1 16,3 
+M20 100 18,2 39,0 14,2 31,8 
+M24 125 26,3 67,3 20,5 55,0 
+FAZ II Plus 
+R90 R120 
+VRk,s,fi,90  
+[kN] 
+M0Rk,s,fi,90  
+[Nm] 
+VRk,s,fi,120  
+[kN] 
+M0Rk,s,fi,120  
+[Nm] 
+M6 
+hef ≥ 
+40 
+[mm] 
+0,31) / 0,92) 0,2 1) / 0,12) 0,2 1) / 0,72) 0,2 1) / 0,12) 
+M8 35 1,3 1,0 1,2 0,8 
+M10 40 2,2 2,4 1,9 2,1 
+M12 50 3,5 5,0 2,8 4,3 
+M16 65 6,6 12,6 5,3 11,0 
+M20 100 10,3 24,6 8,3 21,4 
+M24 125 14,8 42,6 11,9 37,0 
+Concrete pryout failure according to EN 1992-4:2018 
+ 
+1) FAZ II Plus 
+2) FAZ II Plus R / FAZ II Plus HCR  
+  
+Annex C3 Performances 
+Characteristic values of resistance under fire exposure 
+
+PAGE 16
+Page 16 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C4.1: Characteristic values of shear resistance under fire exposure 
+FAZ II Plus R, FAZ II Plus HCR R30 R60 VRk,s,fi,30 [kN] M 0Rk,s,fi,30 [Nm] VRk,s,fi,60 [kN] M 0Rk,s,fi,60 [Nm] 
+M6 
+hef ≥ 
+40 
+[mm] 
+0,61) / 0,92) 0,5 1) / 0,22) 0,4 1) / 0,92) 0,3 1) / 0,12) 
+M8 35 3,6 3,7 2,3 2,4 
+M10 40 7,8 10,1 4,8 6,2 
+M12 50 11,5 17,9 7,1 11,1 
+M16 65 21,8 46,2 13,2 27,9 
+M20 100 34,3 90,9 20,7 54,9 
+M24 125 49,4 157,2 29,3 93,1 
+FAZ II Plus R, FAZ II Plus HCR R90 R120 VRk,s,fi,90 [kN] M 0Rk,s,fi,90 [Nm] V Rk,s,fi,120 [kN] M 0Rk,s,fi,120 [Nm] 
+M6 
+hef ≥ 
+40 
+[mm] 
+0,31) / 0,92) 0,2 1) / 0,12) 0,2 1) / 0,72) 0,2 1) / 0,12) 
+M8 35 1,9 1,9 1,6 1,7 
+M10 40 3,8 4,9 3,3 4,3 
+M12 50 5,7 8,8 4,9 7,6 
+M16 65 10,5 22,1 8,6 18,3 
+M20 100 18,3 48,6 17,3 45,9 
+M24 125 26,4 84,0 25,0 79,4 
+1) FAZ II Plus 
+2) FAZ II Plus R / FAZ II Plus HCR 
+Concrete pryout failure according to EN 1992-4:2018 
+ 
+ 
+ 
+Table C4.2: Minimum spacings and minimum edge distances of fasteners under fire exposure 
+for tension and shear load 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M12 M16 M20 M24 
+Spacing s min  
+[mm] 
+Annex C5 
+Edge distance c min  cmin = 2 ∙ hef, for fire exposure from more than one side cmin ≥ 300 mm 
+ 
+ 
+  
+Annex C4 Performances 
+Characteristic values of resistance under fire exposure 
+
+PAGE 17
+Page 17 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+ 
+Table C5.1: Minimum thickness of concrete members, minimum spacing and minimum edge 
+distance  
+ 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+Minimum edge distance 
+Uncracked concrete cmin 
+[mm] 
+40 40 45 55 65 95 135 Cracked concrete 85 100 
+Corresponding s according to Annex C6 
+Minimum thickness of 
+concrete member hmin 80  100 140 160 200 
+Thickness of concrete member h ≥ max. {hmin; 1,5 · hef; h11) + 25} max. {h min; 1,5 · hef; h11) + 30} 
+Minimum spacing 
+Uncracked concrete smin 
+[mm] 
+35 40 40 50 65 95 100 Cracked concrete 35 
+Corresponding c according to Annex C6 
+Minimum thickness of 
+concrete member hmin 80  100 140 160 200 
+Thickness of concrete member h ≥ max. {hmin; 1,5 · hef; h1 + 25} max. {h min; 1,5 · hef; h1 + 30} 
+Minimum splitting area 
+Uncracked concrete 
+Asp,req 
+[∙1000 
+mm²] 
+5,1 18 37 54 67 100 117,5 
+Cracked concrete 1,5 12 27 40 50 77 87,5 
+1) If borehole cleaning is omitted, h1 is replaced by h1,nc 
+ 
+ 
+ 
+Table C5.2: Minimum spacing and minimum edge di stances - calculated values for  cracked 
+concrete with one edge (c2 and c3 ≥ 1,5 c1) 
+ 
+ Type of anchor / size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M12 M16 M20 M24 
+Effective anchorage depth hef ≥ [mm] 40 35 45 40 60 50 70 65 85 100 125 
+Minimum thickness of 
+concrete member h1) ≥ [mm] 80 85 80 120 100 140 140 180 160 200 
+      
+Minimum spacing smin [mm] 35 40 50 65 95 100 
+for c ≥ [mm] 40 100 65 120 80 100 75 130 115 
+Minimum edge distance cmin [mm] 40 60 45 70 55 65 85 100 
+for s ≥ [mm] 35 160 90 190 125 165 85 230 140 
+1) thickness of concrete member has to be increased by 15 mm, if borehole cleaning is omitted 
+ 
+  
+Annex C5 Performances 
+Minimum thickness of member, minimum spacing and edge distances 
+
+PAGE 18
+Page 18 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Determination of Asp,ef for each existing free edge 
+ 
+Splitting failure applied for minimum edge distance and spacing in depending on hef 
+ 
+ 
+ 
+ 
+ 
+Example for different anchor plates: For considering all free edges the direction 1 and 2 must be swaped. 
+ 
+General formulation for each free edge: Asp,ef = (c2 + scal + c3)∙hcal ≥ (n/2) ∙ Asp,req  
+with: 
+Edge distance c1: cmin ≤ c1  
+Edge distance c2: cmin ≤ c2 ≤ 1,5∙c1 
+Edge distance c3: cmin ≤ c3 ≤ 1,5∙c1 
+Calculation spacing, distance between outer anchors scal: smin ≤ scal ≤  3,0∙c1 
+Distance between group of anchors a: For a ≥ 3,0 c1 no influence between the anchor groups is taken into account.  
+Number of anchors n of an anchor plate as well close and parallel to the edge  
+Effective member thickness hcal: hmin ≤ h; hcal ≤ h; hcal ≤ (hef + 1,5∙c1) 
+c1, c2, c3, h and scal have to be set in way that the requirement is fullfiled 
+ 
+For the calculation of minimum spaci ng and minimum edge distance of fasteners  in combination with different 
+embedment depths and thicknesses of concrete members the following equation shall be fulfilled: 
+ 
+Asp,req < Asp,ef 
+ 
+Asp,req = required splitting area (according to Annex C 5) 
+Asp,ef = effective splitting area  
+ 
+  
+Annex C6 Performances 
+Minimum thickness of member, minimum spacings and edge distances 
+Example for  
+determination of Asp,ef 
+Definition Index: 
+cal = calculatory 
+e.g.: sx,y 
+x = load direction 
+y = number anchor plate 
+(Figure not to scale) 
+
+PAGE 19
+Page 19 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C7.1: Characteristic values of tension and shear resistance under seismic action 
+category C1 
+ 
+Size 
+FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR 
+M6 M8 M10 M1 2 M16 M20 M24 
+Effective embedment depth h ef [mm] 
+- 2) 
+40 - 
+<45 
+45-
+90 40-100 50-125 85-160 100-180 125 
+With filling of the annular gap αgap [-] 1,0 Without filling of the annular gap 0,5 
+Steel failure NRk,s,C1 = NRk,s; γMs,C1 = γMs (see Annex C1) 
+ 
+Pullout failure 
+Characteristic resistance in 
+cracked concrete C1 NRk,p,C1  [kN] -2) 5,1 7,4 11,6 20,0 27,0 34,4 48,1 
+Installation sensitivity factor γinst  [-] 1,0 
+Concrete cone failure and splitting failure NRk,c,C1 = NRk,c; NRk,sp,C1 = NRk,sp (see Annex C1) 
+ 
+Steel failure without lever arm 
+Characteristic 
+resistance C1 
+ FAZ II Plus 
+hef [mm]  
+-2) 
+45-90 60-100 70-125 85-160 100-180 125 
+Without filling  VRk,s,C1 [kN] 14,8 23,6 33,3 58,1 71,2 102,6 With 16,5 24,6 39,9 59,3 85,6 
+hef [mm] 40-<45 40-<60 50-<70 
+-2) Without filling  VRk,s,C1 [kN] -2) 32,9 With 15,6 19,7 39,9 
+ FAZ II Plus R 
+hef [mm] 
+-2) 
+45-90 60-100 70-125 85-160 100-180 125 
+Without filling  VRk,s,C1 [kN] 16,0 23,9 37,9 60,4 86,3 126,5 With 24,8 43,4 62,6 94,3 
+hef [mm] 40-<45 40-<60 50-<70 
+-2) Without filling  VRk,s,C1 [kN] -2) 37,5 With 15,1 19,9 43,4 
+ FAZ II Plus HCR 
+hef [mm] 
+-2) 
+45-90 60-100 70-125 85-160 100-180 125 
+Without filling  VRk,s,C1 [kN] 15,8 21,3 37,9 60,4 86,3 126,5 With 25,1 41,3 62,6 94,3 
+hef [mm] 40-<45 40-<60 50-<70 
+-2) Without filling  VRk,s,C1 [kN] -2) 37,5 With 15,0 20,1 41,3 
+Partial factor for steel failure γMs,C11) [-] 1,25 
+1) In absence of other national regulations 
+2) No performance assessed 
+  
+Annex C7 Performances 
+Characteristic values of tension and shear resistance under seismic action category C1 
+
+PAGE 20
+Page 20 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C8.1: Characteristic values of tension and shear resistance under seismic action 
+category C2 
+ 
+Size 
+FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR 
+M6 M8 M10 M12 M16 M20 M24 
+With filling of the annular gap αgap [-] - 2) 1,0 Without filling of the annular gap 0,5 
+Steel failure NRk,s,C2 = NRk,s; γMs,C2 = γMs (see Annex C1) 
+ 
+Pullout failure 
+Characteristic 
+resistance in cracked 
+concrete C2 
+hef [mm] 
+-2) 
+60-100 70-125 85-160 100-180 125 
+NRk,p,C2 [kN] 5,1 7,4 21,5 30,7 39,6 
+hef [mm] 40 - <60 50 - <70 65 - <85 -2) NRk,p,C2 [kN] 2,7 4,4 16,4 
+Installation sensitivity factor    γinst [-] 1,0 
+Concrete cone failure and splitting failure NRk,c,C2 = NRk,c; NRk,sp,C2 = NRk,sp (see Annex C1) 
+ 
+Steel failure without lever arm 
+Characteristic 
+resistance C2 
+ FAZ II Plus 
+hef [mm] 
+-2) 
+60-100 70-125 85-160 100-180 125 
+Without filling  VRk,s,C2 [kN] 17,6 27,8 37,6 62,2 70,6 With 20,5 30,5 52,4 68,5 102,6 
+hef [mm] 40 - <60 50 - <70 65 - <85 
+-2) Without filling  VRk,s,C2 [kN] 14,1 24,4 31,2 With 14,7 30,5 52,4 
+ FAZ II Plus R 
+hef [mm] 
+-2) 
+60-100 70-125 85-160 100-180 125 
+Without filling  VRk,s,C2 [kN] 17,8 31,6 39,1 70,5 87,0 With 20,7 33,2 55,2 104,9 126,5 
+hef [mm] 40 - <60 50 - <70 65 - <85 
+-2) Without filling  VRk,s,C2 [kN] 14,3 27,8 32,4 With 14,9 33,2 55,2 
+ FAZ II Plus HCR  
+hef [mm] 
+-2) 
+60-100 70-125 85-160 100-180 125 
+Without filling  VRk,s,C2 [kN] 15,9 31,6 39,1 70,5 87,0 With 20,9 55,2 104,9 126,5 
+hef [mm] 40 - <60 50 - <70 65 - <85 
+-2) Without filling  VRk,s,C2 [kN] 12,8 27,8 32,4 With 15,1 31,6 55,2 
+Partial factor for steel γMs,C21) [-] 1,25 
+1) In absence of other national regulations 
+2) No performance assessed 
+  
+Annex C8 Performances 
+Characteristic values of resistance under tension and shear loads under seismic action 
+category C2 
+
+PAGE 21
+Page 21 of European Technical Assessment 
+ETA-19/0520 of 24 May 2023 
+ 
+English translation prepared by DIBt 
+ 
+  
+ 
+fischer Bolt Anchor FAZ II Plus, FAZ II Plus R,  
+FAZ II Plus HCR 
+Table C9.1: Displacements under static and quasi static tension loads  
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+Displacement – factor for tensile load1) 
+δN0 - factor  
+in cracked concrete 
+[mm/kN] 
+0,13 0,22 0,12 0,09 0,08 0,07 0,05 
+δN∞ - factor 1,00 0,78 0,40 0,19 0,09 0,07 
+δN0 - factor in uncracked 
+concrete 
+0,16 0,07 0,05 0,06 0,05 0,04 
+δN∞ - factor 0,24 0,29 0,21 0,14 0,10 0,06 0,05 
+ 
+ 
+Table C9.2: Displacements under static and quasi static shear loads 
+Size M6 M8 M10 M1 2 M16 M20 M24 
+Displacement – factor for shear load2) 
+   FAZ II Plus 
+δV0 - factor 
+in cracked or 
+uncracked concrete [mm/kN] 
+0,6 0,35 0,37 0,27 0,10 0,09 0,07 
+δV∞ - factor 0,9 0,52 0,55 0,40 0,14 0,15 0,11 
+ FAZ II Plus R, FAZ II Plus HCR 
+δV0 - factor 0,6 0,23 0,19 0,18 0,10 0,11 0,07 
+δV∞ - factor 0,9 0,35 0,29 0,27 0,15 0,17 0,11 
+1) Calculation of effective displacement:   2) Calculation of effective displacement: 
+ δN0 = δN0 – factor ∙ N           δV0 = δV0 – factor ∙ V 
+ δN∞ = δN∞ – factor ∙ N          δV∞ = δV∞ – factor ∙ V 
+ 
+N = Action tension loading       V = Action shear loading 
+ 
+ 
+ 
+Table C9.3: Displacements under tension loads for category C2 for all embedment depths 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+DLS δN,C2 (DLS) [mm] - 1) 2,7 4,4 5,6 4,8 ULS δN,C2 (ULS) 11,5 13,0 12,3 14,4 15,2 
+1) No performance assessed 
+ 
+ 
+Table C9.4: Displacements under shear loads for category C2 for all embedment depths 
+Size FAZ II Plus, FAZ II Plus R, FAZ II Plus HCR M6 M8 M10 M1 2 M16 M20 M24 
+DLS without filling δV,C2 (DLS) 
+[mm] - 1) 
+5,0 4,8 4,2 
+ULS without filling δV,C2 (ULS) 7,8 6,3 8,8 6,3 7,4 
+DLS with filling δV,C2 (DLS) 1,2 2,0 4,2 
+ULS with filling δV,C2 (ULS) 4,2 5,8 3,1 4,4 7,4 
+1) No performance assessed  
+Annex C9 Performances 
+Displacements under tension and shear loads 

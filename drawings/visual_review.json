@@ -1,0 +1,33 @@
+{
+  "schema": "cad-drawing-review-v1",
+  "method": "Orthographic projection of actual FreeCAD tessellation; no generated mock imagery.",
+  "visually_inspected": true,
+  "checks": [
+    "Assembly centered and enlarged; all parts in frame.",
+    "Dimensions legible; no clipped labels.",
+    "Bracket detail uses actual tessellation with front projection and dimensional annotations."
+  ],
+  "input_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "cad/preview_mesh.json": "6e511bd9277b068ff230c6975b4fdc97879df42e34835994cc4ef0d6ca21841c",
+    "scripts/build_cad_drawings.py": "96c78ad4db3483bb2ae92e9a9346fddfd00c0bd7b8adacddb4272d9a502c86cb"
+  },
+  "outputs": [
+    {
+      "path": "drawings/assembly.png",
+      "sha256": "dc21c00bf006b7a36f798cbd522a9108de7515e718694eab4187bf7bec74715e",
+      "pixels": [
+        1800,
+        756
+      ]
+    },
+    {
+      "path": "drawings/bracket_detail.png",
+      "sha256": "8f73a4948e06cf2cf1800995b0faadb11a6e3b3dd767f4d2861a4a8c526dfaf7",
+      "pixels": [
+        2070,
+        1260
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ",
+  "url": "https://docs.google.com/document/d/1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ",
+  "mime_type": "application/vnd.google-apps.document",
+  "verified_readback": true,
+  "report_markdown_sha256": "74f17b3739dec5dba497e8adee0e8b2130db30ca8fefcad943402ea4a21d4e04",
+  "report_docx_sha256": "d606f499c785920e7e61192c47d11a846c7ee1228533f63b1f393d26d3101ff9",
+  "native_pdf_sha256": "8b7cc1422127eafa3cb3ea84df73230b3fe6a890e384d4feddd88f1c17163df1",
+  "native_plan_sha256": "186275db74bc262e945b47cfdcc724da5a728ffdd66e53be06db98b0d4bbb0f9",
+  "final_revision_id": "AHj4eMSWJ1V7Lhqlfk08aNRK4AxkP9etVnbbCiDseMmnFNDH_VzPXWDWwP4vnFo6dYkxFJ9CzdpcxXf4wGPIse_cmmHNkKABc31A5JAmK-k",
+  "evidence_files": [
+    "report/google_doc_create_receipt.json",
+    "report/google_doc_readback.json",
+    "report/google_doc_visual_review.json",
+    "report/google_doc_export.pdf"
+  ],
+  "verification_scope": "All v1 prose, 237 table cells, 22 native equation objects, 11 tables, 4 images and 12 named headings were read back; final column-width-only adjustment was verified in the exported PDF."
+}

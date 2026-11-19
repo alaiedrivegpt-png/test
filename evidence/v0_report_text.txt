@@ -1,0 +1,322 @@
+400 mm beam wall mount engineering report v0
+Design baseline and analysis record    17 November 2026
+This version defines a 400 mm purchased aluminum tube supported between two opposite walls by identical printed PETG end brackets. It includes reproducible CAD, hand calculations, executed finite element analyses, purchase evidence, a priced bill of materials and automated checks. The report supports review of the design and the next qualification steps.
+Numerical verification: FAIL. Principal stress changes 14.44% against a 10% limit; beam mesh volume error is 0.5032% against 0.5%. Stress magnitudes remain below the material screening thresholds. Physical qualification is BLOCKED. Engineering release is not approved.
+Figure 1  FreeCAD assembly geometry. Transparency exposes the inserted plugs; purchased fasteners are omitted from this view.
+Design quantity
+v0 selection
+Finished beam length
+400 ± 0.5 mm
+Nominal wall bearing face spacing
+431.6 mm
+Tube and end brackets
+Online Metals 23437; two Prusament PETG brackets
+Applied service force
+10 N quasistatic force in any direction plus self weight
+Material strength screening factor
+3 for aluminum and PETG; added deflection target 1 mm
+The force may act at any span station with at least a 10 × 10 mm contact footprint. The factor of three applies to the aluminum and PETG material screens. Anchors use published permissible capacities and a separate interaction check. An overall assembly safety factor, load duration and environment remain unqualified.
+Geometry press fit and print definition
+Each plug has 30 mm tube engagement beyond a 2 mm root relief. The plate is 13.8 mm thick at its reinforced center and 7.8 mm at the bolt mounts. Wall spacing is therefore 400 + 2 × (13.8 + 2) = 431.6 mm. Measure the actual spacing before fabrication.
+Figure 2  Printable end bracket and fit features. Values follow the current native CAD geometry.
+Feature
+Nominal dimension
+Purpose
+Plate and reinforced center
+60 × 150 mm; 7.8 / 13.8 mm thick
+Thin mounting zones; tapered central reinforcement
+Anchor pitch and sleeve bores
+120 mm; Ø18.6 mm
+Two M6 anchors on one vertical line
+Plug core and rib envelope
+31.55; 31.85 mm
+Relieved core with sacrificial fit ribs
+Plug projection and engagement
+32; 30 mm
+2 mm root fillet within relief
+Corner clearance
+3 mm chamfer
+Clear the tube internal corner radii
+Print the flange wall face on the bed with the local CAD x axis along the build direction. Use dry PETG, 0.2 mm layers and 100% infill as the initial qualification process. The supplier test specimens used 250 °C nozzle and 80 °C bed temperatures; these are a starting reference, not a validated setting for every printer [S6].
+Measure both inside dimensions at both ends. The nominal coupon set cannot cover the full supplier tolerance envelope. Rebuild coupons and brackets from measured openings as needed; record insertion, seating and retention results. Do not obtain fit by forcing an oversized plug.
+Material evidence and cross section
+The beam is Online Metals 23437, an ASTM B221 6061 T6 extruded square tube. Its nominal outside width is 38.1 mm and wall thickness is 3.175 mm. The supplier identifies 3.175 mm outer and 1.5748 mm inner corner radii; consequently the corners are represented explicitly instead of assuming a sharp hollow square [S1].
+Input
+Value used
+Evidence and limit
+Aluminum elastic modulus
+68,947.57 MPa
+Supplier alloy guide typical value [S5]
+Aluminum minimum yield
+240 MPa
+General 6061 T6 extrusion reference [S4]
+Aluminum density for weight
+2800 kg/m³
+Conservative rounded upper value from [S5]
+PETG elastic modulus
+1400 MPa
+Conservative specimen reference [S6]
+PETG strength reference
+14 MPa
+18 ± 4 MPa interlayer result; use 14 as a screen [S6]
+PETG Poisson ratio
+0.38
+Assumption; not established by the material sheet
+PETG density
+1.27 g/cm³
+Supplier technical data [S6]
+The PETG reference is neither a guaranteed allowable nor a statistical lower bound. The isotropic FEM cannot establish through layer strength, creep life or process quality. The beam and steel sleeve also require actual supply lot evidence before manufacturing release.
+Rounded square section formulas
+At nominal dimensions, A = 437.023 mm² and I = 88,514.405 mm⁴. Independent numerical integration and FreeCAD volume inertia are checked against these formulas. The script enumerates the dimensional tolerance corners: outside width ±0.635 mm, wall ±0.2032 mm and radius ±0.396875 mm [S2].
+The resulting conservative values are Imin = 78,669.225 mm⁴, Amax = 474.481 mm² and Z = Imin/cmax = 4,061.919 mm³. Independently extreme dimensions are combined deliberately; actual dimensions must still be measured.
+Beam force stress and deflection calculations
+The calculation span is L = 400.5 mm, including the positive cut tolerance. The force is F = 10 N. All maximum tube weight is assigned conservatively to one bracket for its load envelope; the beam bending model uses the uniformly distributed tube weight W = 5.220 N.
+Substitution gives Mmax = 10 × 400.5/4 + 0.013033 × 400.5²/8 = 1,262.563 N mm. The point force at midspan maximizes simply supported bending. A transverse end moment envelope also covers restraint from snug plugs; perfect pins are not assumed for the bracket check.
+The diagonal section factor bounds transverse direction; axial force at a section corner contributes Me = 273.898 N mm. Calculated bending stress is 0.535 MPa. This envelope intentionally combines some loads that cannot all occur simultaneously.
+The torsion term is a closed thin wall screening approximation. Combined stress is 0.625 MPa against 240/3 = 80.000 MPa. The ratio of material reference yield to this stress is 383.7.
+The computed global beam deflection is 0.00428 mm against the added 1 mm target. The interface contact model on the next page gives a maximum local force of 100 N. A 10 mm axial wall strip under that force gives 55.694 MPa against the 80 MPa screen. Smaller or sharp contact footprints require another local model. These values exclude installation movement and long term creep.
+For comparison with the centered vertical FEM case, use the nominal section and L = 400 mm, with Me = 0. The first two deflection terms then give 0.00284043 mm. Compare this global bending quantity with a section displacement, while retaining the local maximum separately.
+Global FEM displacement 0.00307321 mm averages 101 sidewall nodes with |x − midspan| ≤ h/2, |z| ≤ 2 mm and |y| ≥ 0.4 OD. The difference from Euler is 8.195%, within 15%. The 0.00361843 mm maximum includes local wall deformation and axial translation. Gravity equilibrium uses mesh volume; Euler uses exact CAD section and mass.
+The pin ended Euler compression screen gives PE = 333,747.9 N and Pallow = 32,021.3 N. The 10 N axial utilization is 0.0003123. This global compression screen uses the conservative section and span.
+Bracket analytical screening
+The end force envelope is R = 20 N. The sum F + Wbeam + Wbracket is 16.909 N, using a bounding volume for the bracket weight. Independent applied moment envelopes are T = 550 N mm about the tube axis and Mt = 1600 N mm transverse to it.
+The required transverse moment bound is 1,536.461 N mm. The 6 mm tapered reinforcement and 2 mm root fillet spread the load at the plug junction; their size responds to the root stress concentration found during design. The FEM retains both features.
+Chamfered plug section
+With B = 31.55 mm and C = 3 mm, Ap = 977.403 mm² and Ip = 78,630.434 mm⁴. Bending uses the actual octagonal section. Shear and torsion retain a conservative inscribed square of side a = B − 2C = 25.550 mm.
+Using projection ℓ = 32 mm gives a combined plug screen of 0.746 MPa against 14/3 = 4.667 MPa. The force plus end moment displacement estimate is 0.00943 mm.
+Plate and interface screens
+The plate strip estimate is 0.986 MPa. Two assumed 10 mm axial bearing patches in 30 mm engagement have centers 20 mm apart. Thus Fc = 20 + 1600/20 = 100 N and p = 100/255.5 = 0.391 MPa. These patches and the local wall strip are screening assumptions. Physical contact, interference crushing and sustained bearing remain unqualified; the fit ribs carry no credited structural load.
+Wall anchors and installation load path
+Two fischer 564572 anchors attach each plate to provisionally solid C20/25 concrete in a dry interior. Their centres are 120 mm apart. The project assumes at least 100 mm wall thickness and at least 60 mm to every free edge. Those conditions are unverified at the actual site [S8 S9].
+An 8 mm EN1A sleeve carries installation preload through an 18.6 mm printed hole. A 30 mm retention washer spans the sleeve and print; keep the original fischer washer and nut above it. The original small washer alone cannot retain the printed plate. Each measured sleeve must stand at least 0.1 mm proud of the local flange [S10 S11].
+The anchor load table gives permissible tension 700 N and shear 4300 N for an isolated M6 anchor in cracked C20/25. Its values include material factors and an action factor of 1.4. ETA characteristic bending 11 Nm with factor 1.25 gives a service screening reference of 6285.714 N mm [S8 S9].
+Using e = 45.8 mm, s = 120 mm and d = 6 mm gives N = 40.967 N, V = 24.583 N and Mb = 2,833.125 N mm. One bolt is conservatively assigned the full direct load and full global bending moment because clearances and the vertical bolt alignment cannot guarantee equal sharing in every direction.
+Combined screening utilization is 0.5150. This linear sum is a conservative project screen. It does not replace the full fastening design method or verify the custom fixture and concrete surface.
+Tightening preload remains a qualification gate
+The specified 8 Nm torque with assumed K = 0.15 to 0.25 gives 5,333 to 8,889 N. Minimum sleeve area is 210.10 mm² and its estimated mean compression is 42.308 MPa. K is not manufacturer preload data. Washer bending, local concrete bearing, installation damage and actual torque performance remain blocked even though external beam loads are small.
+FEM attachment idealization
+Model assumption
+Definition and unresolved physical difference
+Retained translations
+Y/Z translations fixed on sleeve bores; X fixed on wall and washer annuli, radii 9.3 to 15 mm, at x = 0 and 7.8 mm.
+Assumed engagement
+Bilateral zero clearance restraint. The actual nominal 0.2 mm washer gap, preload, friction, contact opening and gap take up are not solved.
+The calculated stress applies to the assumed engaged state. This boundary model does not qualify the real metal, polymer and concrete contact; that requires installation and physical evidence.
+Finite element model and three dimensional bracket stress
+FreeCAD creates solids; Gmsh generates STL and FEM meshes. CalculiX uses quadratic C3D10 displacement interpolation. Bracket geometry is curved second order; beam geometry is straight sided to avoid curved element inversion in the thin wall. Gmsh nodes 9 and 10 are remapped to CalculiX ordering. Raw decks, logs and results are retained.
+Beam ends are restrained transversely with one axial fix; a central 10 N patch and gravity load the tube. Bracket tip cases are balanced resultants: fx/fy/fz at 20 N, tx at 550 N mm, my/mz at 1600 N mm. Structural geometry retains reinforcement and fillet but omits fit ribs and interference preload.
+Figure 3  Bracket nodal stress field. The arbitrary-direction bound combines independent solutions and is not one physical stress tensor. PETG is isotropic in this screening model.
+For the principal bound, each Si is maximum absolute principal stress, the spectral norm of its symmetric tensor. Triangle and Cauchy Schwarz inequalities give the bound; the same combination bounds von Mises stress. DAT shears are reordered from XY/XZ/YZ to XY/YZ/ZX before the eigenvalue calculation. Both nodal and integration point results are checked.
+Finite element results and numerical verification
+All reported minimum Jacobians are positive. Bracket and beam displacement changes are 0.23% and 0.31% between the finest meshes, within the 5% limit. Peak stress refinement is assessed separately below; idealized restraints still require physical qualification.
+Part and h mm
+Nodes
+Elems
+VM MPa
+Principal bound MPa
+Displacement mm
+Min det J
+Bracket 6
+17675
+10448
+2.781
+3.238
+0.17840
+0.0569
+Bracket 4
+45078
+28917
+2.757
+3.064
+0.17750
+0.1055
+Bracket 3.2
+79939
+52996
+2.721
+3.582
+0.17792
+0.0845
+Beam 8
+66479
+33429
+0.885
+single case
+0.00361
+0.0927
+Beam 5.5
+127600
+63923
+0.895
+single case
+0.00362
+0.0648
+The finest bracket von Mises bound is 2.721 MPa and the absolute principal bound is 3.582 MPa, compared with the 4.667 MPa material screen. Peak principal stress is not converged: its 14.44% change exceeds the unchanged 10% limit. The stable von Mises result does not close that failed gate.
+Verification metric
+Difference
+Limit
+Result
+Absolute principal stress bound
+14.44%
+10%
+FAIL
+Von Mises stress bound
+1.32%
+10%
+PASS
+Beam mesh volume versus CAD
+0.5032%
+0.5%
+FAIL
+Global beam displacement versus Euler
+8.195%
+15%
+PASS
+Figure 4  Beam nodal stress under the central transverse force and gravity. The hand screen also covers force direction, axial load, torsion, tolerance and local wall effects.
+Purchased parts and project cost
+Prices below are a dated source snapshot from 17 November 2026. Minimum orders determine cash outlay. The CSV retains tax basis, exact URLs, source files, quantities, price basis and component notes. Purchase links are attached to the part identifiers in this table; none of the items has been ordered.
+Part and purchase link
+Used
+Buy
+Unit price
+Purchase cost
+Aluminum tube  23437
+1
+1
+USD 13.61
+USD 13.61
+PETG spool  IDS 3449 / IDF 17558
+306.6 g
+1
+USD 23.99
+USD 23.99
+M6 anchor  564572 / FAZ II Plus 6/10 zp
+4
+50
+EUR 0.63
+EUR 31.50
+Steel sleeve  HPS-18-6.4-8-EN1A
+4
+25
+GBP 4.02
+GBP 100.50
+Wide washer  HYW-M6-30-A2
+4
+4
+GBP 0.38
+GBP 1.52
+Currency
+Cash purchases
+Base material consumed
+With five coupons
+USD
+37.60
+16.28
+21.55
+EUR
+31.50
+2.52
+2.52
+GBP
+102.02
+17.60
+17.60
+No currency conversion is applied. VAT or sales tax, delivery, customs, cutting, tools, energy and labor are excluded. Consumed beam cost is allocated by 400/609.6 of one stock length. Unused inventory remains 46 anchors and 21 sleeves; the supplier minimum orders explain the difference between purchase and consumed costs.
+Printed material allocation
+The two solid brackets use an estimated 306.56 g of PETG. All five optional fit coupons add 219.47 g and USD 5.27 in consumed material. Both are drawn from the same 1 kg spool. Supports, brim, purge and failed prints require an additional process allowance.
+The two printed allocation lines in the CSV are descriptive costs and are excluded from additive purchase totals. The bracket material is counted once in the filament line; coupon material is added once only in the optional coupon scenario. This prevents buying or costing the same filament twice.
+Klium lists the anchors on order. Accu reports the sleeves available for order with zero immediate stock in the captured response. Confirm delivery and final checkout prices before purchasing. Accu public pricing explicitly confirms GBP 4.02 per sleeve, minimum quantity 25, and GBP 0.38 per wide washer at quantity four [S10 S11 S12].
+Manufacture assembly and physical acceptance
+First resolve both numerical failures in the next version: refine the joint/contact mesh at the washer restraint edge and improve the tube curvature/geometry approximation. Then obtain measured print, fit, wall and assembly evidence. The proposed physical qualification sequence follows. Site drilling and torque installation require the actual substrate and manufacturer procedure to be confirmed.
+1. Inspect the purchased tube and material documentation. Finish cut to 400 ±0.5 mm, deburr, and record both inside dimensions and corner clearance at both ends. Verify the actual wall bearing face spacing against the CAD stack.
+2. Print the appropriate fit coupons with the proposed PETG process. Select or regenerate a coupon from measured stock rather than assuming nominal interference. Record fit force, seating, damage and retention. Use the same qualified process for both brackets.
+3. Inspect each printed flange, plug root, rib and sleeve bore. Confirm that the metal sleeves fit the bores and each stands at least 0.1 mm proud of the local printed surface. Keep the wide washer and original anchor washer and nut in the specified order.
+4. Qualify the actual wall and installation. Check concrete class, wall thickness, every edge distance, anchor pitch, buried services and absence of weak finishes under the sleeves. Follow the current M6 ETA drilling, cleaning and 8 Nm torque procedure. Examine the metal and concrete bearing path.
+5. Preassemble both plugs and the tube, then position the assembly between the prepared walls with bolt access above and below the beam. Do not force an assembly into an undersized gap or pry the printed flanges into alignment.
+6. After installation qualification, use an agreed controlled proof procedure for the assembled load path. A proposed 30 N proof level requires review of the complete fixture, wall and test setup; the material screening factor alone does not qualify that test. Record direction, point, duration, deflection, residual movement and inspection outcome.
+Evidence still required for engineering release
+Acceptance item
+Current evidence state
+Actual beam length and openings
+Not measured
+Beam supply lot and printed material process
+Not qualified
+Both press fits and retention
+Not tested
+All four sleeve projections
+Not measured
+Actual walls and torque installation
+Not qualified
+Assembled proof and sustained service load
+Not tested
+Operating temperature and load duration
+Not agreed or qualified
+Store measured values, responsible operator, date and linked evidence in config/physical_acceptance.json. Null values remain blocked. A simulation result must not be used to change a physical observation to true. Stop and investigate cracking, crushing, washer dishing, sleeve rocking, concrete spalling or permanent movement.
+Requirements traceability and reproducibility
+The frozen requirement.md is the baseline. Artifact completeness and engineering release are separate decisions. The final audit supplies PASS, FAIL or BLOCKED evidence for each requirement; missing software results, documents or measurements cannot be replaced by an assumed pass.
+ID
+Requirement
+Evidence or acceptance path
+R01
+Self contained v0 ZIP
+Archive manifest and stored evidence; external software versions documented
+R02
+40 cm beam
+CAD 400 mm; actual length measurement gate
+R03
+Two printed press fit brackets
+FCStd, STEP, Gmsh STL, coupons; physical fit gate
+R04
+Bolt mounts on two walls
+Hardware BOM and anchor screening; actual wall gate
+R05
+No failure under 10 N
+Stress screens pass; numerical verification FAIL; physical qualification BLOCKED
+R06
+Known purchased beam and properties
+Online Metals 23437, supplier snapshots, section and material evidence
+R07
+Google Docs report
+Native import and verified receipt recorded with the final archive
+R08
+Full formulas and calculations
+This report, calculate.py and calculations.json
+R09
+Priced BOM with external links
+bom.csv and bom_summary.json
+R10
+FEM and three dimensional stress
+Raw solved decks, FRD/DAT, figures and offline stress viewer
+R11
+FreeCAD CAD
+Native FCStd, parametric build script and geometry manifest
+R12
+Gmsh generated STL
+STL files, generation logs and hashed provenance
+R13
+CalculiX FEM
+Actual solver logs, versions, input and result files
+R14
+Automated complete project tests
+Recompute/audit commands, structured results and LLM next actions
+Reproduction from the extracted project
+Run the project commands from its root using the documented environment. CAD rebuilding requires FreeCAD; FEM rebuilding requires Gmsh, Python numerical dependencies and CalculiX. Existing reports, CAD exchanges, raw results and the offline viewer remain available without rerunning a solver.
+python scripts/calculate.pypython -m unittest discover -s tests -p "test_calculations.py" -vpython scripts/run_fem.pypython scripts/build_report.py
+Use the README for the single project audit/recompute entry point and pinned software setup. Preserve the frozen requirements and provenance. A geometry, material or load change invalidates downstream meshes and results until they are regenerated. Record future changes as v1 instead of silently replacing this baseline.
+Source register and limits of this version
+Supplier sources and original evidence are retained under evidence with dates and hashes. Catalogue data and generic material references support the calculation inputs; they do not establish the properties of an untested printed part or the condition of a real installation. Prices were checked on 17 November 2026.
+S1  Online Metals 23437  Catalogue identity, alloy, nominal dimensions, corner radii and stock price.
+S2  Online Metals aluminum tolerances  Outside, wall and radius tolerance inputs; inside opening range derived from those inputs.
+S3  Online Metals cut tolerances  Supplier cut tolerance explains why oversize stock is finish cut for the project.
+S4  Hydro 6061 alloy data sheet  General extrusion minimum yield reference; not a certificate for Online Metals stock.
+S5  Online Metals 6061 product guide  Typical modulus, Poisson ratio and density; source of the self weight upper assumption.
+S6  Prusament PETG technical data  Printed specimen test conditions, interlayer adhesion, elastic modulus and density.
+S7  Prusament PETG Jet Black 1 kg  IDS 3449 and IDF 17558; filament identity and observed purchase price.
+S8  fischer FAZ II Plus 6/10 564572  Anchor dimensions, torque, allowed fixture and full ETA download.
+S9  fischer official static load table  Permissible isolated anchor loads and geometric limitations; full ETA is archived.
+S10  Accu EN1A compression sleeve  Dimensions, material and purchase identity; exact pricing response is archived.
+S11  Accu M6 30 mm retention washer  Dimensions, tolerances and purchase identity; exact pricing response is archived.
+S12  Klium fischer 564572 purchase listing  Anchor unit price, minimum order and availability snapshot.
+S13  Smiths EN1A reference sheet  Generic 240 to 400 MPa yield range; actual sleeve condition needs supply evidence.
+Release decision
+v0 is an engineering design baseline for review and further work. Numerical verification is FAIL: principal stress refinement changes 14.44% against 10%; beam mesh volume error is 0.5032% against 0.5%. Physical qualification is BLOCKED for fit, printed material, contact, installation, actual walls, duration and environment. Refine the washer restraint/contact mesh and tube geometric approximation in the next version, then complete physical qualification. Engineering release is not approved.

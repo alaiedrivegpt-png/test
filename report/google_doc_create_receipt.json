@@ -1,0 +1,15 @@
+{
+  "schema": "v1-native-google-doc-creation",
+  "method": "Native copy followed by scoped replacement of non-equation content, native table/image insertion and formatting.",
+  "source_document_url": "https://docs.google.com/document/d/1cYAbrp5_44yrPNomKcAUwh-eoXsCq4oBbQqKRzxCNtM",
+  "create_action": {
+    "success": true,
+    "id": "1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ",
+    "title": "400 mm beam wall mount engineering report v1",
+    "mimeType": "application/vnd.google-apps.document",
+    "url": "https://docs.google.com/document/d/1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ/edit?usp=drivesdk",
+    "made_private": false
+  },
+  "final_document_url": "https://docs.google.com/document/d/1N3dt1la_HsrA0gxzH9_tAiDvqIp4jEMN0UqNdKW_wZQ",
+  "final_revision_id": "AHj4eMSWJ1V7Lhqlfk08aNRK4AxkP9etVnbbCiDseMmnFNDH_VzPXWDWwP4vnFo6dYkxFJ9CzdpcxXf4wGPIse_cmmHNkKABc31A5JAmK-k"
+}

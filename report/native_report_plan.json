@@ -1,0 +1,4989 @@
+{
+  "schema": "native-google-docs-report-plan-v1",
+  "source_markdown": "report/report.md",
+  "input_hashes": {
+    "report/report.md": "74f17b3739dec5dba497e8adee0e8b2130db30ca8fefcad943402ea4a21d4e04",
+    "evidence/v0_report_readback.json": "9fab1e200bcb27f0fd94bc2c6e0e5e7ee49a973190e7d1f992df740ccae9f7a2",
+    "scripts/build_native_report_plan.py": "e71b7c86946d8cc445b10e17405d88d16e9c14cb58a4119e8165dce3b766ada5",
+    "report/build_receipt.json": "9707b4d4b9e9c96f06718112aaaa42415b40732894614413bb308177cb57653b",
+    "drawings/assembly.png": "dc21c00bf006b7a36f798cbd522a9108de7515e718694eab4187bf7bec74715e",
+    "drawings/bracket_detail.png": "8f73a4948e06cf2cf1800995b0faadb11a6e3b3dd767f4d2861a4a8c526dfaf7",
+    "results/bracket_stress.png": "f2ab7ed822b6a10b44dbf8ec667fc06ce7142d0e9e04235fa041cb58d6833d21",
+    "results/beam_stress.png": "33622cfb644cc88ec0c4fd6041b586e7387e01062b329c7b7de44d30cbc25ad1"
+  },
+  "content_ready_for_native_application": true,
+  "content_blockers": [],
+  "counts": {
+    "heading": 12,
+    "paragraph": 69,
+    "figure": 4,
+    "table": 11,
+    "native_equation": 22,
+    "code_paragraph": 4
+  },
+  "template": {
+    "document_id": "1cYAbrp5_44yrPNomKcAUwh-eoXsCq4oBbQqKRzxCNtM",
+    "document_url": "https://docs.google.com/document/d/1cYAbrp5_44yrPNomKcAUwh-eoXsCq4oBbQqKRzxCNtM",
+    "copy_natively": true,
+    "retained_equation_count": 22,
+    "native_inventory": {
+      "inspected": true,
+      "readback_sha256": "69d9bdfa0235049ef45de424ca3d516a98566221091ca3a1e018f3aef80a8b4e",
+      "document_id": "1cYAbrp5_44yrPNomKcAUwh-eoXsCq4oBbQqKRzxCNtM",
+      "revision_id_at_inspection": "AHj4eMSj3jCraT6KXBB7vhIIsQyESEwS_5ot9DkI-8StDHcqYF6nFcbErjPN87KyHtCAtgcvr_AUzFl1k1m-PjcjnbIJr-yGvBvk_9nOV9E",
+      "equation_count": 22,
+      "equations": [
+        {
+          "ordinal": 1,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 40,
+          "paragraph_utf16_length": 41,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 2,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 71,
+          "paragraph_utf16_length": 72,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 3,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 74,
+          "paragraph_utf16_length": 75,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 4,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 32,
+          "paragraph_utf16_length": 33,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 5,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 27,
+          "paragraph_utf16_length": 28,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 6,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 71,
+          "paragraph_utf16_length": 72,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 7,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 90,
+          "paragraph_utf16_length": 91,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 8,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 47,
+          "paragraph_utf16_length": 48,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 9,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 50,
+          "paragraph_utf16_length": 51,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 10,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 65,
+          "paragraph_utf16_length": 66,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 11,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 20,
+          "paragraph_utf16_length": 21,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 12,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 76,
+          "paragraph_utf16_length": 77,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 13,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 76,
+          "paragraph_utf16_length": 77,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 14,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 88,
+          "paragraph_utf16_length": 89,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 15,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 62,
+          "paragraph_utf16_length": 63,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 16,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 87,
+          "paragraph_utf16_length": 88,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 17,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 44,
+          "paragraph_utf16_length": 45,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 18,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 31,
+          "paragraph_utf16_length": 32,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 19,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 36,
+          "paragraph_utf16_length": 37,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 20,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 39,
+          "paragraph_utf16_length": 40,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 21,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 60,
+          "paragraph_utf16_length": 61,
+          "formula_payload_exposed": false
+        },
+        {
+          "ordinal": 22,
+          "tab_id": "t.0",
+          "native_element_type": "equation",
+          "equation_utf16_length": 77,
+          "paragraph_utf16_length": 78,
+          "formula_payload_exposed": false
+        }
+      ],
+      "stored_write_indexes": false,
+      "formula_verification_limit": "Connector exposes equation objects but not their formula contents. Preserve them by native copy; verify rendered formulas against the LaTeX ordinal references."
+    }
+  },
+  "auxiliary_scoped_text_updates": [
+    {
+      "scope": "header",
+      "old_exact_text": "Beam wall mount v0    Engineering screening report",
+      "new_exact_text": "Beam wall mount v1    Engineering screening report",
+      "preserve_style": true
+    },
+    {
+      "scope": "footer",
+      "old_exact_text": "17 November 2026   |   ",
+      "new_exact_text": "19 November 2026   |   ",
+      "preserve_native_page_number_field": true
+    }
+  ],
+  "application_policy": {
+    "destination": "Create a native copy in the ChatGPT folder; never edit the retained v0 source.",
+    "equations": "Keep the 22 actual equation paragraphs, including their paragraph-ending newline, in existing order. LaTeX is audit text only.",
+    "deletions": "Derive non-equation body spans from fresh copied-document readback; delete in descending order while preserving equation ranges and the final structural newline.",
+    "insertions": "Insert the 23 segments around the retained equations. Their placeholder paragraphs mark locations for actual native tables and inline images.",
+    "indexes": "All external write indexes are UTF-16 units and must be derived from current connector readback. Relative offsets in this plan are only inside inserted segment text.",
+    "tables": "Use native insertTable, read returned cell paragraph positions, and fill cells in descending index order. Do not insert Markdown pipes as the final table.",
+    "figures": "Resolve each project-relative local path to an absolute upload path. Insert an inline image with the supplied aspect-preserving object size; caption follows it.",
+    "formatting": "Use existing template named styles. Apply heading named styles, body spacing, inline bold/code/link spans and native list bullets; reset unintended inherited character styling.",
+    "concurrency": "Use requiredRevisionId for guarded writes; reconcile any conflicting revision before continuing.",
+    "verification": "Read all final tabs once and verify 22 native equations, all planned native tables and four inline figures, exact text and hyperlinks, no placeholders or stale v0 prose. Export PDF and inspect all pages and formulas."
+  },
+  "blocks": [
+    {
+      "type": "heading",
+      "source_lines": [
+        1,
+        1
+      ],
+      "markdown_level": 1,
+      "named_style": "TITLE",
+      "text": "400 mm beam wall mount engineering report v1",
+      "text_utf16_length": 44,
+      "runs": [],
+      "id": "b001"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        3,
+        3
+      ],
+      "text": "Reconstructed design and verification record    19 November 2026",
+      "text_utf16_length": 64,
+      "runs": [],
+      "id": "b002"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        5,
+        5
+      ],
+      "text": "This version reconstructs the 400 mm aluminum beam and its two printed end brackets from the retained v0 report and conversation. It adds independent CadQuery and Open CASCADE fit checks, executable CI checks, saved run logs and instructions for the next iteration. The original v0 CAD and solver bytes were unavailable; all v1 geometry and numerical results are newly generated.",
+      "text_utf16_length": 379,
+      "runs": [],
+      "id": "b003"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        7,
+        7
+      ],
+      "text": "Numerical verification: PASS. Nominal CAD fit: PASS. Manufactured fit and physical qualification: BLOCKED. Engineering release is not approved.",
+      "text_utf16_length": 143,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 143,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "id": "b004"
+    },
+    {
+      "type": "figure",
+      "source_lines": [
+        9,
+        11
+      ],
+      "ordinal": 1,
+      "local_path": "drawings/assembly.png",
+      "alt_text": "Figure 1  Reconstructed FreeCAD assembly. The beam is 400 mm long; nominal wall bearing faces are 431.6 mm apart.",
+      "caption": {
+        "text": "Figure 1  Reconstructed FreeCAD assembly. The beam is 400 mm long; nominal wall bearing faces are 431.6 mm apart.",
+        "text_utf16_length": 113,
+        "runs": []
+      },
+      "native_insert_required": true,
+      "placeholder": "[[V1_FIGURE_001]]",
+      "exists": true,
+      "sha256": "dc21c00bf006b7a36f798cbd522a9108de7515e718694eab4187bf7bec74715e",
+      "pixels": [
+        1800,
+        756
+      ],
+      "object_size_pt": {
+        "width": 446.4,
+        "height": 187.488
+      },
+      "caption_placement": "after_image",
+      "keep_image_with_caption": true,
+      "id": "b005"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        13,
+        20
+      ],
+      "ordinal": 1,
+      "row_count": 7,
+      "column_count": 2,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_001]]",
+      "column_alignment": [
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Design quantity",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "v1 selection",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Beam",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "Online Metals 23437; 6061-T6 square tube",
+            "text_utf16_length": 40,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Finished beam length",
+            "text_utf16_length": 20,
+            "runs": []
+          },
+          {
+            "text": "400 +/-0.5 mm",
+            "text_utf16_length": 13,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Wall bearing-face spacing",
+            "text_utf16_length": 25,
+            "runs": []
+          },
+          {
+            "text": "431.6 mm",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Printed brackets",
+            "text_utf16_length": 16,
+            "runs": []
+          },
+          {
+            "text": "Two reinforced Prusament PETG parts",
+            "text_utf16_length": 35,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Load screen",
+            "text_utf16_length": 11,
+            "runs": []
+          },
+          {
+            "text": "10 N quasistatic force in any direction plus selfweight",
+            "text_utf16_length": 55,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Material screen factor",
+            "text_utf16_length": 22,
+            "runs": []
+          },
+          {
+            "text": "3 for aluminum and PETG only",
+            "text_utf16_length": 28,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b006"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        22,
+        22
+      ],
+      "text": "The force may act at any span station with a contact footprint of at least 10 x 10 mm. Anchor capacities use a separate service-load interaction. Load duration, environment, actual fit and installation remain unqualified.",
+      "text_utf16_length": 221,
+      "runs": [],
+      "id": "b007"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        24,
+        24
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Reconstructed geometry and assembly",
+      "text_utf16_length": 35,
+      "runs": [],
+      "id": "b008"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        26,
+        26
+      ],
+      "text": "The flange is 7.8 mm thick at the bolt mounts. A 6 mm central reinforcement has a flat face over z=+/-20 mm and tapers to the flange at z=+/-45 mm. The plug begins at x=13.8 mm and projects 32 mm. A 2 mm root-relief gap leaves 30 mm of tube engagement. The 8-edge root fillet has 2 mm radius.",
+      "text_utf16_length": 292,
+      "runs": [],
+      "id": "b009"
+    },
+    {
+      "type": "figure",
+      "source_lines": [
+        28,
+        30
+      ],
+      "ordinal": 2,
+      "local_path": "drawings/bracket_detail.png",
+      "alt_text": "Figure 2  The printable v1 bracket. Four triangular fit ribs are reconstructed explicitly and are not credited with structural strength.",
+      "caption": {
+        "text": "Figure 2  The printable v1 bracket. Four triangular fit ribs are reconstructed explicitly and are not credited with structural strength.",
+        "text_utf16_length": 136,
+        "runs": []
+      },
+      "native_insert_required": true,
+      "placeholder": "[[V1_FIGURE_002]]",
+      "exists": true,
+      "sha256": "8f73a4948e06cf2cf1800995b0faadb11a6e3b3dd767f4d2861a4a8c526dfaf7",
+      "pixels": [
+        2070,
+        1260
+      ],
+      "object_size_pt": {
+        "width": 446.4,
+        "height": 271.7217
+      },
+      "caption_placement": "after_image",
+      "keep_image_with_caption": true,
+      "id": "b010"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        32,
+        39
+      ],
+      "ordinal": 2,
+      "row_count": 7,
+      "column_count": 3,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_002]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Feature",
+            "text_utf16_length": 7,
+            "runs": []
+          },
+          {
+            "text": "Dimension",
+            "text_utf16_length": 9,
+            "runs": []
+          },
+          {
+            "text": "Purpose",
+            "text_utf16_length": 7,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Flange",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "60 x 150 mm",
+            "text_utf16_length": 11,
+            "runs": []
+          },
+          {
+            "text": "Two anchor mounts",
+            "text_utf16_length": 17,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Anchor pitch and bores",
+            "text_utf16_length": 22,
+            "runs": []
+          },
+          {
+            "text": "120 mm; diameter 18.6 mm",
+            "text_utf16_length": 24,
+            "runs": []
+          },
+          {
+            "text": "Steel sleeves and M6 passage",
+            "text_utf16_length": 28,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Core and rib envelope",
+            "text_utf16_length": 21,
+            "runs": []
+          },
+          {
+            "text": "31.55 /31.85 mm",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "Nominal clearance and sacrificial interference",
+            "text_utf16_length": 46,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Plug corner chamfer",
+            "text_utf16_length": 19,
+            "runs": []
+          },
+          {
+            "text": "3 mm",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "Clear the rounded tube opening",
+            "text_utf16_length": 30,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Ribs",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "1.2 mm base width; x 16 to 44.3 mm",
+            "text_utf16_length": 34,
+            "runs": []
+          },
+          {
+            "text": "Newly specified triangular ribs",
+            "text_utf16_length": 31,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Insertion allowance",
+            "text_utf16_length": 19,
+            "runs": []
+          },
+          {
+            "text": "2 mm root relief; 30 mm engagement",
+            "text_utf16_length": 34,
+            "runs": []
+          },
+          {
+            "text": "Avoid tube contact with the root fillet",
+            "text_utf16_length": 39,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b011"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        41,
+        41
+      ],
+      "text": "The v1 rib and coupon details are reconstructed, so their volume can differ from v0. Both bracket instances and the actual delivered STEP solids are checked. Simplified anchor shanks show placement; thread, nut, expansion clip and supplied small washer are not modeled.",
+      "text_utf16_length": 269,
+      "runs": [],
+      "id": "b012"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        43,
+        43
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Materials evidence and rounded tube section",
+      "text_utf16_length": 43,
+      "runs": [],
+      "id": "b013"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        45,
+        45
+      ],
+      "text": "Online Metals 23437 identifies ASTM B221 6061-T6 extrusion, 1.5 inch outside width, 0.125 inch wall, 0.125 inch outer radius and 0.062 inch inner radius. The actual nominal section therefore includes rounded corners [S1].",
+      "text_utf16_length": 221,
+      "runs": [
+        {
+          "start_utf16": 217,
+          "end_utf16": 219,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437"
+          }
+        }
+      ],
+      "id": "b014"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        47,
+        53
+      ],
+      "ordinal": 3,
+      "row_count": 6,
+      "column_count": 3,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_003]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Input",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "Value used",
+            "text_utf16_length": 10,
+            "runs": []
+          },
+          {
+            "text": "Basis",
+            "text_utf16_length": 5,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Aluminum E /nu",
+            "text_utf16_length": 14,
+            "runs": []
+          },
+          {
+            "text": "68,947.57 MPa /0.33",
+            "text_utf16_length": 19,
+            "runs": []
+          },
+          {
+            "text": "Typical alloy guide [S5]",
+            "text_utf16_length": 24,
+            "runs": [
+              {
+                "start_utf16": 21,
+                "end_utf16": 23,
+                "style": {
+                  "link_url": "https://www.onlinemetals.com/en/product-guide/alloy/6061"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Aluminum yield reference",
+            "text_utf16_length": 24,
+            "runs": []
+          },
+          {
+            "text": "240 MPa",
+            "text_utf16_length": 7,
+            "runs": []
+          },
+          {
+            "text": "Generic extrusion minimum [S4]",
+            "text_utf16_length": 30,
+            "runs": [
+              {
+                "start_utf16": 27,
+                "end_utf16": 29,
+                "style": {
+                  "link_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "Aluminum density",
+            "text_utf16_length": 16,
+            "runs": []
+          },
+          {
+            "text": "2800 kg/m³",
+            "text_utf16_length": 10,
+            "runs": []
+          },
+          {
+            "text": "Conservative rounded guide assumption [S5]",
+            "text_utf16_length": 42,
+            "runs": [
+              {
+                "start_utf16": 39,
+                "end_utf16": 41,
+                "style": {
+                  "link_url": "https://www.onlinemetals.com/en/product-guide/alloy/6061"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "PETG E /strength reference",
+            "text_utf16_length": 26,
+            "runs": []
+          },
+          {
+            "text": "1400 /14 MPa",
+            "text_utf16_length": 12,
+            "runs": []
+          },
+          {
+            "text": "Lower typical references from specimen data [S6]",
+            "text_utf16_length": 48,
+            "runs": [
+              {
+                "start_utf16": 45,
+                "end_utf16": 47,
+                "style": {
+                  "link_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+                }
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "text": "PETG density /nu",
+            "text_utf16_length": 16,
+            "runs": []
+          },
+          {
+            "text": "1270 kg/m³ /0.38",
+            "text_utf16_length": 16,
+            "runs": []
+          },
+          {
+            "text": "Density published; nu assumed [S6]",
+            "text_utf16_length": 34,
+            "runs": [
+              {
+                "start_utf16": 31,
+                "end_utf16": 33,
+                "style": {
+                  "link_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      ],
+      "id": "b015"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        55,
+        55
+      ],
+      "text": "The PETG sheet gives interlayer adhesion 18 +/-4 MPa and horizontal tensile modulus 1.5 +/-0.1 GPa. These are typical test results, not a qualified allowable for the actual print. The aluminum reference is not a certificate for the purchased stock. Retain lot and process qualification gates [S4 S6].",
+      "text_utf16_length": 300,
+      "runs": [
+        {
+          "start_utf16": 293,
+          "end_utf16": 295,
+          "style": {
+            "link_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+          }
+        },
+        {
+          "start_utf16": 296,
+          "end_utf16": 298,
+          "style": {
+            "link_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+          }
+        }
+      ],
+      "id": "b016"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        57,
+        59
+      ],
+      "ordinal": 1,
+      "latex_reference": "A_s(b,r)=b^2-(4-\\pi)r^2,\\quad c=b/2-r",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b017"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        61,
+        63
+      ],
+      "ordinal": 2,
+      "latex_reference": "I_s(b,r)=\\frac{b^4}{12}-4[c^2r^2(1-\\pi/4)+cr^3/3+r^4(1/3-\\pi/16)]",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b018"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        65,
+        67
+      ],
+      "ordinal": 3,
+      "latex_reference": "A=A_s(b,r_o)-A_s(b-2t,r_i),\\quad I=I_s(b,r_o)-I_s(b-2t,r_i)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b019"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        69,
+        69
+      ],
+      "text": "At nominal dimensions, A=437.023 mm² and I=88,514.405 mm⁴. The tolerance enumeration uses outside flats +/-0.635 mm, wall +/-0.2032 mm and corner radii +/-0.396875 mm [S2]. It gives Amin=400.267 mm², Amax=474.481 mm², Imin=78,669.225 mm⁴ and Zmin=4,061.919 mm³.",
+      "text_utf16_length": 261,
+      "runs": [
+        {
+          "start_utf16": 168,
+          "end_utf16": 170,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/aluminum-tolerances"
+          }
+        }
+      ],
+      "id": "b020"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        71,
+        71
+      ],
+      "text": "Independent numerical integration checks the section formula. Tolerance extremes are combined conservatively; the actual tube opening still must be measured. A fixed nominal plug is not guaranteed to fit the full catalogue tolerance range.",
+      "text_utf16_length": 239,
+      "runs": [],
+      "id": "b021"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        73,
+        73
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Beam force stress and displacement calculations",
+      "text_utf16_length": 47,
+      "runs": [],
+      "id": "b022"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        75,
+        75
+      ],
+      "text": "Use the upper finished span L=400.5 mm, F=10 N and g=9.80665 m/s². The beam bending model applies selfweight as a uniform load. The bracket envelope separately assigns all beam weight to one bracket.",
+      "text_utf16_length": 199,
+      "runs": [],
+      "id": "b023"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        77,
+        77
+      ],
+      "text": "Here b is the outside width, t the wall, cmax=bmax/2 and Z=Imin/cmax. The thin-wall torsion approximation uses a deliberately small enclosed area: Am=As(bmin−2tmax, ri, max), the rounded minimum inner opening. All section dimensions are in mm; E and stresses are in MPa.",
+      "text_utf16_length": 270,
+      "runs": [],
+      "id": "b024"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        79,
+        81
+      ],
+      "ordinal": 4,
+      "latex_reference": "W=A_{max}L\\rho g\\,10^{-9},\\quad q=W/L",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b025"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        83,
+        85
+      ],
+      "ordinal": 5,
+      "latex_reference": "M_{max}=FL/4+qL^2/8",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b026"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        87,
+        89
+      ],
+      "ordinal": 6,
+      "latex_reference": "M_e=Fc_{max}\\sqrt2,\\quad\\sigma_b=\\sqrt2(M_{max}+M_e)/Z,\\quad\\sigma_a=F/A_{min}",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b027"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        91,
+        93
+      ],
+      "ordinal": 7,
+      "latex_reference": "T=Fc_{max}\\sqrt2,\\quad\\tau_T=T/(2A_m t_{min}),\\quad\\tau_V=1.5(F+W)/[2t_{min}(b_{min}-2t_{min})]",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b028"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        95,
+        97
+      ],
+      "ordinal": 8,
+      "latex_reference": "\\sigma_{vm}=\\sqrt{(\\sigma_b+\\sigma_a)^2+3(\\tau_T+\\tau_V)^2}",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b029"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        99,
+        99
+      ],
+      "text": "W=5.218 N; Mmax=1,262.474 N mm; Me=273.898 N mm. The diagonal factor bounds transverse force direction. Combined beam stress is 0.633310 MPa against 240/3=80 MPa.",
+      "text_utf16_length": 162,
+      "runs": [],
+      "id": "b030"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        101,
+        103
+      ],
+      "ordinal": 9,
+      "latex_reference": "\\delta=FL^3/(48EI)+5qL^4/(384EI)+M_eL^2/(8EI)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b031"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        105,
+        105
+      ],
+      "text": "The calculated global beam displacement envelope is 0.00428456 mm against 1 mm. With nominal dimensions, centered vertical force and no end eccentricity, the comparable Euler section displacement is 0.00284020 mm. The FEM comparison uses a sidewall section mean; local indentation is reported separately.",
+      "text_utf16_length": 304,
+      "runs": [],
+      "id": "b032"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        107,
+        109
+      ],
+      "ordinal": 10,
+      "latex_reference": "P_E=\\pi^2EI/L^2,\\quad P_{allow}=\\min(P_E,\\sigma_yA_{min})/3",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b033"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        111,
+        111
+      ],
+      "text": "The pinned Euler compression screen gives PE=333,747.9 N and Pallow=32,021.3 N. The 10 N axial utilization is 0.0003123.",
+      "text_utf16_length": 120,
+      "runs": [],
+      "id": "b034"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        113,
+        113
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Bracket and contact analytical screens",
+      "text_utf16_length": 38,
+      "runs": [],
+      "id": "b035"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        115,
+        115
+      ],
+      "text": "The bounding bracket volume is 158,690.4 mm³, deliberately above the actual CAD volume. Required force 17.194 N, torsion 476.108 N mm and transverse moment 1,536.372 N mm remain within the independently applied 20 N, 550 N mm and 1600 N mm envelopes.",
+      "text_utf16_length": 250,
+      "runs": [],
+      "id": "b036"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        117,
+        117
+      ],
+      "text": "For the screens below, R=20 N, T=550 N mm, Mt=1600 N mm, plug length ℓ=32 mm, anchor pitch s=120 mm, plate strip width w=60 mm and plate thickness tp=7.8 mm.",
+      "text_utf16_length": 157,
+      "runs": [],
+      "id": "b037"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        119,
+        121
+      ],
+      "ordinal": 11,
+      "latex_reference": "A_p=B^2-2C^2",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b038"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        123,
+        125
+      ],
+      "ordinal": 12,
+      "latex_reference": "I_p=B^4/12-4[(C^2/2)(B/2-C/3)^2+C^4/36],\\quad Z_p=I_p/(B/2)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b039"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        127,
+        129
+      ],
+      "ordinal": 13,
+      "latex_reference": "\\sigma_p=\\sqrt2(R\\ell+M_t)/Z_p+R/A_p,\\quad\\tau_p=1.5R/a^2+T/(0.208a^3)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b040"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        131,
+        133
+      ],
+      "ordinal": 14,
+      "latex_reference": "\\sigma_{p,vm}=\\sqrt{\\sigma_p^2+3\\tau_p^2},\\quad\\delta_p=R\\ell^3/(3E_pI_p)+M_t\\ell^2/(2E_pI_p)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b041"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        135,
+        135
+      ],
+      "text": "With core B=31.55 mm and chamfer C=3 mm, Ap=977.403 mm² and Ip=78,630.434 mm⁴. The inscribed square for shear/torsion has side a=B-2C=25.55 mm. Plug stress is 0.746 MPa against 14/3=4.667 MPa; isolated plug displacement is 0.00943 mm.",
+      "text_utf16_length": 234,
+      "runs": [],
+      "id": "b042"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        137,
+        139
+      ],
+      "ordinal": 15,
+      "latex_reference": "\\sigma_{plate}=(Rs/4)/(wt_p^2/6),\\quad F_c=R+M_t/(\\ell_{eng}-10)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b043"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        141,
+        143
+      ],
+      "ordinal": 16,
+      "latex_reference": "p_{bearing}=F_c/[(B-2C)10],\\quad\\sigma_{wall}=[F_c(b_{max}-2t_{min})/4]/(10t_{min}^2/6)",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b044"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        145,
+        145
+      ],
+      "text": "The plate strip stress is 0.986 MPa. Two assumed 10 mm bearing patches in 30 mm engagement have centers 20 mm apart:Fc=20+1600/20=100 N. Bearing pressure is 0.391 MPa. The local tube wall strip gives 55.694 MPa against 80 MPa.",
+      "text_utf16_length": 226,
+      "runs": [],
+      "id": "b045"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        147,
+        147
+      ],
+      "text": "The contact patches are screening assumptions. Smaller edge contacts, rib crushing, assembly misalignment, anisotropy and long-term bearing require qualification. The finite element model excludes fit ribs from credited structural material.",
+      "text_utf16_length": 240,
+      "runs": [],
+      "id": "b046"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        149,
+        149
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Anchors sleeves and installation load path",
+      "text_utf16_length": 42,
+      "runs": [],
+      "id": "b047"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        151,
+        151
+      ],
+      "text": "Each bracket uses two fischer 564572 M6 anchors at 120 mm pitch. The provisional wall is dry, sound solid C20/25 concrete, at least 100 mm thick and 60 mm from every free edge. The manufacturer requires 6 mm drilling, 60 mm minimum through-fixing hole depth and 8 N m torque [S8 S9 S14].",
+      "text_utf16_length": 287,
+      "runs": [
+        {
+          "start_utf16": 276,
+          "end_utf16": 278,
+          "style": {
+            "link_url": "https://www.fischer.co.uk/en-gb/products/steel-fixings/bolt-anchor/bolt-anchor-faz-ii-plus/bolt-anchor-faz-ii-plus/564572-faz-ii-plus-6-10-zp"
+          }
+        },
+        {
+          "start_utf16": 279,
+          "end_utf16": 281,
+          "style": {
+            "link_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf"
+          }
+        },
+        {
+          "start_utf16": 282,
+          "end_utf16": 285,
+          "style": {
+            "link_url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf"
+          }
+        }
+      ],
+      "id": "b048"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        153,
+        153
+      ],
+      "text": "An 8 mm EN1A sleeve bypasses tightening compression around the printed plate. The 30 mm retention washer spans the 18.6 mm bore; retain the supplied anchor washer and nut above it. Each measured sleeve must project at least 0.1 mm above the print. Nominal projection is 0.2 mm, so the washer does not initially clamp the print [S10 S11].",
+      "text_utf16_length": 337,
+      "runs": [
+        {
+          "start_utf16": 328,
+          "end_utf16": 331,
+          "style": {
+            "link_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A"
+          }
+        },
+        {
+          "start_utf16": 332,
+          "end_utf16": 335,
+          "style": {
+            "link_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2"
+          }
+        }
+      ],
+      "id": "b049"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        155,
+        157
+      ],
+      "ordinal": 17,
+      "latex_reference": "t_{fix,max}=(8+0.1)+(1.5+0.3)=9.9\\;\\mathrm{mm}\\le10\\;\\mathrm{mm}",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b050"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        159,
+        161
+      ],
+      "ordinal": 18,
+      "latex_reference": "N=R+(Re+M_t)/s,\\quad V=R+T/s",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b051"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        163,
+        165
+      ],
+      "ordinal": 19,
+      "latex_reference": "M_b=V(t_{fix,max}+0.5d)+Re+M_t",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b052"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        167,
+        169
+      ],
+      "ordinal": 20,
+      "latex_reference": "U=N/700+V/4300+M_b/6285.714\\le1",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b053"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        171,
+        171
+      ],
+      "text": "Using e=45.8 mm, s=120 mm, d=6 mm gives N=40.967 N, V=24.583 N and Mb=2,833.125 N mm. The linear interaction is 0.514965. One bolt is conservatively assigned the full direct load and global moment because equal sharing is not guaranteed.",
+      "text_utf16_length": 237,
+      "runs": [],
+      "id": "b054"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        173,
+        173
+      ],
+      "text": "The service references 700 N tension and 4300 N shear come from the published isolated-anchor table in cracked C20/25. The bending reference is 11 N m/(1.25 x 1.4)=6285.714 N mm. This screen does not replace the complete fastening design or qualify the custom fixture [S9 S14].",
+      "text_utf16_length": 277,
+      "runs": [
+        {
+          "start_utf16": 269,
+          "end_utf16": 271,
+          "style": {
+            "link_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf"
+          }
+        },
+        {
+          "start_utf16": 272,
+          "end_utf16": 275,
+          "style": {
+            "link_url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf"
+          }
+        }
+      ],
+      "id": "b055"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        175,
+        177
+      ],
+      "ordinal": 21,
+      "latex_reference": "F_{pre}=T_{inst}/(Kd),\\quad A_{s,min}=\\pi(17.6^2-6.5^2)/4",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b056"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        179,
+        179
+      ],
+      "text": "With assumed torque factor K=0.15 to 0.25, estimated preload is 5333 to 8889 N. Minimum sleeve area is 210.102 mm² and nominal compression screen is 42.308 MPa. Actual washer bending, concrete bearing and preload remain unqualified.",
+      "text_utf16_length": 232,
+      "runs": [],
+      "id": "b057"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        181,
+        181
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Independent geometric fit verification",
+      "text_utf16_length": 38,
+      "runs": [],
+      "id": "b058"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        183,
+        183
+      ],
+      "text": "CadQuery 2.7.0 imports the delivered STEP solids and uses Open CASCADE 7.8.1 to check validity, solid volumes, dimensions, poses and Boolean intersections. The tests use both physical end instances. They distinguish unwanted core collision from intentional sacrificial-rib interference and sample the insertion path before final seating.",
+      "text_utf16_length": 337,
+      "runs": [],
+      "id": "b059"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        185,
+        200
+      ],
+      "ordinal": 4,
+      "row_count": 15,
+      "column_count": 3,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_004]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Geometric check",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "Status",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "Observed result",
+            "text_utf16_length": 15,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Left core collision",
+            "text_utf16_length": 19,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.000000 mm³",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Left minimum core clearance",
+            "text_utf16_length": 27,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.100000 mm",
+            "text_utf16_length": 11,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Left intended rib intersection",
+            "text_utf16_length": 30,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.754667 mm³",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Left sampled insertion core collision",
+            "text_utf16_length": 37,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.000000 mm³",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Right core collision",
+            "text_utf16_length": 20,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.000000 mm³",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Right minimum core clearance",
+            "text_utf16_length": 28,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.100000 mm",
+            "text_utf16_length": 11,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Right intended rib intersection",
+            "text_utf16_length": 31,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.754667 mm³",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Right sampled insertion core collision",
+            "text_utf16_length": 38,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.000000 mm³",
+            "text_utf16_length": 12,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Engagement at each end",
+            "text_utf16_length": 22,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "30.000 mm",
+            "text_utf16_length": 9,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Minimum sleeve clearance",
+            "text_utf16_length": 24,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.100 mm radial",
+            "text_utf16_length": 15,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Minimum washer overlap",
+            "text_utf16_length": 22,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "5.050 mm radial",
+            "text_utf16_length": 15,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Maximum fixture stack",
+            "text_utf16_length": 21,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "9.900 mm",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Catalogue tolerance qualification",
+            "text_utf16_length": 33,
+            "runs": []
+          },
+          {
+            "text": "BLOCKED",
+            "text_utf16_length": 7,
+            "runs": []
+          },
+          {
+            "text": "Minimum catalogue opening 30.7086 mm; nominal core 31.55 mm",
+            "text_utf16_length": 59,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Physical press fit",
+            "text_utf16_length": 18,
+            "runs": []
+          },
+          {
+            "text": "BLOCKED",
+            "text_utf16_length": 7,
+            "runs": []
+          },
+          {
+            "text": "No measured print/stock insertion or retention evidence",
+            "text_utf16_length": 55,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b060"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        202,
+        202
+      ],
+      "text": "The kernel also checks all delivered solids, exact rounded profile, opposite-end pose, assembly instances, hardware bores and the complete dimensional stack. Current nominal geometry status: PASS. The full machine-readable observations are in results/geometric_fit.json.",
+      "text_utf16_length": 270,
+      "runs": [],
+      "id": "b061"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        204,
+        204
+      ],
+      "text": "All nominal checks are geometric statements about the reconstructed model. The catalogue tube opening can vary enough to defeat the fixed nominal plug. Measure both ends, select or regenerate fit coupons, and document insertion and retention before accepting a manufactured assembly. CAD cannot establish insertion force, rib crushing, print shrinkage or creep.",
+      "text_utf16_length": 361,
+      "runs": [],
+      "id": "b062"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        206,
+        206
+      ],
+      "text": "The test suite deliberately introduces defects such as an oversized or shifted core. Successful detection is evidence that the checks execute and discriminate failures. It does not change a failing engineering requirement to PASS.",
+      "text_utf16_length": 230,
+      "runs": [],
+      "id": "b063"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        208,
+        208
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Finite element model and bracket stress",
+      "text_utf16_length": 39,
+      "runs": [],
+      "id": "b064"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        210,
+        210
+      ],
+      "text": "Gmsh 4.15.2 builds quadratic tetrahedral meshes for the reconstructed parts [M2]. CalculiX 2.23 solves six linear bracket cases: three 20 N force directions, 550 N mm torsion and two 1600 N mm transverse moments. The core includes the root fillet and reinforcement. The isotropic PETG model uses E=1400 MPa and nu=0.38.",
+      "text_utf16_length": 319,
+      "runs": [],
+      "id": "b065"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        212,
+        212
+      ],
+      "text": "The idealized attachment restrains transverse motion at sleeve bores and axial motion at wall/washer annuli. It assumes engaged bilateral contact. The actual 0.2 mm washer gap, slip, preload, friction and contact opening are not solved. These limitations require later contact analysis and physical qualification.",
+      "text_utf16_length": 313,
+      "runs": [],
+      "id": "b066"
+    },
+    {
+      "type": "native_equation",
+      "source_lines": [
+        214,
+        216
+      ],
+      "ordinal": 22,
+      "latex_reference": "S_{bound}=\\sqrt{S_{fx}^2+S_{fy}^2+S_{fz}^2}+S_{tx}+\\sqrt{S_{my}^2+S_{mz}^2}",
+      "policy": "retain_existing_native_equation_paragraph",
+      "insert_latex_as_text": false,
+      "id": "b067"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        218,
+        218
+      ],
+      "text": "For each stress measure, the bound combines the norm of three force-case responses, the torsional response and the norm of two moment-case responses. Principal stress uses the spectral norm of the stress tensor. Nodal and integration-point maxima are retained without excluding peaks. A low stress magnitude does not establish mesh convergence.",
+      "text_utf16_length": 344,
+      "runs": [],
+      "id": "b068"
+    },
+    {
+      "type": "figure",
+      "source_lines": [
+        220,
+        222
+      ],
+      "ordinal": 3,
+      "local_path": "results/bracket_stress.png",
+      "alt_text": "Figure 3  Actual v1 CalculiX bracket stress fields and the conservative directional envelope. The figure records the current mesh and verification status.",
+      "caption": {
+        "text": "Figure 3  Actual v1 CalculiX bracket stress fields and the conservative directional envelope. The figure records the current mesh and verification status.",
+        "text_utf16_length": 154,
+        "runs": []
+      },
+      "native_insert_required": true,
+      "placeholder": "[[V1_FIGURE_003]]",
+      "exists": true,
+      "sha256": "f2ab7ed822b6a10b44dbf8ec667fc06ce7142d0e9e04235fa041cb58d6833d21",
+      "pixels": [
+        1932,
+        1168
+      ],
+      "object_size_pt": {
+        "width": 393.0164,
+        "height": 237.6
+      },
+      "caption_placement": "after_image",
+      "keep_image_with_caption": true,
+      "id": "b069"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        224,
+        228
+      ],
+      "ordinal": 5,
+      "row_count": 4,
+      "column_count": 5,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_005]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Mesh h (mm)",
+            "text_utf16_length": 11,
+            "runs": []
+          },
+          {
+            "text": "Elements",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "VM bound (MPa)",
+            "text_utf16_length": 14,
+            "runs": []
+          },
+          {
+            "text": "Principal bound (MPa)",
+            "text_utf16_length": 21,
+            "runs": []
+          },
+          {
+            "text": "Displacement (mm)",
+            "text_utf16_length": 17,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "6.0",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "16,214",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "2.7376",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "3.0444",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.186059",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "4.5",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "24,447",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "2.6621",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "3.1074",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.185595",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "3.5",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "36,388",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "2.6973",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "3.1406",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.188089",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b070"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        230,
+        230
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Beam finite element results and mesh verification",
+      "text_utf16_length": 49,
+      "runs": [],
+      "id": "b071"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        232,
+        232
+      ],
+      "text": "The beam model applies the centered 10 N load patch and gravity to nominal rounded geometry, with simply supported end sections and one axial restraint. A swept tetrahedral mesh starts from the actual STEP end face. Straight-sided quadratic displacement elements use an exact 100 mm² pressure patch integrated with clipped quadratic face shape functions. Gravity uses actual finite element volume; a separate gate compares that volume with CAD.",
+      "text_utf16_length": 444,
+      "runs": [],
+      "id": "b072"
+    },
+    {
+      "type": "figure",
+      "source_lines": [
+        234,
+        236
+      ],
+      "ordinal": 4,
+      "local_path": "results/beam_stress.png",
+      "alt_text": "Figure 4  Actual v1 beam nodal stress field. Local displacement and the global section bending comparison are reported separately.",
+      "caption": {
+        "text": "Figure 4  Actual v1 beam nodal stress field. Local displacement and the global section bending comparison are reported separately.",
+        "text_utf16_length": 130,
+        "runs": []
+      },
+      "native_insert_required": true,
+      "placeholder": "[[V1_FIGURE_004]]",
+      "exists": true,
+      "sha256": "33622cfb644cc88ec0c4fd6041b586e7387e01062b329c7b7de44d30cbc25ad1",
+      "pixels": [
+        2520,
+        792
+      ],
+      "object_size_pt": {
+        "width": 446.4,
+        "height": 140.2971
+      },
+      "caption_placement": "after_image",
+      "keep_image_with_caption": true,
+      "id": "b073"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        238,
+        241
+      ],
+      "ordinal": 6,
+      "row_count": 3,
+      "column_count": 5,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_006]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Mesh h (mm)",
+            "text_utf16_length": 11,
+            "runs": []
+          },
+          {
+            "text": "Elements",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "Nodal VM (MPa)",
+            "text_utf16_length": 14,
+            "runs": []
+          },
+          {
+            "text": "IP VM (MPa)",
+            "text_utf16_length": 11,
+            "runs": []
+          },
+          {
+            "text": "Local displacement (mm)",
+            "text_utf16_length": 23,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "8.0",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "36,000",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.8525",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.7917",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.003599",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "5.5",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "76,650",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.9256",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.8287",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "0.003616",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b074"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        243,
+        251
+      ],
+      "ordinal": 7,
+      "row_count": 8,
+      "column_count": 4,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_007]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Verification",
+            "text_utf16_length": 12,
+            "runs": []
+          },
+          {
+            "text": "Status",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "Observed",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "Limit",
+            "text_utf16_length": 5,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Change in bracket VM bound",
+            "text_utf16_length": 26,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "1.31%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "10%",
+            "text_utf16_length": 3,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Change in bracket principal bound",
+            "text_utf16_length": 33,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "1.06%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "10%",
+            "text_utf16_length": 3,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Change in bracket displacement",
+            "text_utf16_length": 30,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "1.33%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "5%",
+            "text_utf16_length": 2,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Change in beam nodal VM",
+            "text_utf16_length": 23,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "7.90%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "10%",
+            "text_utf16_length": 3,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Change in beam IP VM",
+            "text_utf16_length": 20,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "4.47%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "10%",
+            "text_utf16_length": 3,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "Change in beam displacement",
+            "text_utf16_length": 27,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "0.48%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "5%",
+            "text_utf16_length": 2,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "FEM / Euler section difference",
+            "text_utf16_length": 30,
+            "runs": []
+          },
+          {
+            "text": "PASS",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "7.63%",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "15%",
+            "text_utf16_length": 3,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b075"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        253,
+        253
+      ],
+      "text": "Fine beam section displacement: 0.0030568 mm. Fine beam FE/CAD volume error: 0.1394%. Worst force/moment balance residual: 0.00027%. All element Jacobians are positive: True.",
+      "text_utf16_length": 174,
+      "runs": [],
+      "id": "b076"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        255,
+        255
+      ],
+      "text": "Limits are 10% stress change, 5% displacement change, 0.5% beam volume error, positive Jacobians, 0.5% equilibrium residual and 15% Euler comparison difference. Under gravity, the reaction audit subtracts consistent applied DLOAD nodal forces from CalculiX RF before checking equilibrium [M1].",
+      "text_utf16_length": 293,
+      "runs": [],
+      "id": "b077"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        257,
+        257
+      ],
+      "text": "The ZIP retains full raw stress/displacement fields for the six fine-bracket cases and one fine-beam case. Coarser meshes retain input decks, meshes, logs, metrics and raw-output SHA-256 values; their fields can be regenerated. fem/retained_evidence.json records this scope explicitly.",
+      "text_utf16_length": 285,
+      "runs": [],
+      "id": "b078"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        259,
+        259
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Purchased parts and historical cost basis",
+      "text_utf16_length": 41,
+      "runs": [],
+      "id": "b079"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        261,
+        261
+      ],
+      "text": "The BOM uses exact catalogue identities and retained quotes dated 17 November 2026. Supplier dimensions and evidence were retrieved again for v1. The prices below remain historical; confirm final price, tax, minimum order and delivery before procurement. Current availability is not inferred from generic page templates.",
+      "text_utf16_length": 320,
+      "runs": [],
+      "id": "b080"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        263,
+        269
+      ],
+      "ordinal": 8,
+      "row_count": 6,
+      "column_count": 5,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_008]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Part",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "Used",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "Buy",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "Unit quote",
+            "text_utf16_length": 10,
+            "runs": []
+          },
+          {
+            "text": "Purchase cost",
+            "text_utf16_length": 13,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "23437",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "1 piece cut to 400 mm",
+            "text_utf16_length": 21,
+            "runs": []
+          },
+          {
+            "text": "1",
+            "text_utf16_length": 1,
+            "runs": []
+          },
+          {
+            "text": "USD 13.61",
+            "text_utf16_length": 9,
+            "runs": []
+          },
+          {
+            "text": "USD 13.61",
+            "text_utf16_length": 9,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "IDS 3449 / IDF 17558",
+            "text_utf16_length": 20,
+            "runs": []
+          },
+          {
+            "text": "306.704328 g for two brackets",
+            "text_utf16_length": 29,
+            "runs": []
+          },
+          {
+            "text": "1",
+            "text_utf16_length": 1,
+            "runs": []
+          },
+          {
+            "text": "USD 23.99",
+            "text_utf16_length": 9,
+            "runs": []
+          },
+          {
+            "text": "USD 23.99",
+            "text_utf16_length": 9,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "564572",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "4 anchors",
+            "text_utf16_length": 9,
+            "runs": []
+          },
+          {
+            "text": "50",
+            "text_utf16_length": 2,
+            "runs": []
+          },
+          {
+            "text": "EUR 0.63",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "EUR 31.50",
+            "text_utf16_length": 9,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "HPS-18-6.4-8-EN1A",
+            "text_utf16_length": 17,
+            "runs": []
+          },
+          {
+            "text": "4 sleeves",
+            "text_utf16_length": 9,
+            "runs": []
+          },
+          {
+            "text": "25",
+            "text_utf16_length": 2,
+            "runs": []
+          },
+          {
+            "text": "GBP 4.02",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "GBP 100.50",
+            "text_utf16_length": 10,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "HYW-M6-30-A2",
+            "text_utf16_length": 12,
+            "runs": []
+          },
+          {
+            "text": "4 washers",
+            "text_utf16_length": 9,
+            "runs": []
+          },
+          {
+            "text": "4",
+            "text_utf16_length": 1,
+            "runs": []
+          },
+          {
+            "text": "GBP 0.38",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "GBP 1.52",
+            "text_utf16_length": 8,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b081"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        271,
+        271
+      ],
+      "text": "23437  Online Metals",
+      "text_utf16_length": 20,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 20,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437"
+          }
+        }
+      ],
+      "id": "b082"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        273,
+        273
+      ],
+      "text": "IDS 3449 / IDF 17558  Prusa",
+      "text_utf16_length": 27,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 27,
+          "style": {
+            "link_url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/"
+          }
+        }
+      ],
+      "id": "b083"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        275,
+        275
+      ],
+      "text": "564572  fischer / Klium",
+      "text_utf16_length": 23,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 23,
+          "style": {
+            "link_url": "https://www.klium.com/en/fischer-564572-piercing-anchor-faz-ii-plus-6-10-ev-electrolytically-galvanised-steel-176237"
+          }
+        }
+      ],
+      "id": "b084"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        277,
+        277
+      ],
+      "text": "HPS-18-6.4-8-EN1A  Accu",
+      "text_utf16_length": 23,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 23,
+          "style": {
+            "link_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A"
+          }
+        }
+      ],
+      "id": "b085"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        279,
+        279
+      ],
+      "text": "HYW-M6-30-A2  Accu",
+      "text_utf16_length": 18,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 18,
+          "style": {
+            "link_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2"
+          }
+        }
+      ],
+      "id": "b086"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        281,
+        285
+      ],
+      "ordinal": 9,
+      "row_count": 4,
+      "column_count": 4,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_009]]",
+      "column_alignment": [
+        "START",
+        "START",
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Currency",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "Cash purchases",
+            "text_utf16_length": 14,
+            "runs": []
+          },
+          {
+            "text": "Base consumed",
+            "text_utf16_length": 13,
+            "runs": []
+          },
+          {
+            "text": "With all coupons",
+            "text_utf16_length": 16,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "USD",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "37.60",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "16.29",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "18.88",
+            "text_utf16_length": 5,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "EUR",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "31.50",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "2.52",
+            "text_utf16_length": 4,
+            "runs": []
+          },
+          {
+            "text": "2.52",
+            "text_utf16_length": 4,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "GBP",
+            "text_utf16_length": 3,
+            "runs": []
+          },
+          {
+            "text": "102.02",
+            "text_utf16_length": 6,
+            "runs": []
+          },
+          {
+            "text": "17.60",
+            "text_utf16_length": 5,
+            "runs": []
+          },
+          {
+            "text": "17.60",
+            "text_utf16_length": 5,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b087"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        287,
+        287
+      ],
+      "text": "Two brackets use 306.70 g of PETG; the five optional v1 coupons add 108.10 g. Both allocations use the same 1 kg spool. The CSV's printed allocation rows are not counted again in purchase totals. Consumed beam cost uses 400/609.6 of the stock purchase.",
+      "text_utf16_length": 252,
+      "runs": [],
+      "id": "b088"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        289,
+        289
+      ],
+      "text": "Currencies are kept separate. Taxes, shipping, customs, cutting, tools, energy, labor, support material and failed prints need additional allowance. Historical minimum orders explain 46 unused anchors and 21 unused sleeves.",
+      "text_utf16_length": 223,
+      "runs": [],
+      "id": "b089"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        291,
+        291
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "CI execution requirements and saved feedback",
+      "text_utf16_length": 44,
+      "runs": [],
+      "id": "b090"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        293,
+        293
+      ],
+      "text": "The CI entry point runs the documented stages and writes a separate full stdout/stderr log. Each check reports its requirement IDs, observed value, criterion, status, evidence paths and next action. Missing software, omitted stages, stale hashes and execution errors cannot produce a passing engineering release.",
+      "text_utf16_length": 312,
+      "runs": [],
+      "id": "b091"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        295,
+        301
+      ],
+      "ordinal": 10,
+      "row_count": 6,
+      "column_count": 2,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_010]]",
+      "column_alignment": [
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Artifact",
+            "text_utf16_length": 8,
+            "runs": []
+          },
+          {
+            "text": "Purpose",
+            "text_utf16_length": 7,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "logs/ci_<run_id>.log",
+            "text_utf16_length": 20,
+            "runs": []
+          },
+          {
+            "text": "Commands, versions, start/end times, durations, stdout/stderr and exit status",
+            "text_utf16_length": 77,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "results/ci_summary.json",
+            "text_utf16_length": 23,
+            "runs": []
+          },
+          {
+            "text": "Structured current result and requirement coverage",
+            "text_utf16_length": 50,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "results/selftest_summary.json",
+            "text_utf16_length": 29,
+            "runs": []
+          },
+          {
+            "text": "Functional CI and deliberate-defect test results",
+            "text_utf16_length": 48,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "results/next_iteration.md",
+            "text_utf16_length": 25,
+            "runs": []
+          },
+          {
+            "text": "Actionable changes and evidence needed for the next version",
+            "text_utf16_length": 59,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "AI_REFERENCE.md",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "Short guide to authoritative files, layout, requirements and commands",
+            "text_utf16_length": 69,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b092"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        303,
+        303
+      ],
+      "text": "The test-system checks include deliberate geometric defects and missing/stale artifacts or failed solver behavior. A local execution confirms the CI commands operate in this environment. A hosted GitHub Actions run is not claimed until a repository workflow actually runs. The latest saved CI summary is authoritative for run counts and stage timing.",
+      "text_utf16_length": 350,
+      "runs": [],
+      "id": "b093"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        305,
+        305
+      ],
+      "text": "Saved CI self-test result: test_system_functional=true, exit_code=0. The separate self-test log and summary preserve the executed negative controls. This functional result is distinct from design acceptance.",
+      "text_utf16_length": 207,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 207,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "id": "b094"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        307,
+        307
+      ],
+      "text": "Run from the extracted project root using the documented dependency versions:",
+      "text_utf16_length": 77,
+      "runs": [],
+      "id": "b095"
+    },
+    {
+      "type": "code_paragraph",
+      "source_lines": [
+        310,
+        310
+      ],
+      "language": "sh",
+      "text": "python3 scripts/run_ci.py --mode audit",
+      "text_utf16_length": 38,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 38,
+          "style": {
+            "code": true
+          }
+        }
+      ],
+      "id": "b096"
+    },
+    {
+      "type": "code_paragraph",
+      "source_lines": [
+        311,
+        311
+      ],
+      "language": "sh",
+      "text": "python3 scripts/run_ci.py --mode full",
+      "text_utf16_length": 37,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 37,
+          "style": {
+            "code": true
+          }
+        }
+      ],
+      "id": "b097"
+    },
+    {
+      "type": "code_paragraph",
+      "source_lines": [
+        312,
+        312
+      ],
+      "language": "sh",
+      "text": "python3 scripts/run_ci.py --mode selftest",
+      "text_utf16_length": 41,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 41,
+          "style": {
+            "code": true
+          }
+        }
+      ],
+      "id": "b098"
+    },
+    {
+      "type": "code_paragraph",
+      "source_lines": [
+        313,
+        313
+      ],
+      "language": "sh",
+      "text": "python3 scripts/package_project.py --verify",
+      "text_utf16_length": 43,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 43,
+          "style": {
+            "code": true
+          }
+        }
+      ],
+      "id": "b099"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        316,
+        316
+      ],
+      "text": "To regenerate this report, run scripts/build_bom.py, scripts/build_report.py and scripts/render_report.py. scripts/build_native_report_plan.py prepares the native Google Docs content plan. PDF rendering needs LibreOffice on PATH; optional page PNG export also needs pdftoppm. Inspect every regenerated page before release.",
+      "text_utf16_length": 322,
+      "runs": [],
+      "id": "b100"
+    },
+    {
+      "type": "table",
+      "source_lines": [
+        318,
+        325
+      ],
+      "ordinal": 11,
+      "row_count": 7,
+      "column_count": 2,
+      "header_row_count": 1,
+      "native_insert_required": true,
+      "placeholder": "[[V1_TABLE_011]]",
+      "column_alignment": [
+        "START",
+        "START"
+      ],
+      "rows": [
+        [
+          {
+            "text": "Requirement group",
+            "text_utf16_length": 17,
+            "runs": []
+          },
+          {
+            "text": "Verification path",
+            "text_utf16_length": 17,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "R01 R19",
+            "text_utf16_length": 7,
+            "runs": []
+          },
+          {
+            "text": "Frozen archive and reconstruction/source provenance",
+            "text_utf16_length": 51,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "R02 R03 R04 R15",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "Native CAD, independent fit and hardware checks; physical records",
+            "text_utf16_length": 65,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "R05 R08 R10 R13",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "Analytical screens, CalculiX results, convergence and physical load qualification",
+            "text_utf16_length": 81,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "R06 R09",
+            "text_utf16_length": 7,
+            "runs": []
+          },
+          {
+            "text": "Source evidence and BOM with explicit price basis",
+            "text_utf16_length": 49,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "R07 R11 R12",
+            "text_utf16_length": 11,
+            "runs": []
+          },
+          {
+            "text": "Native Google Doc, FreeCAD geometry and Gmsh STL provenance",
+            "text_utf16_length": 59,
+            "runs": []
+          }
+        ],
+        [
+          {
+            "text": "R14 R16 R17 R18",
+            "text_utf16_length": 15,
+            "runs": []
+          },
+          {
+            "text": "Executable tests, CI controls, saved logs, requirement map and AI reference",
+            "text_utf16_length": 75,
+            "runs": []
+          }
+        ]
+      ],
+      "id": "b101"
+    },
+    {
+      "type": "heading",
+      "source_lines": [
+        327,
+        327
+      ],
+      "markdown_level": 2,
+      "named_style": "HEADING_1",
+      "text": "Manufacture physical acceptance and source register",
+      "text_utf16_length": 51,
+      "runs": [],
+      "id": "b102"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        329,
+        329
+      ],
+      "text": "Resolve all numerical or geometric failures first. Inspect and finish-cut the tube, measure both openings and select suitable fit coupons. Initial print references are dry PETG, flange wall face on the bed, 0.2 mm layers and 100% infill; qualify the actual printer and process. Inspect the root, ribs, bores and sleeve projection. Qualify the concrete and follow the manufacturer drilling, cleaning and torque procedure. Detailed steps are in manufacturing/PRINT_AND_ASSEMBLY.md.",
+      "text_utf16_length": 479,
+      "runs": [],
+      "id": "b103"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        331,
+        331
+      ],
+      "text": "The proposed 30 N assembly proof requires an agreed controlled test setup. Record direction, position, duration, deflection, residual movement and inspection findings. Sustained service loading and operating environment need separate qualification. Put genuine observations, operator, date and supporting files in config/physical_acceptance.json; null records stay BLOCKED.",
+      "text_utf16_length": 373,
+      "runs": [],
+      "id": "b104"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        333,
+        333
+      ],
+      "text": "Source files and extracted text are retained under evidence/ with URL, retrieval date and SHA-256. The archived v0 report is historical context; it is never evidence that a v1 FEM run occurred.",
+      "text_utf16_length": 193,
+      "runs": [],
+      "id": "b105"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        335,
+        335
+      ],
+      "text": "S1  Online Metals 23437 catalogue and section",
+      "text_utf16_length": 45,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 45,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437"
+          }
+        }
+      ],
+      "id": "b106"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        337,
+        337
+      ],
+      "text": "S2  Online Metals aluminum tolerances",
+      "text_utf16_length": 37,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 37,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/aluminum-tolerances"
+          }
+        }
+      ],
+      "id": "b107"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        339,
+        339
+      ],
+      "text": "S3  Online Metals tolerance overview",
+      "text_utf16_length": 36,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 36,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/tolerances"
+          }
+        }
+      ],
+      "id": "b108"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        341,
+        341
+      ],
+      "text": "S4  Hydro 6061 extrusion data sheet",
+      "text_utf16_length": 35,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 35,
+          "style": {
+            "link_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+          }
+        }
+      ],
+      "id": "b109"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        343,
+        343
+      ],
+      "text": "S5  Online Metals 6061 physical properties",
+      "text_utf16_length": 42,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 42,
+          "style": {
+            "link_url": "https://www.onlinemetals.com/en/product-guide/alloy/6061"
+          }
+        }
+      ],
+      "id": "b110"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        345,
+        345
+      ],
+      "text": "S6  Prusament PETG technical data",
+      "text_utf16_length": 33,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 33,
+          "style": {
+            "link_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+          }
+        }
+      ],
+      "id": "b111"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        347,
+        347
+      ],
+      "text": "S7  Prusament PETG Jet Black spool",
+      "text_utf16_length": 34,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 34,
+          "style": {
+            "link_url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/"
+          }
+        }
+      ],
+      "id": "b112"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        349,
+        349
+      ],
+      "text": "S8  fischer 564572 dimensions and installation",
+      "text_utf16_length": 46,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 46,
+          "style": {
+            "link_url": "https://www.fischer.co.uk/en-gb/products/steel-fixings/bolt-anchor/bolt-anchor-faz-ii-plus/bolt-anchor-faz-ii-plus/564572-faz-ii-plus-6-10-zp"
+          }
+        }
+      ],
+      "id": "b113"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        351,
+        351
+      ],
+      "text": "S9  fischer permissible anchor load table",
+      "text_utf16_length": 41,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 41,
+          "style": {
+            "link_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf"
+          }
+        }
+      ],
+      "id": "b114"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        353,
+        353
+      ],
+      "text": "S10  Accu EN1A sleeve catalogue",
+      "text_utf16_length": 31,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 31,
+          "style": {
+            "link_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A"
+          }
+        }
+      ],
+      "id": "b115"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        355,
+        355
+      ],
+      "text": "S11  Accu M6 retention washer catalogue",
+      "text_utf16_length": 39,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 39,
+          "style": {
+            "link_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2"
+          }
+        }
+      ],
+      "id": "b116"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        357,
+        357
+      ],
+      "text": "S12  Smiths EN1A generic properties",
+      "text_utf16_length": 35,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 35,
+          "style": {
+            "link_url": "https://www.smithmetal.com/pdf/engineering/en1a.pdf"
+          }
+        }
+      ],
+      "id": "b117"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        359,
+        359
+      ],
+      "text": "S13  Klium fischer 564572 distributor listing",
+      "text_utf16_length": 45,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 45,
+          "style": {
+            "link_url": "https://www.klium.com/en/fischer-564572-piercing-anchor-faz-ii-plus-6-10-ev-electrolytically-galvanised-steel-176237"
+          }
+        }
+      ],
+      "id": "b118"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        361,
+        361
+      ],
+      "text": "S14  ETA19/0520 full anchor assessment",
+      "text_utf16_length": 38,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 38,
+          "style": {
+            "link_url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf"
+          }
+        }
+      ],
+      "id": "b119"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        363,
+        363
+      ],
+      "text": "M1  CalculiX manual section 6.11.5 on RF; method verified with actual 2.23 results",
+      "text_utf16_length": 82,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 82,
+          "style": {
+            "link_url": "https://www.dhondt.de/ccx_2.13.pdf"
+          }
+        }
+      ],
+      "id": "b120"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        365,
+        365
+      ],
+      "text": "M2  Gmsh official API and mesh documentation",
+      "text_utf16_length": 44,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 44,
+          "style": {
+            "link_url": "https://www.gmsh.info/doc/texinfo/"
+          }
+        }
+      ],
+      "id": "b121"
+    },
+    {
+      "type": "paragraph",
+      "source_lines": [
+        367,
+        367
+      ],
+      "text": "Release decision: v1 supplies a reproducible reconstruction and a test system for the next iteration. Engineering release remains unapproved while any numerical, fit or physical acceptance gate is unresolved.",
+      "text_utf16_length": 208,
+      "runs": [
+        {
+          "start_utf16": 0,
+          "end_utf16": 208,
+          "style": {
+            "bold": true
+          }
+        }
+      ],
+      "id": "b122"
+    }
+  ],
+  "segments": [
+    {
+      "ordinal": 0,
+      "after_equation": null,
+      "before_equation": 1,
+      "block_ids": [
+        "b001",
+        "b002",
+        "b003",
+        "b004",
+        "b005",
+        "b006",
+        "b007",
+        "b008",
+        "b009",
+        "b010",
+        "b011",
+        "b012",
+        "b013",
+        "b014",
+        "b015",
+        "b016"
+      ],
+      "text_with_placeholders": "400 mm beam wall mount engineering report v1\nReconstructed design and verification record    19 November 2026\nThis version reconstructs the 400 mm aluminum beam and its two printed end brackets from the retained v0 report and conversation. It adds independent CadQuery and Open CASCADE fit checks, executable CI checks, saved run logs and instructions for the next iteration. The original v0 CAD and solver bytes were unavailable; all v1 geometry and numerical results are newly generated.\nNumerical verification: PASS. Nominal CAD fit: PASS. Manufactured fit and physical qualification: BLOCKED. Engineering release is not approved.\n[[V1_FIGURE_001]]\nFigure 1  Reconstructed FreeCAD assembly. The beam is 400 mm long; nominal wall bearing faces are 431.6 mm apart.\n[[V1_TABLE_001]]\nThe force may act at any span station with a contact footprint of at least 10 x 10 mm. Anchor capacities use a separate service-load interaction. Load duration, environment, actual fit and installation remain unqualified.\nReconstructed geometry and assembly\nThe flange is 7.8 mm thick at the bolt mounts. A 6 mm central reinforcement has a flat face over z=+/-20 mm and tapers to the flange at z=+/-45 mm. The plug begins at x=13.8 mm and projects 32 mm. A 2 mm root-relief gap leaves 30 mm of tube engagement. The 8-edge root fillet has 2 mm radius.\n[[V1_FIGURE_002]]\nFigure 2  The printable v1 bracket. Four triangular fit ribs are reconstructed explicitly and are not credited with structural strength.\n[[V1_TABLE_002]]\nThe v1 rib and coupon details are reconstructed, so their volume can differ from v0. Both bracket instances and the actual delivered STEP solids are checked. Simplified anchor shanks show placement; thread, nut, expansion clip and supplied small washer are not modeled.\nMaterials evidence and rounded tube section\nOnline Metals 23437 identifies ASTM B221 6061-T6 extrusion, 1.5 inch outside width, 0.125 inch wall, 0.125 inch outer radius and 0.062 inch inner radius. The actual nominal section therefore includes rounded corners [S1].\n[[V1_TABLE_003]]\nThe PETG sheet gives interlayer adhesion 18 +/-4 MPa and horizontal tensile modulus 1.5 +/-0.1 GPa. These are typical test results, not a qualified allowable for the actual print. The aluminum reference is not a certificate for the purchased stock. Retain lot and process qualification gates [S4 S6].\n",
+      "paragraphs": [
+        {
+          "block_id": "b001",
+          "role": "heading",
+          "text": "400 mm beam wall mount engineering report v1",
+          "start_utf16": 0,
+          "end_utf16": 44,
+          "runs": []
+        },
+        {
+          "block_id": "b002",
+          "role": "paragraph",
+          "text": "Reconstructed design and verification record    19 November 2026",
+          "start_utf16": 45,
+          "end_utf16": 109,
+          "runs": []
+        },
+        {
+          "block_id": "b003",
+          "role": "paragraph",
+          "text": "This version reconstructs the 400 mm aluminum beam and its two printed end brackets from the retained v0 report and conversation. It adds independent CadQuery and Open CASCADE fit checks, executable CI checks, saved run logs and instructions for the next iteration. The original v0 CAD and solver bytes were unavailable; all v1 geometry and numerical results are newly generated.",
+          "start_utf16": 110,
+          "end_utf16": 489,
+          "runs": []
+        },
+        {
+          "block_id": "b004",
+          "role": "paragraph",
+          "text": "Numerical verification: PASS. Nominal CAD fit: PASS. Manufactured fit and physical qualification: BLOCKED. Engineering release is not approved.",
+          "start_utf16": 490,
+          "end_utf16": 633,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 143,
+              "style": {
+                "bold": true
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b005",
+          "role": "figure",
+          "text": "[[V1_FIGURE_001]]",
+          "start_utf16": 634,
+          "end_utf16": 651,
+          "runs": []
+        },
+        {
+          "block_id": "b005",
+          "role": "figure_caption",
+          "text": "Figure 1  Reconstructed FreeCAD assembly. The beam is 400 mm long; nominal wall bearing faces are 431.6 mm apart.",
+          "start_utf16": 652,
+          "end_utf16": 765,
+          "runs": []
+        },
+        {
+          "block_id": "b006",
+          "role": "table",
+          "text": "[[V1_TABLE_001]]",
+          "start_utf16": 766,
+          "end_utf16": 782,
+          "runs": []
+        },
+        {
+          "block_id": "b007",
+          "role": "paragraph",
+          "text": "The force may act at any span station with a contact footprint of at least 10 x 10 mm. Anchor capacities use a separate service-load interaction. Load duration, environment, actual fit and installation remain unqualified.",
+          "start_utf16": 783,
+          "end_utf16": 1004,
+          "runs": []
+        },
+        {
+          "block_id": "b008",
+          "role": "heading",
+          "text": "Reconstructed geometry and assembly",
+          "start_utf16": 1005,
+          "end_utf16": 1040,
+          "runs": []
+        },
+        {
+          "block_id": "b009",
+          "role": "paragraph",
+          "text": "The flange is 7.8 mm thick at the bolt mounts. A 6 mm central reinforcement has a flat face over z=+/-20 mm and tapers to the flange at z=+/-45 mm. The plug begins at x=13.8 mm and projects 32 mm. A 2 mm root-relief gap leaves 30 mm of tube engagement. The 8-edge root fillet has 2 mm radius.",
+          "start_utf16": 1041,
+          "end_utf16": 1333,
+          "runs": []
+        },
+        {
+          "block_id": "b010",
+          "role": "figure",
+          "text": "[[V1_FIGURE_002]]",
+          "start_utf16": 1334,
+          "end_utf16": 1351,
+          "runs": []
+        },
+        {
+          "block_id": "b010",
+          "role": "figure_caption",
+          "text": "Figure 2  The printable v1 bracket. Four triangular fit ribs are reconstructed explicitly and are not credited with structural strength.",
+          "start_utf16": 1352,
+          "end_utf16": 1488,
+          "runs": []
+        },
+        {
+          "block_id": "b011",
+          "role": "table",
+          "text": "[[V1_TABLE_002]]",
+          "start_utf16": 1489,
+          "end_utf16": 1505,
+          "runs": []
+        },
+        {
+          "block_id": "b012",
+          "role": "paragraph",
+          "text": "The v1 rib and coupon details are reconstructed, so their volume can differ from v0. Both bracket instances and the actual delivered STEP solids are checked. Simplified anchor shanks show placement; thread, nut, expansion clip and supplied small washer are not modeled.",
+          "start_utf16": 1506,
+          "end_utf16": 1775,
+          "runs": []
+        },
+        {
+          "block_id": "b013",
+          "role": "heading",
+          "text": "Materials evidence and rounded tube section",
+          "start_utf16": 1776,
+          "end_utf16": 1819,
+          "runs": []
+        },
+        {
+          "block_id": "b014",
+          "role": "paragraph",
+          "text": "Online Metals 23437 identifies ASTM B221 6061-T6 extrusion, 1.5 inch outside width, 0.125 inch wall, 0.125 inch outer radius and 0.062 inch inner radius. The actual nominal section therefore includes rounded corners [S1].",
+          "start_utf16": 1820,
+          "end_utf16": 2041,
+          "runs": [
+            {
+              "start_utf16": 217,
+              "end_utf16": 219,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b015",
+          "role": "table",
+          "text": "[[V1_TABLE_003]]",
+          "start_utf16": 2042,
+          "end_utf16": 2058,
+          "runs": []
+        },
+        {
+          "block_id": "b016",
+          "role": "paragraph",
+          "text": "The PETG sheet gives interlayer adhesion 18 +/-4 MPa and horizontal tensile modulus 1.5 +/-0.1 GPa. These are typical test results, not a qualified allowable for the actual print. The aluminum reference is not a certificate for the purchased stock. Retain lot and process qualification gates [S4 S6].",
+          "start_utf16": 2059,
+          "end_utf16": 2359,
+          "runs": [
+            {
+              "start_utf16": 293,
+              "end_utf16": 295,
+              "style": {
+                "link_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+              }
+            },
+            {
+              "start_utf16": 296,
+              "end_utf16": 298,
+              "style": {
+                "link_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ordinal": 1,
+      "after_equation": 1,
+      "before_equation": 2,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 2,
+      "after_equation": 2,
+      "before_equation": 3,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 3,
+      "after_equation": 3,
+      "before_equation": 4,
+      "block_ids": [
+        "b020",
+        "b021",
+        "b022",
+        "b023",
+        "b024"
+      ],
+      "text_with_placeholders": "At nominal dimensions, A=437.023 mm² and I=88,514.405 mm⁴. The tolerance enumeration uses outside flats +/-0.635 mm, wall +/-0.2032 mm and corner radii +/-0.396875 mm [S2]. It gives Amin=400.267 mm², Amax=474.481 mm², Imin=78,669.225 mm⁴ and Zmin=4,061.919 mm³.\nIndependent numerical integration checks the section formula. Tolerance extremes are combined conservatively; the actual tube opening still must be measured. A fixed nominal plug is not guaranteed to fit the full catalogue tolerance range.\nBeam force stress and displacement calculations\nUse the upper finished span L=400.5 mm, F=10 N and g=9.80665 m/s². The beam bending model applies selfweight as a uniform load. The bracket envelope separately assigns all beam weight to one bracket.\nHere b is the outside width, t the wall, cmax=bmax/2 and Z=Imin/cmax. The thin-wall torsion approximation uses a deliberately small enclosed area: Am=As(bmin−2tmax, ri, max), the rounded minimum inner opening. All section dimensions are in mm; E and stresses are in MPa.\n",
+      "paragraphs": [
+        {
+          "block_id": "b020",
+          "role": "paragraph",
+          "text": "At nominal dimensions, A=437.023 mm² and I=88,514.405 mm⁴. The tolerance enumeration uses outside flats +/-0.635 mm, wall +/-0.2032 mm and corner radii +/-0.396875 mm [S2]. It gives Amin=400.267 mm², Amax=474.481 mm², Imin=78,669.225 mm⁴ and Zmin=4,061.919 mm³.",
+          "start_utf16": 0,
+          "end_utf16": 261,
+          "runs": [
+            {
+              "start_utf16": 168,
+              "end_utf16": 170,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/aluminum-tolerances"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b021",
+          "role": "paragraph",
+          "text": "Independent numerical integration checks the section formula. Tolerance extremes are combined conservatively; the actual tube opening still must be measured. A fixed nominal plug is not guaranteed to fit the full catalogue tolerance range.",
+          "start_utf16": 262,
+          "end_utf16": 501,
+          "runs": []
+        },
+        {
+          "block_id": "b022",
+          "role": "heading",
+          "text": "Beam force stress and displacement calculations",
+          "start_utf16": 502,
+          "end_utf16": 549,
+          "runs": []
+        },
+        {
+          "block_id": "b023",
+          "role": "paragraph",
+          "text": "Use the upper finished span L=400.5 mm, F=10 N and g=9.80665 m/s². The beam bending model applies selfweight as a uniform load. The bracket envelope separately assigns all beam weight to one bracket.",
+          "start_utf16": 550,
+          "end_utf16": 749,
+          "runs": []
+        },
+        {
+          "block_id": "b024",
+          "role": "paragraph",
+          "text": "Here b is the outside width, t the wall, cmax=bmax/2 and Z=Imin/cmax. The thin-wall torsion approximation uses a deliberately small enclosed area: Am=As(bmin−2tmax, ri, max), the rounded minimum inner opening. All section dimensions are in mm; E and stresses are in MPa.",
+          "start_utf16": 750,
+          "end_utf16": 1020,
+          "runs": []
+        }
+      ]
+    },
+    {
+      "ordinal": 4,
+      "after_equation": 4,
+      "before_equation": 5,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 5,
+      "after_equation": 5,
+      "before_equation": 6,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 6,
+      "after_equation": 6,
+      "before_equation": 7,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 7,
+      "after_equation": 7,
+      "before_equation": 8,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 8,
+      "after_equation": 8,
+      "before_equation": 9,
+      "block_ids": [
+        "b030"
+      ],
+      "text_with_placeholders": "W=5.218 N; Mmax=1,262.474 N mm; Me=273.898 N mm. The diagonal factor bounds transverse force direction. Combined beam stress is 0.633310 MPa against 240/3=80 MPa.\n",
+      "paragraphs": [
+        {
+          "block_id": "b030",
+          "role": "paragraph",
+          "text": "W=5.218 N; Mmax=1,262.474 N mm; Me=273.898 N mm. The diagonal factor bounds transverse force direction. Combined beam stress is 0.633310 MPa against 240/3=80 MPa.",
+          "start_utf16": 0,
+          "end_utf16": 162,
+          "runs": []
+        }
+      ]
+    },
+    {
+      "ordinal": 9,
+      "after_equation": 9,
+      "before_equation": 10,
+      "block_ids": [
+        "b032"
+      ],
+      "text_with_placeholders": "The calculated global beam displacement envelope is 0.00428456 mm against 1 mm. With nominal dimensions, centered vertical force and no end eccentricity, the comparable Euler section displacement is 0.00284020 mm. The FEM comparison uses a sidewall section mean; local indentation is reported separately.\n",
+      "paragraphs": [
+        {
+          "block_id": "b032",
+          "role": "paragraph",
+          "text": "The calculated global beam displacement envelope is 0.00428456 mm against 1 mm. With nominal dimensions, centered vertical force and no end eccentricity, the comparable Euler section displacement is 0.00284020 mm. The FEM comparison uses a sidewall section mean; local indentation is reported separately.",
+          "start_utf16": 0,
+          "end_utf16": 304,
+          "runs": []
+        }
+      ]
+    },
+    {
+      "ordinal": 10,
+      "after_equation": 10,
+      "before_equation": 11,
+      "block_ids": [
+        "b034",
+        "b035",
+        "b036",
+        "b037"
+      ],
+      "text_with_placeholders": "The pinned Euler compression screen gives PE=333,747.9 N and Pallow=32,021.3 N. The 10 N axial utilization is 0.0003123.\nBracket and contact analytical screens\nThe bounding bracket volume is 158,690.4 mm³, deliberately above the actual CAD volume. Required force 17.194 N, torsion 476.108 N mm and transverse moment 1,536.372 N mm remain within the independently applied 20 N, 550 N mm and 1600 N mm envelopes.\nFor the screens below, R=20 N, T=550 N mm, Mt=1600 N mm, plug length ℓ=32 mm, anchor pitch s=120 mm, plate strip width w=60 mm and plate thickness tp=7.8 mm.\n",
+      "paragraphs": [
+        {
+          "block_id": "b034",
+          "role": "paragraph",
+          "text": "The pinned Euler compression screen gives PE=333,747.9 N and Pallow=32,021.3 N. The 10 N axial utilization is 0.0003123.",
+          "start_utf16": 0,
+          "end_utf16": 120,
+          "runs": []
+        },
+        {
+          "block_id": "b035",
+          "role": "heading",
+          "text": "Bracket and contact analytical screens",
+          "start_utf16": 121,
+          "end_utf16": 159,
+          "runs": []
+        },
+        {
+          "block_id": "b036",
+          "role": "paragraph",
+          "text": "The bounding bracket volume is 158,690.4 mm³, deliberately above the actual CAD volume. Required force 17.194 N, torsion 476.108 N mm and transverse moment 1,536.372 N mm remain within the independently applied 20 N, 550 N mm and 1600 N mm envelopes.",
+          "start_utf16": 160,
+          "end_utf16": 410,
+          "runs": []
+        },
+        {
+          "block_id": "b037",
+          "role": "paragraph",
+          "text": "For the screens below, R=20 N, T=550 N mm, Mt=1600 N mm, plug length ℓ=32 mm, anchor pitch s=120 mm, plate strip width w=60 mm and plate thickness tp=7.8 mm.",
+          "start_utf16": 411,
+          "end_utf16": 568,
+          "runs": []
+        }
+      ]
+    },
+    {
+      "ordinal": 11,
+      "after_equation": 11,
+      "before_equation": 12,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 12,
+      "after_equation": 12,
+      "before_equation": 13,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 13,
+      "after_equation": 13,
+      "before_equation": 14,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 14,
+      "after_equation": 14,
+      "before_equation": 15,
+      "block_ids": [
+        "b042"
+      ],
+      "text_with_placeholders": "With core B=31.55 mm and chamfer C=3 mm, Ap=977.403 mm² and Ip=78,630.434 mm⁴. The inscribed square for shear/torsion has side a=B-2C=25.55 mm. Plug stress is 0.746 MPa against 14/3=4.667 MPa; isolated plug displacement is 0.00943 mm.\n",
+      "paragraphs": [
+        {
+          "block_id": "b042",
+          "role": "paragraph",
+          "text": "With core B=31.55 mm and chamfer C=3 mm, Ap=977.403 mm² and Ip=78,630.434 mm⁴. The inscribed square for shear/torsion has side a=B-2C=25.55 mm. Plug stress is 0.746 MPa against 14/3=4.667 MPa; isolated plug displacement is 0.00943 mm.",
+          "start_utf16": 0,
+          "end_utf16": 234,
+          "runs": []
+        }
+      ]
+    },
+    {
+      "ordinal": 15,
+      "after_equation": 15,
+      "before_equation": 16,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 16,
+      "after_equation": 16,
+      "before_equation": 17,
+      "block_ids": [
+        "b045",
+        "b046",
+        "b047",
+        "b048",
+        "b049"
+      ],
+      "text_with_placeholders": "The plate strip stress is 0.986 MPa. Two assumed 10 mm bearing patches in 30 mm engagement have centers 20 mm apart:Fc=20+1600/20=100 N. Bearing pressure is 0.391 MPa. The local tube wall strip gives 55.694 MPa against 80 MPa.\nThe contact patches are screening assumptions. Smaller edge contacts, rib crushing, assembly misalignment, anisotropy and long-term bearing require qualification. The finite element model excludes fit ribs from credited structural material.\nAnchors sleeves and installation load path\nEach bracket uses two fischer 564572 M6 anchors at 120 mm pitch. The provisional wall is dry, sound solid C20/25 concrete, at least 100 mm thick and 60 mm from every free edge. The manufacturer requires 6 mm drilling, 60 mm minimum through-fixing hole depth and 8 N m torque [S8 S9 S14].\nAn 8 mm EN1A sleeve bypasses tightening compression around the printed plate. The 30 mm retention washer spans the 18.6 mm bore; retain the supplied anchor washer and nut above it. Each measured sleeve must project at least 0.1 mm above the print. Nominal projection is 0.2 mm, so the washer does not initially clamp the print [S10 S11].\n",
+      "paragraphs": [
+        {
+          "block_id": "b045",
+          "role": "paragraph",
+          "text": "The plate strip stress is 0.986 MPa. Two assumed 10 mm bearing patches in 30 mm engagement have centers 20 mm apart:Fc=20+1600/20=100 N. Bearing pressure is 0.391 MPa. The local tube wall strip gives 55.694 MPa against 80 MPa.",
+          "start_utf16": 0,
+          "end_utf16": 226,
+          "runs": []
+        },
+        {
+          "block_id": "b046",
+          "role": "paragraph",
+          "text": "The contact patches are screening assumptions. Smaller edge contacts, rib crushing, assembly misalignment, anisotropy and long-term bearing require qualification. The finite element model excludes fit ribs from credited structural material.",
+          "start_utf16": 227,
+          "end_utf16": 467,
+          "runs": []
+        },
+        {
+          "block_id": "b047",
+          "role": "heading",
+          "text": "Anchors sleeves and installation load path",
+          "start_utf16": 468,
+          "end_utf16": 510,
+          "runs": []
+        },
+        {
+          "block_id": "b048",
+          "role": "paragraph",
+          "text": "Each bracket uses two fischer 564572 M6 anchors at 120 mm pitch. The provisional wall is dry, sound solid C20/25 concrete, at least 100 mm thick and 60 mm from every free edge. The manufacturer requires 6 mm drilling, 60 mm minimum through-fixing hole depth and 8 N m torque [S8 S9 S14].",
+          "start_utf16": 511,
+          "end_utf16": 798,
+          "runs": [
+            {
+              "start_utf16": 276,
+              "end_utf16": 278,
+              "style": {
+                "link_url": "https://www.fischer.co.uk/en-gb/products/steel-fixings/bolt-anchor/bolt-anchor-faz-ii-plus/bolt-anchor-faz-ii-plus/564572-faz-ii-plus-6-10-zp"
+              }
+            },
+            {
+              "start_utf16": 279,
+              "end_utf16": 281,
+              "style": {
+                "link_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf"
+              }
+            },
+            {
+              "start_utf16": 282,
+              "end_utf16": 285,
+              "style": {
+                "link_url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b049",
+          "role": "paragraph",
+          "text": "An 8 mm EN1A sleeve bypasses tightening compression around the printed plate. The 30 mm retention washer spans the 18.6 mm bore; retain the supplied anchor washer and nut above it. Each measured sleeve must project at least 0.1 mm above the print. Nominal projection is 0.2 mm, so the washer does not initially clamp the print [S10 S11].",
+          "start_utf16": 799,
+          "end_utf16": 1136,
+          "runs": [
+            {
+              "start_utf16": 328,
+              "end_utf16": 331,
+              "style": {
+                "link_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A"
+              }
+            },
+            {
+              "start_utf16": 332,
+              "end_utf16": 335,
+              "style": {
+                "link_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ordinal": 17,
+      "after_equation": 17,
+      "before_equation": 18,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 18,
+      "after_equation": 18,
+      "before_equation": 19,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 19,
+      "after_equation": 19,
+      "before_equation": 20,
+      "block_ids": [],
+      "text_with_placeholders": "",
+      "paragraphs": []
+    },
+    {
+      "ordinal": 20,
+      "after_equation": 20,
+      "before_equation": 21,
+      "block_ids": [
+        "b054",
+        "b055"
+      ],
+      "text_with_placeholders": "Using e=45.8 mm, s=120 mm, d=6 mm gives N=40.967 N, V=24.583 N and Mb=2,833.125 N mm. The linear interaction is 0.514965. One bolt is conservatively assigned the full direct load and global moment because equal sharing is not guaranteed.\nThe service references 700 N tension and 4300 N shear come from the published isolated-anchor table in cracked C20/25. The bending reference is 11 N m/(1.25 x 1.4)=6285.714 N mm. This screen does not replace the complete fastening design or qualify the custom fixture [S9 S14].\n",
+      "paragraphs": [
+        {
+          "block_id": "b054",
+          "role": "paragraph",
+          "text": "Using e=45.8 mm, s=120 mm, d=6 mm gives N=40.967 N, V=24.583 N and Mb=2,833.125 N mm. The linear interaction is 0.514965. One bolt is conservatively assigned the full direct load and global moment because equal sharing is not guaranteed.",
+          "start_utf16": 0,
+          "end_utf16": 237,
+          "runs": []
+        },
+        {
+          "block_id": "b055",
+          "role": "paragraph",
+          "text": "The service references 700 N tension and 4300 N shear come from the published isolated-anchor table in cracked C20/25. The bending reference is 11 N m/(1.25 x 1.4)=6285.714 N mm. This screen does not replace the complete fastening design or qualify the custom fixture [S9 S14].",
+          "start_utf16": 238,
+          "end_utf16": 515,
+          "runs": [
+            {
+              "start_utf16": 269,
+              "end_utf16": 271,
+              "style": {
+                "link_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf"
+              }
+            },
+            {
+              "start_utf16": 272,
+              "end_utf16": 275,
+              "style": {
+                "link_url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ordinal": 21,
+      "after_equation": 21,
+      "before_equation": 22,
+      "block_ids": [
+        "b057",
+        "b058",
+        "b059",
+        "b060",
+        "b061",
+        "b062",
+        "b063",
+        "b064",
+        "b065",
+        "b066"
+      ],
+      "text_with_placeholders": "With assumed torque factor K=0.15 to 0.25, estimated preload is 5333 to 8889 N. Minimum sleeve area is 210.102 mm² and nominal compression screen is 42.308 MPa. Actual washer bending, concrete bearing and preload remain unqualified.\nIndependent geometric fit verification\nCadQuery 2.7.0 imports the delivered STEP solids and uses Open CASCADE 7.8.1 to check validity, solid volumes, dimensions, poses and Boolean intersections. The tests use both physical end instances. They distinguish unwanted core collision from intentional sacrificial-rib interference and sample the insertion path before final seating.\n[[V1_TABLE_004]]\nThe kernel also checks all delivered solids, exact rounded profile, opposite-end pose, assembly instances, hardware bores and the complete dimensional stack. Current nominal geometry status: PASS. The full machine-readable observations are in results/geometric_fit.json.\nAll nominal checks are geometric statements about the reconstructed model. The catalogue tube opening can vary enough to defeat the fixed nominal plug. Measure both ends, select or regenerate fit coupons, and document insertion and retention before accepting a manufactured assembly. CAD cannot establish insertion force, rib crushing, print shrinkage or creep.\nThe test suite deliberately introduces defects such as an oversized or shifted core. Successful detection is evidence that the checks execute and discriminate failures. It does not change a failing engineering requirement to PASS.\nFinite element model and bracket stress\nGmsh 4.15.2 builds quadratic tetrahedral meshes for the reconstructed parts [M2]. CalculiX 2.23 solves six linear bracket cases: three 20 N force directions, 550 N mm torsion and two 1600 N mm transverse moments. The core includes the root fillet and reinforcement. The isotropic PETG model uses E=1400 MPa and nu=0.38.\nThe idealized attachment restrains transverse motion at sleeve bores and axial motion at wall/washer annuli. It assumes engaged bilateral contact. The actual 0.2 mm washer gap, slip, preload, friction and contact opening are not solved. These limitations require later contact analysis and physical qualification.\n",
+      "paragraphs": [
+        {
+          "block_id": "b057",
+          "role": "paragraph",
+          "text": "With assumed torque factor K=0.15 to 0.25, estimated preload is 5333 to 8889 N. Minimum sleeve area is 210.102 mm² and nominal compression screen is 42.308 MPa. Actual washer bending, concrete bearing and preload remain unqualified.",
+          "start_utf16": 0,
+          "end_utf16": 232,
+          "runs": []
+        },
+        {
+          "block_id": "b058",
+          "role": "heading",
+          "text": "Independent geometric fit verification",
+          "start_utf16": 233,
+          "end_utf16": 271,
+          "runs": []
+        },
+        {
+          "block_id": "b059",
+          "role": "paragraph",
+          "text": "CadQuery 2.7.0 imports the delivered STEP solids and uses Open CASCADE 7.8.1 to check validity, solid volumes, dimensions, poses and Boolean intersections. The tests use both physical end instances. They distinguish unwanted core collision from intentional sacrificial-rib interference and sample the insertion path before final seating.",
+          "start_utf16": 272,
+          "end_utf16": 609,
+          "runs": []
+        },
+        {
+          "block_id": "b060",
+          "role": "table",
+          "text": "[[V1_TABLE_004]]",
+          "start_utf16": 610,
+          "end_utf16": 626,
+          "runs": []
+        },
+        {
+          "block_id": "b061",
+          "role": "paragraph",
+          "text": "The kernel also checks all delivered solids, exact rounded profile, opposite-end pose, assembly instances, hardware bores and the complete dimensional stack. Current nominal geometry status: PASS. The full machine-readable observations are in results/geometric_fit.json.",
+          "start_utf16": 627,
+          "end_utf16": 897,
+          "runs": []
+        },
+        {
+          "block_id": "b062",
+          "role": "paragraph",
+          "text": "All nominal checks are geometric statements about the reconstructed model. The catalogue tube opening can vary enough to defeat the fixed nominal plug. Measure both ends, select or regenerate fit coupons, and document insertion and retention before accepting a manufactured assembly. CAD cannot establish insertion force, rib crushing, print shrinkage or creep.",
+          "start_utf16": 898,
+          "end_utf16": 1259,
+          "runs": []
+        },
+        {
+          "block_id": "b063",
+          "role": "paragraph",
+          "text": "The test suite deliberately introduces defects such as an oversized or shifted core. Successful detection is evidence that the checks execute and discriminate failures. It does not change a failing engineering requirement to PASS.",
+          "start_utf16": 1260,
+          "end_utf16": 1490,
+          "runs": []
+        },
+        {
+          "block_id": "b064",
+          "role": "heading",
+          "text": "Finite element model and bracket stress",
+          "start_utf16": 1491,
+          "end_utf16": 1530,
+          "runs": []
+        },
+        {
+          "block_id": "b065",
+          "role": "paragraph",
+          "text": "Gmsh 4.15.2 builds quadratic tetrahedral meshes for the reconstructed parts [M2]. CalculiX 2.23 solves six linear bracket cases: three 20 N force directions, 550 N mm torsion and two 1600 N mm transverse moments. The core includes the root fillet and reinforcement. The isotropic PETG model uses E=1400 MPa and nu=0.38.",
+          "start_utf16": 1531,
+          "end_utf16": 1850,
+          "runs": []
+        },
+        {
+          "block_id": "b066",
+          "role": "paragraph",
+          "text": "The idealized attachment restrains transverse motion at sleeve bores and axial motion at wall/washer annuli. It assumes engaged bilateral contact. The actual 0.2 mm washer gap, slip, preload, friction and contact opening are not solved. These limitations require later contact analysis and physical qualification.",
+          "start_utf16": 1851,
+          "end_utf16": 2164,
+          "runs": []
+        }
+      ]
+    },
+    {
+      "ordinal": 22,
+      "after_equation": 22,
+      "before_equation": null,
+      "block_ids": [
+        "b068",
+        "b069",
+        "b070",
+        "b071",
+        "b072",
+        "b073",
+        "b074",
+        "b075",
+        "b076",
+        "b077",
+        "b078",
+        "b079",
+        "b080",
+        "b081",
+        "b082",
+        "b083",
+        "b084",
+        "b085",
+        "b086",
+        "b087",
+        "b088",
+        "b089",
+        "b090",
+        "b091",
+        "b092",
+        "b093",
+        "b094",
+        "b095",
+        "b096",
+        "b097",
+        "b098",
+        "b099",
+        "b100",
+        "b101",
+        "b102",
+        "b103",
+        "b104",
+        "b105",
+        "b106",
+        "b107",
+        "b108",
+        "b109",
+        "b110",
+        "b111",
+        "b112",
+        "b113",
+        "b114",
+        "b115",
+        "b116",
+        "b117",
+        "b118",
+        "b119",
+        "b120",
+        "b121",
+        "b122"
+      ],
+      "text_with_placeholders": "For each stress measure, the bound combines the norm of three force-case responses, the torsional response and the norm of two moment-case responses. Principal stress uses the spectral norm of the stress tensor. Nodal and integration-point maxima are retained without excluding peaks. A low stress magnitude does not establish mesh convergence.\n[[V1_FIGURE_003]]\nFigure 3  Actual v1 CalculiX bracket stress fields and the conservative directional envelope. The figure records the current mesh and verification status.\n[[V1_TABLE_005]]\nBeam finite element results and mesh verification\nThe beam model applies the centered 10 N load patch and gravity to nominal rounded geometry, with simply supported end sections and one axial restraint. A swept tetrahedral mesh starts from the actual STEP end face. Straight-sided quadratic displacement elements use an exact 100 mm² pressure patch integrated with clipped quadratic face shape functions. Gravity uses actual finite element volume; a separate gate compares that volume with CAD.\n[[V1_FIGURE_004]]\nFigure 4  Actual v1 beam nodal stress field. Local displacement and the global section bending comparison are reported separately.\n[[V1_TABLE_006]]\n[[V1_TABLE_007]]\nFine beam section displacement: 0.0030568 mm. Fine beam FE/CAD volume error: 0.1394%. Worst force/moment balance residual: 0.00027%. All element Jacobians are positive: True.\nLimits are 10% stress change, 5% displacement change, 0.5% beam volume error, positive Jacobians, 0.5% equilibrium residual and 15% Euler comparison difference. Under gravity, the reaction audit subtracts consistent applied DLOAD nodal forces from CalculiX RF before checking equilibrium [M1].\nThe ZIP retains full raw stress/displacement fields for the six fine-bracket cases and one fine-beam case. Coarser meshes retain input decks, meshes, logs, metrics and raw-output SHA-256 values; their fields can be regenerated. fem/retained_evidence.json records this scope explicitly.\nPurchased parts and historical cost basis\nThe BOM uses exact catalogue identities and retained quotes dated 17 November 2026. Supplier dimensions and evidence were retrieved again for v1. The prices below remain historical; confirm final price, tax, minimum order and delivery before procurement. Current availability is not inferred from generic page templates.\n[[V1_TABLE_008]]\n23437  Online Metals\nIDS 3449 / IDF 17558  Prusa\n564572  fischer / Klium\nHPS-18-6.4-8-EN1A  Accu\nHYW-M6-30-A2  Accu\n[[V1_TABLE_009]]\nTwo brackets use 306.70 g of PETG; the five optional v1 coupons add 108.10 g. Both allocations use the same 1 kg spool. The CSV's printed allocation rows are not counted again in purchase totals. Consumed beam cost uses 400/609.6 of the stock purchase.\nCurrencies are kept separate. Taxes, shipping, customs, cutting, tools, energy, labor, support material and failed prints need additional allowance. Historical minimum orders explain 46 unused anchors and 21 unused sleeves.\nCI execution requirements and saved feedback\nThe CI entry point runs the documented stages and writes a separate full stdout/stderr log. Each check reports its requirement IDs, observed value, criterion, status, evidence paths and next action. Missing software, omitted stages, stale hashes and execution errors cannot produce a passing engineering release.\n[[V1_TABLE_010]]\nThe test-system checks include deliberate geometric defects and missing/stale artifacts or failed solver behavior. A local execution confirms the CI commands operate in this environment. A hosted GitHub Actions run is not claimed until a repository workflow actually runs. The latest saved CI summary is authoritative for run counts and stage timing.\nSaved CI self-test result: test_system_functional=true, exit_code=0. The separate self-test log and summary preserve the executed negative controls. This functional result is distinct from design acceptance.\nRun from the extracted project root using the documented dependency versions:\npython3 scripts/run_ci.py --mode audit\npython3 scripts/run_ci.py --mode full\npython3 scripts/run_ci.py --mode selftest\npython3 scripts/package_project.py --verify\nTo regenerate this report, run scripts/build_bom.py, scripts/build_report.py and scripts/render_report.py. scripts/build_native_report_plan.py prepares the native Google Docs content plan. PDF rendering needs LibreOffice on PATH; optional page PNG export also needs pdftoppm. Inspect every regenerated page before release.\n[[V1_TABLE_011]]\nManufacture physical acceptance and source register\nResolve all numerical or geometric failures first. Inspect and finish-cut the tube, measure both openings and select suitable fit coupons. Initial print references are dry PETG, flange wall face on the bed, 0.2 mm layers and 100% infill; qualify the actual printer and process. Inspect the root, ribs, bores and sleeve projection. Qualify the concrete and follow the manufacturer drilling, cleaning and torque procedure. Detailed steps are in manufacturing/PRINT_AND_ASSEMBLY.md.\nThe proposed 30 N assembly proof requires an agreed controlled test setup. Record direction, position, duration, deflection, residual movement and inspection findings. Sustained service loading and operating environment need separate qualification. Put genuine observations, operator, date and supporting files in config/physical_acceptance.json; null records stay BLOCKED.\nSource files and extracted text are retained under evidence/ with URL, retrieval date and SHA-256. The archived v0 report is historical context; it is never evidence that a v1 FEM run occurred.\nS1  Online Metals 23437 catalogue and section\nS2  Online Metals aluminum tolerances\nS3  Online Metals tolerance overview\nS4  Hydro 6061 extrusion data sheet\nS5  Online Metals 6061 physical properties\nS6  Prusament PETG technical data\nS7  Prusament PETG Jet Black spool\nS8  fischer 564572 dimensions and installation\nS9  fischer permissible anchor load table\nS10  Accu EN1A sleeve catalogue\nS11  Accu M6 retention washer catalogue\nS12  Smiths EN1A generic properties\nS13  Klium fischer 564572 distributor listing\nS14  ETA19/0520 full anchor assessment\nM1  CalculiX manual section 6.11.5 on RF; method verified with actual 2.23 results\nM2  Gmsh official API and mesh documentation\nRelease decision: v1 supplies a reproducible reconstruction and a test system for the next iteration. Engineering release remains unapproved while any numerical, fit or physical acceptance gate is unresolved.\n",
+      "paragraphs": [
+        {
+          "block_id": "b068",
+          "role": "paragraph",
+          "text": "For each stress measure, the bound combines the norm of three force-case responses, the torsional response and the norm of two moment-case responses. Principal stress uses the spectral norm of the stress tensor. Nodal and integration-point maxima are retained without excluding peaks. A low stress magnitude does not establish mesh convergence.",
+          "start_utf16": 0,
+          "end_utf16": 344,
+          "runs": []
+        },
+        {
+          "block_id": "b069",
+          "role": "figure",
+          "text": "[[V1_FIGURE_003]]",
+          "start_utf16": 345,
+          "end_utf16": 362,
+          "runs": []
+        },
+        {
+          "block_id": "b069",
+          "role": "figure_caption",
+          "text": "Figure 3  Actual v1 CalculiX bracket stress fields and the conservative directional envelope. The figure records the current mesh and verification status.",
+          "start_utf16": 363,
+          "end_utf16": 517,
+          "runs": []
+        },
+        {
+          "block_id": "b070",
+          "role": "table",
+          "text": "[[V1_TABLE_005]]",
+          "start_utf16": 518,
+          "end_utf16": 534,
+          "runs": []
+        },
+        {
+          "block_id": "b071",
+          "role": "heading",
+          "text": "Beam finite element results and mesh verification",
+          "start_utf16": 535,
+          "end_utf16": 584,
+          "runs": []
+        },
+        {
+          "block_id": "b072",
+          "role": "paragraph",
+          "text": "The beam model applies the centered 10 N load patch and gravity to nominal rounded geometry, with simply supported end sections and one axial restraint. A swept tetrahedral mesh starts from the actual STEP end face. Straight-sided quadratic displacement elements use an exact 100 mm² pressure patch integrated with clipped quadratic face shape functions. Gravity uses actual finite element volume; a separate gate compares that volume with CAD.",
+          "start_utf16": 585,
+          "end_utf16": 1029,
+          "runs": []
+        },
+        {
+          "block_id": "b073",
+          "role": "figure",
+          "text": "[[V1_FIGURE_004]]",
+          "start_utf16": 1030,
+          "end_utf16": 1047,
+          "runs": []
+        },
+        {
+          "block_id": "b073",
+          "role": "figure_caption",
+          "text": "Figure 4  Actual v1 beam nodal stress field. Local displacement and the global section bending comparison are reported separately.",
+          "start_utf16": 1048,
+          "end_utf16": 1178,
+          "runs": []
+        },
+        {
+          "block_id": "b074",
+          "role": "table",
+          "text": "[[V1_TABLE_006]]",
+          "start_utf16": 1179,
+          "end_utf16": 1195,
+          "runs": []
+        },
+        {
+          "block_id": "b075",
+          "role": "table",
+          "text": "[[V1_TABLE_007]]",
+          "start_utf16": 1196,
+          "end_utf16": 1212,
+          "runs": []
+        },
+        {
+          "block_id": "b076",
+          "role": "paragraph",
+          "text": "Fine beam section displacement: 0.0030568 mm. Fine beam FE/CAD volume error: 0.1394%. Worst force/moment balance residual: 0.00027%. All element Jacobians are positive: True.",
+          "start_utf16": 1213,
+          "end_utf16": 1387,
+          "runs": []
+        },
+        {
+          "block_id": "b077",
+          "role": "paragraph",
+          "text": "Limits are 10% stress change, 5% displacement change, 0.5% beam volume error, positive Jacobians, 0.5% equilibrium residual and 15% Euler comparison difference. Under gravity, the reaction audit subtracts consistent applied DLOAD nodal forces from CalculiX RF before checking equilibrium [M1].",
+          "start_utf16": 1388,
+          "end_utf16": 1681,
+          "runs": []
+        },
+        {
+          "block_id": "b078",
+          "role": "paragraph",
+          "text": "The ZIP retains full raw stress/displacement fields for the six fine-bracket cases and one fine-beam case. Coarser meshes retain input decks, meshes, logs, metrics and raw-output SHA-256 values; their fields can be regenerated. fem/retained_evidence.json records this scope explicitly.",
+          "start_utf16": 1682,
+          "end_utf16": 1967,
+          "runs": []
+        },
+        {
+          "block_id": "b079",
+          "role": "heading",
+          "text": "Purchased parts and historical cost basis",
+          "start_utf16": 1968,
+          "end_utf16": 2009,
+          "runs": []
+        },
+        {
+          "block_id": "b080",
+          "role": "paragraph",
+          "text": "The BOM uses exact catalogue identities and retained quotes dated 17 November 2026. Supplier dimensions and evidence were retrieved again for v1. The prices below remain historical; confirm final price, tax, minimum order and delivery before procurement. Current availability is not inferred from generic page templates.",
+          "start_utf16": 2010,
+          "end_utf16": 2330,
+          "runs": []
+        },
+        {
+          "block_id": "b081",
+          "role": "table",
+          "text": "[[V1_TABLE_008]]",
+          "start_utf16": 2331,
+          "end_utf16": 2347,
+          "runs": []
+        },
+        {
+          "block_id": "b082",
+          "role": "paragraph",
+          "text": "23437  Online Metals",
+          "start_utf16": 2348,
+          "end_utf16": 2368,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 20,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b083",
+          "role": "paragraph",
+          "text": "IDS 3449 / IDF 17558  Prusa",
+          "start_utf16": 2369,
+          "end_utf16": 2396,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 27,
+              "style": {
+                "link_url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b084",
+          "role": "paragraph",
+          "text": "564572  fischer / Klium",
+          "start_utf16": 2397,
+          "end_utf16": 2420,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 23,
+              "style": {
+                "link_url": "https://www.klium.com/en/fischer-564572-piercing-anchor-faz-ii-plus-6-10-ev-electrolytically-galvanised-steel-176237"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b085",
+          "role": "paragraph",
+          "text": "HPS-18-6.4-8-EN1A  Accu",
+          "start_utf16": 2421,
+          "end_utf16": 2444,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 23,
+              "style": {
+                "link_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b086",
+          "role": "paragraph",
+          "text": "HYW-M6-30-A2  Accu",
+          "start_utf16": 2445,
+          "end_utf16": 2463,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 18,
+              "style": {
+                "link_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b087",
+          "role": "table",
+          "text": "[[V1_TABLE_009]]",
+          "start_utf16": 2464,
+          "end_utf16": 2480,
+          "runs": []
+        },
+        {
+          "block_id": "b088",
+          "role": "paragraph",
+          "text": "Two brackets use 306.70 g of PETG; the five optional v1 coupons add 108.10 g. Both allocations use the same 1 kg spool. The CSV's printed allocation rows are not counted again in purchase totals. Consumed beam cost uses 400/609.6 of the stock purchase.",
+          "start_utf16": 2481,
+          "end_utf16": 2733,
+          "runs": []
+        },
+        {
+          "block_id": "b089",
+          "role": "paragraph",
+          "text": "Currencies are kept separate. Taxes, shipping, customs, cutting, tools, energy, labor, support material and failed prints need additional allowance. Historical minimum orders explain 46 unused anchors and 21 unused sleeves.",
+          "start_utf16": 2734,
+          "end_utf16": 2957,
+          "runs": []
+        },
+        {
+          "block_id": "b090",
+          "role": "heading",
+          "text": "CI execution requirements and saved feedback",
+          "start_utf16": 2958,
+          "end_utf16": 3002,
+          "runs": []
+        },
+        {
+          "block_id": "b091",
+          "role": "paragraph",
+          "text": "The CI entry point runs the documented stages and writes a separate full stdout/stderr log. Each check reports its requirement IDs, observed value, criterion, status, evidence paths and next action. Missing software, omitted stages, stale hashes and execution errors cannot produce a passing engineering release.",
+          "start_utf16": 3003,
+          "end_utf16": 3315,
+          "runs": []
+        },
+        {
+          "block_id": "b092",
+          "role": "table",
+          "text": "[[V1_TABLE_010]]",
+          "start_utf16": 3316,
+          "end_utf16": 3332,
+          "runs": []
+        },
+        {
+          "block_id": "b093",
+          "role": "paragraph",
+          "text": "The test-system checks include deliberate geometric defects and missing/stale artifacts or failed solver behavior. A local execution confirms the CI commands operate in this environment. A hosted GitHub Actions run is not claimed until a repository workflow actually runs. The latest saved CI summary is authoritative for run counts and stage timing.",
+          "start_utf16": 3333,
+          "end_utf16": 3683,
+          "runs": []
+        },
+        {
+          "block_id": "b094",
+          "role": "paragraph",
+          "text": "Saved CI self-test result: test_system_functional=true, exit_code=0. The separate self-test log and summary preserve the executed negative controls. This functional result is distinct from design acceptance.",
+          "start_utf16": 3684,
+          "end_utf16": 3891,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 207,
+              "style": {
+                "bold": true
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b095",
+          "role": "paragraph",
+          "text": "Run from the extracted project root using the documented dependency versions:",
+          "start_utf16": 3892,
+          "end_utf16": 3969,
+          "runs": []
+        },
+        {
+          "block_id": "b096",
+          "role": "code_paragraph",
+          "text": "python3 scripts/run_ci.py --mode audit",
+          "start_utf16": 3970,
+          "end_utf16": 4008,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 38,
+              "style": {
+                "code": true
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b097",
+          "role": "code_paragraph",
+          "text": "python3 scripts/run_ci.py --mode full",
+          "start_utf16": 4009,
+          "end_utf16": 4046,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 37,
+              "style": {
+                "code": true
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b098",
+          "role": "code_paragraph",
+          "text": "python3 scripts/run_ci.py --mode selftest",
+          "start_utf16": 4047,
+          "end_utf16": 4088,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 41,
+              "style": {
+                "code": true
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b099",
+          "role": "code_paragraph",
+          "text": "python3 scripts/package_project.py --verify",
+          "start_utf16": 4089,
+          "end_utf16": 4132,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 43,
+              "style": {
+                "code": true
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b100",
+          "role": "paragraph",
+          "text": "To regenerate this report, run scripts/build_bom.py, scripts/build_report.py and scripts/render_report.py. scripts/build_native_report_plan.py prepares the native Google Docs content plan. PDF rendering needs LibreOffice on PATH; optional page PNG export also needs pdftoppm. Inspect every regenerated page before release.",
+          "start_utf16": 4133,
+          "end_utf16": 4455,
+          "runs": []
+        },
+        {
+          "block_id": "b101",
+          "role": "table",
+          "text": "[[V1_TABLE_011]]",
+          "start_utf16": 4456,
+          "end_utf16": 4472,
+          "runs": []
+        },
+        {
+          "block_id": "b102",
+          "role": "heading",
+          "text": "Manufacture physical acceptance and source register",
+          "start_utf16": 4473,
+          "end_utf16": 4524,
+          "runs": []
+        },
+        {
+          "block_id": "b103",
+          "role": "paragraph",
+          "text": "Resolve all numerical or geometric failures first. Inspect and finish-cut the tube, measure both openings and select suitable fit coupons. Initial print references are dry PETG, flange wall face on the bed, 0.2 mm layers and 100% infill; qualify the actual printer and process. Inspect the root, ribs, bores and sleeve projection. Qualify the concrete and follow the manufacturer drilling, cleaning and torque procedure. Detailed steps are in manufacturing/PRINT_AND_ASSEMBLY.md.",
+          "start_utf16": 4525,
+          "end_utf16": 5004,
+          "runs": []
+        },
+        {
+          "block_id": "b104",
+          "role": "paragraph",
+          "text": "The proposed 30 N assembly proof requires an agreed controlled test setup. Record direction, position, duration, deflection, residual movement and inspection findings. Sustained service loading and operating environment need separate qualification. Put genuine observations, operator, date and supporting files in config/physical_acceptance.json; null records stay BLOCKED.",
+          "start_utf16": 5005,
+          "end_utf16": 5378,
+          "runs": []
+        },
+        {
+          "block_id": "b105",
+          "role": "paragraph",
+          "text": "Source files and extracted text are retained under evidence/ with URL, retrieval date and SHA-256. The archived v0 report is historical context; it is never evidence that a v1 FEM run occurred.",
+          "start_utf16": 5379,
+          "end_utf16": 5572,
+          "runs": []
+        },
+        {
+          "block_id": "b106",
+          "role": "paragraph",
+          "text": "S1  Online Metals 23437 catalogue and section",
+          "start_utf16": 5573,
+          "end_utf16": 5618,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 45,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/buy/aluminum/1-5-x-0-125-aluminum-square-tube-6061-t6-extruded-radius-corner/pid/23437"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b107",
+          "role": "paragraph",
+          "text": "S2  Online Metals aluminum tolerances",
+          "start_utf16": 5619,
+          "end_utf16": 5656,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 37,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/aluminum-tolerances"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b108",
+          "role": "paragraph",
+          "text": "S3  Online Metals tolerance overview",
+          "start_utf16": 5657,
+          "end_utf16": 5693,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 36,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/tolerances"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b109",
+          "role": "paragraph",
+          "text": "S4  Hydro 6061 extrusion data sheet",
+          "start_utf16": 5694,
+          "end_utf16": 5729,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 35,
+              "style": {
+                "link_url": "https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b110",
+          "role": "paragraph",
+          "text": "S5  Online Metals 6061 physical properties",
+          "start_utf16": 5730,
+          "end_utf16": 5772,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 42,
+              "style": {
+                "link_url": "https://www.onlinemetals.com/en/product-guide/alloy/6061"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b111",
+          "role": "paragraph",
+          "text": "S6  Prusament PETG technical data",
+          "start_utf16": 5773,
+          "end_utf16": 5806,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 33,
+              "style": {
+                "link_url": "https://prusament.com/wp-content/uploads/2022/10/PETG_Prusament_TDS_2021_10_EN.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b112",
+          "role": "paragraph",
+          "text": "S7  Prusament PETG Jet Black spool",
+          "start_utf16": 5807,
+          "end_utf16": 5841,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 34,
+              "style": {
+                "link_url": "https://www.prusa3d.com/product/prusament-petg-jet-black-1kg/"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b113",
+          "role": "paragraph",
+          "text": "S8  fischer 564572 dimensions and installation",
+          "start_utf16": 5842,
+          "end_utf16": 5888,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 46,
+              "style": {
+                "link_url": "https://www.fischer.co.uk/en-gb/products/steel-fixings/bolt-anchor/bolt-anchor-faz-ii-plus/bolt-anchor-faz-ii-plus/564572-faz-ii-plus-6-10-zp"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b114",
+          "role": "paragraph",
+          "text": "S9  fischer permissible anchor load table",
+          "start_utf16": 5889,
+          "end_utf16": 5930,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 41,
+              "style": {
+                "link_url": "https://fiproductmedia.azureedge.net/media/Load%20Tables/Load%20Tables%20fischer/LT_01-FAZ-II-PLUS-EN.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b115",
+          "role": "paragraph",
+          "text": "S10  Accu EN1A sleeve catalogue",
+          "start_utf16": 5931,
+          "end_utf16": 5962,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 31,
+              "style": {
+                "link_url": "https://www.accu.co.uk/cylindrical-spacers/1038448-HPS-18-6-4-8-EN1A"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b116",
+          "role": "paragraph",
+          "text": "S11  Accu M6 retention washer catalogue",
+          "start_utf16": 5963,
+          "end_utf16": 6002,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 39,
+              "style": {
+                "link_url": "https://www.accu.co.uk/metric-flat-washers/14666-HYW-M6-30-A2"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b117",
+          "role": "paragraph",
+          "text": "S12  Smiths EN1A generic properties",
+          "start_utf16": 6003,
+          "end_utf16": 6038,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 35,
+              "style": {
+                "link_url": "https://www.smithmetal.com/pdf/engineering/en1a.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b118",
+          "role": "paragraph",
+          "text": "S13  Klium fischer 564572 distributor listing",
+          "start_utf16": 6039,
+          "end_utf16": 6084,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 45,
+              "style": {
+                "link_url": "https://www.klium.com/en/fischer-564572-piercing-anchor-faz-ii-plus-6-10-ev-electrolytically-galvanised-steel-176237"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b119",
+          "role": "paragraph",
+          "text": "S14  ETA19/0520 full anchor assessment",
+          "start_utf16": 6085,
+          "end_utf16": 6123,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 38,
+              "style": {
+                "link_url": "https://fiproductmedia.azureedge.net/media/Certification%20Documents/ETA%20European%20Technical%20Assessment/fischer/ZD_ETAB_19-0520_EN_V2.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b120",
+          "role": "paragraph",
+          "text": "M1  CalculiX manual section 6.11.5 on RF; method verified with actual 2.23 results",
+          "start_utf16": 6124,
+          "end_utf16": 6206,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 82,
+              "style": {
+                "link_url": "https://www.dhondt.de/ccx_2.13.pdf"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b121",
+          "role": "paragraph",
+          "text": "M2  Gmsh official API and mesh documentation",
+          "start_utf16": 6207,
+          "end_utf16": 6251,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 44,
+              "style": {
+                "link_url": "https://www.gmsh.info/doc/texinfo/"
+              }
+            }
+          ]
+        },
+        {
+          "block_id": "b122",
+          "role": "paragraph",
+          "text": "Release decision: v1 supplies a reproducible reconstruction and a test system for the next iteration. Engineering release remains unapproved while any numerical, fit or physical acceptance gate is unresolved.",
+          "start_utf16": 6252,
+          "end_utf16": 6460,
+          "runs": [
+            {
+              "start_utf16": 0,
+              "end_utf16": 208,
+              "style": {
+                "bold": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "expected_final_native_structure": {
+    "equation_paragraphs": 22,
+    "tables": 11,
+    "inline_images": 4,
+    "heading_texts": [
+      "400 mm beam wall mount engineering report v1",
+      "Reconstructed geometry and assembly",
+      "Materials evidence and rounded tube section",
+      "Beam force stress and displacement calculations",
+      "Bracket and contact analytical screens",
+      "Anchors sleeves and installation load path",
+      "Independent geometric fit verification",
+      "Finite element model and bracket stress",
+      "Beam finite element results and mesh verification",
+      "Purchased parts and historical cost basis",
+      "CI execution requirements and saved feedback",
+      "Manufacture physical acceptance and source register"
+    ],
+    "placeholder_tokens_must_be_absent": [
+      "[[V1_FIGURE_001]]",
+      "[[V1_TABLE_001]]",
+      "[[V1_FIGURE_002]]",
+      "[[V1_TABLE_002]]",
+      "[[V1_TABLE_003]]",
+      "[[V1_TABLE_004]]",
+      "[[V1_FIGURE_003]]",
+      "[[V1_TABLE_005]]",
+      "[[V1_FIGURE_004]]",
+      "[[V1_TABLE_006]]",
+      "[[V1_TABLE_007]]",
+      "[[V1_TABLE_008]]",
+      "[[V1_TABLE_009]]",
+      "[[V1_TABLE_010]]",
+      "[[V1_TABLE_011]]"
+    ],
+    "latex_must_not_be_inserted_as_body_text": true
+  },
+  "network_writes_performed": false
+}

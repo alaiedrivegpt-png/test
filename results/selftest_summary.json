@@ -1,0 +1,349 @@
+{
+  "schema": "beam-wall-mount-ci-v1",
+  "version": "v1",
+  "run_id": "20261119T210259_643345Z",
+  "mode": "selftest",
+  "completed_at": "2026-11-19T21:03:09.105517+00:00",
+  "test_system_functional": true,
+  "unit_tests_run": 43,
+  "engineering_release": "NOT_EVALUATED",
+  "artifact_complete": false,
+  "numerical_screen_pass": false,
+  "physical_qualification_pass": false,
+  "project_complete": false,
+  "exit_code": 0,
+  "counts": {
+    "PASS": 10,
+    "FAIL": 0,
+    "BLOCKED": 0,
+    "ERROR": 0
+  },
+  "log_file": "logs/ci_20261119T210259_643345Z.log",
+  "tool_versions": {
+    "cadquery": "2.7.0",
+    "cadquery-ocp": "7.8.1.1.post1",
+    "gmsh": "4.15.2",
+    "numpy": "2.3.5",
+    "matplotlib": "3.10.8",
+    "cad-ccx": "2.23.0",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "OpenCASCADE_binding_reported": "7.8.1.1"
+  },
+  "stages": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "started_at": "2026-11-19T21:03:01.484138+00:00",
+      "finished_at": "2026-11-19T21:03:09.103743+00:00",
+      "duration_s": 7.619464357001561,
+      "returncode": 0,
+      "execution_error": null,
+      "name": "unit_and_negative_tests",
+      "test_count": 43
+    }
+  ],
+  "checks": [
+    {
+      "id": "dependency:cadquery",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "2.7.0",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:cadquery-ocp",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "7.8.1.1.post1",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:gmsh",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "4.15.2",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:numpy",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "2.3.5",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:matplotlib",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "3.10.8",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "dependency:cad-ccx",
+      "requirements": [
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Runtime dependency imported.",
+      "observed": "2.23.0",
+      "criterion": "Importable tested dependency",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "unit_and_negative_tests",
+      "requirements": [
+        "R08",
+        "R15",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Independent unit tests and deliberate-negative controls executed.",
+      "observed": {
+        "exit_code": 0,
+        "tests_run": 43,
+        "mandatory_test_modules_executed": true
+      },
+      "criterion": "All three mandatory test modules executed; at least 20 tests; exit 0",
+      "next_action": "",
+      "evidence": [
+        "logs/ci_20261119T210259_643345Z.log"
+      ]
+    },
+    {
+      "id": "execution_sources_stable",
+      "requirements": [
+        "R14",
+        "R16"
+      ],
+      "category": "execution",
+      "status": "PASS",
+      "message": "Code, tests, requirements and configuration stayed unchanged during this CI run.",
+      "observed": [],
+      "criterion": "No source mutations during execution",
+      "next_action": "",
+      "evidence": []
+    },
+    {
+      "id": "ci_saved_log",
+      "requirements": [
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Full stdout/stderr, commands, timings and exit codes saved in a separate run log.",
+      "observed": null,
+      "criterion": null,
+      "next_action": "",
+      "evidence": [
+        "logs/ci_20261119T210259_643345Z.log"
+      ]
+    },
+    {
+      "id": "selftest_summary",
+      "requirements": [
+        "R16",
+        "R17"
+      ],
+      "category": "artifact",
+      "status": "PASS",
+      "message": "Test-system-only summary written; engineering acceptance is not evaluated in this mode.",
+      "observed": null,
+      "criterion": null,
+      "next_action": "",
+      "evidence": [
+        "results/selftest_summary.json"
+      ]
+    }
+  ],
+  "requirements": {
+    "R01": {
+      "title": "Self-contained version ZIP and frozen layout",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R02": {
+      "title": "400 mm beam",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R03": {
+      "title": "Two printed press-fit brackets",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R04": {
+      "title": "Bolted mounts on two walls",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R05": {
+      "title": "10 N structural requirement",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R06": {
+      "title": "Catalogue section and material evidence",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R07": {
+      "title": "Native Google Doc report",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R08": {
+      "title": "Full executable calculations",
+      "status": "PASS",
+      "check_ids": [
+        "unit_and_negative_tests"
+      ]
+    },
+    "R09": {
+      "title": "Priced BOM with links",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R10": {
+      "title": "3D FEM stress results",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R11": {
+      "title": "Native FreeCAD CAD",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R12": {
+      "title": "Gmsh STL generation",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R13": {
+      "title": "Executed CalculiX FEM",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R14": {
+      "title": "Automatic requirements audit and feedback",
+      "status": "PASS",
+      "check_ids": [
+        "execution_sources_stable"
+      ]
+    },
+    "R15": {
+      "title": "CadQuery and Open CASCADE fit checks",
+      "status": "PASS",
+      "check_ids": [
+        "unit_and_negative_tests"
+      ]
+    },
+    "R16": {
+      "title": "Functional CI and meaningful negative tests",
+      "status": "PASS",
+      "check_ids": [
+        "dependency:cadquery",
+        "dependency:cadquery-ocp",
+        "dependency:gmsh",
+        "dependency:numpy",
+        "dependency:matplotlib",
+        "dependency:cad-ccx",
+        "unit_and_negative_tests",
+        "execution_sources_stable",
+        "selftest_summary"
+      ]
+    },
+    "R17": {
+      "title": "Saved CI logs and next-iteration feedback",
+      "status": "PASS",
+      "check_ids": [
+        "ci_saved_log",
+        "selftest_summary"
+      ]
+    },
+    "R18": {
+      "title": "Simple AI reference",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    },
+    "R19": {
+      "title": "Explicit reconstruction provenance",
+      "status": "NOT_EVALUATED",
+      "check_ids": []
+    }
+  },
+  "input_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "requirement.md": "daed9c70a9376adc1ccc36665bf0f1e1d19cff86ccbe264e7ca375dbde1b2a49",
+    "scripts/run_ci.py": "0a4924eacce8ec7243c7b7b81a8a5ac2761fb3ec995ee9cdda2084a43ee7d41f",
+    "scripts/ci_support.py": "788daddaf6d66e993283d38d5616b3a6608c4fa2b162885a24589ef995dee84b",
+    "tests/test_calculations.py": "2d07d521173c68865f876307b6162fc4d8246117694a7a3d02b24f6e66ea91c9",
+    "tests/test_ci_runner.py": "f69af16949237e31fc402378fce004f0303ab7648c0c9db1a96b72cebffbd5df",
+    "tests/test_geometric_fit.py": "931e4b6723540accab7285ae51ca08216e356df0919c400b687d9abd8a096976"
+  },
+  "executed_source_hashes": {
+    "config/design.json": "661e7c8867ebeb7ec83fc6428820558042b8b492b1e8f701d6fec8c219b92828",
+    "requirement.md": "daed9c70a9376adc1ccc36665bf0f1e1d19cff86ccbe264e7ca375dbde1b2a49",
+    "scripts/run_ci.py": "0a4924eacce8ec7243c7b7b81a8a5ac2761fb3ec995ee9cdda2084a43ee7d41f",
+    "scripts/ci_support.py": "788daddaf6d66e993283d38d5616b3a6608c4fa2b162885a24589ef995dee84b",
+    "scripts/build_cad.py": "0b380d3bf09f49dbcf6e40fa12072424acae6a3fc60c17fb142a750cd40ff933",
+    "scripts/calculate.py": "31e67283f7214c3d4d6b318f089c96e2dfabe7c197d7e6ca2fe8baf8edb629c8",
+    "scripts/check_geometric_fit.py": "38eef5d65622f5dd5b295cebd56295f5e34ab49d687fd4ec656bb70de8f9604e",
+    "scripts/run_fem.py": "b3f66294823c0044c559489ef7e4108272c792a2d606cc92783032f98b7f01bb",
+    "tests/test_calculations.py": "2d07d521173c68865f876307b6162fc4d8246117694a7a3d02b24f6e66ea91c9",
+    "tests/test_ci_runner.py": "f69af16949237e31fc402378fce004f0303ab7648c0c9db1a96b72cebffbd5df",
+    "tests/test_geometric_fit.py": "931e4b6723540accab7285ae51ca08216e356df0919c400b687d9abd8a096976"
+  },
+  "next_iteration": {
+    "action": "ALL_RECORDED_GATES_PASS",
+    "priorities": []
+  },
+  "hosted_ci_execution": "NOT_RUN_NO_REPOSITORY_REQUESTED",
+  "notes": [
+    "Local CI commands were executed. Hosted GitHub Actions execution is not claimed.",
+    "Test-system functionality is separate from engineering acceptance.",
+    "Reconstructed v1 results never reuse historical v0 values as new evidence."
+  ],
+  "log_sha256": "60fc4c0386c37df2bdb6a4d9c5815cf484cbf5298f8d0f61d7b4b82d3fdd7945"
+}
