@@ -60,7 +60,17 @@ jobs:
                   n += 1
           print('Imported',n,'ZIP files; preserved all existing repository files')
           PY
-          python3 scripts/package_project.py --verify
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib
+          manifest = Path('MANIFEST.sha256').read_text().splitlines()
+          for line in manifest:
+              expected, filename = line.split('  ', 1)
+              p = Path(filename)
+              if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest() != expected:
+                  raise RuntimeError('Failed archived file integrity: '+filename)
+          print('Verified', len(manifest), 'archived static file hashes; unrelated existing repository files are preserved')
+          PY
       - name: Commit imported archive to v1 and remove the one-time workflow
         shell: bash
         run: |
