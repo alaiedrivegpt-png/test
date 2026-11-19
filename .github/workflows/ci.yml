@@ -1,0 +1,61 @@
+name: Beam wall mount v1 verification
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test-system:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install native meshing libraries
+        run: sudo apt-get update && sudo apt-get install -y libglu1-mesa libgl1
+      - name: Install tested Python dependencies
+        run: python -m pip install -r requirements.lock
+      - name: Prove the test harness and negative controls work
+        run: python scripts/run_ci.py --mode selftest
+      - name: Save test-system logs even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-system-evidence
+          path: |
+            logs/
+            results/selftest_summary.json
+  engineering:
+    needs: test-system
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install FreeCAD and native meshing libraries
+        run: sudo apt-get update && sudo apt-get install -y freecad libglu1-mesa libgl1
+      - name: Install tested Python dependencies
+        run: python -m pip install -r requirements.lock
+      - name: Recalculate fit and rerun CalculiX then audit every requirement
+        env:
+          FREECAD_PYTHON: /usr/bin/python3
+          PYTHONPATH: /usr/lib/freecad-python3/lib:/usr/lib/freecad/lib
+          OMP_NUM_THREADS: '1'
+        run: python scripts/run_ci.py --mode full
+      - name: Save all feedback after any engineering failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: engineering-evidence
+          retention-days: 30
+          path: |
+            logs/
+            results/
+            fem/
+            mesh/
