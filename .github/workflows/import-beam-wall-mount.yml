@@ -71,13 +71,12 @@ jobs:
                   raise RuntimeError('Failed archived file integrity: '+filename)
           print('Verified', len(manifest), 'archived static file hashes; unrelated existing repository files are preserved')
           PY
-      - name: Commit imported archive to v1 and remove the one-time workflow
+      - name: Commit imported files to v1 (workflows handled separately)
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -A
-          git rm -f .github/workflows/import-beam-wall-mount.yml
-          git commit -m "Import complete beam wall mount v1 project from verified ZIP"
+          git add -A -- ':!.github/workflows/'
+          git commit -m "Import beam wall mount v1 files from verified ZIP"
           git push origin HEAD:v1
